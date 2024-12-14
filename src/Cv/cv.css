@@ -1,0 +1,92 @@
+.cv2 {
+    padding: 40px;
+    padding-top: 70px;
+    background-color: white; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+.cv2 .title {
+        color: #092635;
+        text-align: center;
+        font-size: 36px;
+        font-style: oblique;
+        animation: zoomGlow 1.5s ease-in-out; 
+        text-shadow: 0px 10px 10px #111111, 0 0 20px #2a2f2f;
+    }
+
+
+.log {
+    display: flex;
+    align-items: center;
+    /* gap: 1em; */
+}
+
+.log img {
+    width: 50px;
+    margin-top: 10px;
+    /* filter: hue-rotate(90deg);  */
+}
+
+.fe {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    color: black;
+}
+
+.f{
+    width: 30%;
+    margin-top: 30px;
+    
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   
+
+}
+
+.ex {
+    width: 30%;
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+    color: #1B4242; /* Vert principal */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #5C8374;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.p,
+.ex p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+hr {
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 0 20px;
+}
+
+.role {
+    color: #378181; /* Jaune-orangé pour les rôles */
+    font-weight: bold;
+}
+
+.fe h1 {
+    font-size: 24px;
+    color: #1B4242;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}

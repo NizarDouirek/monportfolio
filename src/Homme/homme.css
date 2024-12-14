@@ -1,0 +1,107 @@
+body, html, #root, .homme {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+.homme{
+    background-image: url("/public/layered-waves-haikei.png");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    /* background-position:top center; */
+    height: 850px;
+}
+.container{
+    text-align: center;
+    margin-top: 15%;
+    
+    
+}
+.bonjour{
+    color: #1B4242;
+    font-size: 30px;
+    font-family:cursive;
+    
+}
+.nom {
+    color: white;
+    text-shadow: 0px 0px 10px black,0px 0px 10px black;
+    font-family: 'Pacifico', cursive;
+    font-size: 90px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    opacity: 0; 
+    animation: modernSlideIn 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    text-transform: uppercase;
+    
+}
+
+
+@keyframes modernSlideIn {
+    0% {
+        transform: translateY(50px) scale(0.8) rotate(-10deg); 
+        opacity: 0; 
+    }
+    50% {
+        transform: translateY(-10px) scale(1.05) rotate(2deg); 
+        opacity: 0.8; 
+       
+    }
+    100% {
+        transform: translateY(0) scale(1) rotate(0); 
+        opacity: 1; 
+    }
+}
+
+
+.job{
+    margin-top: 10px;
+    color: #1B4242;
+    font-size: 40px;
+    font-style: italic;
+}
+/* button{
+    background-color:rgb(90, 201, 39) ;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+button:hover{
+    background: linear-gradient(80deg, rgb(99, 255, 122), rgb(236, 255, 114));
+}
+button a{
+    color: black;
+    text-decoration: none;
+} */
+button {
+    background-color: #1B4242;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(80deg, #3e9a9a, #1B4242);
+    transform: scale(1.1); /* Agrandit légèrement le bouton */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de survol */
+}
+
+button:active {
+    transform: scale(0.95); /* Réduit légèrement le bouton au clic */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Diminue l'ombre */
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button a:hover {
+    text-decoration: underline; /* Ajoute un soulignement au texte du lien au survol */
+}

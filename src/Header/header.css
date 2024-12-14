@@ -1,0 +1,48 @@
+header{
+    background-color: #5C8374;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+img{
+   margin-top: 10px;
+    width: 100px;
+    height: 70px;
+}
+.logo{
+    margin-left: 100px;
+    display: flex;
+    
+    
+}
+.logo h1{
+    color: #1B4242;
+    font-family: 'Pacifico', cursive;
+}
+.prenom{
+    color: #0a2323; 
+    font-family: 'Pacifico', cursive;
+}
+.navbar {
+    margin-top: 15px; /* Ajuste cette valeur selon la distance souhaitée */
+    display: flex;
+    
+}
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 250px;
+    gap: 2em;
+    list-style: none;
+
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:25px;
+}
+nav a:hover{
+  color: #1B4242;
+}

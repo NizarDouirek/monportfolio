@@ -1,0 +1,61 @@
+.skills{
+    padding: 40px;
+    padding-top: 70px; 
+   /* background-image: url(/public/polygon-scatter-haikei.png); */
+   background-color: #1B4242;
+   background-size: cover;
+   background-repeat: no-repeat;
+   min-height: 700px; 
+}  
+.pack{
+    margin-left: 300px;
+    border-radius: 10px;
+   
+}
+.titre1{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-style: oblique;
+    animation: zoomGlow 1.5s ease-in-out; /* Animation d'apparition */
+    text-shadow: 0 0 10px #3e9a9a, 0 0 20px #47acac;
+}
+section .imgskills {
+    width: 90px;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #092635;
+    border: solid 3px white;
+}
+
+section .imgskills:hover {
+    border-color: #9EC8B9; 
+}
+section h2 {
+    text-align: center;
+    color: white;
+    
+}
+
+section .imgskills:hover + h2 {
+    color: #9EC8B9; 
+}
+
+section{
+    background-color:#265757 ;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 3em;
+}
+.p1{
+    gap: 3em;
+    display: flex;
+}
+.p2{
+    margin-top: 20px;
+    margin-left: 100px;
+    gap: 3em;
+    display: flex;
+}
+

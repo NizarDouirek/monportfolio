@@ -1,0 +1,21 @@
+.projets{
+    background-image: url(/public/bb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    height: 500px;
+}
+.imgsite{
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+}
+.imgsite:hover{
+  transform: scale(1.1); 
+}
+.projet{
+    display: flex;
+    gap: 2em;
+    margin-top: 60px;
+    justify-content: center;
+}

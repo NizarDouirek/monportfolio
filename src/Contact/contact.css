@@ -1,0 +1,138 @@
+.contact {
+    background-image: url(/public/low-poly-grid-haikei\ \(1\).png);
+    background-size: cover;
+
+    color: white;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titre {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    animation: zoomGlow 1.5s ease-in-out; /* Animation d'apparition */
+    text-shadow: 0 0 10px #3e9a9a, 0 0 20px #47acac;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 20px;
+    padding: 40px;
+   
+}
+
+form {
+    padding: 40px;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    min-width: 300px;
+    margin: 10px;
+    backdrop-filter: blur(15px) brightness(80%);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.737);
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #3e9a9a;
+}
+
+form textarea {
+    resize: none;
+    height: 120px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: roboto;
+    letter-spacing: 0.1cm;
+    color: white;
+    border: none;
+    margin-left: 8px;
+    border-radius: 20px;
+    background: linear-gradient(80deg, #47acac, #267373);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+
+form button:hover {
+    background: linear-gradient(80deg, #3e9a9a, #1B4242);
+    transform: scale(1.1); /* Agrandit légèrement le bouton */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de survol */
+}
+
+.detail {
+    
+    min-width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+   margin-top: 140px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-detail img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background-color: #3e9a9a;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: solid 1px rgb(45, 44, 44);
+}
+.contact-detail img:hover{
+    border:solid 1px #3e9a9a;
+}
+
+
+
+.contact-detail p {
+    font-size: 1.2em;
+    color: #02131c;
+}
