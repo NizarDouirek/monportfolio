@@ -7,9 +7,9 @@ export default function Cv(){
             <div className="fe">
                <div className="f">
                 <div className="log">
-                   <img src="formation.png" alt="" />
+                   <img src="education.png" alt="" />
                    <h1>Formation</h1>
-                </div>
+                </div><br />
                 <h2>Technicien specialisé en developpement <br /> digital option ‘full-stack web’</h2>
                 <span className="date">2022 - 2024</span>
                 <p className="p">  A l'institut specialisé en technologie appliquée ntic 1 Casablanca</p><br />
@@ -20,9 +20,9 @@ export default function Cv(){
                 <hr />
             <div className="ex">
                 <div className="log">
-                    <img src="experience.png" alt="" />
+                    <img src="mallette.png" alt="" />
                     <h1>Experiences</h1>
-                </div>
+                </div><br />
                 <h2>Stage Développeur, SIRECOM </h2>
                      <span className="date">2024 - 2mois</span>
                 
@@ -31,7 +31,7 @@ export default function Cv(){
                        Développement d'une application de gestion debiens <br /> 
                        <span className="role">Technologies utilisées :</span> php, laravel, MySQL, CSS    
                     
-                </p>
+                </p><br />
                 <h2>
                 Projet Académique , ISTA </h2><span className="date">2024 - 4mois </span>
                 <p> 
@@ -39,7 +39,7 @@ export default function Cv(){
                         Conception et développement d'un site web d'une agence de voyage <br /> 
                        <span className="role">Technologies utilisées :</span> HTML, CSS, React, Laravel, MySQL    
                     
-                </p>
+                </p><br />
                 <h2>
                 Projet Académique (en binôme) , ISTA </h2><span className="date">2023 - 3mois </span>
                 <p> 

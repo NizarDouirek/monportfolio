@@ -8,7 +8,8 @@
 .about h1{
     color: #092635;
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
+    margin-bottom: 60px;
     font-style: oblique;
     animation: zoomGlow 1.5s ease-in-out; 
     text-shadow: 0px 10px 10px #111111, 0 0 20px #2a2f2f;
@@ -17,15 +18,16 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    gap: 4em;
+    gap: 3em;
+    
 }
 .i{
     width: 350px;
-    height: 500px;
+    height: 450px;
     border-radius: 10px;
 }
 .contentAbout{
-    font-size: 20px;
+    font-size: 15px;
 }
 .contentAbout h2{
     color: black;
@@ -36,12 +38,7 @@
 .contentAbout p{
     color: #092635;
 }
-/* table{
-    color: #1B4242;
-}
-table td{
-    gap: 3em;
-} */
+
 table {
     width: 100%; 
     border-collapse: collapse; 
@@ -84,4 +81,43 @@ table td {
 }
 .cv:hover{
     background: linear-gradient(80deg, #3e9a9a, #1B4242);
+}
+@media screen and (max-width: 480px) {
+    .about {
+        padding: 30px 15px; /* Réduction du padding pour les téléphones */
+    }
+
+    .about h1 {
+        font-size: 20px; /* Taille plus petite pour le titre */
+    }
+
+    .i {
+        width: 100%; /* Utilisation de toute la largeur disponible */
+    }
+
+    .contentAbout h2 {
+        font-size: 18px; /* Réduction de la taille des titres */
+    }
+
+    .contentAbout h4 {
+        font-size: 16px;
+    }
+
+    .contentAbout p {
+        font-size: 13px; /* Ajustement pour le paragraphe */
+    }
+
+    table th, table td {
+        padding: 8px; /* Espacement réduit */
+        font-size: 12px; /* Texte plus petit dans les tableaux */
+    }
+
+    table th {
+        background-color: #265757; /* Légère modification de couleur */
+    }
+
+    .cv {
+        padding: 8px; /* Bouton plus petit */
+        font-size: 14px; /* Taille du texte réduite */
+    }
 }

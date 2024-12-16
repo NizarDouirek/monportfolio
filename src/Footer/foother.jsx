@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="footer" role="contentinfo" itemScope itemType="http://schema.org/WPFooter">
       <div className="social" role="navigation" aria-labelledby="social-heading">
-        <h1>Contactez moi</h1>
+        <h1>Contactez moi</h1><br />
         <a href="https://web.facebook.com/nizar.douirek.50" className="face" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
           <i className="fa-brands fa-facebook"></i>
         </a>

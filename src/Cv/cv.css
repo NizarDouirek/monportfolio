@@ -18,14 +18,15 @@
 .log {
     display: flex;
     align-items: center;
-    /* gap: 1em; */
+    gap: 1em;
 }
 
 .log img {
-    width: 50px;
-    margin-top: 10px;
-    /* filter: hue-rotate(90deg);  */
+    width: 40px;
+    height: 40px;
+    
 }
+
 
 .fe {
     display: flex;
@@ -35,8 +36,8 @@
 }
 
 .f{
-    width: 30%;
-    margin-top: 30px;
+    width: 40%;
+    margin-top: 15px;
     
     background-color: #f9f9f9; 
     padding: 20px;
@@ -47,7 +48,7 @@
 }
 
 .ex {
-    width: 30%;
+    width: 40%;
     background-color: #f9f9f9; 
     padding: 20px;
     border-radius: 10px;
@@ -57,26 +58,27 @@
 h2 {
     color: #1B4242; /* Vert principal */
     font-weight: bold;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 
 .date {
     color: #5C8374;
-    font-size: 18px;
+    font-size: 15px;
     font-style: italic;
     margin-bottom: 10px;
 }
 
 .p,
 .ex p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
 hr {
-    height: auto;
+    height: 400px;
     border: 1px solid #ccc;
-    margin: 0 20px;
+    margin-top: 30px;
 }
 
 .role {
@@ -86,7 +88,7 @@ hr {
 
 .fe h1 {
     font-size: 24px;
-    color: #1B4242;
-    margin-bottom: 20px;
+    color: black;
+    
     text-transform: uppercase;
 }

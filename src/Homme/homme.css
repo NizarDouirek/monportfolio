@@ -10,7 +10,7 @@ body, html, #root, .homme {
     
     background-repeat: no-repeat;
     /* background-position:top center; */
-    height: 850px;
+    height: 650px;
 }
 .container{
     text-align: center;
@@ -20,7 +20,7 @@ body, html, #root, .homme {
 }
 .bonjour{
     color: #1B4242;
-    font-size: 30px;
+    font-size: 25px;
     font-family:cursive;
     
 }
@@ -28,9 +28,7 @@ body, html, #root, .homme {
     color: white;
     text-shadow: 0px 0px 10px black,0px 0px 10px black;
     font-family: 'Pacifico', cursive;
-    font-size: 90px;
-    margin-bottom: 10px;
-    margin-top: -20px;
+    font-size: 80px;
     opacity: 0; 
     animation: modernSlideIn 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     text-transform: uppercase;
@@ -58,25 +56,14 @@ body, html, #root, .homme {
 .job{
     margin-top: 10px;
     color: #1B4242;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
 }
-/* button{
-    background-color:rgb(90, 201, 39) ;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 10px;
-}
-button:hover{
-    background: linear-gradient(80deg, rgb(99, 255, 122), rgb(236, 255, 114));
-}
-button a{
-    color: black;
-    text-decoration: none;
-} */
+
 button {
     background-color: #1B4242;
     font-size: 20px;
+    margin-top: 20px;
     border-radius: 10px;
     padding: 10px;
     border: none;
@@ -104,4 +91,30 @@ button a {
 
 button a:hover {
     text-decoration: underline; /* Ajoute un soulignement au texte du lien au survol */
+}
+@media screen and (max-width: 480px) {
+    .homme{
+        height: 400px;
+    }
+    .container {
+        margin-top: 30%; 
+    }
+
+    .nom {
+        font-size: 40px; 
+    }
+
+    .bonjour {
+        font-size: 18px; 
+    }
+
+    .job {
+        font-size: 20px; 
+        color: wheat;
+    }
+
+    button {
+        font-size: 16px; 
+        padding: 6px; 
+    }
 }

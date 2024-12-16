@@ -13,7 +13,7 @@
 }
 
 .titre {
-    font-size: 2.5em;
+    font-size: 30px;
     margin-bottom: 20px;
     text-align: center;
     color: white;
@@ -33,8 +33,9 @@
 }
 
 form {
-    padding: 40px;
-    width: 400px;
+    padding: 30px;
+    border-radius: 40px;
+    width: 360px;
     height: 440px;
     background: transparent;
     min-width: 300px;
@@ -44,7 +45,7 @@ form {
 }
 
 .form h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 20px;
     color: white;
     text-align: center;
@@ -54,8 +55,8 @@ form {
 form input,
 form textarea {
     width: 100%;
-    padding: 10px;
-    font-size: 1em;
+    padding: 7px;
+    
     margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
@@ -81,8 +82,8 @@ form textarea {
 
 form button {
     width: 100%;
-    padding: 10px;
-    font-size: 1.3em;
+    padding: 6px;
+    font-size: 1.1em;
     font-weight: bold;
     font-family: roboto;
     letter-spacing: 0.1cm;
@@ -118,8 +119,8 @@ form button:hover {
 }
 
 .contact-detail img {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 40px;
     padding: 10px;
     background-color: #3e9a9a;
     margin-right: 10px;
@@ -128,6 +129,7 @@ form button:hover {
 }
 .contact-detail img:hover{
     border:solid 1px #3e9a9a;
+    
 }
 
 
