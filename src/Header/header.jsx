@@ -6,7 +6,7 @@ export default function Header(){
         <div>
             <header>
                 <div className="logo">
-                  <img src="d1r.png"/>
+                  <img src="logoN.png"/>
                   <h1>Nizar <span className="prenom">Douirek</span></h1>
                   <div className="navbar">
                       <nav>

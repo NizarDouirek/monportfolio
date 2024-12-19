@@ -1,21 +1,203 @@
 .projets{
-    background-image: url(/public/bb.png);
+    /* background-image: url(/public/bb.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: black;
     padding: 100px;
-    height: 500px;
+    /* height: 500px; */
 }
 .imgsite{
-    width: 320px;
-    height: 170px;
+    width: 420px;
+    height: 270px;
     border-radius: 20px;
 }
 .imgsite:hover{
-  transform: scale(1.1); 
+  transform: scale(1.04); 
 }
-.projet{
+.sectionP h1{
+    color: #46aa9d;
+    cursor: pointer;
+    font-family: roboto;
+}
+.sectionP h1:hover {
+    color: #438d83;
+    cursor: pointer;
+  }
+.sectionP2 h1{
+    color: #bb6fde;
+    cursor: pointer;
+    font-family: roboto;
+}
+.sectionP2 h1:hover {
+    color:#9843bf;
+    cursor: pointer;
+  }
+.sectionP3 h1{
+    color: #0c4047;
+    cursor: pointer;
+    font-family: roboto;
+}
+.sectionP3 h1:hover {
+    color: #24657c;
+    cursor: pointer;
+  }
+.sectionP {
+    padding: 10px;
     display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 10px;
+    background:linear-gradient(60deg, #3a716a, #06107b );
+}
+
+.visit{
+    background-color: #3a716a;
+    font-family: roboto;
+    font-size: 17px;
+}
+
+.sectionP2 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 10px;
+    background:linear-gradient(60deg, #5f2196, #a715c4 );
+}
+.sectionP3 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 10px;
+    background:linear-gradient(60deg, #4f8d79, #9ea3e8 );
+}
+
+.projet{
+    
     gap: 2em;
     margin-top: 60px;
     justify-content: center;
+}
+.tec{
+    display: flex;
+    gap: 1em;
+    
+}   
+.tec img{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+
+}
+.tec img:hover{
+    border:1px solid #5c58cf;
+}
+.contentP{
+    width: 40%;
+    color: white;
+}
+.titreAb{
+    
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+    font-style: oblique;
+    animation: zoomGlow 1.5s ease-in-out; 
+    text-shadow: 0px 10px 10px #3f436dfc, 0 0 20px #433f77;
+}
+.titreAb:hover{
+    animation: shake 0.4s ease-in-out;
+    cursor: pointer ;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+/* @media screen and (max-width: 768px) {
+    .projets {
+        padding: 40px; 
+        height: 700px; 
+    }
+
+    .imgsite {
+        width: 100%; 
+        height: auto; 
+        border-radius: 10px;
+    }
+
+    .imgsite:hover {
+        transform: scale(1.05); 
+    }
+
+    .projet {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1.5em;
+    }
+} */
+@media screen and (max-width: 480px) {
+    .projets {
+        padding: 20px; /* Réduction du padding pour les petits écrans */
+        height: auto; /* Ajuste automatiquement la hauteur */
+        background-color: black; /* Garde un contraste approprié */
+    }
+
+    .imgsite {
+        width: 100%; /* Les images prennent toute la largeur disponible */
+        height: auto; /* Ajustement de la hauteur proportionnelle */
+        border-radius: 10px; /* Réduction des coins arrondis */
+    }
+
+    .sectionP, 
+    .sectionP2, 
+    .sectionP3 {
+        flex-direction: column; /* Aligne les éléments verticalement */
+        gap: 10px; /* Ajoute un espacement entre les éléments */
+        padding: 10px; /* Réduction de l'espacement interne */
+        text-align: center; /* Centrage du contenu */
+    }
+
+    .sectionP h1, 
+    .sectionP2 h1, 
+    .sectionP3 h1 {
+        font-size: 1.2em; /* Réduction de la taille des titres */
+    }
+
+    .projet {
+        flex-direction: column; /* Les projets s'empilent verticalement */
+        gap: 1em; /* Réduction de l'espacement */
+        margin-top: 20px; /* Réduction de l'espacement supérieur */
+    }
+
+    .tec {
+        flex-direction: row; /* Les icônes techniques restent en ligne */
+        justify-content: center; /* Centre les éléments */
+        gap: 0.5em; /* Réduction de l'espacement */
+    }
+
+    .tec img {
+        width: 40px; /* Réduction de la taille des icônes */
+        height: 40px;
+        padding: 3px; /* Réduction du padding */
+    }
+
+    .contentP {
+        width: 100%; /* Le texte prend toute la largeur */
+        text-align: center; /* Centrage du texte */
+        margin-top: 20px; /* Ajoute un espacement supérieur */
+    }
+
+    .titreAb {
+        font-size: 24px; /* Réduction de la taille de la police */
+        margin-bottom: 20px; /* Réduction de l'espacement inférieur */
+    }
 }

@@ -1,19 +1,34 @@
 .about{
     padding: 100px 50px;
     /* background-image: url(/public/bgabout.png); */
-    background-size: cover;
-
-    background-repeat: no-repeat;
+    background-color: black;
+    overflow: hidden; /* Empêche les débordements */
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    box-sizing: border-box;
+    
 }
 .about h1{
-    color: #092635;
+    color: white;
     text-align: center;
     font-size: 30px;
     margin-bottom: 60px;
     font-style: oblique;
     animation: zoomGlow 1.5s ease-in-out; 
-    text-shadow: 0px 10px 10px #111111, 0 0 20px #2a2f2f;
+    text-shadow: 0px 10px 10px #3f436dfc, 0 0 20px #433f77;
 }
+.about h1:hover{
+    animation: shake 0.4s ease-in-out;
+}
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0, 0); }
+  }
 .containe{
     align-items: center;
     justify-content: center;
@@ -25,18 +40,24 @@
     width: 350px;
     height: 450px;
     border-radius: 10px;
+    
 }
+
 .contentAbout{
     font-size: 15px;
 }
 .contentAbout h2{
-    color: black;
+    color: #050C9C;
+}
+.contentAbout span{
+    color: white;
 }
 .contentAbout h4{
-    color: #5C8374;
+   
+    color: #3572EF;
 }
 .contentAbout p{
-    color: #092635;
+    color: white;
 }
 
 table {
@@ -45,7 +66,7 @@ table {
     margin: 20px 0;
     font-size: 18px;
     color: #1B4242;
-    background-color: #f9f9f9; 
+    ; 
     border-radius: 10px; 
     overflow: hidden; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
@@ -57,67 +78,84 @@ table th, table td {
 }
 
 table th {
-    background-color: #317e7e; 
+    
     color: white; 
     font-weight: bold;
     text-transform: uppercase;
 }
 
 table td {
-    background-color: #ffffff; 
-    color: #1B4242; 
+    
+    color: white; 
 }
 
 
 
 .cv{
     margin-top: 25px; 
-    cursor: pointer;
-    background: linear-gradient(80deg, #317e7e, #1B4242);
+    cursor: pointer ;
+    background-color: #3572EF;
 }
 .cv a{
     text-decoration: none;
     color: white;
 }
 .cv:hover{
-    background: linear-gradient(80deg, #3e9a9a, #1B4242);
+    background: linear-gradient(80deg, #3572EF, #2a318e);
 }
 @media screen and (max-width: 480px) {
     .about {
-        padding: 30px 15px; /* Réduction du padding pour les téléphones */
+        padding: 20px;
     }
 
-    .about h1 {
-        font-size: 20px; /* Taille plus petite pour le titre */
+    .containe {
+        flex-direction: column; /* Empile les éléments verticalement */
+        gap: 1.5em; /* Réduit l'espacement entre les éléments */
     }
 
     .i {
-        width: 100%; /* Utilisation de toute la largeur disponible */
+        width: 50%; /* L'image occupe toute la largeur */
+        height: auto; /* Maintient le ratio d'aspect */
+        border-radius: 5px;
+    }
+
+    .contentAbout {
+        text-align: center; /* Centre le texte */
+        font-size: 14px; /* Réduit légèrement la taille de police */
     }
 
     .contentAbout h2 {
-        font-size: 18px; /* Réduction de la taille des titres */
+        font-size: 18px; /* Taille adaptée pour les petits écrans */
+        margin-bottom: 10px;
     }
 
     .contentAbout h4 {
         font-size: 16px;
+        margin-bottom: 10px;
     }
 
     .contentAbout p {
-        font-size: 13px; /* Ajustement pour le paragraphe */
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    table {
+        font-size: 14px; /* Réduit la taille des cellules du tableau */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     table th, table td {
-        padding: 8px; /* Espacement réduit */
-        font-size: 12px; /* Texte plus petit dans les tableaux */
-    }
-
-    table th {
-        background-color: #265757; /* Légère modification de couleur */
+        padding: 10px 5px; /* Diminue les marges internes */
     }
 
     .cv {
-        padding: 8px; /* Bouton plus petit */
-        font-size: 14px; /* Taille du texte réduite */
+        margin-top: 15px; /* Réduit l'espacement au-dessus du bouton */
+    }
+
+    .cv a {
+        font-size: 14px;
     }
 }
+

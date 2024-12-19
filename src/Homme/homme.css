@@ -5,11 +5,11 @@ body, html, #root, .homme {
     
   }
 .homme{
-    background-image: url("/public/layered-waves-haikei.png");
+    background-image: url("/public/g1.gif");
     background-size: cover;
-    
+   
     background-repeat: no-repeat;
-    /* background-position:top center; */
+    background-position: center;
     height: 650px;
 }
 .container{
@@ -19,14 +19,27 @@ body, html, #root, .homme {
     
 }
 .bonjour{
-    color: #1B4242;
+    color: white;
     font-size: 25px;
     font-family:cursive;
     
 }
+.wave-hand::after {
+    content: "👋"; /* Emoji de la main */
+    display: inline-block;
+    
+    animation: wave 1.5s infinite; /* Animation pour faire bouger la main */
+}
+@keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    50% { transform: rotate(30deg); }
+    75% { transform: rotate(10deg); }
+}
+
 .nom {
     color: white;
-    text-shadow: 0px 0px 10px black,0px 0px 10px black;
+    text-shadow: 0px 0px 10px #4e4d6c,0px 0px 10px #605EA1;
     font-family: 'Pacifico', cursive;
     font-size: 80px;
     opacity: 0; 
@@ -55,13 +68,13 @@ body, html, #root, .homme {
 
 .job{
     margin-top: 10px;
-    color: #1B4242;
+    color: #8EA3A6;
     font-size: 30px;
     font-style: italic;
 }
 
 button {
-    background-color: #1B4242;
+    background-color: #3572EF;
     font-size: 20px;
     margin-top: 20px;
     border-radius: 10px;
@@ -70,18 +83,20 @@ button {
     color: white;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
 }
 
 button:hover {
-    background: linear-gradient(80deg, #3e9a9a, #1B4242);
-    transform: scale(1.1); /* Agrandit légèrement le bouton */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de survol */
+    background: linear-gradient(80deg, #3572EF, #2a318e); /* Légère variation de couleur */
+    box-shadow: 0 0 20px 8px rgba(96, 94, 161, 0.7); /* Effet lumineux plus fort */
+    transform: scale(1.05); /* Léger agrandissement */
 }
 
 button:active {
     transform: scale(0.95); /* Réduit légèrement le bouton au clic */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Diminue l'ombre */
+    box-shadow: 0px 4px 8px rgba(59, 35, 101, 0.225); /* Diminue l'ombre */
 }
+
 
 button a {
     color: white;
@@ -89,32 +104,30 @@ button a {
     font-weight: bold;
 }
 
-button a:hover {
-    text-decoration: underline; /* Ajoute un soulignement au texte du lien au survol */
-}
+
 @media screen and (max-width: 480px) {
     .homme{
         height: 400px;
     }
     .container {
-        margin-top: 30%; 
+        margin-top: 30%; /* Déplace plus bas sur les petits écrans */
     }
 
     .nom {
-        font-size: 40px; 
+        font-size: 40px; /* Texte principal encore plus petit */
     }
 
     .bonjour {
-        font-size: 18px; 
+        font-size: 18px; /* Texte d'accueil plus petit */
     }
 
     .job {
-        font-size: 20px; 
-        color: wheat;
+        font-size: 20px; /* Ajustement de la taille */
+        
     }
 
     button {
-        font-size: 16px; 
-        padding: 6px; 
+        font-size: 16px; /* Boutons plus petits */
+        padding: 6px; /* Réduction du padding */
     }
 }

@@ -1,13 +1,27 @@
-import React from "react";
+import React,{useState} from "react";
 import './about.css'
 export default function About(){
+     const [canPlaySound, setCanPlaySound] = useState(false); // État pour activer le son
+    
+      
+      const playSound = () => {
+        if (canPlaySound) {
+          const sound = new Audio("audio1.mp3");
+          sound.play();
+        }
+      };
+    
+     
+      const enableSound = () => {
+        setCanPlaySound(true);
+      };
     return(
-        <div className="about">
-           <h1 className="titre1">À Propos</h1>
+        <div className="about" onClick={enableSound}>
+           <h1 className="titre1" onMouseEnter={playSound}>À Propos</h1>
             <div className="containe">
                 <img className="i" src="profillinkd.jpg"/>
                 <div className="contentAbout">
-                <h2 >Bonjour! Je suis Nizar Douirek</h2>
+                <h2 ><span>Bonjour! Je suis</span> Nizar Douirek</h2>
                 <h4>Développeur Full Stack</h4>
                 <p>
                    Jeune diplômé en développement digital, passionné <br/> par  les nouvelles

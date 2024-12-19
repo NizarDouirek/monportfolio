@@ -1,9 +1,23 @@
-import React from "react";
+import React,{useState}  from "react";
 import './cv.css';
 export default function Cv(){
+     const [canPlaySound, setCanPlaySound] = useState(false); // État pour activer le son
+    
+      
+      const playSound = () => {
+        if (canPlaySound) {
+          const sound = new Audio("audio1.mp3");
+          sound.play();
+        }
+      };
+    
+     
+      const enableSound = () => {
+        setCanPlaySound(true);
+      };
     return(
-        <div id="cv" className="cv2">
-            <h1 className="title">CV</h1>
+        <div id="cv" className="cv2" onClick={enableSound}>
+            <h1 className="title" onMouseEnter={playSound}>CV</h1>
             <div className="fe">
                <div className="f">
                 <div className="log">
@@ -29,7 +43,7 @@ export default function Cv(){
                 <p> 
                     
                        Développement d'une application de gestion debiens <br /> 
-                       <span className="role">Technologies utilisées :</span> php, laravel, MySQL, CSS    
+                       <span className="role">Technologies utilisées :</span> php, laravel, MySQL, CSS, Bootstrap    
                     
                 </p><br />
                 <h2>

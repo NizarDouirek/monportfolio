@@ -12,7 +12,7 @@ export default function Homme(){
         <div id="homme">
         <div className="homme">
             <div className="container">
-                <p className="bonjour">Bonjour, je suis</p>
+                <p className="bonjour">Bonjour <span className="wave-hand"></span>, je suis</p>
                 <h1 className="nom">Nizar Douirek</h1>
                 <p className="job">Developpeur Full Stack</p>
                 <button>

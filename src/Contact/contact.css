@@ -1,6 +1,7 @@
 .contact {
-    background-image: url(/public/low-poly-grid-haikei\ \(1\).png);
+    background-image: url(/public/a4.gif);
     background-size: cover;
+    background-position: center;
 
     color: white;
     padding: 40px;
@@ -18,8 +19,19 @@
     text-align: center;
     color: white;
     animation: zoomGlow 1.5s ease-in-out; /* Animation d'apparition */
-    text-shadow: 0 0 10px #3e9a9a, 0 0 20px #47acac;
+    text-shadow: 0 0 10px #8e3e9a, 0 0 20px #475bac;
 }
+.titre:hover{
+    animation: shake 0.4s ease-in-out;
+}
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, -2px); }
+    100% { transform: translate(0, 0); }
+  }
+  
 
 .form {
     display: flex;
@@ -42,6 +54,7 @@ form {
     margin: 10px;
     backdrop-filter: blur(15px) brightness(80%);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    
 }
 
 .form h2 {
@@ -70,9 +83,10 @@ form textarea::placeholder {
     color: rgba(255, 255, 255, 0.737);
 }
 
-form input:focus,
-form textarea:focus {
-    border-color: #3e9a9a;
+form input:hover,
+form textarea:hover {
+    border-color: #4f49ce;
+    cursor: pointer;
 }
 
 form textarea {
@@ -89,18 +103,18 @@ form button {
     letter-spacing: 0.1cm;
     color: white;
     border: none;
-    margin-left: 8px;
+    
     border-radius: 20px;
-    background: linear-gradient(80deg, #47acac, #267373);
+    background-color: #3572EF;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
 
 
 form button:hover {
-    background: linear-gradient(80deg, #3e9a9a, #1B4242);
-    transform: scale(1.1); /* Agrandit légèrement le bouton */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de survol */
+    background: linear-gradient(80deg, #3572EF, #2a318e); /* Légère variation de couleur */
+    box-shadow: 0 0 20px 8px rgba(96, 94, 161, 0.7); /* Effet lumineux plus fort */
+    transform: scale(1.05); /* Léger agrandissement */
 }
 
 .detail {
@@ -122,13 +136,16 @@ form button:hover {
     width: 45px;
     height: 40px;
     padding: 10px;
-    background-color: #3e9a9a;
+    
+    background-color: rgba(72, 70, 70, 0.455);
     margin-right: 10px;
     border-radius: 50%;
     border: solid 1px rgb(45, 44, 44);
 }
 .contact-detail img:hover{
-    border:solid 1px #3e9a9a;
+    border:solid 1px #4f49ce;
+    background-color: #3572EF ;
+
     
 }
 
@@ -136,5 +153,52 @@ form button:hover {
 
 .contact-detail p {
     font-size: 1.2em;
-    color: #02131c;
+    color: white;
+}
+@media screen and (max-width: 480px) {
+    .contact {
+        padding: 20px; /* Réduction des marges pour économiser de l'espace */
+        min-height: auto; /* Ajuste automatiquement la hauteur */
+        justify-content: flex-start; /* Aligne les éléments en haut */
+    }
+
+    .titre {
+        font-size: 20px; /* Réduction de la taille de la police */
+        margin-bottom: 15px;
+    }
+
+    .form {
+        flex-direction: column; /* Les formulaires se placent en colonne */
+        align-items: center;
+        width: 100%; /* Occupe toute la largeur */
+        padding: 20px; /* Réduction de l'espacement */
+    }
+
+    form {
+        width: 100%; /* Le formulaire occupe toute la largeur */
+        max-width: 320px; /* Taille maximale */
+        height: auto; /* S'ajuste à la hauteur du contenu */
+        margin: 5px 0; /* Espacement réduit */
+        padding: 20px; /* Réduction du padding */
+    }
+
+    form button {
+        font-size: 1em; /* Réduction de la taille du texte */
+        padding: 5px; /* Réduction du padding */
+    }
+
+    .detail {
+        margin-top: 20px; /* Réduction de l'espacement supérieur */
+        align-items: center; /* Centre les détails */
+    }
+
+    .contact-detail img {
+        width: 35px; /* Réduction de la taille de l'icône */
+        height: 35px;
+        padding: 5px; /* Réduction du padding */
+    }
+
+    .contact-detail p {
+        font-size: 1em; /* Réduction de la taille de la police */
+    }
 }

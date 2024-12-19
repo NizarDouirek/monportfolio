@@ -1,6 +1,6 @@
 .footer {
     padding: 40px 0;
-    background-color: #5C8374;
+    background-color: black;
     color: white;
     bottom: 0;
 }
@@ -31,7 +31,7 @@
 
 .footer ul a:hover {
     opacity: 1;
-    color: #112a2a;
+    color: #3572EF;
 }
 
 .footer .social {
@@ -72,17 +72,17 @@
     }
 
 .face:hover{
-    background:#112a2a;
+    background:#3572EF;
 }
 .insta:hover{
-    background:#112a2a;
+    background:#3572EF;
 }
 .linkdeen:hover{
-    background:#112a2a;
+    background:#3572EF;
 }
 .gt:hover{
-    background:#112a2a;
+    background:#3572EF;
 }
 .twit:hover{
-    background:#112a2a;
+    background:#3572EF;
 }
