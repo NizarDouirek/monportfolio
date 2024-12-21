@@ -5,16 +5,18 @@
     font-family: 'Roboto', sans-serif; 
 }
 
-.cv2 .title {
-        color: white;
+.cv2 .title4 {
+        color: #3572EF;
         text-align: center;
         font-size: 36px;
         font-style: oblique;
         animation: zoomGlow 1.5s ease-in-out; 
-        text-shadow: 0px 10px 10px #111111, 0 0 20px #2a2f2f;
+        text-shadow: 0px 0px 10px #c3bcbc, 0 0 20px #a3acac;
     }
-    .cv2 .title:hover{
+    
+    .cv2 .title4:hover{
         animation: shake 0.4s ease-in-out;
+        cursor: pointer ;
     }
     @keyframes shake {
         0% { transform: translate(0, 0); }
@@ -35,6 +37,9 @@
 .log img {
     width: 40px;
     height: 40px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
     
     
 }

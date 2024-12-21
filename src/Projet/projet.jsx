@@ -39,7 +39,7 @@ export default function Projet(){
                    
                       <img className="imgsite" src="voyage.png" alt=""/>
                    
-                 </div><br />
+                 </div><br /><br />
                 <div className="sectionP2">
                 
                 <div className="contentP">
@@ -53,12 +53,12 @@ export default function Projet(){
                             <img src="css-3.png" alt="" />
                             <img src="bootstrap1.png" alt="" />
                        </div>
-                       <button className="visit">Visiter Site</button>
+                       <button className="visit2">Visiter Site</button>
                     </div>
                    <a href="">
                    <img  className="imgsite"src="gbien.png" alt="" />
                    </a>
-                </div><br />
+                </div><br /><br />
                 <div className="sectionP3">
                 <div className="contentP">
                     <h1>Luxury Voyage</h1>
@@ -73,7 +73,7 @@ export default function Projet(){
                             <img src="bootstrap1.png" alt="" />
                             <img src="sql.png" alt="" />
                        </div>
-                       <button className="visit">Visiter Site</button>
+                       <button className="visit3">Visiter Site</button>
                     </div>
                    
                       <img className="imgsite" src="voyage.png" alt=""/>

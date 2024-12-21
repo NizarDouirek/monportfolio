@@ -17,7 +17,7 @@ export default function Contact(){
       };
     return(
         <div id="contact" className="contact" onClick={enableSound}>
-        <h1 className="titre" onMouseEnter={playSound}>Contact</h1>
+        <h1 className="titre" onMouseEnter={playSound}>Contact</h1><br />
         <div className="form">
             <form action="https://formspree.io/f/meoqwagg" method="POST">
                 <h2>Contactez-moi</h2><br />
@@ -33,7 +33,7 @@ export default function Contact(){
                 <h2>Details Contact</h2>
                 <div className="contact-detail">
                     <img src="email (1).png" alt="Email Icon" />
-                    <p>douireknizar@gmail.com</p>
+                    <p title="">douireknizar@gmail.com</p>
                 </div>
                 <div className="contact-detail">
                     <img src="tel.png" alt="Phone Icon" />

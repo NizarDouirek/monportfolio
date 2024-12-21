@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState, useEffect }  from "react";
 import './header.css';
 import { Link } from "react-router-dom";
 export default function Header(){
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return(
         <div>
-            <header>
+            <header  className={isScrolled ? "scrolled" : ""}>
                 <div className="logo">
                   <img src="logoN.png"/>
                   <h1>Nizar <span className="prenom">Douirek</span></h1>

@@ -17,11 +17,11 @@ export default function Cv(){
       };
     return(
         <div id="cv" className="cv2" onClick={enableSound}>
-            <h1 className="title" onMouseEnter={playSound}>CV</h1>
+            <h1 className="title4" onMouseEnter={playSound}>CV</h1>
             <div className="fe">
                <div className="f">
                 <div className="log">
-                   <img src="education.png" alt="" />
+                   <img src="ed.png" alt="" />
                    <h1>Formation</h1>
                 </div><br />
                 <h2>Technicien specialisé en developpement <br /> digital option ‘full-stack web’</h2>
@@ -34,7 +34,7 @@ export default function Cv(){
                 <hr />
             <div className="ex">
                 <div className="log">
-                    <img src="mallette.png" alt="" />
+                    <img src="exp.png" alt="" />
                     <h1>Experiences</h1>
                 </div><br />
                 <h2>Stage Développeur, SIRECOM </h2>

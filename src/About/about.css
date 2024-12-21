@@ -2,7 +2,7 @@
     padding: 100px 50px;
     /* background-image: url(/public/bgabout.png); */
     background-color: black;
-    overflow: hidden; /* Empêche les débordements */
+    
     max-width: 100%;
     align-items: center;
     justify-content: center;
@@ -42,6 +42,7 @@
     border-radius: 10px;
     
 }
+
 
 .contentAbout{
     font-size: 15px;

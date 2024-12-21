@@ -4,7 +4,7 @@
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 700px;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,12 +82,12 @@ section .imgskills:hover + h2 {
 
 .titre1 {
     margin-top: 20px;
-    color: white;
+    color: #3572EF;
     text-align: center;
     font-size: 36px;
     font-style: oblique;
     animation: zoomGlow 1.5s ease-in-out;
-    text-shadow: 0 0 10px #3e5e9a, 0 0 20px #7047ac;
+    text-shadow: 0 0 10px #c3c6cd, 0 0 20px #aeabb4;
 }
 
 .titre1:hover {
@@ -101,8 +101,241 @@ section .imgskills:hover + h2 {
     75% { transform: translate(-2px, -2px); }
     100% { transform: translate(0, 0); }
 }
+.outil{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+.rd{
+   width: 300px;
+   height: 300px;
+}
+
+.circle {
+    position: relative;
+    width: 300px;
+    background-image: url(/public/zz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border: 2px solid white;
+    
+    
+    overflow: hidden;
+  }
+  
+  
+  
+  .circle img {
+    position: absolute;
+    width: 50px; /* Taille des images */
+    height: 50px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Positionnement aléatoire */
+  .circle img:nth-child(1) {
+    top: 20%;
+    left: 70%;
+  }
+  .circle img:nth-child(2) {
+    top: 50%;
+    left: 80%;
+  }
+  .circle img:nth-child(3) {
+    top: 80%;
+    left: 30%;
+  }
+  .circle img:nth-child(4) {
+    top: 20%;
+    left: 30%;
+  }
+  .circle img:nth-child(5) {
+    top: 77%;
+    left: 74%;
+  }
+  .circle img:nth-child(6) {
+    top: 60%;
+    left: 50%;
+  }
+  .circle img:nth-child(7) {
+    top: 60%;
+    left: 20%;
+  }
+  .circle img:nth-child(8) {
+    top: 40%;
+    left: 20%;
+  }
+  .circle img:nth-child(9) {
+    top: 40%;
+    left: 50%;
+  }
+  .circle img:nth-child(10) {
+    top: 90%;
+    left: 50%;
+  }
+  
+  .outils {
+    margin-top: 200px;
+  }
+  .outils h2{
+    background: linear-gradient(80deg,#3e5e9a,#3572EF,#7ba186);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: roboto;
+    font-size: 30px; 
+  }
+  .outils h3{
+    color: #306f8f;
+    font-family: roboto;
+  }
+  .circle p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(80deg,#13ef55, #4ac6f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 40px;
+    font-family: roboto;
+    
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; /* Transition douce */
+    pointer-events: none;
+  }
+  .circle:hover p{
+    opacity: 0;
+  }
+  
+  .circle:hover img{
+    opacity: 1;
+  }
 
 
+
+  .circle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    background-color: gray;
+    width: 300px; 
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.circle1 img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.circle1 .det {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.circle1:hover {
+    background-image: url(/public/ou.gif); 
+    background-position: center;
+    
+}
+
+.circle1:hover img {
+    opacity: 0; 
+}
+
+.circle1:hover .det {
+    opacity: 1; 
+}
+.det h1{
+  color:rgb(184, 130, 81) ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.det p{
+  width: 100%;
+  font-family: roboto;
+}
+
+
+.circle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+ 
+  width: 300px; 
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.circle2 img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out; 
+}
+
+.circle2 .det2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
+}
+
+.circle2:hover {
+  background-image: url(/public/ww.gif); 
+  background-position: center;
+  
+}
+
+.circle2:hover img {
+  opacity: 0; 
+}
+
+.circle2:hover .det2 {
+  opacity: 1; 
+}
+.det2 h1{
+color:rgb(138, 145, 140) ;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.det2 p{
+width: 100%;
+font-family: roboto;
+}
+
+.circle1:hover, .circle2:hover, .circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+  
   
 @media screen and (max-width: 480px) {
     .skills {
