@@ -48,7 +48,6 @@ img{
 
 }
 
-
 nav a{
     color: white;
     text-decoration: none;
@@ -57,4 +56,35 @@ nav a{
 }
 nav a:hover{
   color: #3572EF;
+}
+
+@media (max-width: 480px) {
+    .header{
+        margin: 0;
+        padding: 0;
+        
+
+    }
+    .logo{
+        gap: 1rem;
+    }
+    .logo img {
+        width: 60px;
+        height: 50px;
+        margin-left: 16px;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+        
+    }
+    .logo .prenom {
+        font-size: 26px;
+       
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+    }
+    
 }

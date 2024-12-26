@@ -1,24 +1,26 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import './projet.css';
 export default function Projet(){
-    const [canPlaySound, setCanPlaySound] = useState(false); // État pour activer le son
-
+     useEffect(() => {
+          const sections = document.querySelectorAll('.sectionP, .sectionP2, .sectionP3');
+          
+          const observer = new IntersectionObserver((entries, observer) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      // Ajouter la classe 'visible' lorsque l'élément est visible à l'écran
+                      entry.target.classList.add('visible');
+                  }
+              });
+          }, { threshold: 0.5 }); // Déclenche lorsque 50% de l'élément est visible
   
-  const playSound = () => {
-    if (canPlaySound) {
-      const sound = new Audio("audio1.mp3");
-      sound.play();
-    }
-  };
-
- 
-  const enableSound = () => {
-    setCanPlaySound(true);
-  };
+          sections.forEach(section => {
+              observer.observe(section);
+          });
+      }, []);
     return(
-        <div id="projet" onClick={enableSound}>
+        <div id="projet">
           <div className="projets">
-               <h1 className="titreAb" onMouseEnter={playSound}>Projets</h1> 
+               <h1 className="titreAb">Projets</h1> 
                <div className="projet">
                 <div className="sectionP">
                     <div className="contentP">
@@ -80,7 +82,13 @@ export default function Projet(){
                    
                  </div>
                  </div>
-                
+                 <div class="projets-message">
+    <p>
+        Des projets passionnants sont en cours de développement ! 
+        Restez à l'écoute pour découvrir de nouvelles créations et solutions innovantes.
+    </p>
+</div>
+
                </div>
           </div>
         

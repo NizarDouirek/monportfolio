@@ -7,7 +7,7 @@ body, html, #root, .homme {
 .homme{
     background-image: url("/public/g1.gif");
     background-size: cover;
-   
+    
     background-repeat: no-repeat;
     background-position: center;
     height: 650px;
@@ -39,29 +39,44 @@ body, html, #root, .homme {
 
 .nom {
     color: white;
-    text-shadow: 0px 0px 10px #4e4d6c,0px 0px 10px #605EA1;
+    text-shadow: 0px 0px 10px #4e4d6c, 0px 0px 10px #605EA1;
     font-family: 'Pacifico', cursive;
     font-size: 80px;
-    opacity: 0; 
-    animation: modernSlideIn 2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     text-transform: uppercase;
-    
+    overflow: hidden; /* Garde le texte dans les limites */
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    width: 0; /* Texte caché initialement */
+    margin: 0 auto; /* Centre horizontalement */
+    animation: typing 4s steps(12, end) infinite, blink 0.5s step-end infinite alternate;
+    text-align: center; /* Assure un alignement centré */
 }
 
-
-@keyframes modernSlideIn {
+/* Animation pour simuler l'écriture */
+@keyframes typing {
     0% {
-        transform: translateY(50px) scale(0.8) rotate(-10deg); 
-        opacity: 0; 
+        width: 0;
     }
     50% {
-        transform: translateY(-10px) scale(1.05) rotate(2deg); 
-        opacity: 0.8; 
-       
+        width: 15ch; /* Ajustez à la longueur de "Nizar Douirek" */
+    }
+    75% {
+        width: 15ch; /* Maintient l'état écrit pendant 3 secondes */
+    }
+    90%{
+        width: 15ch;
     }
     100% {
-        transform: translateY(0) scale(1) rotate(0); 
-        opacity: 1; 
+        width: 0; /* Disparaît ensuite */
+    }
+}
+
+/* Animation pour le curseur clignotant */
+@keyframes blink {
+    from {
+        border-right: 2px solid white;
+    }
+    to {
+        border-right: 2px solid transparent;
     }
 }
 

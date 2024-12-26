@@ -7,6 +7,12 @@
 .social h1{
     font-family: Roboto;
     font-size: 30px;
+    color: white;
+    
+}
+.social h1:hover{
+    color: #3572EF;
+    cursor: pointer;
 }
 .footer ul {
     padding: 0;

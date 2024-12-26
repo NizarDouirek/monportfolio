@@ -11,16 +11,17 @@
     
 }
 .about h1{
-    color: white;
+    color: #3572EF;
     text-align: center;
     font-size: 30px;
     margin-bottom: 60px;
     font-style: oblique;
     animation: zoomGlow 1.5s ease-in-out; 
-    text-shadow: 0px 10px 10px #3f436dfc, 0 0 20px #433f77;
+    text-shadow: 0px 10px 10px #adaeb7fc, 0 0 20px #d4d3de;
 }
 .about h1:hover{
     animation: shake 0.4s ease-in-out;
+    cursor: pointer;
 }
 @keyframes shake {
     0% { transform: translate(0, 0); }
@@ -141,7 +142,8 @@ table td {
     }
 
     table {
-        font-size: 14px; /* Réduit la taille des cellules du tableau */
+        font-size: 14px; 
+        margin-left: 40px;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -159,4 +161,62 @@ table td {
         font-size: 14px;
     }
 }
+/* Animation pour le titre */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation pour le contenu */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Classes appliquant les animations */
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.slide-left {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-right {
+    animation: slideInRight 1s ease-out forwards;
+}
+
+
+
+.i {
+    opacity: 0; /* Initialement caché */
+}
+
+.contentAbout {
+    opacity: 0; /* Initialement caché */
+}
+
 

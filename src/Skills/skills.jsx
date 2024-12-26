@@ -1,142 +1,180 @@
-import React,{useState}  from "react";
-import './skills.css';
-export default function Skills(){
-     const [canPlaySound, setCanPlaySound] = useState(false); // État pour activer le son
-     const [isHovered, setIsHovered] = useState(false);
-    
-      
-      const playSound = () => {
-        if (canPlaySound) {
-          const sound = new Audio("audio1.mp3");
-          sound.play();
-        }
-      };
-      const playSound1 = () => {
-        const audio = new Audio("audio.mp3");
-        audio.play();
-      };
-    
-     
+import { useEffect,useState} from "react";
+import React from "react";
+import "./skills.css";
+
+export default function Skills() {
+    const [canPlaySound, setCanPlaySound] = useState(false);
+
+    // Activer la lecture des sons après une interaction utilisateur
+    useEffect(() => {
       const enableSound = () => {
         setCanPlaySound(true);
+        window.removeEventListener("click", enableSound);
       };
-      const handleMouseEnter = () => {
-        setIsHovered(true); // Animation en pause
+  
+      // Ajouter un écouteur d'événement global sur le clic
+      window.addEventListener("click", enableSound);
+  
+      return () => {
+        window.removeEventListener("click", enableSound);
+      };
+    }, []);
+  
+    // Fonction pour jouer un son si l'utilisateur a interagi
+    const playSound = (audioFile) => {
+      if (canPlaySound) {
+        const sound = new Audio(audioFile);
+        sound.play();
+      }
     };
+    const handleMouseEnter = () => {
+        const packContainer = document.querySelector(".pack");
+        if (packContainer) {
+          packContainer.classList.add("paused");
+        }
+      };
+    
+      const handleMouseLeave = () => {
+        const packContainer = document.querySelector(".pack");
+        if (packContainer) {
+          packContainer.classList.remove("paused");
+        }
+      };
+  return (
+    <div id="skills" className="skills">
+      <audio ></audio>
+      <h1 className="titre1">Compétences</h1>
+      <br />
+      <br />
+      <div className="pack-container">
+        <div className="pack">
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="html-5.png" alt="HTML5" />
+            <h2>HTML5</h2>
+          </section>
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="css-3.png" alt="CSS3" />
+            <h2>CSS3</h2>
+          </section>
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="bootstrap.png" alt="Bootstrap" />
+            <h2>Bootstrap</h2>
+          </section>
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="js.svg" alt="JavaScript" />
+            <h2>JavaScript</h2>
+          </section>
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="react.svg" alt="React" />
+            <h2>React</h2>
+          </section>
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="php2.svg" alt="PHP" />
+            <h2>PHP</h2>
+          </section>
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="laravel1.png" alt="Laravel" />
+            <h2>Laravel</h2>
+          </section>
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="sql.png" alt="MySQL" />
+            <h2>MySQL</h2>
+          </section >
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="mongo.svg" alt="MongoDB" />
+            <h2>MongoDB</h2>
+          </section>
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="github1.png" alt="GitHub" />
+            <h2>GitHub</h2>
+          </section>
+          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="imgskills" src="git.png" alt="Git" />
+            <h2>Git</h2>
+          </section>
+        </div>
+      </div>
+      
+      <div className="outils">
+        <h2>
+          Créateurs d'expériences web modernes et solutions backend puissantes
+        </h2>
+        <h3>"Passez votre souris sur les sections pour découvrir les détails"</h3>
+        <br />
+        <div className="outil">
+          <div
+            className="circle1"
+            onMouseEnter={() => playSound("pop.mp3")} // Audio au survol
+          >
+            <img src="ccc.jpg" alt="Frontend Developer" />
+            <div className="det">
+              <h1>Développeur FrontEnd</h1>
+              <p>
+                Passionné par la création d'expériences web modernes et
+                intuitives, je transforme des concepts en interfaces élégantes
+                et performantes. Avec une expertise solide en HTML, CSS,
+                Bootstrap, JavaScript et des frameworks comme React.
+              </p>
+            </div>
+          </div>
 
-    const handleMouseLeave = () => {
-        setIsHovered(false); // Animation reprend
-    };
-    return (
-        <div id="skills" className="skills" onClick={enableSound}>
-            <h1 className="titre1" onMouseEnter={playSound}>Compétences</h1><br /><br />
-            <div  class="pack-container">
-            <div className="pack" style={{
-                    animationPlayState: isHovered ? "paused" : "running",  }}>
-                
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills" src="html-5.png" alt="" />
-                    <h2>html-5</h2>
-                </section>
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills"  src="css-3.png" alt="" />
-                    <h2>css-3</h2>
-                </section>
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills" src="bootstrap.png" alt="" />
-                    <h2>bootstrap</h2>
-                </section>
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills"  src="js.svg" alt="" />
-                    <h2>java-script</h2>
-                </section>
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills" src="react.svg" alt="" />
-                    <h2>react</h2>
-                </section>
-              
-                
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills" src="php2.svg" alt="" />
-                    <h2>php</h2>
-                </section>
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills" src="laravel1.png" alt="" />
-                    <h2>laravel</h2>
-                </section>
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills"  src="sql.png" alt="" />
-                    <h2>MySQL</h2>
-                </section>
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills"  src="mongo.svg" alt="" />
-                    <h2>MongoDB</h2>
-                </section>
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills" src="github1.png" alt="" />
-                    <h2>github</h2>
-                </section>
-                <section onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    <img className="imgskills" src="git.png" alt="" />
-                    <h2>git</h2>
-                </section>
-                </div>
-                </div><br />
-                <div className="outils">
-                <h2>Créateurs d'expériences web modernes et solutions backend puissantes</h2>
-                <h3>"Passez votre souris sur les sections pour découvrir les détails"</h3><br />
-                <div className="outil">
+          <div
+            className="circle2"
+            onMouseEnter={() => playSound("pop.mp3")} // Un autre son
+          >
+            <img src="rr.jpg" alt="Backend Developer" />
+            <div className="det2">
+              <h1>Développeur BackEnd</h1>
+              <p>
+                Je conçois des architectures backend qui assurent fiabilité,
+                évolutivité et sécurité. Expert en langages comme Laravel et
+                Node.js, et maîtrisant les bases de données relationnelles et
+                NoSQL.
+              </p>
+            </div>
+          </div>
 
-                <div className="circle1"   onMouseOver={playSound1}>
-                    <img src="ccc.jpg" alt="" />
-                    <div className="det">
-                      <h1>Developpeur FrontEnd</h1>
-                      <p>Passionné par la création d'expériences web modernes et intuitives,
-                         je transforme des concepts en interfaces élégantes et performantes.
-                          Avec une expertise solide en HTML, CSS, Bootstrap, JavaScript et des frameworks comme React</p>
-                   </div>
-                </div>
-
-                <div className="circle2" onMouseOver={playSound1}>
-                    <img src="rr.jpg" alt="" />
-                    <div className="det2">
-                      <h1>Developpeur BackEnd</h1>
-                      <p> je conçois des architectures backend qui assurent fiabilité, évolutivité et sécurité. Expert en 
-                        langages comme laravel et Node.js, et maîtrisant les bases de données relationnelles et NoSQL</p>
-                   </div>
-                </div>
-                {/* <img className="rd" src="d3.webp" alt="" /> */}
-                <div className="circle" onMouseOver={playSound1}>
-                    <p>Outils de travail</p>
-                    <div className="tools">
-                       <img src="vs.png" alt="React" />
-                       <img src="postman.png" alt="postman" />
-                       <img src="gant.jpeg" alt="gant" style={{borderRadius:'100%'}} />
-                       <img src="ps.png" alt="ps" style={{width:'80px'}}/>
-                       <img src="github1.png" alt="ps" />
-                       <img src="figma.png" alt="ps" style={{borderRadius:'50%'}} />
-                       
-                       <img src="xamp.png" alt="xamp" style={{borderRadius:'50%'}} />
-                       <img src="um.png" alt="Bootstrap" />
-                       <img src="studio3t.webp" alt="st" style={{borderRadius:'50%'}}/>
-                       <img src="g.jpeg" alt="g" style={{borderRadius:'50%'}} />
-                   </div>
-
-                </div>
-                </div>
-                </div>
-           </div>
-        
-    )
+          <div className="circle" onMouseEnter={() => playSound("pop.mp3")} >
+            <p>Outils de travail</p>
+            <div className="tools">
+              <img src="vs.png" alt="Visual Studio" />
+              <img src="postman.png" alt="Postman" />
+              <img
+                src="gant.jpeg"
+                alt="Gantt"
+                style={{ borderRadius: "100%" }}
+              />
+              <img
+                src="ps.png"
+                alt="Photoshop"
+                style={{ width: "80px" }}
+              />
+              <img src="github1.png" alt="GitHub" />
+              <img
+                src="figma.png"
+                alt="Figma"
+                style={{ borderRadius: "50%" }}
+              />
+              <img
+                src="xamp.png"
+                alt="XAMPP"
+                style={{ borderRadius: "50%" }}
+              />
+              <img src="um.png" alt="Umbraco" />
+              <img
+                src="studio3t.webp"
+                alt="Studio 3T"
+                style={{ borderRadius: "50%" }}
+              />
+              <img
+                src="g.jpeg"
+                alt="Google Tools"
+                style={{ borderRadius: "50%" }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

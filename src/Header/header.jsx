@@ -23,7 +23,7 @@ export default function Header(){
         <div>
             <header  className={isScrolled ? "scrolled" : ""}>
                 <div className="logo">
-                  <img src="logoN.png"/>
+                  <img src="nn.png"/>
                   <h1>Nizar <span className="prenom">Douirek</span></h1>
                   <div className="navbar">
                       <nav>

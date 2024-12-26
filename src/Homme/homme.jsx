@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import './homme.css';
 import Header from "../Header/header";
 import About from "../About/about";
@@ -6,7 +6,13 @@ import Skills from "../Skills/skills";
 import Projet from "../Projet/projet";
 import Contact from "../Contact/contact";
 import Cv from "../Cv/cv";
+import Loader from "../Loader/loader";
 export default function Homme(){
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    if (!isLoaded) {
+        return <Loader setIsLoaded={setIsLoaded} />;
+    }
     
     return(
         
@@ -22,7 +28,7 @@ export default function Homme(){
             </div>   
            
         </div>
-        <About/>
+            <About/>
             <Skills/>
             <Cv/>
             <Projet/>

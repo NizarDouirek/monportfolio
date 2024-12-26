@@ -1,38 +1,39 @@
 .contact {
-    background-image: url(/public/ww.gif);
+    background-image: url(/public/blob-scene-haikei.png);
     background-size: cover;
-    /* background-position: center; */
-
+    /* background-position: bottom; */
+    background-position: center;
     color: white;
     padding: 40px;
     font-family: Arial, sans-serif;
+    
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
 }
 
 .titre {
     font-size: 30px;
-    margin-top: 40px;
+    margin-top: 100px;
     text-align: center;
-    color: #3572EF;
-    animation: zoomGlow 1.5s ease-in-out; /* Animation d'apparition */
+    color: #165eed;
+    animation: zoomGlow 1.5s ease-in-out;
     text-shadow: 0 5px 10px #cec1d0, 0 5px 20px #a8aab2;
 }
-.titre:hover{
+.titre:hover {
     animation: shake 0.4s ease-in-out;
+    cursor: pointer;
 }
+
 @keyframes shake {
     0% { transform: translate(0, 0); }
     25% { transform: translate(-2px, 2px); }
     50% { transform: translate(2px, -2px); }
     75% { transform: translate(-2px, -2px); }
     100% { transform: translate(0, 0); }
-  }
-  
+}
 
 .form {
     display: flex;
@@ -42,7 +43,6 @@
     max-width: 900px;
     border-radius: 20px;
     padding: 40px;
-   
 }
 
 form {
@@ -55,24 +55,21 @@ form {
     margin: 10px;
     backdrop-filter: blur(15px) brightness(80%);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    
 }
 
 .form h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(23, 78, 188);
     text-align: center;
 }
-
 
 form input,
 form textarea {
     width: 100%;
     padding: 7px;
-    
     margin-bottom: 20px;
-    border: 1px solid rgb(207, 199, 199);
+    border: 1px solid rgb(143, 145, 148);
     border-radius: 5px;
     background: transparent;
     color: white;
@@ -86,7 +83,7 @@ form textarea::placeholder {
 
 form input:hover,
 form textarea:hover {
-    border-color: #8e8d9c;
+    border-color: rgb(48, 100, 198);
     cursor: pointer;
 }
 
@@ -100,37 +97,33 @@ form button {
     padding: 6px;
     font-size: 1.1em;
     font-weight: bold;
-    font-family: roboto;
+    font-family: Roboto, sans-serif;
     letter-spacing: 0.1cm;
     color: white;
     border: none;
-    
     border-radius: 20px;
-    background-color: #3d3e3f;
+    background-color: rgb(27, 27, 28);
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
 
-
 form button:hover {
-    background: linear-gradient(80deg, #414243, #424350); /* Légère variation de couleur */
-    box-shadow: 0 0 20px 8px rgba(229, 229, 238, 0.7); /* Effet lumineux plus fort */
-    transform: scale(1.05); /* Léger agrandissement */
+    background: linear-gradient(80deg, #343536, #363856);
+    box-shadow: 0 0 20px 8px rgba(229, 229, 238, 0.7);
+    transform: scale(1.05);
 }
 
 .detail {
-    
     min-width: 300px;
     margin: 10px;
     display: flex;
     flex-direction: column;
-    height: 280px;
-   margin-top: 100px;
-   padding: 15px;
-   
-   background-color: transparent;
-   backdrop-filter:blur(15px) brightness(100%);
-   border-radius: 30%;
+    height: 300px;
+    margin-top: 80px;
+    padding: 35px;
+    background-color: transparent;
+    backdrop-filter: blur(15px) brightness(100%);
+    border-radius: 30%;
 }
 
 .contact-detail {
@@ -143,69 +136,112 @@ form button:hover {
     width: 45px;
     height: 40px;
     padding: 10px;
-    
-    background-color: rgba(122, 119, 119, 0.455);
+    background-color: rgba(106, 126, 150, 0.455);
     margin-right: 10px;
     border-radius: 50%;
     border: solid 1px rgb(45, 44, 44);
 }
-.contact-detail img:hover{
-    border:solid 1px #828189;
-    background-color: #636465 ;
-
-    
+.contact-detail img:hover {
+    border: solid 1px #828189;
+    background-color: #445b73;
 }
-
-
 
 .contact-detail p {
     font-size: 1.2em;
     color: white;
 }
+
 @media screen and (max-width: 480px) {
     .contact {
-        padding: 20px; /* Réduction des marges pour économiser de l'espace */
-        min-height: auto; /* Ajuste automatiquement la hauteur */
-        justify-content: flex-start; /* Aligne les éléments en haut */
+        padding: 20px;
+        min-height: auto;
+        justify-content: flex-start;
     }
 
     .titre {
-        font-size: 20px; /* Réduction de la taille de la police */
+        font-size: 20px;
         margin-bottom: 15px;
     }
 
     .form {
-        flex-direction: column; /* Les formulaires se placent en colonne */
+        flex-direction: column;
         align-items: center;
-        width: 100%; /* Occupe toute la largeur */
-        padding: 20px; /* Réduction de l'espacement */
+        width: 100%;
+        padding: 20px;
     }
 
     form {
-        width: 100%; /* Le formulaire occupe toute la largeur */
-        max-width: 320px; /* Taille maximale */
-        height: auto; /* S'ajuste à la hauteur du contenu */
-        margin: 5px 0; /* Espacement réduit */
-        padding: 20px; /* Réduction du padding */
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 5px 0;
+        padding: 20px;
     }
 
     form button {
-        font-size: 1em; /* Réduction de la taille du texte */
-        padding: 5px; /* Réduction du padding */
+        font-size: 1em;
+        padding: 5px;
     }
 
     .detail {
-        margin-top: 20px; /* Réduction de l'espacement supérieur */
-        align-items: center; /* Centre les détails */
+        margin-top: 20px;
+        align-items: center;
     }
 
     .contact-detail img {
-        width: 35px; /* Réduction de la taille de l'icône */
+        width: 35px;
         height: 35px;
-        padding: 5px; /* Réduction du padding */
+        padding: 5px;
     }
 
     .contact-detail p {
-        font-size: 1em; /* Réduction de la taille de la police */
+        font-size: 1em;
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.slide-left {
+    opacity: 1;
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+.slide-right {
+    opacity: 1;
+    animation: slideInFromRight 2s ease-out forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

@@ -66,8 +66,8 @@ section .imgskills {
 }
 
 section .imgskills:hover {
-    border-color: #3572EF;
-    background-color: black;
+    border-color: #5988e7;
+    background-color: #306f8f;
     filter: grayscale(0);
 }
 
@@ -92,6 +92,7 @@ section .imgskills:hover + h2 {
 
 .titre1:hover {
     animation: shake 0.4s ease-in-out;
+    cursor: pointer;
 }
 
 @keyframes shake {
@@ -345,6 +346,7 @@ font-family: roboto;
     .titre1 {
         text-align: center;
         font-size: 20px;
+        margin-top: 40px;
     }
 
     .pack{
@@ -358,4 +360,16 @@ font-family: roboto;
         padding: 8px;
         align-items: center;
     }
+    
+    .outils h2{
+      text-align: center;
+      font-size: 20px;
+    }
+    .outils h3{
+      text-align: center;
+      font-size: 15px;
+    }
+}
+.paused {
+  animation-play-state: paused;
 }
