@@ -60,6 +60,7 @@ section .imgskills {
     height: 100px;
     padding: 20px;
     border-radius: 50%;
+    /* mix-blend-mode: screen; */
     background-color: rgb(117, 116, 116);
     border: solid 3px white;
     filter: grayscale(10);

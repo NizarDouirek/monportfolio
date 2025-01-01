@@ -245,3 +245,66 @@ form button:hover {
         transform: translateX(0);
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact {
+        padding: 30px; /* Ajuste le padding pour un rendu équilibré */
+        min-height: auto;
+        justify-content: flex-start;
+    }
+
+    .titre {
+        font-size: 24px; /* Taille légèrement plus grande que sur mobile */
+        margin-bottom: 20px;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: center;
+        width: 80%; /* Réduit la largeur pour un meilleur centrage */
+        padding: 30px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 480px; /* Augmente la largeur maximale */
+        height: auto;
+        margin: 10px 0;
+        padding: 25px; /* Padding ajusté pour plus de confort */
+    }
+
+    form button {
+        font-size: 1.2em; /* Taille de texte légèrement augmentée */
+        padding: 10px; /* Padding ajusté */
+    }
+
+    .detail {
+        margin-top: 25px; /* Augmentation de l'espacement */
+        align-items: center;
+    }
+
+    .contact-detail img {
+        width: 50px; /* Taille des icônes augmentée */
+        height: 50px;
+        padding: 7px;
+    }
+
+    .contact-detail p {
+        font-size: 1.2em; /* Taille de police adaptée pour les tablettes */
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.slide-left {
+    opacity: 1;
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+.slide-right {
+    opacity: 1;
+    animation: slideInFromRight 2s ease-out forwards;
+}
+

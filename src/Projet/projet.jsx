@@ -30,13 +30,16 @@ export default function Projet(){
                        Notre site est conçu pour vous permettre de découvrir et réserver des voyages sur mesure, 
                        dans les plus belles destinations du monde.</p><br />
                        <div className="tec">
-                            <img src="lar.webp" alt="" />
+                            
                             <img src="react.png" alt="" />
                             <img src="css-3.png" alt="" />
                             <img src="bootstrap1.png" alt="" />
+                            <img src="lar.webp" alt="" />
                             <img src="sql.png" alt="" />
                        </div>
+                       <a href="https://github.com/NizarDouirek/Agence_Voyage">
                        <button className="visit">Visiter Site</button>
+                       </a>
                     </div>
                    
                       <img className="imgsite" src="voyage.png" alt=""/>
@@ -55,7 +58,9 @@ export default function Projet(){
                             <img src="css-3.png" alt="" />
                             <img src="bootstrap1.png" alt="" />
                        </div>
+                       <a href= "https://github.com/NizarDouirek/gestionBien">
                        <button className="visit2">Visiter Site</button>
+                       </a>
                     </div>
                    <a href="">
                    <img  className="imgsite"src="gbien.png" alt="" />
@@ -63,22 +68,25 @@ export default function Projet(){
                 </div><br /><br />
                 <div className="sectionP3">
                 <div className="contentP">
-                    <h1>Luxury Voyage</h1>
-                    <p>"Luxury Voyage" est une agence de voyage spécialisée dans l'organisation de séjours d'exception 
-                      pour les voyageurs en quête de confort, d'élégance et d'expériences inoubliables.
-                       Notre site est conçu pour vous permettre de découvrir et réserver des voyages sur mesure, 
-                       dans les plus belles destinations du monde.</p><br />
+                    <h1>StoreElec</h1>
+                    <p>"StoreElec" est un site de commerce en ligne innovant et fiable, spécialisé dans
+                         la vente de produits électroniques de haute qualité, notamment des téléphones 
+                         mobiles, des ordinateurs portables et des tablettes. Le site propose une large 
+                         sélection de marques populaires, offrant ainsi aux clients un large éventail 
+                          d'options pour répondre à leurs besoins technologiques</p><br />
                        <div className="tec">
-                            <img src="lar.webp" alt="" />
-                            <img src="react.png" alt="" />
+                            <img src="html-5.png" alt="" />
                             <img src="css-3.png" alt="" />
                             <img src="bootstrap1.png" alt="" />
-                            <img src="sql.png" alt="" />
+                            <img src="angular.png" alt="" />
+                            
                        </div>
+                       <a href="https://github.com/NizarDouirek/StoreElec">
                        <button className="visit3">Visiter Site</button>
+                       </a>
                     </div>
                    
-                      <img className="imgsite" src="voyage.png" alt=""/>
+                      <img className="imgsite" src="storeelec.png" alt=""/>
                    
                  </div>
                  </div>

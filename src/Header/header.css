@@ -88,3 +88,32 @@ nav a:hover{
     }
     
 }
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+    .header{
+        margin: 0;
+        padding: 0;
+        
+
+    }
+    .logo{
+        gap: 1rem;
+    }
+    .logo img {
+        width: 100px;
+        height: 100px;
+        margin-left: 160px;
+    }
+
+    .logo h1 {
+        font-size: 46px;
+        
+    }
+    .logo .prenom {
+        font-size: 46px;
+       
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+    }
+}

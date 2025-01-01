@@ -133,29 +133,7 @@
     100% { transform: translate(0, 0); }
   }
   
-/* @media screen and (max-width: 768px) {
-    .projets {
-        padding: 40px; 
-        height: 700px; 
-    }
-
-    .imgsite {
-        width: 100%; 
-        height: auto; 
-        border-radius: 10px;
-    }
-
-    .imgsite:hover {
-        transform: scale(1.05); 
-    }
-
-    .projet {
-        flex-direction: column; 
-        align-items: center; 
-        gap: 1.5em;
-    }
-} */
-@media screen and (max-width: 480px) {
+ @media screen and (max-width: 768px) {
     .projets {
         padding: 20px; /* Réduction du padding pour les petits écrans */
         height: auto; /* Ajuste automatiquement la hauteur */
@@ -218,6 +196,88 @@
 
     .projets-message p {
         font-size: 16px;
+    }
+} 
+ 
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+    .projets {
+        padding: 20px; /* Réduction du padding pour les petits écrans */
+        height: auto; /* Ajuste automatiquement la hauteur */
+        background-color: black; /* Garde un contraste approprié */
+    }
+
+    .imgsite {
+        width: 100%; /* Les images prennent toute la largeur disponible */
+        height: auto; /* Ajustement de la hauteur proportionnelle */
+        
+        border-radius: 10px; /* Réduction des coins arrondis */
+    }
+
+    .sectionP, 
+    .sectionP2, 
+    .sectionP3 {
+        flex-direction: column; /* Aligne les éléments verticalement */
+        gap: 10px; /* Ajoute un espacement entre les éléments */
+        padding: 10px; /* Réduction de l'espacement interne */
+        text-align: center; /* Centrage du contenu */
+    }
+
+    .sectionP h1, 
+    .sectionP2 h1, 
+    .sectionP3 h1 {
+        font-size: 1.5em; /* Réduction de la taille des titres */
+    }
+
+    .projet {
+        flex-direction: column; /* Les projets s'empilent verticalement */
+        gap: 1em; /* Réduction de l'espacement */
+        margin-top: 20px; /* Réduction de l'espacement supérieur */
+        width: 90%;
+        margin-left: 40px;
+    }
+
+    .tec {
+        flex-direction: row; /* Les icônes techniques restent en ligne */
+        justify-content: center; /* Centre les éléments */
+        gap: 0.5em; /* Réduction de l'espacement */
+    }
+
+    .tec img {
+        width: 50px; /* Réduction de la taille des icônes */
+        height: 50px;
+        padding: 3px; /* Réduction du padding */
+    }
+
+    .contentP {
+        width: 100%; /* Le texte prend toute la largeur */
+        text-align: center; /* Centrage du texte */
+        font-size: 27px;
+        margin-top: 20px; /* Ajoute un espacement supérieur */
+    }
+    .contentP p{
+        font-size: 25px;
+    }
+
+    .titreAb {
+        font-size: 34px; /* Réduction de la taille de la police */
+        margin-top: 25px; /* Réduction de l'espacement inférieur */
+    }
+    .visit{
+        font-size: 20px;
+    }
+    .visit1{
+        font-size: 20px;
+    }
+    .visit3{
+        font-size: 20px;
+    }
+    .projets-message {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .projets-message p {
+        font-size: 26px;
     }
 }
 .projets-message {
