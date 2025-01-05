@@ -56,15 +56,22 @@ export default function Contact() {
                 <div className={`detail ${isVisible ? "slide-right" : ""}`}>
                     <h2>Details Contact</h2>
                     <div className="contact-detail">
+                        <a href="mailto:douireknizar@gmail.com?subject=Demande d'informations&body=Bonjour, j'ai une question concernant...">
                         <img src="email (1).png" alt="Email Icon" />
+                        </a>
                         <p>douireknizar@gmail.com</p>
                     </div>
                     <div className="contact-detail">
+                        <a href="https://wa.me/212699862707?text=Bonjour, je souhaite en savoir plus sur vos services">
                         <img src="tel.png" alt="Phone Icon" />
+                        </a>
                         <p>+212 699862707</p>
+                        
                     </div>
                     <div className="contact-detail">
-                        <img src="adress.png" alt="Address Icon" />
+                        <a href="https://www.google.com/maps/place/Ennassim/@33.513411,-7.6660209,15.04z/data=!4m6!3m5!1s0xda62c5670076039:0x9057b8773d86c9d7!8m2!3d33.5127042!4d-7.
+                        // 66057!16s%2Fg%2F1vxw9mbh?entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="adress.png" alt="Address Icon" /></a>
                         <p>Hay Nassim , Casablanca</p>
                     </div>
                 </div>

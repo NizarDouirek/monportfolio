@@ -33,20 +33,22 @@
     cursor: pointer;
   }
 .sectionP3 h1{
-    color: #0c4047;
+    color: #062a2e;
     cursor: pointer;
     font-family: roboto;
 }
 .sectionP3 h1:hover {
-    color: #24657c;
+    color: #0a1c23;
     cursor: pointer;
   }
 .sectionP {
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
+    
     border-radius: 10px;
+    
+    box-shadow: 0 1rem 2rem -1rem black;
     background:linear-gradient(60deg, #3a716a, #06107b );
 }
 
@@ -71,7 +73,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 10px;
     background:linear-gradient(60deg, #5f2196, #a715c4 );
 }
@@ -79,9 +81,21 @@
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 10px;
-    background:linear-gradient(60deg, #4f8d79, #9ea3e8 );
+    background:linear-gradient(60deg, #3c6c5d, #6c70ab );
+}
+.sectionP3 .imgsite{
+    margin-top: 20px;
+}
+.sectionP:hover{
+    border: 1px solid rgb(187, 174, 151);
+}
+.sectionP2:hover{
+    border: 1px solid rgb(187, 174, 151);
+}
+.sectionP3:hover{
+    border: 1px solid rgb(187, 174, 151);
 }
 
 .projet{
@@ -96,7 +110,7 @@
     
 }   
 .tec img{
-    border: 1px solid;
+    
     border-radius: 50%;
     padding: 5px;
     width: 50px;
@@ -104,10 +118,14 @@
 
 }
 .tec img:hover{
-    border:1px solid #5c58cf;
+   
+    border:1px solid transparent;
 }
 .contentP{
     width: 40%;
+    
+}
+.contentP p{
     color: white;
 }
 .titreAb{
@@ -256,6 +274,7 @@
     }
     .contentP p{
         font-size: 25px;
+        
     }
 
     .titreAb {
@@ -285,24 +304,35 @@
     padding: 30px;
     max-width: 600px;
     background: linear-gradient(135deg, rgba(51, 23, 193, 0.752), rgba(29, 169, 143, 0.718));
-    border: 1px solid rgba(53, 114, 239, 0.5);
+    
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 0px 15px rgba(53, 114, 239, 0.2);
-    animation: fadeInUp 1.5s ease-out;
+    animation: move 3s ease-in-out infinite;
+
+}
+@keyframes move {
+    0%, 100% {
+        opacity: 0.2;
+        
+    }
+    50% {
+        opacity: 1;
+    }
+    
 }
 
 .projets-message p {
     font-size: 18px;
     line-height: 1.8;
-    color: rgb(137, 157, 226);
+    color: rgb(208, 215, 244);
     font-family: 'Roboto', sans-serif;
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
     margin: 0;
 }
 
 /* Animation */
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -311,7 +341,7 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 @keyframes slideUp {
     0% {
         opacity: 0;

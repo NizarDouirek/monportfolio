@@ -7,7 +7,7 @@ export default function Loader({ setIsLoaded }) {
         const timer = setTimeout(() => {
             setIsLoaded(true);
             console.log("Loader finished"); // Vérifier que le Loader termine après 3 secondes
-        }, 5000); // 3 secondes
+        }, 3000); // 3 secondes
 
         return () => clearTimeout(timer); // Nettoyage pour éviter les fuites de mémoire
     }, [setIsLoaded]);

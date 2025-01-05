@@ -21,7 +21,7 @@ body, html, #root, .homme {
 .bonjour{
     color: white;
     font-size: 25px;
-    font-family:cursive;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
 .wave-hand::after {
@@ -83,7 +83,7 @@ body, html, #root, .homme {
 
 .job{
     margin-top: 10px;
-    color: #8EA3A6;
+    color: #3b58b8;
     font-size: 30px;
     font-style: italic;
 }
@@ -122,10 +122,10 @@ button a {
 
 @media screen and (max-width: 480px) {
     .homme{
-        height: 400px;
+        height: 600px;
     }
     .container {
-        margin-top: 30%; /* Déplace plus bas sur les petits écrans */
+        margin-top: 40%; /* Déplace plus bas sur les petits écrans */
     }
 
     .nom {
@@ -145,4 +145,72 @@ button a {
         font-size: 16px; /* Boutons plus petits */
         padding: 6px; /* Réduction du padding */
     }
+   
+    .marq p{
+        margin-top: 100px;
+        font-size: -40px;
+        display: block;
+    }
 }
+@media screen and (min-width: 760px) and (max-width: 1060px) {
+    .homme {
+        height: 600px; /* Ajuste la hauteur pour les tablettes */
+    }
+
+    .container {
+        margin-top: 20%; /* Ajuste la marge pour bien centrer */
+    }
+
+    .nom {
+        font-size: 50px; /* Taille du texte principal ajustée pour les tablettes */
+    }
+
+    .bonjour {
+        font-size: 22px; /* Texte d'accueil légèrement plus grand */
+    }
+
+    .job {
+        font-size: 24px; /* Texte de job adapté */
+    }
+
+    button {
+        font-size: 18px; /* Boutons légèrement plus grands */
+        padding: 8px 12px; /* Ajuste le padding pour une meilleure ergonomie */
+    }
+
+    .marq p {
+        font-size: 16px; /* Affiche le texte avec une petite taille */
+        display: block; /* Rétablit l'affichage si masqué pour téléphones */
+    }
+}
+
+.marq{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    margin-top: 130px;
+    animation: modernMove 20s linear infinite;
+}
+.marq p {
+    font-size: 30px;
+    font-weight: bold;
+    
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+  }
+
+  @keyframes modernMove {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-180%); 
+    }
+
+}
+

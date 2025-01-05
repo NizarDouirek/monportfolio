@@ -32,10 +32,10 @@ export default function Projet(){
                        <div className="tec">
                             
                             <img src="react.png" alt="" />
-                            <img src="css-3.png" alt="" />
-                            <img src="bootstrap1.png" alt="" />
-                            <img src="lar.webp" alt="" />
-                            <img src="sql.png" alt="" />
+                            <img src="css.png" alt="" />
+                            <img src="bootstrap-framework.png" alt="" />
+                            <img src="laravel-framework.png" alt="" />
+                            <img src="mysql (1).png" alt="" />
                        </div>
                        <a href="https://github.com/NizarDouirek/Agence_Voyage">
                        <button className="visit">Visiter Site</button>
@@ -53,10 +53,10 @@ export default function Projet(){
                       liées à la gestion des biens de l'entreprise (ordinateurs , imprimantes…). Elle permet aux 
                         gestionnaires  de suivre efficacement leurs biens et d’organiser les données.</p><br />
                        <div className="tec">
-                            <img src="lar.webp" alt="" />
-                            <img src="php.png" alt="" />
-                            <img src="css-3.png" alt="" />
-                            <img src="bootstrap1.png" alt="" />
+                            <img src="laravel-framework.png" alt="" />
+                            <img src="php (2).png" alt="" />
+                            <img src="css.png" alt="" />
+                            <img src="bootstrap-framework.png" alt="" />
                        </div>
                        <a href= "https://github.com/NizarDouirek/gestionBien">
                        <button className="visit2">Visiter Site</button>
@@ -75,10 +75,10 @@ export default function Projet(){
                          sélection de marques populaires, offrant ainsi aux clients un large éventail 
                           d'options pour répondre à leurs besoins technologiques</p><br />
                        <div className="tec">
-                            <img src="html-5.png" alt="" />
-                            <img src="css-3.png" alt="" />
-                            <img src="bootstrap1.png" alt="" />
-                            <img src="angular.png" alt="" />
+                            <img src="html.png" alt="" />
+                            <img src="css.png" alt="" />
+                            <img src="bootstrap-framework.png" alt="" />
+                            <img src="angular.svg" alt="" />
                             
                        </div>
                        <a href="https://github.com/NizarDouirek/StoreElec">

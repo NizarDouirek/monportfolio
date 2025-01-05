@@ -121,6 +121,7 @@ form button:hover {
     height: 300px;
     margin-top: 80px;
     padding: 35px;
+    cursor: pointer;
     background-color: transparent;
     backdrop-filter: blur(15px) brightness(100%);
     border-radius: 30%;

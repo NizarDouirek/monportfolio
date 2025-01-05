@@ -29,7 +29,7 @@ export default function Header(){
                       <nav>
                         <ul>
                           
-                           <li><Link to="/homme">Accueil</Link></li>
+                           <li><Link to="/homme" style={{color:'#3572EF'}}>Accueil</Link></li>
                            <li><Link to="/about">À propos</Link></li>
                            <li><Link to="/skills">Compétences</Link></li>
                            <li><Link to="/cv">CV</Link></li>
