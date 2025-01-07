@@ -98,7 +98,7 @@ export default function Skills() {
       <div className="outils">
         <h2>
         
-        Ce que je fais
+        Ce que je fais !!
         </h2>
         <h3>"Passez votre souris sur les sections pour découvrir les détails"</h3>
         <br />

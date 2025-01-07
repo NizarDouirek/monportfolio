@@ -94,6 +94,7 @@ section .imgskills:hover + h2 {
 .titre1:hover {
     animation: shake 0.4s ease-in-out;
     cursor: pointer;
+    cursor: url("/public/zon.cur"),auto;
 }
 
 @keyframes shake {
@@ -121,7 +122,7 @@ section .imgskills:hover + h2 {
     background-repeat: no-repeat;
     background-size: center;
     height: 400px;
-    border: 1px solid rgb(30, 30, 108);
+    border: 1px solid rgb(52, 52, 54);
     
     
     overflow: hidden;
@@ -229,7 +230,7 @@ section .imgskills:hover + h2 {
     justify-content: center;
     align-items: center;
     color: white;
-    border: 1px solid rgb(30, 30, 108);
+    border: 1px solid rgb(52, 52, 54);
     background-color: gray;
     width: 300px; 
     height: 400px;
@@ -285,7 +286,7 @@ section .imgskills:hover + h2 {
   justify-content: center;
   align-items: center;
   color: white;
-  border: 1px solid rgb(30, 30, 108);
+  border: 1px solid rgb(52, 52, 54);
  
   width: 300px; 
   height: 400px;

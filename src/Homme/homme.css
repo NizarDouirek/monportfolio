@@ -96,18 +96,20 @@ button {
     padding: 10px;
     border: none;
     color: white;
-    cursor: pointer;
+    cursor: url("/public/zon.cur"),auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
 }
 
 button:hover {
+    cursor: url("/public/zon.cur"),auto;
     background: linear-gradient(80deg, #3572EF, #2a318e); /* Légère variation de couleur */
     box-shadow: 0 0 20px 8px rgba(96, 94, 161, 0.7); /* Effet lumineux plus fort */
     transform: scale(1.05); /* Léger agrandissement */
 }
 
 button:active {
+    
     transform: scale(0.95); /* Réduit légèrement le bouton au clic */
     box-shadow: 0px 4px 8px rgba(59, 35, 101, 0.225); /* Diminue l'ombre */
 }
@@ -117,6 +119,8 @@ button a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    cursor: url("/public/zon.cur"),auto;
+   
 }
 
 
@@ -147,9 +151,10 @@ button a {
     }
    
     .marq p{
-        margin-top: 100px;
+        /* margin-top: 100px;
         font-size: -40px;
-        display: block;
+        display: block; */
+        display: none;
     }
 }
 @media screen and (min-width: 760px) and (max-width: 1060px) {

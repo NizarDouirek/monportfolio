@@ -62,9 +62,9 @@ export default function Projet(){
                        <button className="visit2">Visiter Site</button>
                        </a>
                     </div>
-                   <a href="">
+                   <div className="imgsite-container">
                    <img  className="imgsite"src="gbien.png" alt="" />
-                   </a>
+                   </div>
                 </div><br /><br />
                 <div className="sectionP3">
                 <div className="contentP">
@@ -92,8 +92,8 @@ export default function Projet(){
                  </div>
                  <div class="projets-message">
     <p>
-        Des projets passionnants sont en cours de développement ! 
-        Restez à l'écoute pour découvrir de nouvelles créations et solutions innovantes.
+        Des projets passionnants sont en cours de développement !!! 
+        {/* Restez à l'écoute pour découvrir de nouvelles créations et solutions innovantes. */}
     </p>
 </div>
 

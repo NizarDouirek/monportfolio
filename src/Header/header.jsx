@@ -39,6 +39,16 @@ export default function Header(){
                         </ul>
                       </nav>
                   </div>
+                  <div className="navbar-icons"> 
+                    <ul> 
+                        <li><Link to="/homme"><i className="fas fa-home"></i></Link></li>
+                        <li><Link to="/about"><i className="fas fa-user"></i></Link></li>
+                        <li><Link to="/skills"><i className="fas fa-code"></i></Link></li>
+                        <li><Link to="/cv"><i className="fas fa-file-alt"></i></Link></li> 
+                        <li><Link to="/projet"><i className="fas fa-briefcase"></i></Link></li>
+                        <li><Link to="/contact"><i className="fas fa-envelope"></i></Link></li>
+                     </ul>
+                 </div>
                 </div>
             </header>
         </div>

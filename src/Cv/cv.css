@@ -16,12 +16,22 @@
 .f, .ex {
     background-color: #0c0c0c;
     border: 2px solid #4b7ccc;
+    
     border-radius: 15px;
     padding: 20px;
     margin: 10px;
     flex: 1 1 45%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
+.ex:hover{
+    
+    background-color: rgb(22, 23, 39);
+}
+.f:hover{
+    
+    background-color: rgb(22, 23, 39);
+}
+
 /* Initial state (hidden with transformation) */
 .hidden {
     opacity: 0;
@@ -69,6 +79,9 @@ h2 {
     padding: 5px 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+.date:hover{
+    background-color:#0d1b82 ;
 }
 
 .p, p {

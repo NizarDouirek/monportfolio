@@ -13,6 +13,7 @@
 .social h1:hover{
     color: #3572EF;
     cursor: pointer;
+    cursor: url('/public/zon.cur'), auto;
 }
 .footer ul {
     padding: 0;
@@ -38,6 +39,7 @@
 .footer ul a:hover {
     opacity: 1;
     color: #3572EF;
+    cursor: url('/public/zon.cur'), auto;
 }
 
 .footer .social {
@@ -57,6 +59,7 @@
     margin: 0 8px;
     color: inherit;
     opacity: 0.75;
+    cursor: url('/public/zon.cur'),auto;
 }
 
 .footer .social > a:hover {
@@ -77,18 +80,9 @@
   background-color:white
     }
 
-.face:hover{
+
+#i:hover{
     background:#042870;
-}
-.insta:hover{
-    background:#042870;
-}
-.linkdeen:hover{
-    background:#042870;
-}
-.gt:hover{
-    background:#042870;
-}
-.twit:hover{
-    background:#042870;
+    
+    cursor: url('/public/zon.cur'), auto;
 }

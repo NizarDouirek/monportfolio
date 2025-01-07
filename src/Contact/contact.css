@@ -84,7 +84,8 @@ form textarea::placeholder {
 form input:hover,
 form textarea:hover {
     border-color: rgb(48, 100, 198);
-    cursor: pointer;
+    /* cursor: pointer;
+    cursor: url('/public/zon.cur'), auto; */
 }
 
 form textarea {
@@ -103,7 +104,7 @@ form button {
     border: none;
     border-radius: 20px;
     background-color: rgb(27, 27, 28);
-    cursor: pointer;
+    cursor: url('/public/zon.cur'), auto;
     transition: background 0.3s ease-in-out;
 }
 
@@ -121,7 +122,7 @@ form button:hover {
     height: 300px;
     margin-top: 80px;
     padding: 35px;
-    cursor: pointer;
+    
     background-color: transparent;
     backdrop-filter: blur(15px) brightness(100%);
     border-radius: 30%;
@@ -131,6 +132,7 @@ form button:hover {
     display: flex;
     align-items: center;
     margin: 10px 0;
+    
 }
 
 .contact-detail img {
@@ -145,8 +147,11 @@ form button:hover {
 .contact-detail img:hover {
     border: solid 1px #828189;
     background-color: #445b73;
+    cursor: url('/public/zon.cur'), auto;
 }
-
+.contact-detail a{
+    cursor: url("/public/zon.cur"),auto;
+}
 .contact-detail p {
     font-size: 1.2em;
     color: white;

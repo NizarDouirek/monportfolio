@@ -7,6 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden; /* Empêche le débordement horizontal */
   width: 100%;
+  
+  cursor: url('/public/11zon_icons8-select-cursor-48.cur'), auto;
 }
 
 

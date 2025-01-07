@@ -17,20 +17,15 @@
     margin-bottom: 60px;
     font-style: oblique;
     /* animation: zoomGlow 1.5s ease-in-out; */
-     
+     cursor: url("/public/zon.cur"),auto;
     text-shadow: 0px 10px 10px #adaeb7fc, 0 0 20px #d4d3de;
 }
 .about h1:hover{
     animation: shake 0.4s ease-in-out;
     cursor: pointer;
+    cursor: url("/public/zon.cur"),auto;
 }
-@keyframes shake {
-    0% { transform: translate(0, 0); }
-    25% { transform: translate(-2px, 2px); }
-    50% { transform: translate(2px, -2px); }
-    75% { transform: translate(-2px, -2px); }
-    100% { transform: translate(0, 0); }
-  }
+
 .containe{
     align-items: center;
     justify-content: center;

@@ -10,36 +10,40 @@
     width: 420px;
     height: 270px;
     border-radius: 20px;
+    
 }
 .imgsite:hover{
-  transform: scale(1.04); 
+  transform: scale(1.02); 
 }
 .sectionP h1{
     color: #46aa9d;
-    cursor: pointer;
     font-family: roboto;
 }
 .sectionP h1:hover {
     color: #438d83;
     cursor: pointer;
+    cursor: url("/public/zon.cur"),auto;
   }
 .sectionP2 h1{
     color: #bb6fde;
-    cursor: pointer;
+    
     font-family: roboto;
 }
 .sectionP2 h1:hover {
     color:#9843bf;
     cursor: pointer;
+    cursor: url("/public/zon.cur"),auto;
   }
 .sectionP3 h1{
     color: #062a2e;
-    cursor: pointer;
+    
     font-family: roboto;
+    
 }
 .sectionP3 h1:hover {
     color: #0a1c23;
     cursor: pointer;
+    cursor: url("/public/zon.cur"),auto;
   }
 .sectionP {
     padding: 10px;
@@ -88,15 +92,7 @@
 .sectionP3 .imgsite{
     margin-top: 20px;
 }
-.sectionP:hover{
-    border: 1px solid rgb(187, 174, 151);
-}
-.sectionP2:hover{
-    border: 1px solid rgb(187, 174, 151);
-}
-.sectionP3:hover{
-    border: 1px solid rgb(187, 174, 151);
-}
+
 
 .projet{
     
@@ -135,12 +131,14 @@
     font-size: 30px;
     margin-bottom: 60px;
     font-style: oblique;
+    
     animation: zoomGlow 1.5s ease-in-out; 
     text-shadow: 0px 10px 10px #acadb4fc, 0 0 20px #babac5;
 }
 .titreAb:hover{
     animation: shake 0.4s ease-in-out;
     cursor: pointer ;
+    cursor: url("/public/zon.cur"),auto;
 }
 
 @keyframes shake {

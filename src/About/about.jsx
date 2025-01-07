@@ -28,7 +28,7 @@ export default function About() {
 
     return (
         <div className="about" ref={aboutRef}>
-            <h1 className={`titre1 ${isVisible ? "fade-in" : ""}`}>À Propos</h1>
+            <h1 >À Propos</h1>
             <div className={`containe ${isVisible ? "slide-in" : ""}`}>
                 <img className={`i ${isVisible ? "slide-left" : ""}`} src="profillinkd.jpg" alt="Profil" />
                 <div className={`contentAbout ${isVisible ? "slide-right" : ""}`}>
