@@ -113,7 +113,9 @@ table tr:hover{
     .about {
         padding: 20px;
     }
-
+.about h1{
+    margin-top: 20px;
+}
     .containe {
         flex-direction: column; /* Empile les éléments verticalement */
         gap: 1.5em; /* Réduit l'espacement entre les éléments */

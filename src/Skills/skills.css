@@ -118,9 +118,9 @@ section .imgskills:hover + h2 {
 .circle {
     position: relative;
     width: 300px;
-    background-image: url(/public/s22.jpg);
+    background-image: url(/public/gg.gif);
     background-repeat: no-repeat;
-    background-size: center;
+    background-size: top;
     height: 400px;
     border: 1px solid rgb(52, 52, 54);
     
@@ -205,7 +205,7 @@ section .imgskills:hover + h2 {
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
-    background: linear-gradient(80deg,#133fef, #4ac6f7);
+    background: linear-gradient(80deg,#aaaaac, #757576);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     font-size: 40px;
@@ -383,4 +383,14 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .paused {
   animation-play-state: paused;
+}
+.circle, .circle1, .circle2 {
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 6s ease, transform 6s ease;
+}
+
+.circle.animate, .circle1.animate, .circle2.animate {
+  opacity: 1;
+  transform: scale(1);
 }

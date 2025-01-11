@@ -38,7 +38,7 @@ export default function Contact() {
 
     return (
         <div id="contact" className="contact" ref={contactRef}>
-            <h1 className={`titre ${isVisible ? "fade-in" : ""}`}>Contact</h1><br />
+            <h1 className="titre6">Contact</h1><br />
             <div className="form">
                 <form
                     action="https://formspree.io/f/meoqwagg"
@@ -57,7 +57,7 @@ export default function Contact() {
                     <h2>Details Contact</h2>
                     <div className="contact-detail">
                         <a href="mailto:douireknizar@gmail.com?subject=Demande d'informations&body=Bonjour, j'ai une question concernant...">
-                        <img src="email (1).png" alt="Email Icon" />
+                        <img src="mallette.png" alt="Email Icon" />
                         </a>
                         <p>douireknizar@gmail.com</p>
                     </div>

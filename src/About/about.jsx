@@ -35,7 +35,7 @@ export default function About() {
                     <h2>
                         <span>Bonjour! Je suis</span> Nizar Douirek
                     </h2>
-                    <h4>Développeur Full Stack</h4>
+                    {/* <h4>Développeur Full Stack</h4> */}
                     <p>
                         Jeune diplômé en développement digital, passionné <br />
                         par les nouvelles technologies et l'innovation, je possède <br />

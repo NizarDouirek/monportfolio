@@ -10,7 +10,7 @@ body, html, #root, .homme {
     
     background-repeat: no-repeat;
     background-position: center;
-    height: 650px;
+    height: 700px;
 }
 .container{
     text-align: center;
@@ -159,7 +159,7 @@ button a {
 }
 @media screen and (min-width: 760px) and (max-width: 1060px) {
     .homme {
-        height: 600px; /* Ajuste la hauteur pour les tablettes */
+        height: 800px; /* Ajuste la hauteur pour les tablettes */
     }
 
     .container {
@@ -167,23 +167,24 @@ button a {
     }
 
     .nom {
-        font-size: 50px; /* Taille du texte principal ajustée pour les tablettes */
+        font-size: 70px; /* Taille du texte principal ajustée pour les tablettes */
     }
 
     .bonjour {
-        font-size: 22px; /* Texte d'accueil légèrement plus grand */
+        font-size: 40px; /* Texte d'accueil légèrement plus grand */
     }
 
     .job {
-        font-size: 24px; /* Texte de job adapté */
+        font-size: 34px; /* Texte de job adapté */
     }
 
     button {
-        font-size: 18px; /* Boutons légèrement plus grands */
+        font-size: 28px; /* Boutons légèrement plus grands */
         padding: 8px 12px; /* Ajuste le padding pour une meilleure ergonomie */
     }
 
     .marq p {
+        margin-top: 90px;
         font-size: 16px; /* Affiche le texte avec une petite taille */
         display: block; /* Rétablit l'affichage si masqué pour téléphones */
     }

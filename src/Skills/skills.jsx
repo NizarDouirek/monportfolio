@@ -19,6 +19,7 @@ export default function Skills() {
         window.removeEventListener("click", enableSound);
       };
     }, []);
+    
   
     // Fonction pour jouer un son si l'utilisateur a interagi
     const playSound = (audioFile) => {
@@ -40,6 +41,32 @@ export default function Skills() {
           packContainer.classList.remove("paused");
         }
       };
+      useEffect(() => {
+        const circles = document.querySelectorAll(".circle, .circle1, .circle2");
+    
+        const handleScroll = () => {
+          circles.forEach((circle) => {
+            const rect = circle.getBoundingClientRect();
+            const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+    
+            if (isVisible) {
+              circle.classList.add("animate");
+            } else {
+              circle.classList.remove("animate");
+            }
+          });
+        };
+    
+        // Appliquer au chargement initial
+        handleScroll();
+    
+        // Écouter le scroll
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
   return (
     <div id="skills" className="skills">
       <audio ></audio>
