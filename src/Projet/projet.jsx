@@ -42,7 +42,7 @@ export default function Projet(){
                        </a>
                     </div>
                    
-                      <img className="imgsite" src="voyage.png" alt=""/>
+                      <img className="imgsite1" src="voyage.png" alt=""/>
                    
                  </div><br /><br />
                 <div className="sectionP2">
@@ -88,8 +88,34 @@ export default function Projet(){
                    
                       <img className="imgsite" src="storeelec.png" alt=""/>
                    
+                 </div><br /><br />
+                 <div className="sectionP4">
+                <div className="contentP">
+                    <h1>FitTrack</h1>
+                    <p>
+                    "FitTrack" est une plateforme innovante dédiée au suivi de la condition
+                     physique et des performances. Elle permet aux utilisateurs de fixer 
+                     des objectifs, de suivre leurs progrès en temps réel, et d'accéder
+                      à des analyses personnalisées pour améliorer leur bien-être et 
+                      atteindre leurs objectifs de fitness.</p><br />
+                       <div className="tec">
+                            <img src="html.png" alt="" />
+                            <img src="css.png" alt="" />
+                            <img src="laravel-framework.png" alt="" />
+                            <img src="react.png" alt="" />
+                            
+                       </div>
+                       <a href="#">
+                       <button className="visit4">Visiter Site</button>
+                       </a>
+                    </div>
+                   
+                      <img className="imgsite" src="fittrack.png" alt=""/>
+                   
                  </div>
+                 
                  </div>
+                 
                  <div class="projets-message">
     <p>
         Des projets passionnants sont en cours de développement !!! 

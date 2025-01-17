@@ -17,7 +17,7 @@ header.scrolled {
   background-color: black; /* Fond noir au défilement */
 }
 img {
-  width: 80px;
+  width: 120px;
   height: 70px;
 }
 .logo {
@@ -109,7 +109,7 @@ nav a:hover::after {
        
         gap: 1.9rem;
         list-style: none;
-       margin-left: -20px;
+       margin-left: -10px;
     }
     .navbar-icons li a {
         color: rgb(124, 140, 194);

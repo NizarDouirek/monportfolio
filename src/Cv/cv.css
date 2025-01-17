@@ -25,11 +25,11 @@
 }
 .ex:hover{
     
-    background-color: rgb(22, 23, 39);
+    background-color: rgb(22, 23, 30);
 }
 .f:hover{
     
-    background-color: rgb(22, 23, 39);
+    background-color: rgb(22, 23, 30);
 }
 
 /* Initial state (hidden with transformation) */

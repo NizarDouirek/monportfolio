@@ -10,52 +10,35 @@
     width: 420px;
     height: 270px;
     border-radius: 20px;
-    
+    transition: transform 0.5s ease;
 }
 .imgsite:hover{
-  transform: scale(1.02); 
+  transform: translateY(-5px); 
+}
+.imgsite1:hover{
+  transform: translateY(-5px); 
 }
 .sectionP h1{
     color: #46aa9d;
     font-family: roboto;
 }
-.sectionP h1:hover {
-    color: #438d83;
-    cursor: pointer;
-    cursor: url("/public/zon.cur"),auto;
-  }
+
 .sectionP2 h1{
     color: #bb6fde;
-    
     font-family: roboto;
 }
-.sectionP2 h1:hover {
-    color:#9843bf;
-    cursor: pointer;
-    cursor: url("/public/zon.cur"),auto;
-  }
 .sectionP3 h1{
     color: #062a2e;
-    
     font-family: roboto;
-    
 }
-.sectionP3 h1:hover {
-    color: #0a1c23;
-    cursor: pointer;
-    cursor: url("/public/zon.cur"),auto;
-  }
 .sectionP {
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    
     border-radius: 10px;
-    
     box-shadow: 0 1rem 2rem -1rem black;
     background:linear-gradient(60deg, #3a716a, #06107b );
 }
-
 .visit{
     background-color: #3a716a;
     font-family: roboto;
@@ -92,7 +75,36 @@
 .sectionP3 .imgsite{
     margin-top: 20px;
 }
+.imgsite1{
+    margin-top: 10px;
+    width: 420px;
+    height: 270px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+.sectionP4 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    background:linear-gradient(60deg, #955b5b, #f62440 );
+}
+.sectionP4 .imgsite{
+    margin-top: 8px;
+}
+.sectionP4 h1{
+    color: rgb(80, 12, 12);
+    
+    font-family: roboto;
+    
+}
 
+.visit4{
+    background-color: #a30827;
+    font-family: roboto;
+    font-size: 17px;
+}
 
 .projet{
     
@@ -111,10 +123,10 @@
     padding: 5px;
     width: 50px;
     height: 50px;
-
+    transition: transform 0.5 ease;
 }
 .tec img:hover{
-   
+   transform: translateY(-5px);
     border:1px solid transparent;
 }
 .contentP{
@@ -158,13 +170,19 @@
 
     .imgsite {
         width: 100%; /* Les images prennent toute la largeur disponible */
-        height: auto; /* Ajustement de la hauteur proportionnelle */
+        height: 200px; /* Ajustement de la hauteur proportionnelle */
         border-radius: 10px; /* Réduction des coins arrondis */
+    }
+    .imgsite1{
+        width: 100%; /* Les images prennent toute la largeur disponible */
+        height: 200px; /* Ajustement de la hauteur proportionnelle */
+        border-radius: 10px; 
     }
 
     .sectionP, 
     .sectionP2, 
-    .sectionP3 {
+    .sectionP3 ,
+    .sectionP4{
         flex-direction: column; /* Aligne les éléments verticalement */
         gap: 10px; /* Ajoute un espacement entre les éléments */
         padding: 10px; /* Réduction de l'espacement interne */

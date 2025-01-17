@@ -122,8 +122,8 @@ table tr:hover{
     }
 
     .i {
-        width: 50%; /* L'image occupe toute la largeur */
-        height: auto; /* Maintient le ratio d'aspect */
+        width: 70%; /* L'image occupe toute la largeur */
+        height: 300px; /* Maintient le ratio d'aspect */
         border-radius: 5px;
     }
 
@@ -148,11 +148,12 @@ table tr:hover{
     }
 
     table {
-        font-size: 14px; 
+        font-size: 16px; 
         margin-left: 40px;
         text-align: center;
         justify-content: center;
         align-items: center;
+        width: 200px;
     }
 
     table th, table td {
@@ -164,7 +165,7 @@ table tr:hover{
     }
 
     .cv a {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 /* Animation pour le titre */

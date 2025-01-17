@@ -120,17 +120,14 @@ section .imgskills:hover + h2 {
     width: 300px;
     background-image: url(/public/gg.gif);
     background-repeat: no-repeat;
-    background-size: top;
+    background-size: cover;
     height: 400px;
     border: 1px solid rgb(52, 52, 54);
     
-    
+    transition: transform 0.5s ease;
     overflow: hidden;
   }
-  .circle:hover{
-    
-    border-radius: 20px;
-  }
+  
   
   
   
@@ -259,7 +256,7 @@ section .imgskills:hover + h2 {
 .circle1:hover {
     background-image: url(/public/ou.gif); 
     background-position: center;
-    border-radius: 20px;
+    
 }
 .circle1:hover img {
     opacity: 0;
@@ -292,7 +289,7 @@ section .imgskills:hover + h2 {
   height: 400px;
   position: relative;
   overflow: hidden;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .circle2 img {
@@ -310,13 +307,13 @@ section .imgskills:hover + h2 {
   text-align: center;
   opacity: 0; 
   transition: opacity 0.3s ease-in-out; 
+
 }
 
 .circle2:hover {
   background-image: url(/public/ww.gif); 
   background-position: center;
-  border-radius: 20px;
-  
+ 
 }
 
 .circle2:hover img {
@@ -350,26 +347,30 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   
 @media screen and (max-width: 480px) {
     .skills {
-        padding: 5px;
+     
+        padding: 10px;
     }
 
     .titre1 {
         text-align: center;
         font-size: 20px;
-        margin-top: 40px;
+        margin-top: 70px;
     }
 
     .pack{
         gap: 1em;
         animation: none;
     }
-
+    section{
+      background-color: #0d0e0f;
+    }
     section .imgskills {
         width: 70px;
         height: 70px;
         padding: 8px;
         align-items: center;
         filter: grayscale(0);
+        background-color: #0c2d3e;
     }
     
     .outils h2{
@@ -387,7 +388,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .circle, .circle1, .circle2 {
   opacity: 0;
   transform: scale(0.6);
-  transition: opacity 6s ease, transform 6s ease;
+  transition: opacity 4s ease, transform 4s ease;
 }
 
 .circle.animate, .circle1.animate, .circle2.animate {
