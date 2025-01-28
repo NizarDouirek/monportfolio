@@ -228,7 +228,7 @@ section .imgskills:hover + h2 {
     align-items: center;
     color: white;
     border: 1px solid rgb(52, 52, 54);
-    background-color: gray;
+    
     width: 300px; 
     height: 400px;
     position: relative;

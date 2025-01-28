@@ -17,8 +17,9 @@ header.scrolled {
   background-color: black; /* Fond noir au défilement */
 }
 img {
-  width: 120px;
-  height: 70px;
+  margin-top: -5px;
+  width: 130px;
+  height: 80px;
 }
 .logo {
   margin-left: 50px;

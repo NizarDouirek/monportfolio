@@ -109,4 +109,14 @@ hr {
     .f, .ex {
         flex: 1 1 100%;
     }
+    .hidden, .hidden-right {
+        transform: none !important; 
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+    }
+
+    .show {
+        opacity: 1;
+    }
+    
 }

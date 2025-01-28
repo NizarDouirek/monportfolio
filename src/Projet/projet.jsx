@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import './projet.css';
 export default function Projet(){
      useEffect(() => {
-          const sections = document.querySelectorAll('.sectionP, .sectionP2, .sectionP3');
+          const sections = document.querySelectorAll('.sectionP, .sectionP2, .sectionP3, .sectionP4');
           
           const observer = new IntersectionObserver((entries, observer) => {
               entries.forEach(entry => {

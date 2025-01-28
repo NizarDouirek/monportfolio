@@ -191,7 +191,7 @@
 
     .sectionP h1, 
     .sectionP2 h1, 
-    .sectionP3 h1 {
+    .sectionP3 h1 ,.sectionP4{
         font-size: 1.2em; /* Réduction de la taille des titres */
     }
 
@@ -249,7 +249,8 @@
 
     .sectionP, 
     .sectionP2, 
-    .sectionP3 {
+    .sectionP3,
+    .sectionP4 {
         flex-direction: column; /* Aligne les éléments verticalement */
         gap: 10px; /* Ajoute un espacement entre les éléments */
         padding: 10px; /* Réduction de l'espacement interne */
@@ -258,7 +259,8 @@
 
     .sectionP h1, 
     .sectionP2 h1, 
-    .sectionP3 h1 {
+    .sectionP3 h1,
+    .sectionP4 h1{
         font-size: 1.5em; /* Réduction de la taille des titres */
     }
 
@@ -371,14 +373,16 @@
 
 .projet .sectionP,
 .projet .sectionP2,
-.projet .sectionP3 {
+.projet .sectionP3,
+.projet .sectionP4 {
     opacity: 0; /* Initialement invisible */
     transform: translateY(50px); /* Départ depuis le bas */
 }
 
 .projet .sectionP.visible,
 .projet .sectionP2.visible,
-.projet .sectionP3.visible {
+.projet .sectionP3.visible ,
+.projet .sectionP4.visible {
     opacity: 1; /* Lorsque l'élément devient visible */
     animation: slideUp 1s forwards; /* Animation déclenchée */
 }

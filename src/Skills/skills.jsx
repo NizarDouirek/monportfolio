@@ -134,7 +134,7 @@ export default function Skills() {
             className="circle1"
             onMouseEnter={() => playSound("pop.mp3")} // Audio au survol
           >
-            <img src="ccc.jpg" alt="Frontend Developer" />
+            <img src="front End (5).png" alt="Frontend Developer" />
             <div className="det">
               <h1>Développeur FrontEnd</h1><br />
               <p>
@@ -149,7 +149,7 @@ export default function Skills() {
             className="circle2"
             onMouseEnter={() => playSound("pop.mp3")} // Un autre son
           >
-            <img src="rr.jpg" alt="Backend Developer" />
+            <img src="front End (7).png" alt="Backend Developer" />
             <div className="det2">
               <h1>Développeur BackEnd</h1><br />
               <p>
