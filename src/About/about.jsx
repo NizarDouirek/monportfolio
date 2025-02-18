@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./about.css";
+import Header from "../Header/header";
 
 export default function About() {
     const [isVisible, setIsVisible] = useState(false);
@@ -27,6 +28,8 @@ export default function About() {
     }, []);
 
     return (
+        <>
+        <Header/>
         <div id="about" className="about" ref={aboutRef}>
             <h1 >À Propos</h1>
             <div className={`containe ${isVisible ? "slide-in" : ""}`}>
@@ -74,5 +77,6 @@ export default function About() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

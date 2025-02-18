@@ -71,12 +71,14 @@ nav a::after {
   bottom: -5px; /* Décalé légèrement sous le texte */
   width: 0%;
   height: 2px;
+  color: #3572ef;
   background-color: #3572ef;
   transition: width 0.3s ease-in-out;
 }
 
 nav a:hover::after {
   width: 100%; /* La ligne s'étend sous le texte */
+
 }
 
 .navbar-icons ul{

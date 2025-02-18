@@ -1,5 +1,5 @@
 .contact {
-    background-image: url(/public/bb3.jpg);
+    background-image: url(/public/dec3.jpg);
     background-size: cover;
     /* background-position: bottom; */
     background-position: cover;
@@ -125,7 +125,7 @@ form button:hover {
     padding: 35px;
     
     background-color: transparent;
-    backdrop-filter: blur(15px) brightness(100%);
+    backdrop-filter: blur(20px) brightness(70%);
     border-radius: 30%;
 }
 

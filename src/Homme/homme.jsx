@@ -7,6 +7,7 @@ import Projet from "../Projet/projet";
 import Contact from "../Contact/contact";
 import Cv from "../Cv/cv";
 import Loader from "../Loader/loader";
+import Footer from "../Footer/foother";
 export default function Homme() {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -16,6 +17,7 @@ export default function Homme() {
 
   return (
     <div id="homme">
+      <Header/>
       <div className="homme">
         <div className="container" >
           <p className="bonjour">
@@ -41,6 +43,7 @@ export default function Homme() {
       <Cv />
       <Projet />
       <Contact />
+      <Footer/>
     </div>
   );
 }

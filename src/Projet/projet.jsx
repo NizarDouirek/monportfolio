@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import './projet.css';
+import Header from "../Header/header";
 export default function Projet(){
      useEffect(() => {
           const sections = document.querySelectorAll('.sectionP, .sectionP2, .sectionP3, .sectionP4');
@@ -18,6 +19,8 @@ export default function Projet(){
           });
       }, []);
     return(
+        <>
+                <Header/>
         <div id="projet">
           <div className="projets">
                <h1 className="titreAb">Projets</h1> 
@@ -125,6 +128,6 @@ export default function Projet(){
 
                </div>
           </div>
-        
+        </>
     )
 }

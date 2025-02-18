@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import './contact.css';
 
+import Header from "../Header/header";
+
 export default function Contact() {
     const [isVisible, setIsVisible] = useState(false);
     const contactRef = useRef(null);
@@ -37,6 +39,8 @@ export default function Contact() {
     };
 
     return (
+        <>
+                <Header/>
         <div id="contact" className="contact" ref={contactRef}>
             <h1 className="titre6">Contact</h1><br />
             <div className="form">
@@ -77,5 +81,6 @@ export default function Contact() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

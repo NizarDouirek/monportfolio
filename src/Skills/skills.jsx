@@ -1,6 +1,7 @@
 import { useEffect,useState} from "react";
 import React from "react";
 import "./skills.css";
+import Header from "../Header/header";
 
 export default function Skills() {
     const [canPlaySound, setCanPlaySound] = useState(false);
@@ -68,6 +69,8 @@ export default function Skills() {
         };
       }, []);
   return (
+    <>
+            <Header/>
     <div id="skills" className="skills">
       <audio ></audio>
       <h1 className="titre1">Compétences</h1>
@@ -134,7 +137,7 @@ export default function Skills() {
             className="circle1"
             onMouseEnter={() => playSound("pop.mp3")} // Audio au survol
           >
-            <img src="front End (5).png" alt="Frontend Developer" />
+            <img src="dec2.avif" alt="Frontend Developer" />
             <div className="det">
               <h1>Développeur FrontEnd</h1><br />
               <p>
@@ -149,7 +152,7 @@ export default function Skills() {
             className="circle2"
             onMouseEnter={() => playSound("pop.mp3")} // Un autre son
           >
-            <img src="front End (7).png" alt="Backend Developer" />
+            <img src="dec.avif" alt="Backend Developer" />
             <div className="det2">
               <h1>Développeur BackEnd</h1><br />
               <p>
@@ -202,5 +205,6 @@ export default function Skills() {
         </div>
       </div>
     </div>
+    </>
   );
 }

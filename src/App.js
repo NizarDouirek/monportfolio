@@ -22,7 +22,7 @@ function App() {
     return (
         <Router>
             
-            <Header />
+            {/* <Header /> */}
             <Routes>
                 <Route path="/" element={<Homme />} />
                 <Route path="/homme" element={<Homme />} />
@@ -32,7 +32,7 @@ function App() {
                 <Route path="/projet" element={<Projet />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
         </Router>
     );
 }

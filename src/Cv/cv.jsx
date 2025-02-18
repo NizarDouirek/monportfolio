@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import './cv.css';
+import Header from "../Header/header";
 
 export default function Cv() {
     const formationRef = useRef();
@@ -29,6 +30,8 @@ export default function Cv() {
     }, []);
 
     return (
+        <>
+                <Header/>
         <div id="cv" className="cv2">
             <h1  className="titre1">CV</h1>
             <div className="fe">
@@ -83,5 +86,6 @@ export default function Cv() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

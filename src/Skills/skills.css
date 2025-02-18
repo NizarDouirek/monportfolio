@@ -45,7 +45,7 @@
 
 
 section {
-    background-color: rgba(49, 47, 47, 0.706);
+    background-color: rgba(17, 17, 17, 0.706);
     padding: 20px;
     border-radius: 20px;
     display: flex;
@@ -61,14 +61,14 @@ section .imgskills {
     padding: 20px;
     border-radius: 30%;
     /* mix-blend-mode: screen; */
-    background-color: rgb(117, 116, 116);
+    background-color: rgb(67, 67, 67);
     /* border: solid 3px white; */
     filter: grayscale(10);
 }
 
 section .imgskills:hover {
     border-color: #3f62a7;
-    background-color: #1a4d66;
+    background-color: #0a2c3e;
     filter: grayscale(0);
 }
 

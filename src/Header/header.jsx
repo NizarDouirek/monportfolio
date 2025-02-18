@@ -1,9 +1,12 @@
 import React, { useState, useEffect }  from "react";
 import './header.css';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 export default function Header(){
     const [isScrolled, setIsScrolled] = useState(false);
-
+    const location = useLocation();
+    const isActive = (path) => {
+        return location.pathname === path;
+    };
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
@@ -29,12 +32,12 @@ export default function Header(){
                       <nav>
                         <ul>
                           
-                           <li><Link to="/homme" style={{color:'#3572EF'}}>Accueil</Link></li>
-                           <li><Link to="/about">À propos</Link></li>
-                           <li><Link to="/skills">Compétences</Link></li>
-                           <li><Link to="/cv">CV</Link></li>
-                           <li><Link to="/projet">Projets</Link></li>
-                           <li><Link to="/contact">Contact</Link></li>
+                           <li><Link to="/homme" style={{ color: isActive("/homme") ? '#3572EF' : 'white' }}>Accueil</Link></li>
+                           <li><Link to="/about"  style={{ color: isActive("/about") ? '#3572EF' : 'white' }}>À propos</Link></li>
+                           <li><Link to="/skills"  style={{ color: isActive("/skills") ? '#3572EF' : 'white' }}>Compétences</Link></li>
+                           <li><Link to="/cv" style={{ color: isActive("/cv") ? '#3572EF' : 'white' }}>CV</Link></li>
+                           <li><Link to="/projet" style={{ color: isActive("/projet") ? '#3572EF' : 'white' }}>Projets</Link></li>
+                           <li><Link to="/contact" style={{ color: isActive("/contact") ? '#3572EF' : 'white' }}>Contact</Link></li>
                            
                         </ul>
                       </nav>
