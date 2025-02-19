@@ -40,7 +40,7 @@ export default function Contact() {
 
     return (
         <>
-                <Header/>
+                {/* <Header/> */}
         <div id="contact" className="contact" ref={contactRef}>
             <h1 className="titre6">Contact</h1><br />
             <div className="form">

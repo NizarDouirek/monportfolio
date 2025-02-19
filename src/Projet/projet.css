@@ -219,7 +219,7 @@
         margin-top: 20px; /* Ajoute un espacement supérieur */
     }
 
-    .titreAb {
+    .titre1 {
         font-size: 24px; /* Réduction de la taille de la police */
         margin-top: 25px; /* Réduction de l'espacement inférieur */
     }
@@ -295,7 +295,7 @@
         
     }
 
-    .titreAb {
+    .titre1 {
         font-size: 34px; /* Réduction de la taille de la police */
         margin-top: 25px; /* Réduction de l'espacement inférieur */
     }
@@ -322,7 +322,6 @@
     padding: 30px;
     max-width: 600px;
     background: linear-gradient(135deg, rgba(51, 23, 193, 0.752), rgba(29, 169, 143, 0.718));
-    
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 0px 15px rgba(53, 114, 239, 0.2);

@@ -5,7 +5,15 @@
     font-family: Arial, sans-serif;
 }
 
+.titre1{
+    color: #3572EF;
+    text-align: center;
+    font-size: 36px;
+    font-style: oblique;
+    animation: zoomGlow 1.5s ease-in-out;
+    text-shadow: 0 0 10px #c3c6cd, 0 0 20px #aeabb4;
 
+}
 
 .fe {
     display: flex;
@@ -102,8 +110,14 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
+    .titre1{
+        margin-top: 30px;
+        text-align: center;
+    }
+
     .fe {
         flex-direction: column;
+        margin-top: 30px;
     }
 
     .f, .ex {

@@ -1,12 +1,13 @@
 .contact {
-    background-image: url(/public/dec3.jpg);
+    /* background-image: url(/public/dec3.jpg); */
+    background: linear-gradient(80deg, #1e1e1e,rgb(0, 0, 0), #121213,black);
     background-size: cover;
     /* background-position: bottom; */
     background-position: cover;
     color: white;
     padding: 40px;
     font-family: Arial, sans-serif;
-    min-height: 110vh;
+    min-height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;

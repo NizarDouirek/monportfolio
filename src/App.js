@@ -22,7 +22,7 @@ function App() {
     return (
         <Router>
             
-            {/* <Header /> */}
+            <Header />
             <Routes>
                 <Route path="/" element={<Homme />} />
                 <Route path="/homme" element={<Homme />} />

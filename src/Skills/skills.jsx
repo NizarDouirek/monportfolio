@@ -70,10 +70,10 @@ export default function Skills() {
       }, []);
   return (
     <>
-            <Header/>
+            {/* <Header/> */}
     <div id="skills" className="skills">
       <audio ></audio>
-      <h1 className="titre1">Compétences</h1>
+      <h1 className="titre2">Compétences</h1>
       <br />
       <br />
       <div className="pack-container">

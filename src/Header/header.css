@@ -104,21 +104,37 @@ nav a:hover::after {
         display: none;
     }
     .navbar {
-        display: none;
+        display: none !important;
     }
-    .navbar-icons ul{
-        display: flex;
-        margin-top: 10px;
-       
-        gap: 1.9rem;
-        list-style: none;
-       margin-left: -10px;
-    }
-    .navbar-icons li a {
-        color: rgb(124, 140, 194);
-        font-size: 25px;
-        text-decoration: none;
-    }
+    .navbar-icons ul {
+      display: flex;
+      /* align-items: center;
+      justify-content: center; */
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+      margin-left: -45px;
+      margin-top: 12px;
+      /* margin: 10px 0; */
+  }
+  
+  .navbar-icons li {
+      display: flex;
+      flex-direction: column; /* Met l'icône au-dessus du texte */
+      align-items: center;
+      text-align: center;
+  }
+  
+  .navbar-icons i {
+      font-size: 20px; /* Taille de l'icône */
+      margin-bottom: 5px; /* Espacement entre l'icône et le texte */
+  }
+  
+  .navbar-icons span {
+      font-size: 12px;
+      color: white;
+      font-weight: 500;
+  }
 
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {

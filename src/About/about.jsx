@@ -29,7 +29,7 @@ export default function About() {
 
     return (
         <>
-        <Header/>
+        {/* <Header/> */}
         <div id="about" className="about" ref={aboutRef}>
             <h1 >À Propos</h1>
             <div className={`containe ${isVisible ? "slide-in" : ""}`}>

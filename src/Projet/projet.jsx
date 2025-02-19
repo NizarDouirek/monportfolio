@@ -20,10 +20,10 @@ export default function Projet(){
       }, []);
     return(
         <>
-                <Header/>
+                {/* <Header/> */}
         <div id="projet">
           <div className="projets">
-               <h1 className="titreAb">Projets</h1> 
+               <h1 className="titre1">Projets</h1> 
                <div className="projet">
                 <div className="sectionP">
                     <div className="contentP">

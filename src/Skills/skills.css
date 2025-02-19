@@ -81,7 +81,7 @@ section .imgskills:hover + h2 {
     color: #296f93;
 }
 
-.titre1 {
+.titre2 {
     margin-top: 20px;
     color: #3572EF;
     text-align: center;
@@ -91,7 +91,7 @@ section .imgskills:hover + h2 {
     text-shadow: 0 0 10px #c3c6cd, 0 0 20px #aeabb4;
 }
 
-.titre1:hover {
+.titre2:hover {
     animation: shake 0.4s ease-in-out;
     cursor: pointer;
     cursor: url("/public/zon.cur"),auto;
@@ -351,11 +351,11 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         padding: 10px;
     }
 
-    .titre1 {
+    .titre2 {
         text-align: center;
-        font-size: 20px;
+        font-size: 30px;
         margin-top: 70px;
-    }
+          }
 
     .pack{
         gap: 1em;

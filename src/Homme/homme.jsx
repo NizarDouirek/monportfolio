@@ -17,7 +17,7 @@ export default function Homme() {
 
   return (
     <div id="homme">
-      <Header/>
+      {/* <Header/> */}
       <div className="homme">
         <div className="container" >
           <p className="bonjour">

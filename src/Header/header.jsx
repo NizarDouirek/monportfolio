@@ -31,7 +31,6 @@ export default function Header(){
                   <div className="navbar">
                       <nav>
                         <ul>
-                          
                            <li><Link to="/homme" style={{ color: isActive("/homme") ? '#3572EF' : 'white' }}>Accueil</Link></li>
                            <li><Link to="/about"  style={{ color: isActive("/about") ? '#3572EF' : 'white' }}>À propos</Link></li>
                            <li><Link to="/skills"  style={{ color: isActive("/skills") ? '#3572EF' : 'white' }}>Compétences</Link></li>
@@ -44,12 +43,12 @@ export default function Header(){
                   </div>
                   <div className="navbar-icons"> 
                     <ul> 
-                        <li><Link to="/homme"><i className="fas fa-home"></i></Link></li>
-                        <li><Link to="/about"><i className="fas fa-user"></i></Link></li>
-                        <li><Link to="/skills"><i className="fas fa-code"></i></Link></li>
-                        <li><Link to="/cv"><i className="fas fa-file-alt"></i></Link></li> 
-                        <li><Link to="/projet"><i className="fas fa-briefcase"></i></Link></li>
-                        <li><Link to="/contact"><i className="fas fa-envelope"></i></Link></li>
+                        <li><Link to="/homme" style={{ color: isActive("/homme") ? '#3572EF' : 'white' }}><i className="fas fa-home"></i> <span style={{ color: isActive("/homme") ? '#3572EF' : 'white' }}>homme</span></Link></li>
+                        <li><Link to="/about" style={{ color: isActive("/about") ? '#3572EF' : 'white' }}><i className="fas fa-user"></i><span style={{ color: isActive("/about") ? '#3572EF' : 'white' }}>About</span></Link></li>
+                        <li><Link to="/skills" style={{ color: isActive("/skills") ? '#3572EF' : 'white' }}><i className="fas fa-code"></i><span style={{ color: isActive("/skills") ? '#3572EF' : 'white' }}>skills</span></Link></li>
+                        <li><Link to="/cv" style={{ color: isActive("/cv") ? '#3572EF' : 'white' }}><i className="fas fa-file-alt"></i><span style={{ color: isActive("/cv") ? '#3572EF' : 'white' }}>cv</span></Link></li> 
+                        <li><Link to="/projet" style={{ color: isActive("/projet") ? '#3572EF' : 'white' }}><i className="fas fa-briefcase"></i><span style={{ color: isActive("/projet") ? '#3572EF' : 'white' }}>projet</span></Link></li>
+                        <li><Link to="/contact" style={{ color: isActive("/contact") ? '#3572EF' : 'white' }}><i className="fas fa-envelope"></i><span style={{ color: isActive("/contact") ? '#3572EF' : 'white' }}>contact</span></Link></li>
                      </ul>
                  </div>
                 </div>

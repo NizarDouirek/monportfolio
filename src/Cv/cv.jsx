@@ -31,7 +31,7 @@ export default function Cv() {
 
     return (
         <>
-                <Header/>
+                {/* <Header/> */}
         <div id="cv" className="cv2">
             <h1  className="titre1">CV</h1>
             <div className="fe">
