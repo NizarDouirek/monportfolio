@@ -110,7 +110,7 @@ nav a:hover::after {
         display: none !important;
     }
     .navbar-icons ul {
-      display: none;
+      display: flex;
       /* align-items: center;
       justify-content: center; */
       gap: 1rem;
