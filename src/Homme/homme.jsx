@@ -72,7 +72,7 @@ export default function Homme() {
        
 
 
-        <div class="decoration">
+        {/* <div class="decoration">
   <div class="carre carre1"></div>
   <div class="carre carre2"></div>
   <div class="carre carre3"></div>
@@ -82,10 +82,10 @@ export default function Homme() {
   <div class="carre carre7"></div>
   <div class="carre carre8"></div>
   <div class="carre carre9"></div>
-</div>
+</div> */}
       </div>
       <About />
-      {/* <button
+      <button
       onClick={scrollToTop}
       style={{
         position: 'fixed',
@@ -104,7 +104,7 @@ export default function Homme() {
       }}
     >
       ↑
-    </button> */}
+    </button>
       <Skills />
       <Cv />
       <Projet />
