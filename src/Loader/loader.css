@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     
-	background: radial-gradient(#000000, #101010);
+	background: radial-gradient(#ffffff, #bab6b6);
     flex-direction: column;
     color: #ffffff;
     font-family: 'Arial', sans-serif;
@@ -36,8 +36,8 @@
 
 .cercleload {
 	--in: 80%;
-	--ar: #003cff;
-	--dt: #34aaff;
+	--ar: #28a47b;
+	--dt: #379777;
 	--shadow: drop-shadow(0vmin 0vmin 0.5vmin #000) drop-shadow(0vmin 1vmin 0.5vmin #0004);
 	--cross: linear-gradient(0deg, #fff0 calc(50% - 2px), #000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px)), linear-gradient(90deg, #fff0 calc(50% - 2px), #000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px));
     border: 6vmin solid var(--ar);
@@ -122,7 +122,7 @@
   margin-top: 40px;
   font-family: roboto; /* Rendre le texte plus visible */
   text-transform: uppercase; /* Convertir en majuscules */
-  color: #34aaff; /* Couleur du texte */
+  color: #266c54; /* Couleur du texte */
   animation: fadeText 1.5s ease-in-out infinite; /* Animation fluide */
 }
 
@@ -134,4 +134,9 @@
   50% {
       opacity: 1;
   }
+}
+@media screen and (max-width: 480px) {
+    .loading-text {
+        text-align: center;
+    }
 }

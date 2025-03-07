@@ -1,8 +1,10 @@
 .about{
     padding: 100px 50px;
-    /* background-image: url(/public/bgabout.png); */
-    background-color: black;
-    
+    background-image: url(/public/skill.avif);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-color: white; */
+    background-position: right;
     max-width: 100%;
     align-items: center;
     justify-content: center;
@@ -10,27 +12,14 @@
     box-sizing: border-box;
     
 }
-.about h1{
-    color: #3572EF;
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 60px;
-    font-style: oblique;
-    /* animation: zoomGlow 1.5s ease-in-out; */
-     cursor: url("/public/zon.cur"),auto;
-    text-shadow: 0px 10px 10px #adaeb7fc, 0 0 20px #d4d3de;
-}
-.about h1:hover{
-    animation: shake 0.4s ease-in-out;
-    cursor: pointer;
-    cursor: url("/public/zon.cur"),auto;
-}
+
 
 .containe{
     align-items: center;
     justify-content: center;
     display: flex;
     gap: 3em;
+    margin-top: 45px;
     
 }
 .i{
@@ -45,7 +34,7 @@
     font-size: 15px;
 }
 .contentAbout h2{
-    color: #3740e5;
+    color: #1B4242;
     font-family: 'Courier New', Courier, monospace;
    
 
@@ -53,14 +42,14 @@
 
 
 .contentAbout span{
-    color: white;
+    color: #379777;
 }
 .contentAbout h4{
    
-    color: #3572EF;
+    color: #379777;
 }
 .contentAbout p{
-    color: white;
+    color: #1B4242;
 }
 
 table {
@@ -68,8 +57,8 @@ table {
     border-collapse: collapse; 
     margin: 20px 0;
     font-size: 18px;
-    color: #1B4242;
-    ; 
+    color: #1B4242;;
+    background-color: #f1fffa; 
     border-radius: 10px; 
     overflow: hidden; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
@@ -82,36 +71,42 @@ table th, table td {
 
 table th {
     
-    color: white; 
+    color: #1B4242; 
     font-weight: bold;
     text-transform: uppercase;
 }
 
 table td {
     
-    color: white; 
+    color: #1B4242; 
 }
 table tr:hover{
-    background-color: rgb(15, 14, 14);
+    background-color: rgb(226, 255, 246);
 }
 
 
 
 .cv{
-    margin-top: 25px; 
+    margin-top: 20px; 
     cursor: pointer ;
-    background-color: #3572EF;
+    background-color: #379777;
 }
 .cv a{
     text-decoration: none;
     color: white;
 }
 .cv:hover{
-    background: linear-gradient(80deg, #3572EF, #2a318e);
+    background: linear-gradient(80deg, #379777,#1B4242);
 }
 @media screen and (max-width: 480px) {
     .about {
         padding: 20px;
+        background: white;
+        /* background:url(/public/skill.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right; */
+        
     }
 .about h1{
     margin-top: 50px;
@@ -225,5 +220,4 @@ table tr:hover{
 .contentAbout {
     opacity: 0; /* Initialement caché */
 }
-
 

@@ -1,32 +1,28 @@
-import React, { useEffect, useState, useRef } from "react";
-import './contact.css';
-
-import Header from "../Header/header";
+import React, { useEffect, useRef, useState } from "react";
+import "./contact.css";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import Title from "../Constant/Titre";
 
 export default function Contact() {
-    const [isVisible, setIsVisible] = useState(false);
-    const contactRef = useRef(null);
+    const sectionRef = useRef(null);
     const [formStatus, setFormStatus] = useState(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+                });
             },
             { threshold: 0.3 }
         );
 
-        if (contactRef.current) {
-            observer.observe(contactRef.current);
-        }
+        const elements = sectionRef.current.querySelectorAll(".hidden");
+        elements.forEach((el) => observer.observe(el));
 
-        return () => {
-            if (contactRef.current) {
-                observer.unobserve(contactRef.current);
-            }
-        };
+        return () => elements.forEach((el) => observer.unobserve(el));
     }, []);
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevent page redirection on form submission
@@ -37,50 +33,51 @@ export default function Contact() {
         // Optionally reset the form
         e.target.reset();
     };
-
     return (
-        <>
-                {/* <Header/> */}
-        <div id="contact" className="contact" ref={contactRef}>
-            <h1 className="titre6">Contact</h1><br />
-            <div className="form">
-                <form
-                    action="https://formspree.io/f/meoqwagg"
-                    method="POST"
-                    className={isVisible ? "slide-left" : ""}
-                    // onSubmit={handleSubmit}
-                >
-                    <h2>Contactez-moi</h2><br />
-                    <input type="text" name="name" id="name" placeholder="Votre nom" required /><br />
-                    <input type="email" name="email" id="email" placeholder="Votre email" required /><br />
-                    <textarea name="message" id="message" placeholder="Votre message" required></textarea><br />
-                    <button type="submit">Envoyer</button>
-                </form>
-                {formStatus && <p className="form-status">{formStatus}</p>} {/* Confirmation message */}
-                <div className={`detail ${isVisible ? "slide-right" : ""}`}>
-                    <h2>Details Contact</h2>
-                    <div className="contact-detail">
-                        <a href="mailto:douireknizar@gmail.com?subject=Demande d'informations&body=Bonjour, j'ai une question concernant...">
-                        <img src="mallette.png" alt="Email Icon" />
-                        </a>
-                        <p>douireknizar@gmail.com</p>
+        <div id="contact" className="contact" ref={sectionRef}>
+            
+            <Title text="Contact"/>
+
+            <div className="loginPage">
+                <div className="contentForm">
+                    {/* Bloc Texte & Réseaux Sociaux */}
+                    <div className="imgForm hidden">
+                        <h2>
+                            Une idée en tête ? Un projet à concrétiser ? 🚀 Contactez-moi et transformons vos ambitions en réalité!
+                        </h2>
+                        <p className="parcontact">
+                            Contactez-moi sur n'importe quel réseau social de votre choix ! 😊📩
+                        </p>
+                        <div className="social-icons">
+                            <a href="https://wa.me/212699862707"><FaWhatsapp className="icon" /></a>
+                            <a href="https://linkedin.com"><FaLinkedin className="icon" /></a>
+                            <a href="mailto:douireknizar@gmail.com"><FaEnvelope className="icon" /></a>
+                            <a href="https://instagram.com"><FaInstagram className="icon" /></a>
+                            <a href="https://facebook.com"><FaFacebook className="icon" /></a>
+                        </div>
                     </div>
-                    <div className="contact-detail">
-                        <a href="https://wa.me/212699862707?text=Bonjour, je souhaite en savoir plus sur vos services">
-                        <img src="tel.png" alt="Phone Icon" />
-                        </a>
-                        <p>+212 699862707</p>
-                        
-                    </div>
-                    <div className="contact-detail">
-                        <a href="https://www.google.com/maps/place/Ennassim/@33.513411,-7.6660209,15.04z/data=!4m6!3m5!1s0xda62c5670076039:0x9057b8773d86c9d7!8m2!3d33.5127042!4d-7.
-                        // 66057!16s%2Fg%2F1vxw9mbh?entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D">
-                        <img src="adress.png" alt="Address Icon" /></a>
-                        <p>Hay Nassim , Casablanca</p>
-                    </div>
+
+                    {/* Formulaire */}
+                    <form action="https://formspree.io/f/meoqwagg"
+                    method="POST" className="formLogin hidden">
+                        <h1 className="bienvenu">Contactez-moi</h1>
+
+                        <div className="inputbox">
+                            <input type="text" name="name" id="name" placeholder="Votre nom" required />
+                        </div>
+
+                        <div className="inputbox">
+                            <input type="email" name="email" id="email" placeholder="Votre email" required />
+                        </div>
+
+                        <div className="inputbox">
+                            <textarea name="message" id="message" placeholder="Votre message" required></textarea>
+                        </div>
+
+                        <button className="btn-Login">Envoyer</button>
+                    </form>
                 </div>
             </div>
         </div>
-        </>
     );
 }

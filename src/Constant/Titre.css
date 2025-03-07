@@ -1,0 +1,100 @@
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px; /* Espace entre les éléments */
+}
+.title {
+    color: white; /* Couleur principale */
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    /* Effet néon avec des couleurs plus harmonieuses */
+    text-shadow: 
+        0 0 10px #0bed93, 
+        0 0 20px #33ff55, 
+        0 0 30px #0ca668, 
+        0 0 40px #0ca668, 
+        0 0 50px #0ca668;
+    animation: glow 1.8s infinite alternate;
+}
+
+/* Animation du texte avec des couleurs plus douces */
+@keyframes glow {
+    0% {
+        text-shadow: 
+        0 0 10px #0bed93, 
+        0 0 20px #33ff55, 
+        0 0 30px #0ca668, 
+        0 0 40px #0ca668, 
+        0 0 50px #0ca668
+    }
+    100% {
+        text-shadow: 
+        0 0 10px #0bed93, 
+        0 0 20px #33ff55, 
+        0 0 30px #0ca668, 
+        0 0 40px #0ca668, 
+        0 0 50px #0ca668
+    }
+}
+
+/* Lignes sous le titre avec un dégradé dynamique */
+.line {
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(to right,#0bed93, #0bed93, #0dbb75, #0ca668);
+    border-radius: 10px;
+    animation: lineGlow 1.5s infinite alternate;
+}
+
+@keyframes lineGlow {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .title-container {
+        margin-top: 15px;
+    }
+
+    .title {
+        font-size: 22px;
+        text-shadow: 
+            0 0 8px #0bed93, 
+            0 0 16px #33ff55, 
+            0 0 24px #0ca668;
+    }
+
+    .line {
+        width: 100px;
+        height: 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title-container {
+        /* margin-top: 10px; */
+        gap: 5px;
+    }
+
+    .title {
+        font-size: 25px;
+        
+    }
+
+    .line {
+        width: 50px;
+        height: 2px;
+    }
+}

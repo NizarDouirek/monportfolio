@@ -1,88 +1,75 @@
 .footer {
-    padding: 40px 0;
-    background-color: black;
-    color: white;
-    bottom: 0;
-}
-.social h1{
-    font-family: Roboto;
+    background: url(/public/foot.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    /* color: #fff; */
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .footer .social {
+    margin-bottom: 20px;
+  }
+  
+  .footer .social h1 {
     font-size: 30px;
-    color: white;
-    
-}
-.social h1:hover{
-    color: #3572EF;
-    cursor: pointer;
-    cursor: url('/public/zon.cur'), auto;
-}
-.footer ul {
-    padding: 0;
+    margin-bottom: 10px;
+    color: #21634d;
+  }
+  
+  .footer .social a {
+    font-size: 30px;
+    color: #878787;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .footer .social a:hover {
+    transform: scale(1.2);
+    color: #1b5542;
+  }
+  
+  .footer-break {
+    border: 0;
+    height: 1px;
+    background: #1b5542;
+    margin: 20px auto;
+    width: 50%;
+  }
+  
+  .footer-links {
     list-style: none;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
-.footer li {
-    display: inline-block; 
-    padding: 0 10px;
-}
-
-
-.footer ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-.footer ul a:hover {
-    opacity: 1;
-    color: #3572EF;
-    cursor: url('/public/zon.cur'), auto;
-}
-
-.footer .social {
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-.footer .social > a {
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .footer-links li {
     display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    margin: 0 8px;
-    color: inherit;
-    opacity: 0.75;
-    cursor: url('/public/zon.cur'),auto;
-}
-
-.footer .social > a:hover {
-    opacity: 0.9;
-}
-
-.footer .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0;
-}
-.footer .footer-break{
-  height:2px;
-  border-width:0;
-  color:gray;
-  background-color:white
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #1b5542;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #20634d;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  @media (max-width: 480px) {
+    .footer{
+      margin-top: 40px;
     }
-
-
-#i:hover{
-    background:#042870;
-    
-    cursor: url('/public/zon.cur'), auto;
-}
+  }

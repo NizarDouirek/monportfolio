@@ -1,5 +1,5 @@
 header {
-  background-color: black;
+  /* background-color: black; */
   width: 100%;
   overflow: hidden; /* Empêche les débordements */
   max-width: 100%;
@@ -14,26 +14,29 @@ header:not(.scrolled) {
 
 /* Style lorsque l'utilisateur a défilé */
 header.scrolled {
-  background-color: black; /* Fond noir au défilement */
+  background-image: url('/public/bgheader.avif'); 
+  background-size: cover;
+    
+  background-repeat: no-repeat;
 }
 img {
-  margin-top: -5px;
-  width: 130px;
-  height: 80px;
+  /* margin-top: -5px; */
+  width: 120px;
+  height: 70px;
 }
 .logo {
   margin-left: 50px;
   display: flex;
 }
-.logo h1 {
+/* .logo h1 {
   margin-top: 9px;
-  color: white;
+  color: black;
   font-family: "Pacifico", cursive;
 }
 .prenom {
   color: #3572ef;
   font-family: "Pacifico", cursive;
-}
+} */
 .navbar {
   margin-top: 19px;
   display: flex;
@@ -48,7 +51,7 @@ img {
 }
 
 nav a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   cursor: url("/public/zon.cur"), auto;
@@ -59,7 +62,7 @@ nav a {
 
 /* Effet sur le texte au survol */
 nav a:hover {
-  color: #3572ef;
+  color: #379777;
   transform: scale(1.1); /* Agrandit légèrement le texte */
 }
 
@@ -71,8 +74,8 @@ nav a::after {
   bottom: -5px; /* Décalé légèrement sous le texte */
   width: 0%;
   height: 2px;
-  color: #3572ef;
-  background-color: #3572ef;
+  color: #495E57;
+  background-color: #495E57;
   transition: width 0.3s ease-in-out;
 }
 
@@ -110,12 +113,15 @@ nav a:hover::after {
       display: flex;
       /* align-items: center;
       justify-content: center; */
-      gap: 2rem;
+      gap: 1rem;
       list-style: none;
       padding: 0;
-      margin-left: -45px;
+      margin-right: 50px;
       margin-top: 12px;
       /* margin: 10px 0; */
+  }
+  .navbar-icons a{
+    text-decoration: none;
   }
   
   .navbar-icons li {

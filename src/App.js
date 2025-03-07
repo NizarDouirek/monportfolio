@@ -10,6 +10,7 @@ import Cv from './Cv/cv';
 import Footer from './Footer/foother';
 import Contact from './Contact/contact';
 import Loader from './Loader/loader';
+import Page from './Portfolio/page';
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(false); // Gérer l'état de chargement
@@ -23,6 +24,7 @@ function App() {
         <Router>
             
             <Header />
+            {/* <Page/> */}
             <Routes>
                 <Route path="/" element={<Homme />} />
                 <Route path="/homme" element={<Homme />} />

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./about.css";
 import Header from "../Header/header";
+import Title from "../Constant/Titre";
 
 export default function About() {
     const [isVisible, setIsVisible] = useState(false);
@@ -31,7 +32,7 @@ export default function About() {
         <>
         {/* <Header/> */}
         <div id="about" className="about" ref={aboutRef}>
-            <h1 >À Propos</h1>
+            <Title text="À propos" />
             <div className={`containe ${isVisible ? "slide-in" : ""}`}>
                 <img className={`i ${isVisible ? "slide-left" : ""}`} src="profillinkd.jpg" alt="Profil" />
                 <div className={`contentAbout ${isVisible ? "slide-right" : ""}`}>

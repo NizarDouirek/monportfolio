@@ -5,7 +5,7 @@ body, html, #root, .homme {
     
   }
 .homme{
-    background-image: url("/public/g1.gif");
+    background-image: url("/public/g2.gif");
     background-size: cover;
     
     background-repeat: no-repeat;
@@ -19,8 +19,8 @@ body, html, #root, .homme {
     
 }
 .bonjour{
-    color: white;
-    font-size: 25px;
+    color:#45474B;
+    font-size: 30px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
@@ -39,9 +39,9 @@ body, html, #root, .homme {
 
 .nom {
     color: white;
-    text-shadow: 0px 0px 10px #4e4d6c, 0px 0px 10px #605EA1;
+    text-shadow: 0px 0px 10px #0f0f0f, 0px 0px 10px #379777;
     font-family: 'Pacifico', cursive;
-    font-size: 80px;
+    font-size: 85px;
     text-transform: uppercase;
     overflow: hidden; /* Garde le texte dans les limites */
     white-space: nowrap; /* Empêche le retour à la ligne */
@@ -73,7 +73,7 @@ body, html, #root, .homme {
 /* Animation pour le curseur clignotant */
 @keyframes blink {
     from {
-        border-right: 2px solid white;
+        border-right: 2px solid black;
     }
     to {
         border-right: 2px solid transparent;
@@ -83,13 +83,13 @@ body, html, #root, .homme {
 
 .job{
     margin-top: 10px;
-    color: #3b58b8;
+    color: #495E57;
     font-size: 30px;
     font-style: italic;
 }
 
 button {
-    background-color: #3572EF;
+    background-color: #379777;
     font-size: 20px;
     margin-top: 20px;
     border-radius: 10px;
@@ -103,8 +103,8 @@ button {
 
 button:hover {
     cursor: url("/public/zon.cur"),auto;
-    background: linear-gradient(80deg, #3572EF, #2a318e); /* Légère variation de couleur */
-    box-shadow: 0 0 20px 8px rgba(96, 94, 161, 0.7); /* Effet lumineux plus fort */
+    background: linear-gradient(80deg, #379777, #495E57); /* Légère variation de couleur */
+    box-shadow: 0 0 20px 8px rgba(61, 111, 106, 0.7); /* Effet lumineux plus fort */
     transform: scale(1.05); /* Léger agrandissement */
 }
 
@@ -126,28 +126,31 @@ button a {
 
 @media screen and (max-width: 480px) {
     .homme{
-        height: 600px;
+        height: 650px;
     }
     .container {
-        margin-top: 40%; /* Déplace plus bas sur les petits écrans */
+        margin-top: 50%; /* Déplace plus bas sur les petits écrans */
     }
 
     .nom {
-        font-size: 40px; /* Texte principal encore plus petit */
+        margin-top: 30px;
+        font-size: 44px; /* Texte principal encore plus petit */
     }
 
     .bonjour {
-        font-size: 18px; /* Texte d'accueil plus petit */
+        margin-top: -30px;
+        font-size: 22px; /* Texte d'accueil plus petit */
     }
 
     .job {
-        font-size: 20px; /* Ajustement de la taille */
+        margin-top: 30px;
+        font-size: 24px; /* Ajustement de la taille */
         
     }
 
     button {
-        font-size: 16px; /* Boutons plus petits */
-        padding: 6px; /* Réduction du padding */
+        font-size: 20px; /* Boutons plus petits */
+        padding: 10px; /* Réduction du padding */
     }
    
     .marq p{
@@ -205,8 +208,8 @@ button a {
     
     letter-spacing: 1px;
     font-family: 'Courier New', Courier;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color:#495E57;
+    text-shadow: 2px 2px 4px #45474B;
     white-space: nowrap;
   }
 
@@ -219,4 +222,87 @@ button a {
     }
 
 }
+.decoration {
+    position: fixed;
+    bottom: calc(0em - 50px);
+    height: 17em;
+    width: 25em;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .carre {
+    width: 84px;
+    height: 84px;
+    border: 1px solid #45474B;
+    transform: rotate(17deg);
+    position: relative;
+  }
+  
+  .carre1 {
+    bottom: calc(84px - 140px);
+    left: -10px;
+    animation: float 5s ease infinite;
+  }
+  .carre2 {
+    bottom: calc(74px - 140px);
+    left: -10px;
+    animation: float 5s .4s ease infinite;
+  }
+  .carre3 {
+    bottom: calc(226px - 140px);
+    left: 77px;
+    animation: float 5s .4s ease infinite;
+  }
+  
+  .carre4 {
+    bottom: calc(215px - 140px);
+    left: 76px;
+    animation: float 5s .9s ease infinite;
+  }
+  
+  .carre5 {
+    bottom: calc(367px - 140px);
+    left: 163px;
+    animation: float 5s .2s ease infinite;
+  }
+  .carre6 {
+    bottom: calc(356px - 140px);
+    left: 162px;
+    animation: float 5s .6s ease infinite;
+  }
+  .carre7 {
+    bottom: calc(508px - 140px);
+    left: 251px;
+    animation: float 5s .3s ease infinite;
+  }
+  .carre8 {
+    bottom: calc(618px - 140px);
+    left: 23px;
+    animation: float 5s .4s ease infinite;
+  }
+  .carre9 {
+    bottom: calc(675px - 140px);
+    left: 110px;
+    animation: float 5s .3s ease infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(17deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(17deg);
+    }
+    100% {
+      transform: translateY(0) rotate(17deg);
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .decoration {
+      zoom: .7;
+    }
+  }
 
+ 

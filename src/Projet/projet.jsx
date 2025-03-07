@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import './projet.css';
 import Header from "../Header/header";
+import Title from "../Constant/Titre";
 export default function Projet(){
      useEffect(() => {
           const sections = document.querySelectorAll('.sectionP, .sectionP2, .sectionP3, .sectionP4');
@@ -23,7 +24,7 @@ export default function Projet(){
                 {/* <Header/> */}
         <div id="projet">
           <div className="projets">
-               <h1 className="titre1">Projets</h1> 
+          <Title text="Projet" />
                <div className="projet">
                 <div className="sectionP">
                     <div className="contentP">
@@ -36,9 +37,9 @@ export default function Projet(){
                             
                             <img src="react.png" alt="" />
                             <img src="css.png" alt="" />
-                            <img src="bootstrap-framework.png" alt="" />
-                            <img src="laravel-framework.png" alt="" />
-                            <img src="mysql (1).png" alt="" />
+                            <img src="bootstrap.png" alt="" />
+                            <img src="laravel.png" alt="" />
+                            <img src="mysql.png" alt="" />
                        </div>
                        <a href="https://github.com/NizarDouirek/Agence_Voyage">
                        <button className="visit">Visiter Site</button>
@@ -56,10 +57,10 @@ export default function Projet(){
                       liées à la gestion des biens de l'entreprise (ordinateurs , imprimantes…). Elle permet aux 
                         gestionnaires  de suivre efficacement leurs biens et d’organiser les données.</p><br />
                        <div className="tec">
-                            <img src="laravel-framework.png" alt="" />
-                            <img src="php (2).png" alt="" />
+                            <img src="laravel.png" alt="" />
+                            <img src="php.png" alt="" />
                             <img src="css.png" alt="" />
-                            <img src="bootstrap-framework.png" alt="" />
+                            <img src="bootstrap.png" alt="" />
                        </div>
                        <a href= "https://github.com/NizarDouirek/gestionBien">
                        <button className="visit2">Visiter Site</button>
@@ -80,7 +81,7 @@ export default function Projet(){
                        <div className="tec">
                             <img src="html.png" alt="" />
                             <img src="css.png" alt="" />
-                            <img src="bootstrap-framework.png" alt="" />
+                            <img src="bootstrap.png" alt="" />
                             <img src="angular.svg" alt="" />
                             
                        </div>
@@ -104,7 +105,7 @@ export default function Projet(){
                        <div className="tec">
                             <img src="html.png" alt="" />
                             <img src="css.png" alt="" />
-                            <img src="laravel-framework.png" alt="" />
+                            <img src="laravel.png" alt="" />
                             <img src="react.png" alt="" />
                             
                        </div>

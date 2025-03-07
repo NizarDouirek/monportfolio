@@ -1,210 +1,91 @@
-import { useEffect,useState} from "react";
 import React from "react";
 import "./skills.css";
-import Header from "../Header/header";
+import Title from "../Constant/Titre";
+import { motion } from "framer-motion";
 
-export default function Skills() {
-    const [canPlaySound, setCanPlaySound] = useState(false);
+const Skills = () => {
+  const characters = [
+    {
+      name: "Développeur FrontEnd",
+      image: "front.avif",
+      description:
+        "Passionné par la conception d'interfaces modernes et intuitives, des designs élégants et fonctionnels, je transforme les idées en expériences web performantes. Expert en HTML, CSS, Bootstrap, JavaScript et React."
+    },
+    {
+      name: "Développeur BackEnd",
+      image: "back.jpg",
+      description:
+        "J'orchestre des solutions backend performantes et sur mesure, garantissant fiabilité, évolutivité et sécurité. Avec une expertise reconnue en PHP et Laravel. Maîtrisant les bases de données relationnelles et NoSQL."
+    },
+    {
+      name: "Designer",
+      image: "design.webp",
+      description:
+        "Je suis passionné par le design et j’ai développé une expertise sur des outils comme Figma, Canva et Adobe Photoshop, me permettant de créer des interfaces modernes et attrayantes 🎨✨"
+    }
+  ];
 
-    // Activer la lecture des sons après une interaction utilisateur
-    useEffect(() => {
-      const enableSound = () => {
-        setCanPlaySound(true);
-        window.removeEventListener("click", enableSound);
-      };
-  
-      // Ajouter un écouteur d'événement global sur le clic
-      window.addEventListener("click", enableSound);
-  
-      return () => {
-        window.removeEventListener("click", enableSound);
-      };
-    }, []);
-    
-  
-    // Fonction pour jouer un son si l'utilisateur a interagi
-    const playSound = (audioFile) => {
-      if (canPlaySound) {
-        const sound = new Audio(audioFile);
-        sound.play();
-      }
-    };
-    const handleMouseEnter = () => {
-        const packContainer = document.querySelector(".pack");
-        if (packContainer) {
-          packContainer.classList.add("paused");
-        }
-      };
-    
-      const handleMouseLeave = () => {
-        const packContainer = document.querySelector(".pack");
-        if (packContainer) {
-          packContainer.classList.remove("paused");
-        }
-      };
-      useEffect(() => {
-        const circles = document.querySelectorAll(".circle, .circle1, .circle2");
-    
-        const handleScroll = () => {
-          circles.forEach((circle) => {
-            const rect = circle.getBoundingClientRect();
-            const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-    
-            if (isVisible) {
-              circle.classList.add("animate");
-            } else {
-              circle.classList.remove("animate");
-            }
-          });
-        };
-    
-        // Appliquer au chargement initial
-        handleScroll();
-    
-        // Écouter le scroll
-        window.addEventListener("scroll", handleScroll);
-    
-        return () => {
-          window.removeEventListener("scroll", handleScroll);
-        };
-      }, []);
   return (
-    <>
-            {/* <Header/> */}
     <div id="skills" className="skills">
-      <audio ></audio>
-      <h1 className="titre2">Compétences</h1>
-      <br />
-      <br />
-      <div className="pack-container">
-        <div className="pack">
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="html.png" alt="HTML5" />
-            <h2>HTML5</h2>
-          </section>
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="css.png" alt="CSS3" />
-            <h2>CSS3</h2>
-          </section>
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="bootstrap-framework.png" alt="Bootstrap" />
-            <h2>Bootstrap</h2>
-          </section>
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="javascript.png" alt="JavaScript" />
-            <h2>JavaScript</h2>
-          </section>
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="react (1).png" alt="React" />
-            <h2>React</h2>
-          </section>
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="php (2).png" alt="PHP" />
-            <h2>PHP</h2>
-          </section>
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="laravel-framework.png" alt="Laravel" />
-            <h2>Laravel</h2>
-          </section>
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="mysql (1).png" alt="MySQL" />
-            <h2>MySQL</h2>
-          </section >
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="mongo-db.png" alt="MongoDB" />
-            <h2>MongoDB</h2>
-          </section>
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="github (2).png" alt="GitHub" />
-            <h2>GitHub</h2>
-          </section>
-          <section onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img className="imgskills" src="git (1).png" alt="Git" />
-            <h2>Git</h2>
-          </section>
-        </div>
-      </div>
-      
-      <div className="outils">
-        <h2>
-        
-        Ce que je fais !!
-        </h2>
-        <h3>"Passez votre souris sur les sections pour découvrir les détails"</h3>
-        <br />
-        <div className="outil">
-          <div
-            className="circle1"
-            onMouseEnter={() => playSound("pop.mp3")} // Audio au survol
-          >
-            <img src="dec2.avif" alt="Frontend Developer" />
-            <div className="det">
-              <h1>Développeur FrontEnd</h1><br />
-              <p>
-              Passionné par la conception d'interfaces modernes et intuitives, des designs
-               élégants et fonctionnels, je transformeles idées en expériences web performantes.
-                Expert en HTML, CSS, Bootstrap, JavaScript et React,  .
-              </p>
-            </div>
-          </div>
+      <Title text="Compétences" />
+      <p className="hover-instruction">💡 Survolez les cartes pour en savoir plus !</p>
 
-          <div
-            className="circle2"
-            onMouseEnter={() => playSound("pop.mp3")} // Un autre son
+      <div className="containerskills">
+        {characters.map((character, index) => (
+          <motion.div
+            key={index}
+            className="cardskills"
+            initial={{ opacity: 0, y: 150 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            whileHover={{ scale: 1.05 }}
           >
-            <img src="dec.avif" alt="Backend Developer" />
-            <div className="det2">
-              <h1>Développeur BackEnd</h1><br />
-              <p>
-              J'orchestre des solutions backend performantes et sur mesure, garantissant fiabilité, 
-              évolutivité et sécurité. Avec une expertise reconnue en Php et Laravel. 
-              Maîtrisant les bases de données relationnelles et NoSQL.
-              </p>
+            <div className="img-container">
+              <img src={character.image} alt={character.name} />
             </div>
-          </div>
-
-          <div className="circle" onMouseEnter={() => playSound("pop.mp3")} >
-            <p>Outils de travail</p>
-            <div className="tools">
-              <img src="vs.png" alt="Visual Studio" />
-              <img src="postman.png" alt="Postman" />
-              <img
-                src="gant.jpeg"
-                alt="Gantt"
-                style={{ borderRadius: "100%" }}
-              />
-              <img
-                src="ps.png"
-                alt="Photoshop"
-                style={{ width: "80px" }}
-              />
-              <img src="github (2).png" alt="GitHub" />
-              <img
-                src="figma.png"
-                alt="Figma"
-                style={{ borderRadius: "50%" }}
-              />
-              <img
-                src="xamp.png"
-                alt="XAMPP"
-                style={{ borderRadius: "50%" }}
-              />
-              <img src="um.png" alt="Umbraco" />
-              <img
-                src="studio3t.webp"
-                alt="Studio 3T"
-                style={{ borderRadius: "50%" }}
-              />
-              <img
-                src="g.jpeg"
-                alt="Google Tools"
-                style={{ borderRadius: "50%" }}
-              />
+            <div className="card-details">
+              <h2>{character.name}</h2>
+              <p>{character.description}</p>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        ))}
       </div>
+
+      {/* Langages et Frameworks */}
+      <h1 className="titrecp">Langages et Frameworks</h1>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        {["html.png", "css.png", "javascript.png", "php.png", "bootstrap.png", "react.png","react-native.png", "laravel.png"].map((img, index) => (
+          <motion.section key={index} whileHover={{ scale: 1.1 }}>
+            <img className="imgskills" src={img} alt={img.split(".")[0]} />
+            <h2>{img.split(".")[0].toUpperCase()}</h2>
+          </motion.section>
+        ))}
+      </motion.div>
+
+      {/* Bases de données */}
+      <h1 className="titrecp">Base de données</h1>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        {["mysql.png", "mongo-db.png"].map((img, index) => (
+          <motion.section key={index} whileHover={{ scale: 1.1 }}>
+            <img className="imgskills" src={img} alt={img.split(".")[0]} />
+            <h2>{img.split(".")[0].toUpperCase()}</h2>
+          </motion.section>
+        ))}
+      </motion.div>
+
+      {/* Outils de Développement et Design */}
+      <h1 className="titrecp">Outils de Développement et de Design</h1>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        {["github.png", "git.png", "figma.png", "canva.webp", "photoshop.png"].map((img, index) => (
+          <motion.section key={index} whileHover={{ scale: 1.1 }}>
+            <img className="imgskills" src={img} alt={img.split(".")[0]} />
+            <h2>{img.split(".")[0].toUpperCase()}</h2>
+          </motion.section>
+        ))}
+      </motion.div>
     </div>
-    </>
   );
-}
+};
+
+export default Skills;

@@ -7,7 +7,7 @@ export default function Loader({ setIsLoaded }) {
         const timer = setTimeout(() => {
             setIsLoaded(true);
             console.log("Loader finished"); // Vérifier que le Loader termine après 3 secondes
-        }, 1000); // 1 secondes
+        }, 3000); // 1 secondes
 
         return () => clearTimeout(timer); // Nettoyage pour éviter les fuites de mémoire
     }, [setIsLoaded]);
@@ -20,7 +20,7 @@ export default function Loader({ setIsLoaded }) {
                 <div className="cercleload"></div>
                 <div className="cercleload"></div>
             </div>
-            <p className="loading-text">Chargement...</p>
+            <p className="loading-text">Bienvenue sur mon portfolio...</p>
             
         </div>
     );

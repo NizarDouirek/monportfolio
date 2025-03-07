@@ -1,32 +1,18 @@
-.contact {
-    /* background-image: url(/public/dec3.jpg); */
-    background: linear-gradient(80deg, #1e1e1e,rgb(0, 0, 0), #121213,black);
-    background-size: cover;
-    /* background-position: bottom; */
-    background-position: cover;
-    color: white;
-    padding: 40px;
-    font-family: Arial, sans-serif;
-    min-height: 120vh;
+.contact{
+    height: 100vh;
+    /* min-height: 120vh; */
+    background: url('/public/vv.avif');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position: left; */
+}
+.loginPage {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-
-.titre6{
-    font-size: 30px;
-    margin-top: 100px;
-    text-align: center;
-    color: #165eed;
-    animation: zoomGlow 1.5s ease-in-out;
-    text-shadow: 0 5px 10px #cec1d0, 0 5px 20px #a8aab2;
-}
-.titre6:hover {
-    animation: shake 0.4s ease-in-out;
-    cursor: pointer;
-    cursor: url(/public/zon.cur),auto;
-}
+    align-items: center;
+    margin-top: 45px;
+  }
+  
 
 @keyframes shake {
     0% { transform: translate(0, 0); }
@@ -35,285 +21,244 @@
     75% { transform: translate(-2px, -2px); }
     100% { transform: translate(0, 0); }
 }
-
-.form {
+  
+  .contentForm {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 80%;
+    width: 70%;
     max-width: 900px;
-    border-radius: 20px;
-    padding: 40px;
-}
-
-form {
-    padding: 30px;
-    border-radius: 40px;
-    width: 400px;
-    height: 480px;
-    background: transparent;
-    min-width: 300px;
-    margin: 10px;
-    backdrop-filter: blur(15px) brightness(80%);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.form h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: rgb(170, 196, 247);
-    text-align: center;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    height: 40px;
-    padding: 7px;
-    margin-bottom: 20px;
-    border: 1px solid rgb(143, 145, 148);
-    border-radius: 5px;
-    background: transparent;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+  }
+  
+  .imgForm {
+    width: 50%;
+    /* background: linear-gradient(120deg, #379777, #c7e616); */
+    background: url('/public/hh.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    align-content:center ;
     color: white;
-    outline: none;
-}
-
-form input::placeholder,
-form textarea::placeholder {
-    color: rgba(255, 255, 255, 0.737);
-}
-
-form input:hover,
-form textarea:hover {
-    border-color: rgb(155, 184, 238);
-    /* cursor: pointer;
-    cursor: url('/public/zon.cur'), auto; */
-}
-
-form textarea {
-    resize: none;
-    height: 150px;
-}
-
-form button {
-    width: 100%;
-    padding: 6px;
-    font-size: 1.1em;
+    font-size: 22px;
     font-weight: bold;
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.1cm;
+    text-align: center;
+    padding: 20px;
+    
+  }
+  .bienvenu{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #379777;
+    margin-bottom: 20px;
+    animation: floatText 3s ease-in-out infinite;
+  }
+  .imgForm h2{
     color: white;
-    border: none;
-    border-radius: 20px;
-    background-color: rgb(27, 27, 28);
-    cursor: url('/public/zon.cur'), auto;
-    transition: background 0.3s ease-in-out;
-}
-
-form button:hover {
-    background: linear-gradient(80deg, #343536, #363856);
-    box-shadow: 0 0 20px 8px rgba(229, 229, 238, 0.7);
-    transform: scale(1.05);
-}
-
-.detail {
-    min-width: 300px;
-    margin: 10px;
+    font-size: 22px;
+    font-family: Poppins,sans-serif;
+  }
+  
+  @keyframes floatText {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  
+  /* --- 🌟 Partie formulaire/droite --- */
+  .formLogin {
+     width: 50%; 
     display: flex;
     flex-direction: column;
-    height: 300px;
-    margin-top: 80px;
-    padding: 35px;
-    
-    background-color: transparent;
-    backdrop-filter: blur(20px) brightness(70%);
-    border-radius: 30%;
-}
-
-.contact-detail {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    
-}
-
-.contact-detail img {
-    width: 45px;
-    height: 40px;
-    padding: 10px;
-    background-color: rgba(106, 126, 150, 0.455);
-    margin-right: 10px;
-    border-radius: 50%;
-    border: solid 1px rgb(45, 44, 44);
-}
-.contact-detail img:hover {
-    border: solid 1px #828189;
-    background-color: #445b73;
-    cursor: url('/public/zon.cur'), auto;
-}
-.contact-detail a{
-    cursor: url("/public/zon.cur"),auto;
-}
-.contact-detail p {
+    justify-content: center;
+    padding: 40px;
+    background-color: rgb(237, 237, 237);
+  }
+  
+  
+  
+  /* --- 🌟 Champs de saisie --- */
+  .inputbox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .inputbox input,
+  .inputbox textarea {
+    width: 100%;
+    height: 50px;
+    background: white; /* Légère transparence */
+    border: 2px solid transparent;
+    outline: none;
     font-size: 1.2em;
+    padding: 10px 15px;
+    color: #093c2b;
+    border-radius: 8px; /* Arrondi des bords */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Effet de focus */
+  .inputbox input:focus,
+  .inputbox textarea:focus {
+    border: 2px solid #379777;
+    box-shadow: 0 0 10px rgba(55, 151, 119, 0.5);
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .inputbox textarea{
+    height:80px ;
+  }
+  
+  /* Placeholder amélioré */
+  .inputbox input::placeholder,
+  .inputbox textarea::placeholder {
+    color: #555;
+    font-size: 1em;
+    font-style: italic;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+  
+  /* Effet de survol */
+  .inputbox input:hover,
+  .inputbox textarea:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Réduction de la taille du placeholder en focus */
+  .inputbox input:focus::placeholder,
+  .inputbox textarea:focus::placeholder {
+    transform: translateY(-10px);
+    font-size: 0.9em;
+    opacity: 0.6;
+  }
+  
+  /* --- 🌟 Bouton d'envoi --- */
+  .btn-Login {
+    background: linear-gradient(135deg, #2a6e58,  #47d8a8);
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 12px;
+    border: none;
+    width: 100%;
     color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
+  }
+  
+  .btn-Login:hover {
+    background: linear-gradient(135deg, #46ad8a, #357a63);
+    transform: scale(1.05);
+  }
+  
+  /* --- 🌟 Responsive Design --- */
+  @media (max-width: 768px) {
+    .contentForm {
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+    }
+  
+    .imgForm {
+      width: 100%;
+      height: 150px;
+      font-size: 18px;
+    }
+  
+    .formLogin {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Espace entre les icônes */
+    margin-top: 20px; /* Espace au-dessus des icônes */
+    margin-left: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons .icon {
+    font-size:40px; /* Taille des icônes */
+    color: white; /* Couleur des icônes */
+    transition: color 0.3s ease; 
+  }
+  
+  .social-icons .icon:hover {
+    color: #F4CE14; 
+  }
+  .parcontact{
+    color: #F4CE14;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-family: Poppins,sans-serif;
+  }
+  /* .title {
+    margin-top: -60px; 
+} */
+@media (max-width: 480px) {
+  .contact {
+      height: auto; /* Ajuste la hauteur pour que le contenu s'adapte à l'écran */
+      background: url('/public/cv.avif') no-repeat center center; /* Centre l'image d'arrière-plan */
+      background-size: cover; /* Assure que l'image occupe toute la surface disponible */
+  }
+
+  .loginPage {
+      margin-top: 20px; /* Réduit la marge pour plus d'espace sur les petits écrans */
+  }
+
+  .contentForm {
+      flex-direction: column;
+      width: 90%; /* Ajuste la largeur */
+      height: auto; /* Ajuste la hauteur pour s'adapter à l'écran */
+  }
+
+  .imgForm {
+      width: 100%; /* Prend toute la largeur disponible */
+      height: 300px; /* Réduit la hauteur pour mieux s'adapter */
+      font-size: 14px; /* Réduit la taille de la police */
+  }
+
+  .formLogin {
+      width: 100%;
+      padding: 15px; /* Réduit les espacements */
+  }
+
+  .inputbox input,
+  .inputbox textarea {
+      font-size: 1em; /* Réduit la taille de la police des champs de saisie */
+      padding: 8px 12px; /* Ajuste le padding pour les petits écrans */
+  }
+
+  .btn-Login {
+      font-size: 16px; /* Ajuste la taille du texte du bouton */
+      padding: 10px; /* Réduit le padding du bouton */
+  }
+
+  .social-icons {
+      margin-left: 0; /* Aligne les icônes socialement sans décalage */
+      justify-content: center; /* Centre les icônes */
+  }
+
+  .social-icons .icon {
+      font-size: 30px; /* Réduit la taille des icônes pour les petits écrans */
+  }
+
+  .parcontact {
+      font-size: 14px; /* Réduit la taille de la police */
+      margin-top: 30px; /* Ajuste la marge */
+  }
 }
-
-@media screen and (max-width: 480px) {
-    .contact {
-        padding: 20px;
-        min-height: auto;
-        justify-content: flex-start;
-    }
-
-    .titre {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    .form {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 20px;
-    }
-
-    form {
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-        justify-content: center;
-        padding: 20px;
-        
-    }
-
-    form button {
-        font-size: 1em;
-        padding: 5px;
-    }
-
-    .detail {
-        margin-top: 20px;
-        margin-left: -10px;
-    }
-
-    .contact-detail img {
-        width: 35px;
-        height: 35px;
-        padding: 5px;
-    }
-
-    .contact-detail p {
-        font-size: 1em;
-    }
-}
-
-.fade-in {
-    opacity: 1;
-    animation: fadeIn 1s ease-out forwards;
-}
-
-.slide-left {
-    opacity: 1;
-    animation: slideInFromLeft 2s ease-out forwards;
-}
-
-.slide-right {
-    opacity: 1;
-    animation: slideInFromRight 2s ease-out forwards;
-}
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInFromRight {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .contact {
-        padding: 30px; /* Ajuste le padding pour un rendu équilibré */
-        min-height: auto;
-        justify-content: flex-start;
-    }
-
-    .titre {
-        font-size: 24px; /* Taille légèrement plus grande que sur mobile */
-        margin-bottom: 20px;
-    }
-
-    .form {
-        flex-direction: column;
-        align-items: center;
-        width: 80%; /* Réduit la largeur pour un meilleur centrage */
-        padding: 30px;
-    }
-
-    form {
-        width: 100%;
-        max-width: 500px; /* Augmente la largeur maximale */
-        height: auto;
-        margin: 10px 0;
-        padding: 25px; /* Padding ajusté pour plus de confort */
-    }
-
-    form button {
-        font-size: 1.2em; /* Taille de texte légèrement augmentée */
-        padding: 10px; /* Padding ajusté */
-    }
-
-    .detail {
-        margin-top: 25px; /* Augmentation de l'espacement */
-        align-items: center;
-    }
-
-    .contact-detail img {
-        width: 50px; /* Taille des icônes augmentée */
-        height: 50px;
-        padding: 7px;
-    }
-
-    .contact-detail p {
-        font-size: 2em; /* Taille de police adaptée pour les tablettes */
-    }
-}
-
-.fade-in {
-    opacity: 1;
-    animation: fadeIn 1s ease-out forwards;
-}
-
-.slide-left {
-    opacity: 1;
-    animation: slideInFromLeft 2s ease-out forwards;
-}
-
-.slide-right {
-    opacity: 1;
-    animation: slideInFromRight 2s ease-out forwards;
-}
-
