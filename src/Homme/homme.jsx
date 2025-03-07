@@ -85,7 +85,7 @@ export default function Homme() {
 </div>
       </div>
       <About />
-      <button
+      {/* <button
       onClick={scrollToTop}
       style={{
         position: 'fixed',
@@ -104,7 +104,7 @@ export default function Homme() {
       }}
     >
       ↑
-    </button>
+    </button> */}
       <Skills />
       <Cv />
       <Projet />
