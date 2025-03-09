@@ -89,20 +89,20 @@ body, html, #root, .homme {
 }
 
 button {
-    background-color: #379777;
+    background: linear-gradient(135deg, #2a6e58,  #47d8a8);
     font-size: 20px;
     margin-top: 20px;
     border-radius: 10px;
     padding: 10px;
     border: none;
     color: white;
-    cursor: url("/public/zon.cur"),auto;
+    cursor: url("/public/cr1.cur"),auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
 }
 
 button:hover {
-    cursor: url("/public/zon.cur"),auto;
+    cursor: url("/public/cr1.cur"),auto;
     background: linear-gradient(80deg, #379777, #495E57); /* Légère variation de couleur */
     box-shadow: 0 0 20px 8px rgba(61, 111, 106, 0.7); /* Effet lumineux plus fort */
     transform: scale(1.05); /* Léger agrandissement */
@@ -119,7 +119,7 @@ button a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    cursor: url("/public/zon.cur"),auto;
+    cursor: url("/public/cr1.cur"),auto;
    
 }
 

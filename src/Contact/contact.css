@@ -198,10 +198,11 @@
   }
   
   .social-icons .icon:hover {
-    color: #F4CE14; 
+    color: #14f462; 
+    cursor: url('/public/cr1.cur'), auto;;
   }
   .parcontact{
-    color: #F4CE14;
+    color: #00ffa6;
     margin-top: 40px;
     letter-spacing: 2px;
     font-family: Poppins,sans-serif;

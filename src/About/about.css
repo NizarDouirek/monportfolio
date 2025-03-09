@@ -88,8 +88,8 @@ table tr:hover{
 
 .cv{
     margin-top: 20px; 
-    cursor: pointer ;
-    background-color: #379777;
+    cursor: url('/public/cr1.cur'), auto ;
+    background: linear-gradient(135deg, #2a6e58,  #47d8a8);
 }
 .cv a{
     text-decoration: none;

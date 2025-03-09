@@ -21,6 +21,7 @@
   
   .footer .social a {
     font-size: 30px;
+    cursor: url('/public/cr1.cur'), auto;
     color: #878787;
     margin: 0 10px;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -54,6 +55,7 @@
   
   .footer-links a {
     text-decoration: none;
+    cursor: url('/public/cr1.cur'), auto;
     color: #1b5542;
     font-size: 16px;
     transition: color 0.3s ease;

@@ -60,7 +60,7 @@ export default function Contact() {
                     {/* Formulaire */}
                     <form action="https://formspree.io/f/meoqwagg"
                     method="POST" className="formLogin hidden">
-                        {/* <h1 className="bienvenu">Contactez-moi</h1> */}
+                        <h1 className="bienvenu">Contactez-moi</h1>
 
                         <div className="inputbox">
                             <input type="text" name="name" id="name" placeholder="Votre nom" required />

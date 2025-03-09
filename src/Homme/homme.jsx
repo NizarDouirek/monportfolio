@@ -29,15 +29,15 @@ export default function Homme() {
     });
   };
 
-  // Ajout de l'écouteur d'événements pour surveiller le défilement
-  useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
+  // // Ajout de l'écouteur d'événements pour surveiller le défilement
+  // useEffect(() => {
+  //   window.addEventListener('scroll', toggleVisibility);
     
-    // Nettoyage de l'écouteur d'événements au démontage
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
-  }, []);
+  //   // Nettoyage de l'écouteur d'événements au démontage
+  //   return () => {
+  //     window.removeEventListener('scroll', toggleVisibility);
+  //   };
+  // }, []);
 
   if (!isLoaded) {
     return <Loader setIsLoaded={setIsLoaded} />;
@@ -51,7 +51,7 @@ export default function Homme() {
           <p className="bonjour">
             Bonjour <span className="wave-hand"></span>, je suis
           </p>
-          <h1 className="nom">Nizar Douirek</h1>
+          {/* <h1 className="nom">Nizar Douirek</h1> */}
           <p className="job">Developpeur Full Stack</p>
           <button>
             <a href="#contact">Contactez-moi</a>
