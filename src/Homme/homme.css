@@ -41,7 +41,7 @@ body, html, #root, .homme {
     color: white;
     text-shadow: 0px 0px 10px #0f0f0f, 0px 0px 10px #379777;
     font-family: 'Pacifico', cursive;
-    font-size: 80px;
+    font-size: 85px;
     text-transform: uppercase;
     overflow: hidden; /* Garde le texte dans les limites */
     white-space: nowrap; /* Empêche le retour à la ligne */
@@ -134,7 +134,7 @@ button a {
 
     .nom {
         margin-top: 30px;
-        font-size: 44px; /* Texte principal encore plus petit */
+        font-size: 40px; /* Texte principal encore plus petit */
     }
 
     .bonjour {
