@@ -16,7 +16,7 @@ header:not(.scrolled) {
 header.scrolled {
   background-image: url('/public/h.jpg'); 
   background-size: cover;
-    background-position: left;
+  background-position: left;
   background-repeat: no-repeat;
 }
 img {
@@ -89,10 +89,10 @@ nav a:hover::after {
 }
 
 @media (max-width: 480px) {
-    .header {
+    /* .header {
         margin: 0;
         padding: 0;
-    }
+    } */
     /* .logo {
         gap: 1rem;
     } */
@@ -113,10 +113,10 @@ nav a:hover::after {
       display: flex;
       /* align-items: center;
       justify-content: center; */
-      gap: 1rem;
+      gap: 1.1rem;
       list-style: none;
       padding: 0;
-      margin-right: 50px;
+      margin-right: 55px;
       margin-top: 12px;
       /* margin: 10px 0; */
   }

@@ -100,7 +100,7 @@ table tr:hover{
 }
 @media screen and (max-width: 480px) {
     .about {
-        padding: 20px;
+        /* padding: 20px; */
         background: white;
         /* background:url(/public/skill.avif);
         background-repeat: no-repeat;
@@ -119,7 +119,7 @@ table tr:hover{
     .i {
         width: 70%; /* L'image occupe toute la largeur */
         height: 300px; /* Maintient le ratio d'aspect */
-        border-radius: 5px;
+        border-radius: 10px;
     }
 
     .contentAbout {
@@ -144,7 +144,7 @@ table tr:hover{
 
     table {
         font-size: 16px; 
-        margin-left: 40px;
+        margin-left: 30px;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -152,7 +152,7 @@ table tr:hover{
     }
 
     table th, table td {
-        padding: 10px 5px; /* Diminue les marges internes */
+        padding: 13px 15px; /* Diminue les marges internes */
     }
 
     .cv {

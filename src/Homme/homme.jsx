@@ -51,7 +51,7 @@ export default function Homme() {
           <p className="bonjour">
             Bonjour <span className="wave-hand"></span>, je suis
           </p>
-          {/* <h1 className="nom">Nizar Douirek</h1> */}
+          <h1 className="nom">Nizar Douirek</h1>
           <p className="job">Developpeur Full Stack</p>
           <button>
             <a href="#contact">Contactez-moi</a>
