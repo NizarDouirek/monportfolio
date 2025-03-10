@@ -53,7 +53,7 @@ export default function Homme() {
           </p>
           <h1 className="nom">Nizar Douirek</h1>
           <p className="job">Developpeur Full Stack</p>
-          <button>
+          <button className="btn-homme">
             <a href="#contact">Contactez-moi</a>
           </button>
        

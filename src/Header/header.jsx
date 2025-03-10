@@ -35,7 +35,7 @@ export default function Header(){
                            <li><Link to="/homme" style={{ color: isActive(["/", "/homme"]) ? '#379777' : '#495E57' }}>Accueil</Link></li>
                            <li><Link to="/about"  style={{ color: isActive(["/about"]) ? '#379777' : '#495E57' }}>À propos</Link></li>
                            <li><Link to="/skills"  style={{ color: isActive(["/skills"]) ? '#379777' : '#495E57' }}>Compétences</Link></li>
-                           <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#379777' : '#495E57' }}>CV</Link></li>
+                           <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#379777' : '#495E57' }}>Parcours</Link></li>
                            <li><Link to="/projet" style={{ color: isActive(["/projet"]) ? '#379777' : '#495E57' }}>Projets</Link></li>
                            <li><Link to="/contact" style={{ color: isActive(["/contact"]) ? '#379777' : '#495E57' }}>Contact</Link></li>
                            
@@ -47,7 +47,7 @@ export default function Header(){
                         <li><Link to="/homme" style={{ color: isActive(["/", "/homme"]) ? '#379777' : 'black' }}><i className="fas fa-home"></i> <span style={{ color: isActive(["/", "/homme"]) ? '#379777' : 'black' }}>homme</span></Link></li>
                         <li><Link to="/about" style={{ color: isActive(["/about"]) ? '#379777' : 'black' }}><i className="fas fa-user"></i><span style={{ color: isActive(["/about"]) ? '#379777' : 'black' }}>About</span></Link></li>
                         <li><Link to="/skills" style={{ color: isActive(["/skills"]) ? '#379777' : 'black' }}><i className="fas fa-code"></i><span style={{ color: isActive(["/skills"]) ? '#379777' : 'black' }}>skills</span></Link></li>
-                        <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#379777' : 'black' }}><i className="fas fa-file-alt"></i><span style={{ color: isActive(["/cv"]) ? '#379777' : 'black' }}>cv</span></Link></li> 
+                        <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#379777' : 'black' }}><i className="fas fa-file-alt"></i><span style={{ color: isActive(["/cv"]) ? '#379777' : 'black' }}>Parcours</span></Link></li> 
                         <li><Link to="/projet" style={{ color: isActive(["/projet"]) ? '#379777' : 'black' }}><i className="fas fa-briefcase"></i><span style={{ color: isActive(["/projet"]) ? '#379777' : 'black' }}>projet</span></Link></li>
                         <li><Link to="/contact" style={{ color: isActive(["/contact"]) ? '#379777' : 'black' }}><i className="fas fa-envelope"></i><span style={{ color: isActive(["/contact"]) ? '#379777' : 'black' }}>contact</span></Link></li>
                      </ul>

@@ -40,20 +40,38 @@
     background:linear-gradient(60deg, #3a716a, #06107b );
 }
 .visit{
-    background-color: #3a716a;
+    margin-top: 5px;
+    background-color: #397a71;
     font-family: roboto;
     font-size: 17px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #40a295;
+   color: white; 
+    cursor: url("/public/cr1.cur"),auto;
 }
 
 .visit2{
+    margin-top: 5px;
     background-color: #9843bf;
     font-family: roboto;
     font-size: 17px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #e4b2fb;
+   color: white; 
+    cursor: url("/public/cr1.cur"),auto;
 }
 .visit3{
-    background-color: #0c4047;
+    margin-top: 5px;
+    background-color: #12695d;
     font-family: roboto;
     font-size: 17px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #40a295;
+   color: white; 
+    cursor: url("/public/cr1.cur"),auto;
 }
 
 .sectionP2 {
@@ -94,16 +112,47 @@
     margin-top: 8px;
 }
 .sectionP4 h1{
-    color: rgb(80, 12, 12);
+    color: rgb(102, 17, 17);
     
     font-family: roboto;
     
 }
 
 .visit4{
+    margin-top: 5px;
     background-color: #a30827;
     font-family: roboto;
     font-size: 17px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ff738f;
+   color: white; 
+    cursor: url("/public/cr1.cur"),auto;
+    
+}
+.visit4:hover {
+    cursor: url("/public/cr1.cur"),auto;
+    background: linear-gradient(80deg, #a30827, #fd0d3d); /* Légère variation de couleur */
+    box-shadow: 0 0 20px 8px rgba(189, 56, 83, 0.7); /* Effet lumineux plus fort */
+    transform: scale(1.05); /* Léger agrandissement */
+}
+.visit3:hover {
+    cursor: url("/public/cr1.cur"),auto;
+    background: linear-gradient(80deg, #1f8795, #0d6e7b); /* Légère variation de couleur */
+    box-shadow: 0 0 20px 8px #0c4047; /* Effet lumineux plus fort */
+    transform: scale(1.05); /* Léger agrandissement */
+}
+.visit2:hover {
+    cursor: url("/public/cr1.cur"),auto;
+    background: linear-gradient(80deg, #a715c4, #79168c); /* Légère variation de couleur */
+    box-shadow: 0 0 20px 8px #6d0a81; /* Effet lumineux plus fort */
+    transform: scale(1.05); /* Léger agrandissement */
+}
+.visit:hover {
+    cursor: url("/public/cr1.cur"),auto;
+    background: linear-gradient(80deg, #1f8795, #1b5f68); /* Légère variation de couleur */
+    box-shadow: 0 0 20px 8px #09434a; /* Effet lumineux plus fort */
+    transform: scale(1.05); /* Léger agrandissement */
 }
 
 .projet{

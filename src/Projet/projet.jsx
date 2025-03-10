@@ -42,7 +42,9 @@ export default function Projet(){
                             <img src="mysql.png" alt="" />
                        </div>
                        <a href="https://github.com/NizarDouirek/Agence_Voyage">
-                       <button className="visit">Visiter Site</button>
+                       <button className="visit">visit Repository
+                       <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
+                       </button>
                        </a>
                     </div>
                    
@@ -63,7 +65,9 @@ export default function Projet(){
                             <img src="bootstrap.png" alt="" />
                        </div>
                        <a href= "https://github.com/NizarDouirek/gestionBien">
-                       <button className="visit2">Visiter Site</button>
+                       <button className="visit2">visit Repository
+                       <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
+                       </button>
                        </a>
                     </div>
                    <div className="imgsite-container">
@@ -86,7 +90,9 @@ export default function Projet(){
                             
                        </div>
                        <a href="https://github.com/NizarDouirek/StoreElec">
-                       <button className="visit3">Visiter Site</button>
+                       <button className="visit3">visit Repository
+                       <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
+                       </button>
                        </a>
                     </div>
                    
@@ -110,7 +116,10 @@ export default function Projet(){
                             
                        </div>
                        <a href="#">
-                       <button className="visit4">Visiter Site</button>
+                       <button className="visit4">visit Repository
+                       <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
+                       </button>
+                       
                        </a>
                     </div>
                    

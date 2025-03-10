@@ -34,7 +34,7 @@ export default function Cv() {
         <>
                 {/* <Header/> */}
         <div id="cv" className="cv2">
-        <Title text="Cv" size="xl" color="primary" />
+        <Title text="Parcours" size="xl" color="primary" />
             {/* <h1  className="titre1">CV</h1> */}
             <div className="fe">
                 {/* Section Formation */}

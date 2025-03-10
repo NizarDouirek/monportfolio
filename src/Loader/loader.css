@@ -138,5 +138,7 @@
 @media screen and (max-width: 480px) {
     .loading-text {
         text-align: center;
+        align-items: center;
     }
+
 }
