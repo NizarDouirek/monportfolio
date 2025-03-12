@@ -29,15 +29,15 @@ export default function Homme() {
     });
   };
 
-  // // Ajout de l'écouteur d'événements pour surveiller le défilement
-  // useEffect(() => {
-  //   window.addEventListener('scroll', toggleVisibility);
+  // Ajout de l'écouteur d'événements pour surveiller le défilement
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
     
-  //   // Nettoyage de l'écouteur d'événements au démontage
-  //   return () => {
-  //     window.removeEventListener('scroll', toggleVisibility);
-  //   };
-  // }, []);
+    // Nettoyage de l'écouteur d'événements au démontage
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
 
   if (!isLoaded) {
     return <Loader setIsLoaded={setIsLoaded} />;

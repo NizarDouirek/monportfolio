@@ -100,24 +100,19 @@ nav a:hover::after {
         
         display: none;
     }
-    .logo h1 {
-        display: none;
-    }
-    .logo .prenom {
-        display: none;
-    }
+    
     .navbar {
         display: none !important;
     }
     .navbar-icons ul {
       display: flex;
-      /* align-items: center;
-      justify-content: center; */
+      align-items: center;
+      justify-content: center;
       gap: 1.1rem;
       list-style: none;
       padding: 0;
-      margin-right: 55px;
-      margin-top: 12px;
+      /* margin-right: 55px; */
+      /* margin-top: 12px; */
       /* margin: 10px 0; */
   }
   .navbar-icons a{

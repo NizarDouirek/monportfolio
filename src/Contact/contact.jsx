@@ -49,11 +49,11 @@ export default function Contact() {
                             Contactez-moi sur n'importe quel réseau social de votre choix ! 😊📩
                         </p>
                         <div className="social-icons">
-                            <a href="https://wa.me/212699862707"><FaWhatsapp className="icon" /></a>
-                            <a href="https://linkedin.com"><FaLinkedin className="icon" /></a>
+                            <a href="https://wa.me/212699862707&text=Bonjour 👋, je suis intéressé par vos services et j'aimerais en savoir plus"><FaWhatsapp className="icon" /></a>
+                            <a href="https://www.linkedin.com/in/nizar-douirek123/"><FaLinkedin className="icon" /></a>
                             <a href="mailto:douireknizar@gmail.com"><FaEnvelope className="icon" /></a>
-                            <a href="https://instagram.com"><FaInstagram className="icon" /></a>
-                            <a href="https://facebook.com"><FaFacebook className="icon" /></a>
+                            <a href="https://www.instagram.com/nizar_douirek"><FaInstagram className="icon" /></a>
+                            <a href="https://web.facebook.com/nizar.douirek.50"><FaFacebook className="icon" /></a>
                         </div>
                     </div>
 
