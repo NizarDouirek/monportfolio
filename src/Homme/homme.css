@@ -136,7 +136,8 @@ body, html, #root, .homme {
 
     .nom {
         margin-top: 30px;
-        font-size: 40px; /* Texte principal encore plus petit */
+        
+        font-size: 35px; /* Texte principal encore plus petit */
     }
 
     .bonjour {

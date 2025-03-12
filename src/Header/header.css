@@ -96,7 +96,7 @@ nav a:hover::after {
     gap: 1.1rem;
     list-style: none;
     padding: 0;
-    margin-left: -18px;
+    margin-left: -16px;
     /* margin-top: 12px; */
     /* margin: 10px 0; */
 }
@@ -129,7 +129,7 @@ nav a:hover::after {
       gap: 1.1rem;
       list-style: none;
       padding: 0;
-      margin-right: 55px;
+      margin-right: 50px;
       margin-top: 12px;
       /* margin: 10px 0; */
   }
