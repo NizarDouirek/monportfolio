@@ -58,7 +58,7 @@ body, html, #root, .homme {
         width: 15ch; /* Ajustez à la longueur de "Nizar Douirek" */
     }
     75% {
-        width: 15ch; /* Maintient l'état écrit pendant 3 secondes */
+        width: 15ch; 
     }
     90%{
         width: 15ch;
@@ -123,6 +123,10 @@ body, html, #root, .homme {
 
 
 @media screen and (max-width: 480px) {
+    body, html, #root {
+        
+        /* overflow-x: hidden; */
+      }
     .homme{
         height: 650px;
     }
