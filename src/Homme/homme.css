@@ -2,7 +2,7 @@ body, html, #root, .homme {
     height: 100%;
     display: flex;
     flex-direction: column; 
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
  
 .homme{

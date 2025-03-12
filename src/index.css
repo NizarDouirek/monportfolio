@@ -11,8 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden; /* Empêche le débordement horizontal */
   width: 100%;
+  overflow-x: hidden;
   
   cursor: url('/public/cr.cur'), auto;
 }
