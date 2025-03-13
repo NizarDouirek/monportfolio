@@ -71,7 +71,7 @@ body, html, #root, .homme {
 /* Animation pour le curseur clignotant */
 @keyframes blink {
     from {
-        border-right: 2px solid black;
+        border-right: 2px solid #046748;
     }
     to {
         border-right: 2px solid transparent;
@@ -125,7 +125,7 @@ body, html, #root, .homme {
 @media screen and (max-width: 480px) {
     body, html, #root {
         
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
       }
     .homme{
         height: 650px;
