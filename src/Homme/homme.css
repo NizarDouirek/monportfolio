@@ -130,6 +130,10 @@ body, html, #root, .homme {
     .homme{
         height: 650px;
     }
+    .decoration {
+        content: none;
+        display: none;
+    }
     .container {
         margin-top: 50%; /* Déplace plus bas sur les petits écrans */
     }
@@ -231,7 +235,7 @@ body, html, #root, .homme {
     height: 17em;
     width: 25em;
     overflow: hidden;
-    z-index: 2;
+    /* z-index: 2; */
   }
   
   .carre {

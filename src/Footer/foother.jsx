@@ -73,22 +73,22 @@ export default function Footer() {
           Footer Links
         </h3>
         <li>
-          <a href="homme">Acceuil</a>
+          <a href="/homme">Acceuil</a>
         </li>
         <li>
-          <a href="about">A propos</a>
+          <a href="/about">A propos</a>
         </li>
         <li>
-          <a href="skills">compétance</a>
+          <a href="/skills">compétance</a>
         </li>
         <li>
-          <a href="projet">Projet</a>
+          <a href="/projet">Projet</a>
         </li>
         <li>
-          <a href="Cv">CV</a>
+          <a href="/Cv">CV</a>
         </li>
         <li>
-          <a href="contact">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
       </ul>
       <p className="copyright">

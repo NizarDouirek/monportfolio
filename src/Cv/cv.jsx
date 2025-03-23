@@ -73,10 +73,23 @@ export default function Cv() {
                     </div>
                     <div className="divcv">
                     <div className="groupcv">
+                    <img src="tecknaps.png" style={{borderRadius:'50%'}} alt="" />
+                    <h2>Stage Développeur Frontend, TECHNAPS</h2>
+                    </div>
+                    <span className="date">Décembre 2024 - Février 2025</span>
+                    <p>
+                        Développement de l'interface d'un site web de
+                        réservation d'hôtels, de voitures et de restaurants<br />
+                        <span className="role">Technologies utilisées :</span> React.js, CSS
+                    </p>
+                    </div>
+                    <br />
+                    <div className="divcv">
+                    <div className="groupcv">
                     <img src="sirecom.png" alt="" />
                     <h2>Stage Développeur, SIRECOM</h2>
                     </div>
-                    <span className="date">2024 - 2 mois</span>
+                    <span className="date">MARS 2024 - MAI 2024</span>
                     <p>
                         Développement d'une application de gestion de biens<br />
                         <span className="role">Technologies utilisées :</span> PHP, Laravel, MySQL, CSS, Bootstrap
@@ -89,14 +102,14 @@ export default function Cv() {
                     
                     <h2>Projet Académique, ISTA</h2>
                     </div>
-                    <span className="date">2024 - 3 mois</span>
+                    <span className="date"> JANVIER 2024 - Avril 2024</span>
                     <p>
                         Conception et développement d'un site web d'une agence de voyage<br />
-                        <span className="role">Technologies utilisées :</span> HTML, CSS, React, Laravel, MySQL
+                        <span className="role">Technologies utilisées :</span> HTML, CSS, React.js, Laravel, MySQL
                     </p>
                     </div>
                     <br />
-                    <div className="divcv">
+                    {/* <div className="divcv">
                     <div className="groupcv">
                     <img src="ofppt.png" alt="" />
                     <h2>Projet Académique (en binôme), ISTA</h2>
@@ -107,7 +120,7 @@ export default function Cv() {
                         <span className="role">Technologies utilisées :</span> HTML, CSS, Bootstrap, Angular, Node.js<br />
                         <span className="role">Rôle :</span> Responsable de la conception et du développement d’une interface intuitive, création de pages réactives, intégration de styles et optimisation de l'expérience utilisateur
                     </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

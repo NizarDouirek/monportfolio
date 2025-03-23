@@ -22,14 +22,14 @@
   .footer .social a {
     font-size: 30px;
     cursor: url('/public/cr1.cur'), auto;
-    color: #878787;
+    color: #1b5542;
     margin: 0 10px;
     transition: transform 0.3s ease, color 0.3s ease;
   }
   
   .footer .social a:hover {
     transform: scale(1.2);
-    color: #1b5542;
+    color: #26ae81;
   }
   
   .footer-break {

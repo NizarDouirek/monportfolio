@@ -14,15 +14,15 @@ header:not(.scrolled) {
 
 /* Style lorsque l'utilisateur a défilé */
 header.scrolled {
-  background-image: url('/public/h.jpg'); 
+  background-image: url('/public/ban.jpg'); 
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
 }
 img {
-  /* margin-top: -5px; */
+  margin-top: -7px;
   width: 120px;
-  height: 70px;
+  height: 90px;
 }
 .logo {
   margin-left: 50px;
