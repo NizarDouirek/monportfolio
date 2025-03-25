@@ -76,11 +76,11 @@ export default function Cv() {
                     <img src="tecknaps.png" style={{borderRadius:'50%'}} alt="" />
                     <h2>Stage Développeur Frontend, TECHNAPS</h2>
                     </div>
-                    <span className="date">Décembre 2024 - Février 2025</span>
+                    <span className="date">Décembre 2024 - Mars 2025</span>
                     <p>
                         Développement de l'interface d'un site web de
                         réservation d'hôtels, de voitures et de restaurants<br />
-                        <span className="role">Technologies utilisées :</span> React.js, CSS
+                        <span className="role">Technologies utilisées :</span> React.js, CSS, MongoDB
                     </p>
                     </div>
                     <br />
@@ -91,7 +91,7 @@ export default function Cv() {
                     </div>
                     <span className="date">MARS 2024 - MAI 2024</span>
                     <p>
-                        Développement d'une application de gestion de biens<br />
+                        Développement d'une application de gestion des équipements informatiques et matériels de l'entreprise<br />
                         <span className="role">Technologies utilisées :</span> PHP, Laravel, MySQL, CSS, Bootstrap
                     </p>
                     </div>
