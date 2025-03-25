@@ -68,7 +68,7 @@ export default function About() {
                     </div>
                     <button className="cv">
                         <a
-                            href="MonCV.pdf"
+                            href="NizarCV.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
