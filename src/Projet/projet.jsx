@@ -35,11 +35,11 @@ export default function Projet(){
                        dans les plus belles destinations du monde.</p><br />
                        <div className="tec">
                             
-                            <img src="react.png" alt="" />
-                            <img src="css.png" alt="" />
-                            <img src="bootstrap.png" alt="" />
-                            <img src="laravel.png" alt="" />
-                            <img src="mysql.png" alt="" />
+                            <img src="react.png" alt=""  title="React.js"/>
+                            <img src="css.png" alt=""  title="CSS"/>
+                            <img src="bootstrap.png" alt=""  title="Bootstrap"/>
+                            <img src="laravel.png" alt=""  title="Laravel"/>
+                            <img src="mysql.png" alt=""  title="MySQL"/>
                        </div>
                        <a href="https://github.com/NizarDouirek/Agence_Voyage">
                        <button className="visit">visit Repository
@@ -59,10 +59,10 @@ export default function Projet(){
                       liées à la gestion des biens de l'entreprise (ordinateurs , imprimantes…). Elle permet aux 
                         gestionnaires  de suivre efficacement leurs biens et d’organiser les données.</p><br />
                        <div className="tec">
-                            <img src="laravel.png" alt="" />
-                            <img src="php.png" alt="" />
-                            <img src="css.png" alt="" />
-                            <img src="bootstrap.png" alt="" />
+                            <img src="laravel.png" alt="" title="Laravel" />                
+                            <img src="css.png" alt=""  title="CSS"/>
+                            <img src="bootstrap.png" alt=""  title="Bootstrap"/>
+                            <img src="mysql.png" alt=""  title="MySQL"/>
                        </div>
                        <a href= "https://github.com/NizarDouirek/gestionBien">
                        <button className="visit2">visit Repository
@@ -83,10 +83,10 @@ export default function Projet(){
                          sélection de marques populaires, offrant ainsi aux clients un large éventail 
                           d'options pour répondre à leurs besoins technologiques</p><br />
                        <div className="tec">
-                            <img src="html.png" alt="" />
-                            <img src="css.png" alt="" />
-                            <img src="bootstrap.png" alt="" />
-                            <img src="angular.svg" alt="" />
+                            <img src="html.png" alt=""   title="Html"/>
+                            <img src="css.png" alt="" title="CSS"/>
+                            <img src="bootstrap.png" alt="" title="Bootstrap" />
+                            <img src="angular.svg" alt=""  title="Angular"/>
                             
                        </div>
                        <a href="https://github.com/NizarDouirek/StoreElec">
@@ -109,10 +109,11 @@ export default function Projet(){
                       à des analyses personnalisées pour améliorer leur bien-être et 
                       atteindre leurs objectifs de fitness.</p><br />
                        <div className="tec">
-                            <img src="html.png" alt="" />
-                            <img src="css.png" alt="" />
-                            <img src="laravel.png" alt="" />
-                            <img src="react.png" alt="" />
+                            <img src="html.png" alt="" title="HTML"/>
+                            <img src="css.png" alt="" title="CSS"/>
+                            <img src="laravel.png" alt="" title="Laravel"/>
+                            <img src="react.png" alt="" title="React.js"/>
+                            <img src="mongo-db.png" alt="" title="MongoDB" />
                             
                        </div>
                        <a href="#">

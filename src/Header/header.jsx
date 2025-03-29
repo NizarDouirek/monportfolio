@@ -27,12 +27,12 @@ export default function Header(){
         <div>
             <header  className={isScrolled ? "scrolled" : ""}>
                 <div className="logo">
-                  <img src="fin.png"/>
+                  <img src="dn.png"/>
                   {/* <h1>Nizar <span className="prenom">Douirek</span></h1> */}
                   <div className="navbar">
                       <nav>
                         <ul>
-                           <li><Link to="/homme" style={{ color: isActive(["/", "/homme"]) ? '#379777' : '#495E57' }}>Accueil</Link></li>
+                           <li><Link to="/homme" style={{ color: isActive(["/", "/homme"]) ? '#32ca97' : '#495E57' }}>Accueil</Link></li>
                            <li><Link to="/about"  style={{ color: isActive(["/about"]) ? '#379777' : '#495E57' }}>À propos</Link></li>
                            <li><Link to="/skills"  style={{ color: isActive(["/skills"]) ? '#379777' : '#495E57' }}>Compétences</Link></li>
                            <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#379777' : '#495E57' }}>Parcours</Link></li>

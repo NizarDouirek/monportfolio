@@ -14,15 +14,32 @@ header:not(.scrolled) {
 
 /* Style lorsque l'utilisateur a défilé */
 header.scrolled {
-  background-image: url('/public/ban.jpg'); 
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
+  /* background-image: url('/public/bgheader.avif');  */
+  /* background-color: transparent;
+  backdrop-filter: blur(5px) brightness(170%); */
+  /* background: linear-gradient(80deg,#e6f2ee,#99c6b7,#99c6b7,#495E57); */
+  background: linear-gradient(135deg,white, hsl(155, 48%, 91%), #e6f7ff  , #d7f3ea); 
+  background-size: 200% 200%; 
+  animation: gradientAnimation 10s ease infinite;
+  /* background-size: cover; */
+  /* background-position: left; */
+  /* background-repeat: no-repeat; */
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 img {
-  margin-top: -7px;
+  margin-top: -15px;
   width: 120px;
-  height: 90px;
+  height: 100px;
 }
 .logo {
   margin-left: 50px;

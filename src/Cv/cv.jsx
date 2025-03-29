@@ -49,17 +49,20 @@ export default function Cv() {
                      <div className="groupcv">
                         <img src="ofppt.png" alt="" />
                         <h2>Technicien spécialisé en développement digital option ‘full-stack web’</h2>
+                     
                       </div>
                       <span className="date">2022 - 2024</span>
-                      <p className="p">
+                      <p className="p" style={{letterSpacing:'1px',fontWeight:'bold'}}>
                         A l'institut spécialisé en technologie appliquée NTIC 1, Casablanca
-                      </p>
+                      </p><br />
+                      <p > Formation axée sur le développement web , incluant
+                      des projets pratiques avec React.js et Laravel </p>
                     </div>
                     <br /><br />
                     <div className="divcv">
-                    <h2>Baccalauréat en Sciences de la Vie et de la Terre</h2>
+                    <h2 >Baccalauréat en Sciences de la Vie et de la Terre</h2>
                     <span className="date">2021 - 2022</span>
-                    <p className="p">En Lycée Ibno-Khatib, Casablanca</p>
+                    <p className="p" style={{letterSpacing:'1px',fontWeight:'bold'}}>En Lycée Ibno-Khatib, Casablanca</p>
                     </div>
                 </div>
                 <hr />
@@ -74,7 +77,7 @@ export default function Cv() {
                     <div className="divcv">
                     <div className="groupcv">
                     <img src="tecknaps.png" style={{borderRadius:'50%'}} alt="" />
-                    <h2>Stage Développeur Frontend, TECHNAPS</h2>
+                    <h2>Stage Développeur Full stack, TECHNAPS</h2>
                     </div>
                     <span className="date">Décembre 2024 - Mars 2025</span>
                     <p>
