@@ -84,7 +84,9 @@ export default function Cv() {
                         Développement de l'interface d'un site web de
                         réservation d'hôtels, de voitures et de restaurants<br />
                         <span className="role">Technologies utilisées :</span> React.js, CSS, MongoDB
-                    </p>
+                    </p><br />
+                    <button className="see-more-btn"><a href="attestationTeckNaps.pdf" 
+                    target="_blank" rel="noopener noreferrer" >attestation</a></button>
                     </div>
                     <br />
                     <div className="divcv">

@@ -278,3 +278,31 @@ hr {
     width: 50px;
     height: 50px;
 }
+.see-more-btn {
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #aacec6, #FFFAEC);
+    border: none;
+    border-radius: 25px;
+    margin-left: 420px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    display: inline-block;
+  }
+  .see-more-btn a{
+    text-decoration:none;
+    color: rgb(32, 85, 57);
+  }
+  
+  .see-more-btn:hover {
+    background: linear-gradient(45deg, #d9e7e4, #aacec6);
+    transform: scale(1.05);
+  }
+  
+  .see-more-btn:active {
+    transform: scale(0.95);
+  }
+  
