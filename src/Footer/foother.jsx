@@ -15,7 +15,8 @@ export default function Footer() {
         role="navigation"
         aria-labelledby="social-heading"
       >
-        <h1>Contactez moi</h1>
+        <img style={{width:130}} src="dn.png" alt="" />
+        {/* <h1>Contactez moi</h1> */}
         <br />
         <a id="i"
           href="https://web.facebook.com/nizar.douirek.50"

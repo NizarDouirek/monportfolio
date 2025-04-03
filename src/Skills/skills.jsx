@@ -13,7 +13,7 @@ const Skills = () => {
     },
     {
       name: "Développeur BackEnd",
-      image: "back.jpg",
+      image: "zz.jpg",
       description:
         "Je crée  des solutions backend performantes et sur mesure, garantissant fiabilité, évolutivité et sécurité. Avec une expertise reconnue en PHP et Laravel. Maîtrisant les bases de données relationnelles et NoSQL."
     },

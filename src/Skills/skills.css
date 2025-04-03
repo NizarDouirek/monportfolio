@@ -54,7 +54,7 @@
     box-sizing:border-box;
     transform-origin:left;
     z-index:1;
-    transition:1s;
+    transition:2s;
   }
   
   .cardskills .img-container img{
@@ -64,6 +64,7 @@
     height:100%;
     width:100%;
     object-fit:cover;
+    margin-top: 0.1px;
   }
   
   .cardskills:hover .img-container{

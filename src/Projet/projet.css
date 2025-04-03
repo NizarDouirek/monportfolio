@@ -70,7 +70,7 @@
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #40a295;
-   color: white; 
+    color: white; 
     cursor: url("/public/cr1.cur"),auto;
 }
 
@@ -80,6 +80,7 @@
     justify-content: space-around;
     /* border: 1px solid white; */
     border-radius: 10px;
+    /* height: 290px; */
     background:linear-gradient(60deg, #5f2196, #a715c4 );
 }
 .sectionP3 {

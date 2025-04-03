@@ -71,7 +71,7 @@ export default function Projet(){
                        </a>
                     </div>
                    <div className="imgsite-container">
-                   <img  className="imgsite"src="gbien.png" alt="" />
+                   <img  className="imgsite"src="gbien.png" alt="" style={{marginTop:"0.1px"}}/>
                    </div>
                 </div><br /><br />
                 <div className="sectionP3">
