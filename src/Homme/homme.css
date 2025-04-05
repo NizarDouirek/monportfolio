@@ -161,10 +161,10 @@ body, html, #root, .homme {
     }
    
     .marq p{
-        margin-top: 40px;
-        font-size: 10px;
+        /* margin-top: 40px;
+        font-size: 10px; */
         /* display: block; */
-        /* display: none; */
+        display: none;
     }
 }
 @media screen and (min-width: 760px) and (max-width: 1060px) {
