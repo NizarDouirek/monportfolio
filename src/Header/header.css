@@ -2,7 +2,7 @@ header {
   /* background-color: black; */
   width: 100%;
   overflow: hidden; /* Empêche les débordements */
-  max-width: 100%;
+  /* max-width: 100%; */
   box-sizing: border-box;
   position: fixed;
   z-index: 100;

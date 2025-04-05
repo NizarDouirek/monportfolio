@@ -211,7 +211,7 @@ hr {
 
 @media screen and (max-width: 480px) {
     .cv2 {
-        
+        margin-top: 20px;
         padding: 30px;
     }
 
@@ -286,7 +286,7 @@ hr {
     background: linear-gradient(45deg, #aacec6, #FFFAEC);
     border: none;
     border-radius: 25px;
-    margin-left: 420px;
+    /* margin-left: 420px; */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     outline: none;

@@ -132,7 +132,7 @@ export default function Projet(){
                  
                  <div class="projets-message">
     <p>
-        Des projets passionnants sont en cours de développement !!! 
+        Des projets passionnants ✨ sont en cours de développement !!! 
         {/* Restez à l'écoute pour découvrir de nouvelles créations et solutions innovantes. */}
     </p>
 </div>

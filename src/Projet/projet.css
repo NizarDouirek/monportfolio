@@ -189,7 +189,11 @@
 
 
 
-  
+@media screen and (max-width: 768px) {
+    .projets{
+        margin-top: 25px;
+    }
+}
  @media screen and (max-width: 768px) {
     .projets {
         padding: 20px; /* Réduction du padding pour les petits écrans */
