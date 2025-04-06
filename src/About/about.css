@@ -80,6 +80,9 @@ table td {
     
     color: #1B4242; 
 }
+table td::selection{
+    color: rgb(14, 186, 155);
+}
 table tr:hover{
     background-color: rgb(226, 255, 246);
 }

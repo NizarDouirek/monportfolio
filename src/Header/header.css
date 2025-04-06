@@ -18,7 +18,7 @@ header.scrolled {
   /* background-color: transparent;
   backdrop-filter: blur(5px) brightness(170%); */
   /* background: linear-gradient(80deg,#e6f2ee,#99c6b7,#99c6b7,#495E57); */
-  background: linear-gradient(135deg,white, hsl(155, 48%, 91%), #e6f7ff  , #d7f3ea); 
+  background: linear-gradient(135deg,white, hsl(154, 100%, 95%), #e6f7ff  , #d7f3ea); 
   background-size: 200% 200%; 
   animation: gradientAnimation 10s ease infinite;
   /* background-size: cover; */

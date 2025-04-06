@@ -41,10 +41,13 @@ export default function About() {
                     </h2>
                     {/* <h4>Développeur Full Stack</h4> */}
                     <p>
-                        Jeune diplômé en développement digital, passionné <br />
-                        par les nouvelles technologies et l'innovation, je possède <br />
-                        une solide formation en programmation et en conception <br />
-                        de solutions numériques.
+                    jeune diplômé en développement digital, passionné par la
+
+<br />
+création de solutions innovantes , avec une expertise solide <br />
+en programmation et en conception web  <br />
+
+                        
                     </p>
                     <div>
                         <table>

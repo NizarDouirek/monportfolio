@@ -270,7 +270,7 @@
     .projets {
         padding: 20px; /* Réduction du padding pour les petits écrans */
         height: auto; /* Ajuste automatiquement la hauteur */
-        background-color: black; /* Garde un contraste approprié */
+         
     }
 
     .imgsite {
