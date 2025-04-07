@@ -77,7 +77,7 @@ const Skills = () => {
       {/* Outils de Développement et Design */}
       <h1 className="titrecp">Outils de Développement et de Design</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-        {["github.png", "git.png", "figma.png", "canva.webp", "photoshop.png"].map((img, index) => (
+        {["github.png", "git.png", "postman.png","figma.png", "canva.webp", "photoshop.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img className="imgskills" src={img} alt={img.split(".")[0]} />
             <h2>{img.split(".")[0].toUpperCase()}</h2>

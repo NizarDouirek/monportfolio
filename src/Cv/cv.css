@@ -44,7 +44,8 @@
       z-index: -1;
       top: -16px;
       right: -16px;
-      background: #054044;
+      /* background: #054044; */
+      background-image: linear-gradient(25deg, #caf6e8, #025b3f, #023035, #054044);
       height: 52px;
       width: 60px;
       border-radius: 32px;
@@ -142,7 +143,7 @@ h2 {
     margin-bottom: 10px;
 }
 .date:hover{
-    background-color:#495E57 ;
+    background-color:#4c7466 ;
 }
 
 .p, p {
