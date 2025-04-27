@@ -190,9 +190,12 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .projets{
         margin-top: 25px;
+    }
+    .projets-message p{
+        font-size: 10px;
     }
 }
  @media screen and (max-width: 768px) {
@@ -258,7 +261,7 @@
         margin-top: 25px; /* Réduction de l'espacement inférieur */
     }
     .projets-message {
-        padding: 20px;
+        padding: 10px;
         max-width: 90%;
     }
 

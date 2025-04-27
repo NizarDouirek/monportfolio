@@ -26,9 +26,9 @@ export default function Loader({ setIsLoaded }) {
             <p className="loading-text">Bienvenue sur mon portfolio...</p>
             </div>
              <video 
-                src="Vid7.mp4" 
+                src="/Vid7.mp4" 
                 autoPlay 
-               
+            
                 muted 
                 className="loader-video"
             />

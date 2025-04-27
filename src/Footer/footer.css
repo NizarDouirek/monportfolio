@@ -266,6 +266,9 @@
         font-size: 29px; /* Réduire la taille des icônes */
         margin: 0 8px; /* Réduire l'espacement entre les icônes */
     }
+    .contact-foot{
+      margin-top: 20px;
+    }
 
     .footer-break {
         margin: 10px auto; /* Réduire l'espacement autour de la ligne séparatrice */
@@ -285,6 +288,9 @@
 .contact-foot p{
   display: none;
 }
+.contact-foot h1{
+  display: none;
+}
 
     .footer-links {
       flex-direction: row !important;
@@ -297,6 +303,9 @@
         font-size: 18px;
         color: rgb(1, 24, 12); /* Réduire la taille des liens */
     }
+    .footer-newsletter {
+      width: 400px; /* Réduire la largeur du formulaire */
+  }
 
     .copyright {
         font-size: 12px; /* Réduire la taille du texte de copyright */
