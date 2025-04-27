@@ -149,7 +149,7 @@ table tr:hover{
     }
 
     .i {
-        width: 70%; /* L'image occupe toute la largeur */
+        width: 75%; /* L'image occupe toute la largeur */
         height: 300px; /* Maintient le ratio d'aspect */
         border-radius: 10px;
     }
