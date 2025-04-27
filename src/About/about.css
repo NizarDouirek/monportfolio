@@ -26,12 +26,20 @@
     width: 350px;
     height: 450px;
     border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
     
-}
+    box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
+  }
+  
+  .i:hover {
+    transform: scale(3.08);
+    box-shadow: 0 0 10px rgba(51, 51, 52, 0.721);
+  }
 
 
 .contentAbout{
     font-size: 15px;
+    width: 450px;
 }
 .contentAbout h2{
     color: #1B4242;
@@ -50,6 +58,8 @@
 }
 .contentAbout p{
     color: #1B4242;
+    font-size: 18px;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
 }
 
 table {
@@ -65,6 +75,7 @@ table {
 }
 
 table th, table td {
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     padding: 15px 20px; 
     text-align: left; 
 }
@@ -91,7 +102,7 @@ table tr:hover{
 
 .cv{
     margin-top: 20px; 
-    cursor: url('/public/cr1.cur'), auto ;
+    cursor: url('/public/nnb.cur'), auto;
     background: linear-gradient(135deg, #2a6e58,  #47d8a8);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
@@ -104,10 +115,11 @@ table tr:hover{
 .cv a{
     text-decoration: none;
     color: white;
-    cursor: url("/public/cr1.cur"),auto;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    cursor: url('/public/nnb.cur'), auto;;
 }
 .cv:hover {
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;;
     background: linear-gradient(80deg, #379777, #495E57); /* Légère variation de couleur */
     box-shadow: 0 0 20px 8px rgba(61, 111, 106, 0.7); /* Effet lumineux plus fort */
     transform: scale(1.05); /* Léger agrandissement */
@@ -143,7 +155,7 @@ table tr:hover{
     }
 
     .contentAbout {
-        text-align: center; /* Centre le texte */
+        text-align: center;
         font-size: 14px; /* Réduit légèrement la taille de police */
     }
 
@@ -160,11 +172,14 @@ table tr:hover{
     .contentAbout p {
         font-size: 14px;
         line-height: 1.5;
+        width: 400px;
+        margin-left: 35px;
+        
     }
 
     table {
         font-size: 16px; 
-        margin-left: 19px;
+        margin-left: 79px;
         text-align: center;
         justify-content: center;
         align-items: center;

@@ -15,6 +15,16 @@
 .f, .ex {
     background-color: rgb(233, 238, 238);
     /* border: 2px solid #495E57; */
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.cer{
+    background-color: rgb(233, 238, 238);
+    /* border: 2px solid #495E57; */
     
     border-radius: 15px;
     padding: 20px;
@@ -62,7 +72,7 @@
   .divcv:hover {
     p {
       transition: all 0.3s ease-out;
-      color: rgba(255, 255, 255, 0.8);
+      color: rgb(233, 228, 228);
     }
     h2 {
       transition: all 0.3s ease-out;
@@ -104,6 +114,7 @@
 }
 
 .log h1 {
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     font-size: 1.8rem;
     color: #495E57;
     text-align: center;
@@ -118,7 +129,7 @@
     height: 4px; 
     /* color: black; */
     display: block;
-    background-color: #3dbdac;
+    background-color: #278579;
     position: absolute;
     transition: width 0.4s ease-in-out; 
 
@@ -129,13 +140,13 @@
 
 h2 {
     font-size: 1.4rem;
-    color: #191f1d;
+    color: #163726;
     margin: 10px 0;
 }
 
 .date {
     display: inline-block;
-    
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     background-color: #3a716a;
     color: white;
     padding: 5px 10px;
@@ -147,7 +158,7 @@ h2 {
 }
 
 .p, p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #495E57;
 }
 
@@ -223,12 +234,17 @@ hr {
         margin-top: 20px;
     }
 
-    .f, .ex {
+    .f, .ex ,.cer {
         width: 100%;
         max-width: 400px;
         padding: 15px;
         margin-left: -3px;
         font-size: 0.9rem;
+    }
+    .imgcertif{
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 20px; */
     }
     .ex{
         margin-top: -35px;
@@ -248,9 +264,15 @@ hr {
         width: 35px;
         height: 35px;
     }
+    
 
     .log h1 {
         font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .log2 h1{
+        /* font-size: 1.5rem; */
         text-align: center;
         margin-bottom: 20px;
     }
@@ -267,6 +289,9 @@ hr {
     p {
         font-size: 0.9rem;
     }
+    .cer{
+        display: none;
+    }
 }
 .groupcv{
     display: flex;
@@ -278,6 +303,7 @@ hr {
 .groupcv img{
     width: 50px;
     height: 50px;
+    margin-top: 1px;
 }
 .see-more-btn {
     padding: 8px 10px;
@@ -288,7 +314,7 @@ hr {
     border: none;
     border-radius: 25px;
     /* margin-left: 420px; */
-    cursor: pointer;
+    cursor: url('/public/nnb.cur'), auto;
     transition: all 0.3s ease-in-out;
     outline: none;
     display: inline-block;
@@ -296,14 +322,148 @@ hr {
   .see-more-btn a{
     text-decoration:none;
     color: rgb(32, 85, 57);
+    cursor: url('/public/nnb.cur'), auto;
   }
   
   .see-more-btn:hover {
     background: linear-gradient(45deg, #d9e7e4, #aacec6);
     transform: scale(1.05);
+    cursor: url('/public/nnb.cur'), auto;
   }
   
   .see-more-btn:active {
     transform: scale(0.95);
+  }
+  .log2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.log2 h1 {
+    /* font-size: 1.8rem; */
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    color: #495E57;
+    text-align: center;
+    position: relative;
+    margin: 0 auto 30px auto; /* ✅ Centré horizontalement */
+    width: fit-content;
+}
+.log2 h1::after{
+    content: "";
+    bottom: -5px;
+    width: 20%;
+    height: 4px; 
+    /* color: black; */
+    display: block;
+    background-color: #278579;
+    position: absolute;
+    transition: width 0.4s ease-in-out; 
+
+}
+.log2 h1:hover::after{
+    width: 100%;
+}
+.imgcertif{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    overflow-x: auto;
+    cursor: url('/public/nnb.cur'), auto;
+
+}
+.itemcertif {
+    max-width: 600px;
+    height: 500px;
+    /* margin: 2rem auto; */
+    background: #edecec;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    scrollbar-width: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 calc(100% / 3 - 20px); /* 3 items par vue */scroll-snap-align: start;
+  }
+  
+  .itemcertif:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  }
+  
+  .itemcertif img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #e9e4e4;
+    cursor: url('/public/nnb.cur'), auto;
+  }
+  
+  .certif-text {
+    padding: 1.5rem;
+  }
+  
+  .certif-text h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #274c47;
+  }
+  
+  .certif-text h3 span {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #5c7268;
+  }
+  
+  .certif-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #2c5c55;
+  }
+  
+  .certif-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  
+  
+  .imgcertif::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
+  .arrow {
+    background-color: #1b6355;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: url('/public/nnb.cur'), auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .arrow.left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .arrow.right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
   

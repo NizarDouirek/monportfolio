@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./about.css";
 import Header from "../Header/header";
 import Title from "../Constant/Titre";
+import { motion } from "framer-motion";
 
 export default function About() {
     const [isVisible, setIsVisible] = useState(false);
@@ -36,20 +37,38 @@ export default function About() {
             <div className={`containe ${isVisible ? "slide-in" : ""}`}>
                 <img className={`i ${isVisible ? "slide-left" : ""}`} src="profillinkd.jpg" alt="Profil" />
                 <div className={`contentAbout ${isVisible ? "slide-right" : ""}`}>
-                    <h2>
+                    <motion.h2 variants={{
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0 }
+  }}
+  initial="hidden"
+  animate={isVisible ? "visible" : "hidden"}
+  transition={{ delay: 1, duration: 0.2 }}>
                         <span>Bonjour! Je suis</span> Nizar Douirek
-                    </h2>
+                    </motion.h2>
                     {/* <h4>Développeur Full Stack</h4> */}
-                    <p>
+                    <motion.p variants={{
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 }
+  }}
+  initial="hidden"
+  animate={isVisible ? "visible" : "hidden"}
+  transition={{ delay: 1, duration:1.5 }}>
                     jeune diplômé en développement digital, passionné par la
 
-<br />
-création de solutions innovantes , avec une expertise solide <br />
+
+création de solutions innovantes , avec une expertise solide 
 en programmation et en conception web  <br />
 
                         
-                    </p>
-                    <div>
+                    </motion.p>
+                    <motion.div variants={{
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0 }
+  }}
+  initial="hidden"
+  animate={isVisible ? "visible" : "hidden"}
+  transition={{ delay: 1, duration: 1.3 }}>
                         <table>
                             <tr>
                                 <td>Téléphone</td>
@@ -68,16 +87,22 @@ en programmation et en conception web  <br />
                                 <td>Arabe, Français, Anglais</td>
                             </tr>
                         </table>
-                    </div>
-                    <button className="cv">
+                    </motion.div>
+                    <motion.button className="cv" variants={{
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 }
+  }}
+  initial="hidden"
+  animate={isVisible ? "visible" : "hidden"}
+  transition={{ delay: 1, duration: 1.6 }}>
                         <a
-                            href="NizarCV.pdf"
+                            href="NizarDouirek-CV (1).pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            télécharger CV
+                            Télécharger Cv
                         </a>
-                    </button>
+                    </motion.button>
                 </div>
             </div>
         </div>

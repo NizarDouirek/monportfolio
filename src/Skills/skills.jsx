@@ -7,19 +7,19 @@ const Skills = () => {
   const characters = [
     {
       name: "Développeur FrontEnd",
-      image: "front.avif",
+      image: "1i.avif",
       description:
         "Passionné par la conception d'interfaces modernes et intuitives, des designs élégants et fonctionnels, je transforme les idées en expériences web performantes. Expert en HTML, CSS, Bootstrap, JavaScript et React."
     },
     {
       name: "Développeur BackEnd",
-      image: "k1.jpg",
+      image: "2i.avif",
       description:
         "Je crée  des solutions backend performantes et sur mesure, garantissant fiabilité, évolutivité et sécurité. Avec une expertise reconnue en PHP et Laravel. Maîtrisant les bases de données relationnelles et NoSQL."
     },
     {
       name: "Designer",
-      image: "design.webp",
+      image: "i3.avif",
       description:
         "Je suis passionné par le design et j’ai développé une expertise sur des outils comme Figma, Canva et Adobe Photoshop, me permettant de créer des interfaces modernes et attrayantes 🎨✨"
     }
@@ -38,7 +38,7 @@ const Skills = () => {
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            transition={{ duration: 1, delay: index * 0.2 }}
             whileHover={{ scale: 1.05 }}
           >
             <div className="img-container">
@@ -54,7 +54,7 @@ const Skills = () => {
 
       {/* Langages et Frameworks */}
       <h1 className="titrecp">Langages et Frameworks</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5}}>
         {["html.png", "css.png", "javascript.png", "php.png", "bootstrap.png", "react.png","react-native.png", "laravel.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img className="imgskills" src={img} alt={img.split(".")[0]} />
@@ -65,7 +65,7 @@ const Skills = () => {
 
       {/* Bases de données */}
       <h1 className="titrecp">Base de données</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
         {["mysql.png", "mongo-db.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img className="imgskills" src={img} alt={img.split(".")[0]} />
@@ -76,8 +76,8 @@ const Skills = () => {
 
       {/* Outils de Développement et Design */}
       <h1 className="titrecp">Outils de Développement et de Design</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-        {["github.png", "git.png", "postman.png","figma.png", "canva.webp", "photoshop.png"].map((img, index) => (
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
+        {[ "git.png","github.png", "postman.png","figma.png", "canva.webp", "photoshop.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img className="imgskills" src={img} alt={img.split(".")[0]} />
             <h2>{img.split(".")[0].toUpperCase()}</h2>

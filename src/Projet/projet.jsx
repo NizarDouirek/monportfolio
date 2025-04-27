@@ -2,6 +2,9 @@ import React,{useState,useEffect} from "react";
 import './projet.css';
 import Header from "../Header/header";
 import Title from "../Constant/Titre";
+
+import { motion } from "framer-motion";
+
 export default function Projet(){
      useEffect(() => {
           const sections = document.querySelectorAll('.sectionP, .sectionP2, .sectionP3, .sectionP4');
@@ -41,7 +44,7 @@ export default function Projet(){
                             <img src="laravel.png" alt=""  title="Laravel"/>
                             <img src="mysql.png" alt=""  title="MySQL"/>
                        </div>
-                       <a href="https://github.com/NizarDouirek/Agence_Voyage">
+                       <a href="https://github.com/NizarDouirek/Agence_Voyage" target="_blank" rel="noopener noreferrer">
                        <button className="visit">visit Repository
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
                        </button>
@@ -64,7 +67,7 @@ export default function Projet(){
                             <img src="bootstrap.png" alt=""  title="Bootstrap"/>
                             <img src="mysql.png" alt=""  title="MySQL"/>
                        </div>
-                       <a href= "https://github.com/NizarDouirek/gestionBien">
+                       <a href= "https://github.com/NizarDouirek/gestionBien" target="_blank" rel="noopener noreferrer">
                        <button className="visit2">visit Repository
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
                        </button>
@@ -89,7 +92,7 @@ export default function Projet(){
                             <img src="angular.svg" alt=""  title="Angular"/>
                             
                        </div>
-                       <a href="https://github.com/NizarDouirek/StoreElec">
+                       <a href="https://github.com/NizarDouirek/StoreElec" target="_blank" rel="noopener noreferrer">
                        <button className="visit3">visit Repository
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
                        </button>
@@ -116,7 +119,7 @@ export default function Projet(){
                             <img src="mongo-db.png" alt="" title="MongoDB" />
                             
                        </div>
-                       <a href="#">
+                       <a href="#" target="_blank" rel="noopener noreferrer">
                        <button className="visit4">visit Repository
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
                        </button>
@@ -130,12 +133,18 @@ export default function Projet(){
                  
                  </div>
                  
-                 <div class="projets-message">
-    <p>
+                 <motion.div className="projets-message"
+                 initial={{ opacity: 0, y: 50 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{ delay: 1, duration: 3 }}
+                >
+    <motion.p initial={{ opacity: 0, y: 50 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{ delay: 1, duration: 3 }}>
         Des projets passionnants ✨ sont en cours de développement !!! 
         {/* Restez à l'écoute pour découvrir de nouvelles créations et solutions innovantes. */}
-    </p>
-</div>
+    </motion.p>
+</motion.div>
 
                </div>
           </div>

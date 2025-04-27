@@ -33,11 +33,11 @@ export default function Header(){
                       <nav>
                         <ul>
                            <li><Link to="/homme" style={{ color: isActive(["/", "/homme"]) ? '#32ca97' : '#495E57' }}>Accueil</Link></li>
-                           <li><Link to="/about"  style={{ color: isActive(["/about"]) ? '#379777' : '#495E57' }}>À propos</Link></li>
-                           <li><Link to="/skills"  style={{ color: isActive(["/skills"]) ? '#379777' : '#495E57' }}>Compétences</Link></li>
-                           <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#379777' : '#495E57' }}>Parcours</Link></li>
-                           <li><Link to="/projet" style={{ color: isActive(["/projet"]) ? '#379777' : '#495E57' }}>Projets</Link></li>
-                           <li><Link to="/contact" style={{ color: isActive(["/contact"]) ? '#379777' : '#495E57' }}>Contact</Link></li>
+                           <li><Link to="/about"  style={{ color: isActive(["/about"]) ? '#32ca97' : '#495E57' }}>À propos</Link></li>
+                           <li><Link to="/skills"  style={{ color: isActive(["/skills"]) ? '#32ca97' : '#495E57' }}>Compétences</Link></li>
+                           <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#32ca97' : '#495E57' }}>Parcours</Link></li>
+                           <li><Link to="/projet" style={{ color: isActive(["/projet"]) ? '#32ca97' : '#495E57' }}>Projets</Link></li>
+                           <li><Link to="/contact" style={{ color: isActive(["/contact"]) ? '#32ca97' : '#495E57' }}>Contact</Link></li>
                            
                         </ul>
                       </nav>

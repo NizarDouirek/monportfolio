@@ -1,8 +1,8 @@
 .skills {
     padding: 40px;
     padding-top: 70px;
-    /* background-color: black; */
-    background-image: url('/public/skill.avif');
+    background-color:white;
+    /* background-image: url('/public/skill.avif'); */
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
   }
+  
   .containerskills{
     max-width:1000px;
     /* margin:100px auto; */
@@ -19,11 +20,12 @@
     gap: 3rem;
   }
   .hover-instruction {
-  
-    font-size: 18px;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 50px;
-    color: #555;
+    color: #139371;
+    text-align: center;
   }
   
   
@@ -50,7 +52,8 @@
     position:relative;
     width:100%;
     height:100%;
-    border:1px solid #000;
+    border:1px solid #a7a4a4;
+    padding: 20px;
     box-sizing:border-box;
     transform-origin:left;
     z-index:1;
@@ -66,6 +69,7 @@
     object-fit:cover;
     margin-top: 0.1px;
   }
+  
   
   .cardskills:hover .img-container{
     transform:rotateY(-135deg);
@@ -83,15 +87,17 @@
    .cardskills .card-details h2{
     margin:0;
     padding:0.5em 0;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     text-transform:uppercase;
     font-size:2em;
-    color:#379777;
+    color:#267259;
   }
   
   .cardskills .card-details p{
     margin:0;
     padding:0;
-    line-height:25px;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    line-height:30px;
     font-size:1.1em;
   }
   /* Style de base pour le conteneur */
@@ -163,8 +169,11 @@
   
   /* Style pour les titres */
   .pack h2 {
-    font-size: 1.2em;
-    color: #104f3a;
+    font-size: 1.1em;
+    color: #021710;
+    font-weight: 700;
+    font-style: italic;
+    /* font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1; */
     margin: 0;
     text-align: center;
     transition: color 0.4s ease, transform 0.4s ease;
@@ -191,6 +200,9 @@
   }
   .titrecp{
     margin-top: 80px;
+    text-align: center;
+    color: #023725;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
   }
   .pack section {
     animation: fadeIn 0.5s ease forwards;
@@ -213,8 +225,8 @@
   @media screen and (max-width: 480px) {
     .containerskills {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0.1rem;
       /* justify-content: center; */
     }
   
@@ -233,7 +245,7 @@
     .pack section:hover {
       transform: none;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      background-color: #f0f0f0;
+      /* background-color: #f0f0f0; */
     }
     .titrecp{
       font-size: 20px;

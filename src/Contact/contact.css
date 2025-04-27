@@ -1,11 +1,11 @@
 .contact{
     height: 100vh;
     /* min-height: 120vh; */
-    background: url('/public/vv.avif');
+    /* background: url('/public/wx1.avif'); */
     background-repeat: no-repeat;
     margin-top: 50px;
     /* background-size: cover; */
-    /* background-position: left; */
+    background-position: right top;
 }
 .loginPage {
     display: flex;
@@ -155,7 +155,7 @@
     width: 100%;
     color: white;
     font-weight: bold;
-    cursor: pointer;
+    cursor: url('/public/nnb.cur'), auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
   }
@@ -163,6 +163,7 @@
   .btn-Login:hover {
     background: linear-gradient(135deg, #46ad8a, #357a63);
     transform: scale(1.05);
+    
   }
   
   /* --- 🌟 Responsive Design --- */
@@ -196,14 +197,15 @@
     font-size:40px; /* Taille des icônes */
     color: white; /* Couleur des icônes */
     transition: color 0.3s ease; 
+    cursor: url('/public/nnb.cur'), auto;
   }
   
   .social-icons .icon:hover {
-    color: #09af83; 
-    cursor: url('/public/cr1.cur'), auto;;
+    color: #b3e5d6; 
+    cursor: url('/public/nnb.cur'), auto;
   }
   .parcontact{
-    color: #00ffa6;
+    color: #04e899;
     margin-top: 40px;
     letter-spacing: 2px;
     font-family: Poppins,sans-serif;
@@ -214,7 +216,7 @@
 @media (max-width: 480px) {
   .contact {
       height: auto; /* Ajuste la hauteur pour que le contenu s'adapte à l'écran */
-      background: url('/public/cv.avif') no-repeat center center; /* Centre l'image d'arrière-plan */
+      /* background: url('/public/cv.avif') no-repeat center center; */
       background-size: cover; /* Assure que l'image occupe toute la surface disponible */
   }
 
@@ -263,4 +265,18 @@
       font-size: 14px; /* Réduit la taille de la police */
       margin-top: 30px; /* Ajuste la marge */
   }
+}
+.form-status.success {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #d4edda; /* Vert clair */
+  color: #155724; /* Vert foncé */
+  border: 1px solid #c3e6cb;
+}
+
+/* Style pour un message d'erreur */
+.form-status.error {
+  background-color: #f8d7da; /* Rouge clair */
+  color: #721c24; /* Rouge foncé */
+  border: 1px solid #f5c6cb;
 }

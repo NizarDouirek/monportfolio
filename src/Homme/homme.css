@@ -18,9 +18,10 @@ body, html, #root, .homme {
 }
 .bonjour{
     color:#45474B;
-    font-size: 30px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    font-size: 35px;
+    /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    font-style: italic;
 }
 .wave-hand::after {
     content: "👋"; /* Emoji de la main */
@@ -83,6 +84,7 @@ body, html, #root, .homme {
     margin-top: 10px;
     color: #495E57;
     font-size: 30px;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     font-style: italic;
 }
 
@@ -94,13 +96,19 @@ body, html, #root, .homme {
     padding: 10px;
     border: none;
     color: white;
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
 }
 
+.Top,.Top1{
+    cursor: url('/public/nnb.cur'), auto;
+}
+.Top1:hover{
+    cursor: url('/public/nnb.cur'), auto;
+}
 .btn-homme:hover {
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;
     background: linear-gradient(80deg, #379777, #495E57); /* Légère variation de couleur */
     box-shadow: 0 0 20px 8px rgba(61, 111, 106, 0.7); /* Effet lumineux plus fort */
     transform: scale(1.05); /* Léger agrandissement */
@@ -116,8 +124,9 @@ body, html, #root, .homme {
 .btn-homme a {
     color: white;
     text-decoration: none;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     font-weight: bold;
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;
    
 }
 

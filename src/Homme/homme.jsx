@@ -70,22 +70,30 @@ export default function Homme() {
       >
         {/* Section principale */}
         <motion.div className="container" variants={itemVariants}>
-          <motion.p className="bonjour" variants={itemVariants}>
+          <motion.p className="bonjour" initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 1, duration: 0.5 }}>
             Bonjour <span className="wave-hand"></span>, je suis
           </motion.p>
           <motion.h1 className="nom" variants={itemVariants}>
             Nizar Douirek
           </motion.h1>
-          <motion.p className="job" variants={itemVariants}>
+          <motion.p className="job"  initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 2, duration: 0.5 }}>
             Développeur Full Stack
           </motion.p>
-          <motion.button className="btn-homme" variants={itemVariants}>
+          <motion.button className="btn-homme"  initial={{ opacity: 0, x: -100 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ delay: 3, duration: 1 }}>
             <a href="#contact">Contactez-moi</a>
           </motion.button>
         </motion.div>
 
         {/* Section des compétences */}
-        <motion.div className="marq" variants={itemVariants}>
+        <motion.div className="marq" initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 4, duration: 0.6 }}>
           <p> Développeur FrontEnd</p>
           <p>-</p>
           <p> Développeur BackEnd</p>
@@ -95,10 +103,14 @@ export default function Homme() {
           <p> Développeur d'interfaces utilisateur</p>
           <p>-</p>
           <p> Développeur créatif</p>
+          <p>-</p>
+          <p> Développeur Web</p>
         </motion.div>
 
         {/* Décoration */}
-        <motion.div className="decoration" variants={itemVariants}>
+        <motion.div className="decoration" initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 5, duration: 0.6}}>
           <div className="carre carre1"></div>
           <div className="carre carre2"></div>
           <div className="carre carre3"></div>
@@ -115,23 +127,28 @@ export default function Homme() {
       <About />
       <button
         onClick={scrollToTop}
+        className="Top1"
         style={{
           position: "fixed",
           bottom: "30px",
           right: "30px",
-          backgroundColor: "#379777",
-          color: "white",
+          backgroundColor: 'transparent',
+          // color: "white",
           border: "none",
           borderRadius: "50%",
-          padding: "10px 20px",
-          fontSize: "25px",
+          padding: "5px 5px",
           zIndex: 1,
-          cursor: "pointer",
+          
           display: isVisible ? "block" : "none",
-          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+          boxShadow: "0 4px 6px rgba(95, 92, 92, 0.1)",
         }}
       >
-        ↑
+        <img
+  src="top.png"
+  className="Top"
+  alt="scroll up"
+  style={{ width: "40px", height: "40px" }}
+/>
       </button>
       <Skills />
       <Cv />

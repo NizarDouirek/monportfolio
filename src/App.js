@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './App.css';
 import Header from './Header/header';
 import Homme from './Homme/homme';
@@ -11,15 +11,20 @@ import Footer from './Footer/foother';
 import Contact from './Contact/contact';
 import Loader from './Loader/loader';
 import Page from './Portfolio/page';
+import ReactGA from "react-ga4";
 
 function App() {
-    const [isLoaded, setIsLoaded] = useState(false); // Gérer l'état de chargement
-
+    const [isLoaded, setIsLoaded] = useState(true); 
+    console.log("App rendered - isLoaded:", isLoaded);// Gérer l'état de chargement
+    useEffect(() => {
+        ReactGA.initialize("G-ZDH7MTTLQ9"); // Remplace par ton ID GA4
+        ReactGA.send("pageview");
+      }, []);
     if (!isLoaded) {
         // Tant que le chargement n'est pas terminé, affiche uniquement le Loader
-        return <Loader setIsLoaded={setIsLoaded} />;
+        return <Loader  key="loader" setIsLoaded={setIsLoaded} />;
     }
-
+    
     return (
         <Router>
             

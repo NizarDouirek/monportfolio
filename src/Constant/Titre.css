@@ -7,10 +7,10 @@
 }
 .title {
     color: white; /* Couleur principale */
-    font-size: 30px;
+    font-size: 33px;
     font-weight: bold;
     font-style: oblique;
-    font-family: 'Poppins', sans-serif;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;

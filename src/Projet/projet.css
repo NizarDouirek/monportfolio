@@ -48,7 +48,7 @@
     padding: 10px;
     border: 1px solid #40a295;
    color: white; 
-    cursor: url("/public/cr1.cur"),auto;
+   cursor: url('/public/nnb.cur'), auto;
 }
 
 .visit2{
@@ -60,7 +60,7 @@
     padding: 10px;
     border: 1px solid #e4b2fb;
    color: white; 
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;
 }
 .visit3{
     margin-top: 5px;
@@ -71,7 +71,7 @@
     padding: 10px;
     border: 1px solid #40a295;
     color: white; 
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;
 }
 
 .sectionP2 {
@@ -128,29 +128,29 @@
     padding: 10px;
     border: 1px solid #ff738f;
    color: white; 
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;
     
 }
 .visit4:hover {
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;
     background: linear-gradient(80deg, #a30827, #fd0d3d); /* Légère variation de couleur */
     box-shadow: 0 0 20px 8px rgba(189, 56, 83, 0.7); /* Effet lumineux plus fort */
     transform: scale(1.05); /* Léger agrandissement */
 }
 .visit3:hover {
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;
     background: linear-gradient(80deg, #1f8795, #0d6e7b); /* Légère variation de couleur */
     box-shadow: 0 0 20px 8px #0c4047; /* Effet lumineux plus fort */
     transform: scale(1.05); /* Léger agrandissement */
 }
 .visit2:hover {
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;
     background: linear-gradient(80deg, #a715c4, #79168c); /* Légère variation de couleur */
     box-shadow: 0 0 20px 8px #6d0a81; /* Effet lumineux plus fort */
     transform: scale(1.05); /* Léger agrandissement */
 }
 .visit:hover {
-    cursor: url("/public/cr1.cur"),auto;
+    cursor: url('/public/nnb.cur'), auto;
     background: linear-gradient(80deg, #1f8795, #1b5f68); /* Légère variation de couleur */
     box-shadow: 0 0 20px 8px #09434a; /* Effet lumineux plus fort */
     transform: scale(1.05); /* Léger agrandissement */
@@ -185,6 +185,7 @@
 }
 .contentP p{
     color: white;
+    
 }
 
 
@@ -373,11 +374,12 @@
 }
 
 .projets-message p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.8;
     color: rgb(208, 215, 244);
     
-    font-family: Palo system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    /* font-family: Palo system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif; */
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
     margin: 0;
 }
