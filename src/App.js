@@ -28,7 +28,7 @@ function App() {
     return (
         <Router>
             
-            <Header />
+            {/* <Header /> */}
             {/* <Page/> */}
             <Routes>
                 <Route path="/" element={<Homme />} />
