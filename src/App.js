@@ -33,11 +33,11 @@ function App() {
             <Routes>
                 <Route path="/" element={<Homme />} />
                 <Route path="/homme" element={<Homme />} />
-                <Route path="/about" element={<About />} />
+                {/* <Route path="/about" element={<About />} />
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/Cv" element={<Cv />} />
                 <Route path="/projet" element={<Projet />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/contact" element={<Contact />} /> */}
             </Routes>
             <Footer />
         </Router>
