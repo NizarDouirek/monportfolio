@@ -1,167 +1,151 @@
-.about{
-    padding: 100px 50px;
+.about {
+    padding: 80px 20px;
     background-image: url(/public/skill.avif);
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    /* background-color: white; */
     background-position: right;
+    background-size: contain;
+    box-sizing: border-box;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    box-sizing: border-box;
-    
 }
 
-
-.containe{
-    align-items: center;
-    justify-content: center;
+.containe {
     display: flex;
     gap: 3em;
     margin-top: 45px;
-    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.i{
+
+.i {
     width: 350px;
     height: 450px;
     border-radius: 10px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
-  }
-  
-  .i:hover {
-    transform: scale(3.08);
+    opacity: 0; /* Initialement caché pour animation */
+}
+
+.i:hover {
+    transform: scale(1.05);
     box-shadow: 0 0 10px rgba(51, 51, 52, 0.721);
-  }
+}
 
-
-.contentAbout{
+.contentAbout {
     font-size: 15px;
     width: 450px;
+    opacity: 0; /* Initialement caché pour animation */
 }
-.contentAbout h2{
+
+.contentAbout h2 {
     color: #1B4242;
     font-family: 'Courier New', Courier, monospace;
-   
-
 }
 
-
-.contentAbout span{
+.contentAbout span,
+.contentAbout h4 {
     color: #379777;
 }
-.contentAbout h4{
-   
-    color: #379777;
-}
-.contentAbout p{
+
+.contentAbout p {
     color: #1B4242;
     font-size: 18px;
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
 }
 
 table {
-    width: 100%; 
-    border-collapse: collapse; 
+    width: 100%;
+    border-collapse: collapse;
     margin: 20px 0;
     font-size: 18px;
-    color: #1B4242;;
-    background-color: #f1fffa; 
-    border-radius: 10px; 
-    overflow: hidden; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #f1fffa;
+    color: #1B4242;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 table th, table td {
+    padding: 15px 20px;
+    text-align: left;
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    padding: 15px 20px; 
-    text-align: left; 
 }
 
 table th {
-    
-    color: #1B4242; 
-    font-weight: bold;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
-table td {
-    
-    color: #1B4242; 
-}
-table td::selection{
-    color: rgb(14, 186, 155);
-}
-table tr:hover{
+table tr:hover {
     background-color: rgb(226, 255, 246);
 }
 
+table td::selection {
+    color: rgb(14, 186, 155);
+}
 
-
-.cv{
-    margin-top: 20px; 
-    cursor: url('/public/nnb.cur'), auto;
-    background: linear-gradient(135deg, #2a6e58,  #47d8a8);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+.cv {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #2a6e58, #47d8a8);
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
     border-radius: 10px;
     padding: 10px;
     border: none;
     color: white;
     font-size: 20px;
+    cursor: url('/public/nnb.cur'), auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
-.cv a{
+
+.cv a {
     text-decoration: none;
     color: white;
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    cursor: url('/public/nnb.cur'), auto;;
+    cursor: url('/public/nnb.cur'), auto;
 }
+
 .cv:hover {
-    cursor: url('/public/nnb.cur'), auto;;
-    background: linear-gradient(80deg, #379777, #495E57); /* Légère variation de couleur */
-    box-shadow: 0 0 20px 8px rgba(61, 111, 106, 0.7); /* Effet lumineux plus fort */
-    transform: scale(1.05); /* Léger agrandissement */
+    background: linear-gradient(80deg, #379777, #495E57);
+    box-shadow: 0 0 20px 8px rgba(61, 111, 106, 0.7);
+    transform: scale(1.05);
 }
 
 .cv:active {
-    
-    transform: scale(0.95); /* Réduit légèrement le bouton au clic */
-    box-shadow: 0px 4px 8px rgba(59, 35, 101, 0.225); /* Diminue l'ombre */
+    transform: scale(0.95);
+    box-shadow: 0px 4px 8px rgba(59, 35, 101, 0.225);
 }
+
+/* Media Queries */
 @media screen and (max-width: 480px) {
     .about {
-        /* padding: 20px; */
         background: white;
-        /* background:url(/public/skill.avif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right; */
-        
+        padding: 40px 10px;
     }
-.about h1{
-    margin-top: 50px;
-}
+
+    .about h1 {
+        margin-top: 50px;
+    }
+
     .containe {
-        flex-direction: column; /* Empile les éléments verticalement */
-        gap: 1.5em; /* Réduit l'espacement entre les éléments */
+        flex-direction: column;
+        gap: 1.5em;
     }
 
     .i {
-        width: 75%; /* L'image occupe toute la largeur */
-        height: 300px; /* Maintient le ratio d'aspect */
-        border-radius: 10px;
+        width: 75%;
+        height: 300px;
     }
 
     .contentAbout {
         text-align: center;
-        
-        font-size: 14px; /* Réduit légèrement la taille de police */
+        font-size: 14px;
     }
 
     .contentAbout h2 {
-        font-size: 18px; /* Taille adaptée pour les petits écrans */
+        font-size: 18px;
         margin-bottom: 10px;
     }
 
@@ -173,33 +157,26 @@ table tr:hover{
     .contentAbout p {
         font-size: 14px;
         line-height: 1.5;
-        width: 350px;
-        margin-left: 47px;
-        
+        width: 100%;
+        margin: auto;
     }
 
     table {
-        font-size: 16px; 
-        margin-left: 79px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-    }
-
-    table th, table td {
-        padding: 13px 15px; /* Diminue les marges internes */
+        font-size: 16px;
+        width: 90%;
+        margin: 20px auto;
     }
 
     .cv {
-        margin-top: 15px; /* Réduit l'espacement au-dessus du bouton */
+        margin-top: 15px;
     }
 
     .cv a {
         font-size: 20px;
     }
 }
-/* Animation pour le titre */
+
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -211,7 +188,6 @@ table tr:hover{
     }
 }
 
-/* Animation pour le contenu */
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -234,7 +210,6 @@ table tr:hover{
     }
 }
 
-/* Classes appliquant les animations */
 .fade-in {
     animation: fadeIn 1s ease-out forwards;
 }
@@ -246,14 +221,3 @@ table tr:hover{
 .slide-right {
     animation: slideInRight 1s ease-out forwards;
 }
-
-
-
-.i {
-    opacity: 0; /* Initialement caché */
-}
-
-.contentAbout {
-    opacity: 0; /* Initialement caché */
-}
-
