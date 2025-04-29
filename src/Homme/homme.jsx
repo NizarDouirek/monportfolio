@@ -154,7 +154,7 @@ export default function Homme() {
       <Cv />
       <Projet />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

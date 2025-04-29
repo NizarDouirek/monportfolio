@@ -35,6 +35,46 @@
 
 
 
+@media screen and (max-width: 480px) {
+    .loader {
+        justify-content: center;
+        align-items: center;
+    }
+    .loading-text {
+        text-align: center;
+        align-items: center;
+    }
+    .wee{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contenuloader {
+        width: 50vmin;
+        height: 50vmin;
+        position: relative;
+        /* margin-left: 60px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: scale(0.65);
+        animation: spin-all calc(var(--sp) * 2) linear 0s infinite
+    }
+    .loader-video{
+        display: none;
+    }
+    .loading-text {
+        font-size: 1.3rem; 
+        margin-top: 40px;
+        font-family: roboto; /* Rendre le texte plus visible */
+        text-transform: uppercase; /* Convertir en majuscules */
+        color: #266c54; /* Couleur du texte */
+        animation: fadeText 1.5s ease-in-out infinite; /* Animation fluide */
+      }
+      
 .cercleload {
 	--in: 80%;
 	--ar: #28a47b;
@@ -129,39 +169,5 @@
       opacity: 1;
   }
 }
-@media screen and (max-width: 480px) {
-    .loading-text {
-        text-align: center;
-        align-items: center;
-    }
-    .wee{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .contenuloader {
-        width: 50vmin;
-        height: 50vmin;
-        position: relative;
-        margin-left: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        transform: scale(0.65);
-        animation: spin-all calc(var(--sp) * 2) linear 0s infinite
-    }
-    .loader-video{
-        display: none;
-    }
-    .loading-text {
-        font-size: 1.3rem; 
-        margin-top: 40px;
-        font-family: roboto; /* Rendre le texte plus visible */
-        text-transform: uppercase; /* Convertir en majuscules */
-        color: #266c54; /* Couleur du texte */
-        animation: fadeText 1.5s ease-in-out infinite; /* Animation fluide */
-      }
 
 }

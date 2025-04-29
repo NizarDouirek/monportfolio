@@ -156,6 +156,7 @@ table tr:hover{
 
     .contentAbout {
         text-align: center;
+        
         font-size: 14px; /* Réduit légèrement la taille de police */
     }
 
@@ -172,8 +173,8 @@ table tr:hover{
     .contentAbout p {
         font-size: 14px;
         line-height: 1.5;
-        width: 400px;
-        margin-left: 35px;
+        width: 350px;
+        margin-left: 43px;
         
     }
 

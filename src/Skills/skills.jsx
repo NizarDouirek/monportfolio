@@ -38,7 +38,7 @@ const Skills = () => {
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1, delay: index * 0.2 }}
+            transition={{ duration: 0.4, delay: index * 0.2 }}
             whileHover={{ scale: 1.05 }}
           >
             <div className="img-container">

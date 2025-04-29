@@ -39,7 +39,7 @@ function App() {
                 <Route path="/projet" element={<Projet />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
         </Router>
     );
 }
