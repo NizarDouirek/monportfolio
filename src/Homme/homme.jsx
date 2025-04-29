@@ -124,7 +124,7 @@ export default function Homme() {
       </motion.div>
 
       {/* Autres sections */}
-      <About />
+      {/* <About /> */}
       <button
         onClick={scrollToTop}
         className="Top1"
