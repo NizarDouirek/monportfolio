@@ -150,10 +150,10 @@ export default function Homme() {
   style={{ width: "40px", height: "40px" }}
 />
       </button>
-      <Skills />
+      {/* <Skills />
       <Cv />
       <Projet />
-      <Contact />
+      <Contact /> */}
       {/* <Footer /> */}
     </div>
   );
