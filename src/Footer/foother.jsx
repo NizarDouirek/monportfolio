@@ -90,7 +90,8 @@ export default function Footer() {
   };
 
   // Fonction utilitaire pour appliquer variants seulement sur desktop
-  const getVariants = (variant) => (isDesktop ? variant : {});
+  const getVariants = (variant) => variant; // Teste avec ça
+
 
   return (
     <motion.footer

@@ -254,7 +254,7 @@
 @media (max-width: 480px) {
     .footer {
         margin-top: 60px; /* Réduire l'espace en haut */
-        padding: 25px 20px; /* Réduire le padding */
+        padding: 35px 20px; /* Réduire le padding */
     }
 
     .footer .social h1 {
@@ -267,14 +267,17 @@
         margin: 0 8px; /* Réduire l'espacement entre les icônes */
     }
     .contact-foot{
-      margin-top: 20px;
+      margin-top: 30px;
     }
 
     .footer-break {
         margin: 10px auto; /* Réduire l'espacement autour de la ligne séparatrice */
     }
-.section-adrss{
+.section-adrss h1{
   display: none;
+}
+.cv-foot{
+  margin-top: -10px;
 }
 .divLogo img{
   display: none;
@@ -293,19 +296,12 @@
 }
 
     .footer-links {
-      flex-direction: row !important;
-      flex-wrap: wrap;
-      justify-content: center;/* Centrer les liens */
-        gap: 15px; /* Ajouter un espacement entre les liens */
-    }
-
-    .footer-links a {
-        font-size: 18px;
-        color: rgb(1, 24, 12); /* Réduire la taille des liens */
+      display: none; /* Réduire la taille des liens */
     }
     .footer-newsletter {
-      width: 320px; /* Réduire la largeur du formulaire */
+      width: 330px; /* Réduire la largeur du formulaire */
   }
+  
 
     .copyright {
         font-size: 12px; /* Réduire la taille du texte de copyright */

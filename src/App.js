@@ -12,6 +12,7 @@ import Contact from './Contact/contact';
 import Loader from './Loader/loader';
 import Page from './Portfolio/page';
 import ReactGA from "react-ga4";
+import ScrollToTop from './ScrollToTop/ScrollToTop';
 
 function App() {
     const [isLoaded, setIsLoaded] = useState(true); 
@@ -27,7 +28,7 @@ function App() {
     
     return (
         <Router>
-            
+            <ScrollToTop/>
             <Header />
             {/* <Page/> */}
             <Routes>

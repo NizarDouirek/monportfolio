@@ -9,7 +9,7 @@ export default function Loader({ setIsLoaded }) {
             console.log("Loader finished");
             return () => {
                 console.log("Loader unmounted");} // Vérifier que le Loader termine après 3 secondes
-        }, 4000); // 1 secondes
+        }, 4800); // 1 secondes
         
         return () => clearTimeout(timer); // Nettoyage pour éviter les fuites de mémoire
     }, [setIsLoaded]);
