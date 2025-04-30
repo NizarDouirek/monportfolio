@@ -10,7 +10,7 @@
     justify-content: center;
     
     box-sizing: border-box;
-    
+    /* overflow: hidden; */
 }
 
 
@@ -134,6 +134,8 @@ table tr:hover{
     .about {
         /* padding: 20px; */
         background: white;
+        overflow: hidden;
+        min-height: 900px;
         /* background:url(/public/skill.avif);
         background-repeat: no-repeat;
         background-size: cover;
@@ -148,14 +150,12 @@ table tr:hover{
         gap: 1.5em; /* Réduit l'espacement entre les éléments */
     }
 
-    /* .i {
-        width: 75%; 
-        height: 300px; 
+    .i {
+        width: 75%; /* L'image occupe toute la largeur */
+        height: 300px; /* Maintient le ratio d'aspect */
         border-radius: 10px;
-    } */
-     .i{
-        display: none;
-     }
+    }
+    
 
     .contentAbout {
         text-align: center;
@@ -177,17 +177,23 @@ table tr:hover{
         font-size: 14px;
         line-height: 1.5;
         width: 350px;
-        margin-left: 47px;
+        font-size: 14px;
+        line-height: 1.5;
+        /* width: 90%; */
+        margin: 0 auto; 
+        text-align: center
         
     }
 
     table {
         font-size: 16px; 
-        margin-left: 79px;
+        /* margin-left: 79px; */
         text-align: center;
         justify-content: center;
         align-items: center;
         width: 200px;
+        margin: 20px auto; /* Centre horizontalement */
+        
     }
 
     table th, table td {

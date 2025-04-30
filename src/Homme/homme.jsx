@@ -80,12 +80,12 @@ export default function Homme() {
           </motion.h1>
           <motion.p className="job"  initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 2, duration: 0.5 }}>
+    transition={{ delay: 1, duration: 0.5 }}>
             Développeur Full Stack
           </motion.p>
           <motion.button className="btn-homme"  initial={{ opacity: 0, x: -100 }}
     animate={{ opacity: 1, x: 0 }}
-    transition={{ delay: 3, duration: 1 }}>
+    transition={{ delay: 2, duration: 1 }}>
             <a href="#contact">Contactez-moi</a>
           </motion.button>
         </motion.div>
@@ -93,7 +93,7 @@ export default function Homme() {
         {/* Section des compétences */}
         <motion.div className="marq" initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 4, duration: 0.6 }}>
+    transition={{ delay: 3, duration: 0.6 }}>
           <p> Développeur FrontEnd</p>
           <p>-</p>
           <p> Développeur BackEnd</p>
@@ -110,7 +110,7 @@ export default function Homme() {
         {/* Décoration */}
         <motion.div className="decoration" initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 5, duration: 0.6}}>
+    transition={{ delay: 4, duration: 0.6}}>
           <div className="carre carre1"></div>
           <div className="carre carre2"></div>
           <div className="carre carre3"></div>

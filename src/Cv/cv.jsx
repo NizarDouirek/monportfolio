@@ -56,8 +56,8 @@ export default function Cv() {
         {/* <h1  className="titre1">CV</h1> */}
         <div className="fe">
           {/* Section Formation */}
-          <div className="f" ref={formationRef}>
-          {/* <div className="f hidden" ref={formationRef}> */}
+          {/* <div className="f" ref={formationRef}> */}
+          <div className="f hidden" ref={formationRef}>
             <div className="log">
               <h1>Formation</h1>
             </div>
@@ -101,8 +101,8 @@ export default function Cv() {
           </div>
           <hr />
           {/* Section Expériences */}
-          <div className="ex" ref={experienceRef}>
-          {/* <div className="ex hidden hidden-right" ref={experienceRef}> */}
+          {/* <div className="ex" ref={experienceRef}> */}
+          <div className="ex hidden hidden-right" ref={experienceRef}>
             <div className="log">
               <h1>Expériences</h1>
             </div>
