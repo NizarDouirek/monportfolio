@@ -44,7 +44,7 @@ export default function About() {
   initial="hidden"
   animate={isVisible ? "visible" : "hidden"}
   transition={{ delay: 1, duration: 0.2 }}>
-                        <span>Bonjour! Je suis</span> Nizar Douirek
+                        Bonjour! Je suis<span className="sp"> Nizar Douirek</span>
                     </motion.h2>
                     {/* <h4>Développeur Full Stack</h4> */}
                     <motion.p variants={{

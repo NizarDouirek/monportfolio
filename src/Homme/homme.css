@@ -86,7 +86,21 @@ body, html, #root, .homme {
     font-size: 30px;
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     font-style: italic;
+    animation: shine1 4s linear infinite, glow1 2s ease-in-out infinite alternate;
+    position: relative;
 }
+@keyframes shine1 {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  @keyframes glow1 {
+   
+    100% {
+      text-shadow: 0 0 10px #2a6e58, 0 0 20px #2a6e58, 0 0 40px #2a6e58 ;
+    }
+  }
 
 .btn-homme{
     background: linear-gradient(135deg, #2a6e58,  #47d8a8);
@@ -215,11 +229,11 @@ body, html, #root, .homme {
     flex-wrap: nowrap;
 
     width: 100%;
-    margin-top: 130px;
+    margin-top: 125px;
     animation: modernMove 20s linear infinite;
 }
 .marq p {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     
     letter-spacing: 1px;

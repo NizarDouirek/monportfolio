@@ -90,7 +90,12 @@ export default function Footer() {
   };
 
   // Fonction utilitaire pour appliquer variants seulement sur desktop
-  const getVariants = (variant) => variant; // Teste avec ça
+  // const getVariants = (variant) => variant; 
+  const getVariants = (variant) => {
+    return isDesktop ? variant : {};
+  };
+  
+  // Teste avec ça
 
 
   return (

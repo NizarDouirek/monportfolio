@@ -42,20 +42,35 @@
     width: 450px;
 }
 .contentAbout h2{
-    color: #1B4242;
+    color: #379777;
+   
     font-family: 'Courier New', Courier, monospace;
-   
-
 }
 
 
-.contentAbout span{
-    color: #379777;
-}
-.contentAbout h4{
-   
-    color: #379777;
-}
+.sp{
+    color: #1B4242;
+    font-size: 27px;
+    animation: shine2 4s linear infinite, glow2 4s ease-in-out infinite alternate;
+    position: relative;
+  }
+  
+  @keyframes shine2 {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  @keyframes glow2 {
+    0% {
+      text-shadow: 0 0 5px rgb(21, 179, 48), 0 0 10px rgb(16, 178, 127), 0 0 20px rgb(0, 255, 34);
+    }
+    100% {
+      text-shadow: 0 0 10px #1B4242, 0 0 20px #47d8a8, 0 0 40px #2a6e58;
+    }
+  }
+
+
 .contentAbout p{
     color: #1B4242;
     font-size: 18px;
@@ -135,7 +150,7 @@ table tr:hover{
         /* padding: 20px; */
         background: white;
         overflow: hidden;
-        min-height: 900px;
+        min-height: 950px;
         /* background:url(/public/skill.avif);
         background-repeat: no-repeat;
         background-size: cover;
@@ -164,14 +179,14 @@ table tr:hover{
     }
 
     .contentAbout h2 {
-        font-size: 18px; /* Taille adaptée pour les petits écrans */
+        font-size: 22px; /* Taille adaptée pour les petits écrans */
         margin-bottom: 10px;
+        width: 370px;
+        text-align: center;
+        margin-left: 30px;
     }
+   
 
-    .contentAbout h4 {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
 
     .contentAbout p {
         font-size: 14px;
