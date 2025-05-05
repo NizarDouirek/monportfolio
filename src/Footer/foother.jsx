@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 import "./footer.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -207,12 +208,33 @@ export default function Footer() {
           >
             <h1>Pages</h1>
             <ul className="footer-links">
-              <motion.li variants={getVariants(slideInLeft)}><motion.a whileHover={isDesktop ? { x: 10 } : {}} href="/about">À propos</motion.a></motion.li>
-              <motion.li variants={getVariants(slideInRight)}><motion.a whileHover={isDesktop ? { x: 10 } : {}} href="/skills">Compétences</motion.a></motion.li>
-              <motion.li variants={getVariants(slideInLeft)}><motion.a whileHover={isDesktop ? { x: 10 } : {}} href="/projet">Projet</motion.a></motion.li>
-              <motion.li variants={getVariants(slideInRight)}><motion.a whileHover={isDesktop ? { x: 10 } : {}} href="/Cv">Parcours</motion.a></motion.li>
-              <motion.li variants={getVariants(slideInLeft)}><motion.a whileHover={isDesktop ? { x: 10 } : {}} href="/contact">Contact</motion.a></motion.li>
-            </ul>
+  <motion.li variants={getVariants(slideInLeft)}>
+    <motion.div whileHover={isDesktop ? { x: 10 } : {}}>
+      <Link to="/about">À propos</Link>
+    </motion.div>
+  </motion.li>
+  <motion.li variants={getVariants(slideInRight)}>
+    <motion.div whileHover={isDesktop ? { x: 10 } : {}}>
+      <Link to="/skills">Compétences</Link>
+    </motion.div>
+  </motion.li>
+  <motion.li variants={getVariants(slideInLeft)}>
+    <motion.div whileHover={isDesktop ? { x: 10 } : {}}>
+      <Link to="/projet">Projet</Link>
+    </motion.div>
+  </motion.li>
+  <motion.li variants={getVariants(slideInRight)}>
+    <motion.div whileHover={isDesktop ? { x: 10 } : {}}>
+      <Link to="/Cv">Parcours</Link>
+    </motion.div>
+  </motion.li>
+  <motion.li variants={getVariants(slideInLeft)}>
+    <motion.div whileHover={isDesktop ? { x: 10 } : {}}>
+      <Link to="/contact">Contact</Link>
+    </motion.div>
+  </motion.li>
+</ul>
+
           </motion.div>
 
           <motion.div className="section-adrss" variants={getVariants(slideInLeft)}>

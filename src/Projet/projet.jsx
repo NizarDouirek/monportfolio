@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Projet(){
      useEffect(() => {
-          const sections = document.querySelectorAll('.sectionP, .sectionP2, .sectionP3, .sectionP4');
+          const sections = document.querySelectorAll('.sectionP, .sectionP2, .sectionP3, .sectionP4, .sectionP5');
           
           const observer = new IntersectionObserver((entries, observer) => {
               entries.forEach(entry => {
@@ -119,7 +119,7 @@ export default function Projet(){
                             <img src="mongo-db.png" alt="" title="MongoDB" />
                             
                        </div>
-                       <a href="#" target="_blank" rel="noopener noreferrer">
+                       <a href="https://github.com/NizarDouirek/fittrack" target="_blank" rel="noopener noreferrer">
                        <button className="visit4">visit Repository
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
                        </button>
@@ -128,6 +128,32 @@ export default function Projet(){
                     </div>
                    
                       <img className="imgsite" src="fittrack.png" alt=""/>
+                   
+                 </div><br /><br />
+                 <div className="sectionP5">
+                <div className="contentP">
+                    <h1>Tasko</h1>
+                    <p>
+                    "Tasko" est une application de gestion de tâches conçue pour aider les utilisateurs
+                     à organiser efficacement leur quotidien. Elle permet  de gérer une liste de tâches de manière simple et intuitive. Chaque utilisateur
+                       peut ajouter de nouvelles tâches, les modifier, les marquer comme terminées , ou encore les supprimer </p><br />
+                       <div className="tec">
+                            <img src="html.png" alt="" title="HTML"/>
+                            <img src="css.png" alt="" title="CSS"/>
+                            <img src="laravel.png" alt="" title="Laravel"/>
+                            <img src="react.png" alt="" title="React.js"/>
+                            <img src="mongo-db.png" alt="" title="MongoDB" />
+                            
+                       </div>
+                       <a href="https://github.com/NizarDouirek/Tasko" target="_blank" rel="noopener noreferrer">
+                       <button className="visit5">visit Repository
+                       <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
+                       </button>
+                       
+                       </a>
+                    </div>
+                   
+                      <img className="imgsite" src="tasko.png" alt=""/>
                    
                  </div>
                  

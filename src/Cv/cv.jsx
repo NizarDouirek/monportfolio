@@ -109,6 +109,37 @@ export default function Cv() {
             <div className="divcv">
               <div className="groupcv">
                 <img
+                  src="vnb-it.jfif"
+                  style={{ borderRadius: "50%" }}
+                  alt=""
+                />
+                <h2>Stage Développeur mobile Full stack, VNB-IT</h2>
+              </div>
+              <span className="date">Mars 2022 - aujourd'hui</span>
+              <p>
+              développement de l’application mobile LCR, plateforme numérique de
+               l’auto-école GMP, axée sur la formation accélérée à la conduite et 
+               l’accompagnement personnalisé des élèves.
+                <br />
+                <span className="role">Technologies utilisées :</span> React Native,
+                CSS,postgresql,Git
+
+
+              </p>
+              <br />
+              {/* <button className="see-more-btn">
+                <a
+                  href="aa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  attestation
+                </a>
+              </button> */}
+            </div><br />
+            <div className="divcv">
+              <div className="groupcv">
+                <img
                   src="tecknaps.png"
                   style={{ borderRadius: "50%" }}
                   alt=""
@@ -121,7 +152,7 @@ export default function Cv() {
                 d'hôtels, de voitures et de restaurants
                 <br />
                 <span className="role">Technologies utilisées :</span> React.js,
-                CSS, MongoDB
+                CSS, MongoDB, Git
               </p>
               <br />
               <button className="see-more-btn">
@@ -146,11 +177,11 @@ export default function Cv() {
                 informatiques et matériels de l'entreprise
                 <br />
                 <span className="role">Technologies utilisées :</span> PHP,
-                Laravel, MySQL, CSS, Bootstrap
+                Laravel, MySQL, CSS, Bootstrap ,Git
               </p>
             </div>
             <br />
-            <div className="divcv">
+            {/* <div className="divcv">
               <div className="groupcv">
                 <img src="ofppt.png" alt="" />
 
@@ -164,7 +195,7 @@ export default function Cv() {
                 CSS, React.js, Laravel, MySQL
               </p>
             </div>
-            <br />
+            <br /> */}
           </div>
         </div>
         {/* <div className="cer">
