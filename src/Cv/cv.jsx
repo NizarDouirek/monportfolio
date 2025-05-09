@@ -115,7 +115,7 @@ export default function Cv() {
                 />
                 <h2>Stage Développeur mobile Full stack, VNB-IT</h2>
               </div>
-              <span className="date">Mars 2022 - aujourd'hui</span>
+              <span className="date">1 Avril 2025 - aujourd'hui</span>
               <p>
               développement de l’application mobile LCR, plateforme numérique de
                l’auto-école GMP, axée sur la formation accélérée à la conduite et 
@@ -146,7 +146,7 @@ export default function Cv() {
                 />
                 <h2>Stage Développeur Full stack, TECHNAPS</h2>
               </div>
-              <span className="date">Décembre 2024 - Mars 2025</span>
+              <span className="date">1 Décembre 2024 - 26 Mars 2025</span>
               <p>
                 Développement de l'interface d'un site web de réservation
                 d'hôtels, de voitures et de restaurants
@@ -171,7 +171,7 @@ export default function Cv() {
                 <img src="sirecom.png" alt="" />
                 <h2>Stage Développeur full stack - laravel, SIRECOM</h2>
               </div>
-              <span className="date">MARS 2024 - MAI 2024</span>
+              <span className="date">1 MARS 2024 - 1 MAI 2024</span>
               <p>
                 Développement d'une application de gestion des équipements
                 informatiques et matériels de l'entreprise

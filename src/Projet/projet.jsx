@@ -140,9 +140,10 @@ export default function Projet(){
                        <div className="tec">
                             <img src="html.png" alt="" title="HTML"/>
                             <img src="css.png" alt="" title="CSS"/>
-                            <img src="laravel.png" alt="" title="Laravel"/>
                             <img src="react.png" alt="" title="React.js"/>
-                            <img src="mongo-db.png" alt="" title="MongoDB" />
+                            <img src="laravel.png" alt="" title="Laravel"/>
+                            
+                            {/* <img src="mongo-db.png" alt="" title="MongoDB" /> */}
                             
                        </div>
                        <a href="https://github.com/NizarDouirek/Tasko" target="_blank" rel="noopener noreferrer">

@@ -33,6 +33,36 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Nizar-Portfolio</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.0/tsparticles.bundle.min.js"></script>
+    <script>
+      tsParticles.load("tsparticles", {
+        background: {
+          color: {
+            value: "transparent", // Important pour laisser le gif visible
+          },
+        },
+        particles: {
+          number: { value: 50 },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5 },
+          size: { value: 3 },
+          move: {
+            enable: true,
+            speed: 1,
+          },
+        },
+        interactivity: {
+          events: {
+            onHover: { enable: true, mode: "repulse" },
+            onClick: { enable: true, mode: "push" },
+          },
+        },
+        fullScreen: { enable: false }, // Pour rester dans la div
+      });
+    </script>
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDH7MTTLQ9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
