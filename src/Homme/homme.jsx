@@ -91,21 +91,25 @@ export default function Homme() {
         </motion.div>
 
         {/* Section des compétences */}
-        <motion.div className="marq" initial={{ opacity: 0, y: -50 }}
+        <motion.div className="marquee-container2" initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 3, duration: 0.6 }}>
-          <p> Développeur FrontEnd</p>
-          <p>-</p>
-          <p> Développeur BackEnd</p>
-          <p>-</p>
-          <p> Développeur d'applications</p>
-          <p>-</p>
-          <p> Développeur d'interfaces utilisateur</p>
-          <p>-</p>
-          <p> Développeur créatif</p>
-          <p>-</p>
-          <p> Développeur Web</p>
+      <div className="marquee-content2">
+          <p>Développeur FrontEnd
+          -
+           Développeur BackEnd
+          -
+           Développeur d'applications
+          -
+           Développeur d'interfaces utilisateur
+          -
+           Développeur créatif
+          -
+           Développeur Web</p> 
+          </div>
         </motion.div>
+
+
 
         {/* Décoration */}
         <motion.div className="decoration" initial={{ opacity: 0, y: -50 }}

@@ -152,6 +152,7 @@ body, html, #root, .homme {
       }
     .homme{
         height: 650px;
+        overflow-x: hidden;
     }
     .decoration {
         content: none;
@@ -183,11 +184,9 @@ body, html, #root, .homme {
         padding: 10px; /* Réduction du padding */
     }
    
-    .marq p{
-        /* margin-top: 40px;
-        font-size: 10px; */
-        /* display: block; */
-        display: none;
+    .marquee-container2 p{
+      font-size: 25px !important;
+      margin-top: 60px;
     }
 }
 @media screen and (min-width: 760px) and (max-width: 1060px) {
@@ -335,4 +334,37 @@ body, html, #root, .homme {
     }
   }
 
- 
+ .marquee-container2 {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 125px;
+}
+
+.marquee-content2 {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-left1 20s linear infinite;
+} 
+.marquee-container2 p{
+  font-size: 35px;
+    font-weight: bold;
+    
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier;
+    color:#495E57;
+    text-shadow: 2px 2px 4px #45474B;
+    white-space: nowrap;
+}
+
+@keyframes scroll-left1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
