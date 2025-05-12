@@ -50,9 +50,9 @@ export default function Projet(){
                        </button>
                        </a>
                     </div>
-                   
+                   <a href="voyage.png" target="_blank">
                       <img className="imgsite1" src="voyage.png" alt=""/>
-                   
+                   </a>
                  </div><br /><br />
                 <div className="sectionP2">
                 
@@ -74,7 +74,9 @@ export default function Projet(){
                        </a>
                     </div>
                    <div className="imgsite-container">
+                    <a href="gbien.png" target="_blank">
                    <img  className="imgsite"src="gbien.png" alt="" style={{marginTop:"0.1px"}}/>
+                   </a>
                    </div>
                 </div><br /><br />
                 <div className="sectionP3">
@@ -98,9 +100,9 @@ export default function Projet(){
                        </button>
                        </a>
                     </div>
-                   
+                   <a href="storeelec.png" target="_blank">
                       <img className="imgsite" src="storeelec.png" alt=""/>
-                   
+                   </a>
                  </div><br /><br />
                  <div className="sectionP4">
                 <div className="contentP">
@@ -126,9 +128,9 @@ export default function Projet(){
                        
                        </a>
                     </div>
-                   
+                   <a href="fittrack.png" target="_blank">
                       <img className="imgsite" src="fittrack.png" alt=""/>
-                   
+                   </a>
                  </div><br /><br />
                  <div className="sectionP5">
                 <div className="contentP">
@@ -154,7 +156,9 @@ export default function Projet(){
                        </a>
                     </div>
                    
+                   <a href="tasko.png" target="_blank">
                       <img className="imgsite" src="tasko.png" alt=""/>
+                      </a>
                    
                  </div>
                  

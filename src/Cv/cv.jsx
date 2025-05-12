@@ -113,7 +113,7 @@ export default function Cv() {
                   style={{ borderRadius: "50%" }}
                   alt=""
                 />
-                <h2>Stage Développeur mobile Full stack, VNB-IT</h2>
+                <h2>Stage Développeur mobile , VNB-IT</h2>
               </div>
               <span className="date">1 Avril 2025 - aujourd'hui</span>
               <p>
