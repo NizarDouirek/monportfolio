@@ -96,7 +96,7 @@ en programmation et en conception web  <br />
   animate={isVisible ? "visible" : "hidden"}
   transition={{ delay: 1, duration: 1.6 }}>
                         <a
-                            href="Nizar Douirek (9).pdf"
+                            href="Nizar-douirek.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
