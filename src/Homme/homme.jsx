@@ -86,7 +86,7 @@ export default function Homme() {
           <motion.button className="btn-homme"  initial={{ opacity: 0, x: -100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 2, duration: 1 }}>
-            <a href="#contact">Contactez-moi</a>
+            <a href="#contact">Contactez-moi </a>
           </motion.button>
         </motion.div>
 

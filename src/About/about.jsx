@@ -71,19 +71,19 @@ en programmation et en conception web  <br />
   transition={{ delay: 1, duration: 1.3 }}>
                         <table>
                             <tr>
-                                <td>Téléphone</td>
+                                <td><i class="fas fa-phone"></i> Téléphone </td>
                                 <td>+212 699862707</td>
                             </tr>
                             <tr>
-                                <td>Email</td>
+                                <td> <i class="fas fa-envelope"></i> Email </td>
                                 <td>douireknizar@gmail.com</td>
                             </tr>
                             <tr>
-                                <td>Adresse</td>
+                                <td><i class="fas fa-map-marker-alt"></i> Adresse</td>
                                 <td>Hay Nassim, Casablanca</td>
                             </tr>
                             <tr>
-                                <td>Langues</td>
+                                <td><i class="fas fa-language"></i> Langues</td>
                                 <td>Arabe, Français, Anglais</td>
                             </tr>
                         </table>
@@ -96,11 +96,11 @@ en programmation et en conception web  <br />
   animate={isVisible ? "visible" : "hidden"}
   transition={{ delay: 1, duration: 1.6 }}>
                         <a
-                            href="NizarDouirek-CV (1).pdf"
+                            href="Nizar Douirek (9).pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Télécharger Cv
+                            Télécharger Cv  📄
                         </a>
                     </motion.button>
                 </div>

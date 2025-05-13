@@ -250,7 +250,7 @@ export default function Footer() {
               whileTap={isDesktop ? { scale: 0.95 } : {}}
               variants={getVariants(slideInBottom)}
             >
-              <a href="NizarDouirek-CV (1).pdf" target="_blank" rel="noopener noreferrer">
+              <a href="Nizar Douirek (9).pdf" target="_blank" rel="noopener noreferrer">
                 Télécharger Cv
               </a>
             </motion.button>

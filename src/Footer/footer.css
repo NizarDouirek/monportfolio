@@ -226,9 +226,9 @@
 
 .cv-foot:hover {
   /* background: linear-gradient(135deg, #46ad8a, #357a63); */
-  background: linear-gradient(45deg, #00b894, #1b5542);
-  transform: scale(1.05);
-  
+    background: linear-gradient(80deg, #379777, #495E57); /* Légère variation de couleur */
+    box-shadow: 0 0 20px 8px rgba(61, 111, 106, 0.7); /* Effet lumineux plus fort */
+    transform: scale(1.05); /* Léger agrandissement */
 }
 .cv-foot a{
   text-decoration: none;

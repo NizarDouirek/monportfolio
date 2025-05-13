@@ -68,8 +68,9 @@ export default function Projet(){
                             <img src="mysql.png" alt=""  title="MySQL"/>
                        </div>
                        <a href= "https://github.com/NizarDouirek/gestionBien" target="_blank" rel="noopener noreferrer">
-                       <button className="visit2">visit Repository
+                       <button className="visit2">visit Repository 
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
+                       
                        </button>
                        </a>
                     </div>

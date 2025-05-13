@@ -59,7 +59,7 @@ export default function Cv() {
           {/* <div className="f" ref={formationRef}> */}
           <div className="f hidden" ref={formationRef}>
             <div className="log">
-              <h1>Formation</h1>
+              <h1><i class="fas fa-graduation-cap"></i> Formation</h1>
             </div>
             <div className="divcv">
               <div className="groupcv">
@@ -104,7 +104,7 @@ export default function Cv() {
           {/* <div className="ex" ref={experienceRef}> */}
           <div className="ex hidden hidden-right" ref={experienceRef}>
             <div className="log">
-              <h1>Expériences</h1>
+              <h1>  <i class="fas fa-briefcase"></i> Expériences</h1>
             </div>
             <div className="divcv">
               <div className="groupcv">
@@ -161,7 +161,7 @@ export default function Cv() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  attestation
+                  attestation 🔗
                 </a>
               </button>
             </div>
