@@ -288,9 +288,9 @@ export default function Footer() {
       <motion.p
         className="copyright"
         variants={getVariants(slideInRight)}
-        whileHover={isDesktop ? { scale: 1.05, transition: { duration: 0.2 } } : {}}
+        whileHover={isDesktop ? { scale: 1.01, transition: { duration: 0.2 } } : {}}
       >
-        copyright © NIZAR DOUIREK {new Date().getFullYear()}
+        copyright © NIZAR DOUIREK {new Date().getFullYear()} 🖤
       </motion.p>
     </motion.footer>
   );

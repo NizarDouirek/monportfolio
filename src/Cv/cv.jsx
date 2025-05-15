@@ -115,7 +115,7 @@ export default function Cv() {
                 />
                 <h2>Stage Développeur mobile , VNB-IT</h2>
               </div>
-              <span className="date">1 Avril 2025 - aujourd'hui</span>
+              <span className="date"> Mars 2025 - Mai 2025</span>
               <p>
               développement de l’application mobile LCR, plateforme numérique de
                l’auto-école GMP, axée sur la formation accélérée à la conduite et 
@@ -146,7 +146,7 @@ export default function Cv() {
                 />
                 <h2>Stage Développeur Full stack, TECHNAPS</h2>
               </div>
-              <span className="date">1 Décembre 2024 - 26 Mars 2025</span>
+              <span className="date"> Décembre 2024 - Mars 2025</span>
               <p>
                 Développement de l'interface d'un site web de réservation
                 d'hôtels, de voitures et de restaurants
