@@ -14,7 +14,7 @@ body, html, #root, .homme {
 }
 .container{
     text-align: center;
-    margin-top: 15%; 
+    margin-top: 14%; 
 }
 .bonjour{
     color:#45474B;
@@ -22,9 +22,20 @@ body, html, #root, .homme {
     /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     font-style: italic;
+
+ 
+  text-shadow:
+    0 0 5px #b0d1be,
+    0 0 10px #bfdecb,
+    0 0 20px #234d34,
+    0 0 40px #bbebcf;
+  font-weight: 900;
+  text-align: center;
+
+                
 }
 .wave-hand::after {
-    content: "👋"; /* Emoji de la main */
+    content: "👋🏻"; /* Emoji de la main */
     display: inline-block;
     
     animation: wave 1.5s infinite; /* Animation pour faire bouger la main */
@@ -38,9 +49,9 @@ body, html, #root, .homme {
 
 .nom {
     color: white;
-    text-shadow: 0px 0px 10px #0f0f0f, 0px 0px 10px #379777;
+    
     font-family: 'Pacifico', cursive;
-    font-size: 85px;
+    font-size: 95px;
     text-transform: uppercase;
     overflow: hidden; /* Garde le texte dans les limites */
     white-space: nowrap; /* Empêche le retour à la ligne */
@@ -48,6 +59,20 @@ body, html, #root, .homme {
     margin: 0 auto; /* Centre horizontalement */
     animation: typing 4s steps(12, end) infinite, blink 0.5s step-end infinite alternate;
     text-align: center; /* Assure un alignement centré */
+     
+  text-shadow:   0px -6px 0 #215645,  
+                
+                 0px  6px 0 #215645,
+                -6px  0px 0 #215645,  
+                 6px  0px 0 #215645,
+                
+                 0 19px 1px rgba(0,0,0,.1),
+                 0 0 6px rgba(0,0,0,.1),
+                 0 6px 3px rgba(0,0,0,.3),
+                 0 12px 6px rgba(0,0,0,.2),
+                 0 18px 18px rgba(0,0,0,.25),
+                 0 2px 24px rgba(0,0,0,.2),
+                 0 3px 36px rgba(0,0,0,.15);
 }
 
 /* Animation pour simuler l'écriture */
@@ -86,8 +111,16 @@ body, html, #root, .homme {
     font-size: 30px;
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     font-style: italic;
-    animation: shine1 4s linear infinite, glow1 2s ease-in-out infinite alternate;
+    /* animation: shine1 4s linear infinite, glow1 2s ease-in-out infinite alternate; */
     position: relative;
+    font-weight: 700;
+     
+  text-shadow:
+    0 0 5px #b0d1be,
+    0 0 10px #bfdecb,
+    0 0 20px #234d34,
+    0 0 40px #bbebcf;
+    
 }
 @keyframes shine1 {
     to {
@@ -164,7 +197,11 @@ body, html, #root, .homme {
 
     .nom {
         margin-top: 30px;
-        
+       
+    
+    text-shadow: 0px 0px 10px #0f0f0f, 0px 0px 10px #379777;
+    width: auto;
+    animation: typing 4s steps(12, end) infinite, blink 0.5s step-end infinite alternate;
         font-size: 35px; /* Texte principal encore plus petit */
     }
 
@@ -222,35 +259,12 @@ body, html, #root, .homme {
     }
 }
 
-.marq{
-    display: flex;
-    gap: 1rem;
-    flex-wrap: nowrap;
 
-    width: 100%;
-    margin-top: 125px;
-    animation: modernMove 20s linear infinite;
-}
-.marq p {
-    font-size: 35px;
-    font-weight: bold;
-    
-    letter-spacing: 1px;
-    font-family: 'Courier New', Courier;
-    color:#495E57;
-    text-shadow: 2px 2px 4px #45474B;
-    white-space: nowrap;
-  }
 
-  @keyframes modernMove {
-    0% {
-        transform: translateX(100%); 
-    }
-    100% {
-        transform: translateX(-180%); 
-    }
 
-}
+ 
+
+
 .decoration {
     position: fixed;
     bottom: calc(0em - 50px);
@@ -347,7 +361,7 @@ body, html, #root, .homme {
   display: inline-block;
   white-space: nowrap;
   padding-left: 100%;
-  animation: scroll-left1 20s linear infinite;
+  animation: scroll-left1 25s linear infinite;
 } 
 .marquee-container2 p{
   font-size: 35px;
@@ -359,6 +373,9 @@ body, html, #root, .homme {
     text-shadow: 2px 2px 4px #45474B;
     white-space: nowrap;
 }
+.marquee-container2:hover .marquee-content2 {
+  animation-play-state: paused;
+}
 
 @keyframes scroll-left1 {
   0% {
@@ -366,5 +383,76 @@ body, html, #root, .homme {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+.circle-stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 5.2rem;
+  flex-wrap: wrap;
+  margin-top: -5rem;
+  padding: 100px;
+}
+
+.circle-card {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #143d2f, #309976);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+  font-style: italic;
+  transition: transform 0.3s ease;
+}
+
+.circle-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(61, 111, 106, 0.6);
+}
+
+.circle-title {
+  font-size: 34px;
+  margin: 0;
+  color: wheat;
+}
+
+.circle-number {
+  font-size: 46px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+.iconEf {
+  font-size: 30px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.circle-card:hover .iconEf {
+  transform: scale(1.2) rotate(10deg);
+}
+/* Responsive */
+@media (max-width: 480px) {
+  .circle-card {
+    width: 230px;
+    height: 130px;
+    
+  }
+  .circle-stats-container{
+    gap: 1rem;
+  }
+  .circle-title {
+    font-size: 22px;
+  }
+  .circle-number {
+    font-size: 22px;
+  }
+  .iconEf{
+    font-size: 20px;
   }
 }

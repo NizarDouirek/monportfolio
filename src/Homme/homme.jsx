@@ -109,7 +109,7 @@ export default function Homme() {
           </div>
         </motion.div>
 
-
+         
 
         {/* Décoration */}
         <motion.div className="decoration" initial={{ opacity: 0, y: -50 }}
@@ -126,7 +126,7 @@ export default function Homme() {
           <div className="carre carre9"></div>
         </motion.div>
       </motion.div>
-
+{/* <img src="hoo.jpg" alt="" style={{width:'300px',height:'300px',marginTop:'-700px'}}/> */}
       {/* Autres sections */}
       <About />
       <button
@@ -157,6 +157,25 @@ export default function Homme() {
       <Skills />
       <Cv />
       <Projet />
+     <div className="circle-stats-container">
+       <div className="circle-card">
+    <i class="fas fa-code iconEf"></i>
+    <p className="circle-title">Skills</p>
+    <p className="circle-number">+16</p>
+  </div>
+  <div className="circle-card">
+    <i class="fas fa-laptop iconEf"></i>
+    <p className="circle-title">Projet réalisé</p>
+    <p className="circle-number">+6</p>
+  </div>
+  <div className="circle-card">
+    <i class="fas fa-user-graduate iconEf"></i>
+    <p className="circle-title">Certification</p>
+    <p className="circle-number">+7</p>
+  </div>
+ 
+</div>
+
       <Contact />
       {/* <Footer /> */}
     </div>

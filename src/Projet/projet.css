@@ -81,6 +81,7 @@
     /* border: 1px solid white; */
     border-radius: 10px;
     /* height: 290px; */
+     box-shadow: 0 1rem 2rem -1rem black;
     background:linear-gradient(60deg, #5f2196, #a715c4 );
 }
 .sectionP3 {
@@ -89,6 +90,7 @@
     justify-content: space-around;
     /* border: 1px solid white; */
     border-radius: 10px;
+     box-shadow: 0 1rem 2rem -1rem black;
     background:linear-gradient(60deg, #3c6c5d, #6c70ab );
 }
 .sectionP3 .imgsite{
@@ -106,6 +108,7 @@
     display: flex;
     justify-content: space-around;
     /* border: 1px solid white; */
+     box-shadow: 0 1rem 2rem -1rem black;
     border-radius: 10px;
     background:linear-gradient(60deg, #955b5b, #f62440 );
 }
@@ -143,6 +146,7 @@
     justify-content: space-around;
     /* border: 1px solid white; */
     border-radius: 10px;
+     box-shadow: 0 1rem 2rem -1rem black;
     background:linear-gradient(60deg,  #ac6fb4 ,#dbc1d6);
 }
 .sectionP5 .imgsite{

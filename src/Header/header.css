@@ -76,6 +76,7 @@ nav a {
   font-family: roboto;
   cursor: url('/public/nnb.cur'), auto;
   font-size: 20px;
+  font-weight: 700;
   position: relative; /* Nécessaire pour les pseudo-éléments */
   transition: color 0.3s ease, transform 0.3s ease;
 }

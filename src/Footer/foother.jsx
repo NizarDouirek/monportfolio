@@ -189,14 +189,14 @@ export default function Footer() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 1 }}
             >
-              douireknizar@gmail.com
+              <i class="fas fa-envelope"></i>  douireknizar@gmail.com
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 1 }}
             >
-              +212 699862707
+              <i class="fas fa-phone"></i>  +212 699862707
             </motion.p>
           </motion.div>
 
@@ -251,7 +251,7 @@ export default function Footer() {
               variants={getVariants(slideInBottom)}
             >
               <a href="Nizar-douirek.pdf" target="_blank" rel="noopener noreferrer">
-                Télécharger Cv
+                Voir monF Cv <i class="fas fa-download"></i> 
               </a>
             </motion.button>
           </motion.div>

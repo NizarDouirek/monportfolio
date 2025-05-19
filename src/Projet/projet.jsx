@@ -173,7 +173,7 @@ export default function Projet(){
     <motion.p initial={{ opacity: 0, y: 50 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ delay: 1, duration: 3 }}>
-        Des projets passionnants ✨ sont en cours de développement !!! 
+        Des projets passionnants sont en cours de développement ✨  
         {/* Restez à l'écoute pour découvrir de nouvelles créations et solutions innovantes. */}
     </motion.p>
 </motion.div>
