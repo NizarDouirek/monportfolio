@@ -72,20 +72,20 @@ export default function Homme() {
         <motion.div className="container" variants={itemVariants}>
           <motion.p className="bonjour" initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 1, duration: 0.5 }}>
+    transition={{ delay: 1, duration: 2}}>
             Bonjour <span className="wave-hand"></span>, je suis
           </motion.p>
           <motion.h1 className="nom" variants={itemVariants}>
             Nizar Douirek
           </motion.h1>
-          <motion.p className="job"  initial={{ opacity: 0, y: -50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 1, duration: 0.5 }}>
+          <motion.p className="job"  initial={{ opacity: 0, x: 200 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ delay: 2, duration: 1 }}>
             Développeur Full Stack
           </motion.p>
           <motion.button className="btn-homme"  initial={{ opacity: 0, x: -100 }}
     animate={{ opacity: 1, x: 0 }}
-    transition={{ delay: 2, duration: 1 }}>
+    transition={{ delay: 3, duration: 1 }}>
             <a href="#contact">Contactez-moi </a>
           </motion.button>
         </motion.div>
@@ -157,24 +157,47 @@ export default function Homme() {
       <Skills />
       <Cv />
       <Projet />
-     <div className="circle-stats-container">
-       <div className="circle-card">
-    <i class="fas fa-code iconEf"></i>
+    <div className="circle-stats-container">
+  <motion.div
+    className="circle-card"
+    initial={{ opacity: 0, x: 100 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.3 }}
+    viewport={{ once: true, amount: 0.3 }}
+    whileHover={{scale: 1.1}}
+  >
+    <i className="fas fa-code iconEf"></i>
     <p className="circle-title">Skills</p>
     <p className="circle-number">+16</p>
-  </div>
-  <div className="circle-card">
-    <i class="fas fa-laptop iconEf"></i>
+  </motion.div>
+
+  <motion.div
+    className="circle-card"
+    initial={{ opacity: 0, y: 100 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.3 }}
+    viewport={{ once: true, amount: 0.3 }}
+    whileHover={{scale: 1.1}}
+  >
+    <i className="fas fa-laptop iconEf"></i>
     <p className="circle-title">Projet réalisé</p>
     <p className="circle-number">+6</p>
-  </div>
-  <div className="circle-card">
-    <i class="fas fa-user-graduate iconEf"></i>
+  </motion.div>
+
+  <motion.div
+    className="circle-card"
+    initial={{ opacity: 0, x: -100 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.3 }}
+    viewport={{ once: true, amount: 0.3 }}
+     whileHover={{scale: 1.1}}
+  >
+    <i className="fas fa-user-graduate iconEf"></i>
     <p className="circle-title">Certification</p>
     <p className="circle-number">+7</p>
-  </div>
- 
+  </motion.div>
 </div>
+
 
       <Contact />
       {/* <Footer /> */}

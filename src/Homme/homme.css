@@ -24,11 +24,11 @@ body, html, #root, .homme {
     font-style: italic;
 
  
-  text-shadow:
+  /* text-shadow:
     0 0 5px #b0d1be,
     0 0 10px #bfdecb,
     0 0 20px #234d34,
-    0 0 40px #bbebcf;
+    0 0 40px #bbebcf; */
   font-weight: 900;
   text-align: center;
 
@@ -117,9 +117,9 @@ body, html, #root, .homme {
      
   text-shadow:
     0 0 5px #b0d1be,
-    0 0 10px #bfdecb,
+    0 0 10px #1f7867,
     0 0 20px #234d34,
-    0 0 40px #bbebcf;
+    0 0 40px #328956;
     
 }
 @keyframes shine1 {

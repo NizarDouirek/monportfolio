@@ -125,10 +125,9 @@ nav a:hover::after {
 }
 }
 @media (max-width: 480px) {
-    /* .header {
-        margin: 0;
-        padding: 0;
-    } */
+    header {
+       height: 9vh;
+    }
     /* .logo {
         gap: 1rem;
     } */
@@ -153,7 +152,7 @@ nav a:hover::after {
       list-style: none;
       padding: 0;
       /* margin-right: 50px; */
-      margin-top: 12px;
+      margin-top: 8px;
       /* margin: 10px 0; */
   }
   .navbar-icons a{

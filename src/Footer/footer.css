@@ -257,6 +257,8 @@
     .footer {
         margin-top: 60px; /* Réduire l'espace en haut */
         padding: 35px 20px; /* Réduire le padding */
+         overflow: hidden;
+         min-height: 400px;
     }
 
     .footer .social h1 {

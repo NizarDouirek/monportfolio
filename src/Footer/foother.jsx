@@ -7,22 +7,12 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function Footer() {
   const [formStatus, setFormStatus] = useState(null);
-  const [isDesktop, setIsDesktop] = useState(false);
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0.7, 1], [0, 1]);
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   });
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-    };
-    handleResize(); // Vérifie au chargement
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -52,52 +42,42 @@ export default function Footer() {
     }, 3000);
   };
 
+  // Variants simplifiés pour tous les écrans
   const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      y: 0,
-      transition: { duration: 1, ease: "easeOut" },
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 1, ease: "easeOut" },
-    },
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
   };
 
   const slideInLeft = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 2.8 } },
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
   };
 
   const slideInRight = {
-    hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 2 } },
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0 },
   };
 
   const slideInBottom = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 2.8 } },
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
   };
 
   const slideInTop = {
-    hidden: { opacity: 0, y: -100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 2 } },
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0 },
   };
-
-  // Fonction utilitaire pour appliquer variants seulement sur desktop
-  // const getVariants = (variant) => variant; 
-  const getVariants = (variant) => {
-    return isDesktop ? variant : {};
-  };
-  
-  // Teste avec ça
-
 
   return (
     <motion.footer
@@ -106,27 +86,27 @@ export default function Footer() {
       style={{ opacity }}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      variants={getVariants(containerVariants)}
+      variants={containerVariants}
     >
-      <motion.div className="social" variants={getVariants(slideInRight)}>
-        <motion.div className="head-foot" variants={getVariants(slideInTop)}>
+      <motion.div className="social" variants={fadeIn}>
+        <motion.div className="head-foot" variants={slideInTop}>
           <div className="container-footer-form">
             <motion.form
               className="footer-newsletter"
               onSubmit={handleSubmit}
-              variants={getVariants(slideInTop)}
+              variants={slideInTop}
             >
               <motion.input
                 type="email"
                 name="email"
                 placeholder="Entrez votre adresse email"
                 required
-                whileFocus={isDesktop ? { scale: 1.02 } : {}}
+                whileFocus={{ scale: 1.02 }}
               />
               <motion.button
                 type="submit"
-                whileHover={isDesktop ? { scale: 1.05 } : {}}
-                whileTap={isDesktop ? { scale: 0.95 } : {}}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 S'abonner
               </motion.button>
@@ -141,12 +121,12 @@ export default function Footer() {
                 </motion.b>
               )}
             </motion.form>
-            <div style={{ display: 'flex' }}>
+            <motion.div style={{ display: 'flex' }} variants={fadeIn} transition={{ duration: 2 }}>
               <motion.span
-                animate={isDesktop ? {
+                animate={{
                   y: [-5, 5, -5],
                   rotate: [0, 10, 0],
-                } : {}}
+                }}
                 transition={{
                   duration: 3,
                   repeat: Infinity,
@@ -156,14 +136,15 @@ export default function Footer() {
                 🚀
               </motion.span>
               <b> Restez connecté à mon univers tech </b>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
 
-        <motion.div className="section-foot" variants={getVariants(containerVariants)}>
-          <motion.div className="contact-foot" variants={getVariants(slideInLeft)}>
+        <motion.div className="section-foot" variants={fadeIn}>
+          <motion.div className="contact-foot" variants={slideInLeft}>
             <h1>Contactez moi</h1>
-            <motion.div variants={getVariants(slideInBottom)}>
+            <motion.div variants={fadeIn}
+            transition={{ duration: 1.5 }}>
               {[
                 { href: "https://web.facebook.com/nizar.douirek.50", img: "fcb.png" },
                 { href: "https://www.linkedin.com/in/nizar-douirek123/", img: "linkdeen-footer.png" },
@@ -176,119 +157,101 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={isDesktop ? { scale: 1.2, rotate: [0, -10, 10, -10, 0] } : {}}
-                  variants={getVariants(slideInRight)}
+                  whileHover={{ scale: 1.2 }}
+                  transition={{ duration: 1.3 }}
+                  variants={slideInRight}
                 >
                   <img src={social.img} alt="" className="social-icon" />
                 </motion.a>
               ))}
             </motion.div>
 
-            <motion.p
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 1 }}
-            >
-              <i class="fas fa-envelope"></i>  douireknizar@gmail.com
+            <motion.p variants={slideInBottom} transition={{ duration: 2 }}>
+              <i className="fas fa-envelope"></i> douireknizar@gmail.com
             </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 1 }}
-            >
-              <i class="fas fa-phone"></i>  +212 699862707
+            <motion.p variants={slideInBottom} transition={{ duration: 2 }}>
+              <i className="fas fa-phone"></i> +212 699862707
             </motion.p>
           </motion.div>
 
-          <motion.div
-            className="section-nav"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 1 }}
-          >
+          <motion.div className="section-nav" variants={slideInRight}>
             <h1>Pages</h1>
             <ul className="footer-links">
-  <motion.li variants={getVariants(slideInLeft)}>
-    <motion.div whileHover={isDesktop ? { x: 10 } : {}}>
-      <Link to="/about">À propos</Link>
-    </motion.div>
-  </motion.li>
-  <motion.li variants={getVariants(slideInRight)}>
-    <motion.div whileHover={isDesktop ? { x: 10 } : {}}>
-      <Link to="/skills">Compétences</Link>
-    </motion.div>
-  </motion.li>
-  <motion.li variants={getVariants(slideInLeft)}>
-    <motion.div whileHover={isDesktop ? { x: 10 } : {}}>
-      <Link to="/projet">Projet</Link>
-    </motion.div>
-  </motion.li>
-  <motion.li variants={getVariants(slideInRight)}>
-    <motion.div whileHover={isDesktop ? { x: 10 } : {}}>
-      <Link to="/Cv">Parcours</Link>
-    </motion.div>
-  </motion.li>
-  <motion.li variants={getVariants(slideInLeft)}>
-    <motion.div whileHover={isDesktop ? { x: 10 } : {}}>
-      <Link to="/contact">Contact</Link>
-    </motion.div>
-  </motion.li>
-</ul>
-
+              <motion.li variants={slideInLeft} transition={{ duration: 2 }}>
+                <motion.div whileHover={{ x: 10 }}>
+                  <Link to="/about">À propos</Link>
+                </motion.div>
+              </motion.li>
+              <motion.li variants={slideInRight} transition={{ duration: 2 }}>
+                <motion.div whileHover={{ x: 10 }}>
+                  <Link to="/skills">Compétences</Link>
+                </motion.div>
+              </motion.li>
+              <motion.li variants={slideInLeft} transition={{ duration: 2 }}>
+                <motion.div whileHover={{ x: 10 }}>
+                  <Link to="/projet">Projet</Link>
+                </motion.div>
+              </motion.li>
+              <motion.li variants={slideInRight} transition={{ duration: 2 }}>
+                <motion.div whileHover={{ x: 10 }}>
+                  <Link to="/Cv">Parcours</Link>
+                </motion.div>
+              </motion.li>
+              <motion.li variants={slideInLeft} transition={{ duration: 2 }}>
+                <motion.div whileHover={{ x: 10 }}>
+                  <Link to="/contact">Contact</Link>
+                </motion.div>
+              </motion.li>
+            </ul>
           </motion.div>
 
-          <motion.div className="section-adrss" variants={getVariants(slideInLeft)}>
+          <motion.div className="section-adrss" variants={slideInLeft} transition={{ duration: 2 }}>
             <h1>Adresse</h1>
             <ul className="footer-links">
-              <motion.p variants={getVariants(slideInRight)}>
+              <motion.p variants={slideInRight}>
                 Hay Nassim imm:31 <br /> app:9, Casablanca
               </motion.p>
             </ul>
             <motion.button
               className="cv-foot"
-              whileHover={isDesktop ? { scale: 1.05 } : {}}
-              whileTap={isDesktop ? { scale: 0.95 } : {}}
-              variants={getVariants(slideInBottom)}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              variants={slideInBottom}
             >
               <a href="Nizar-douirek.pdf" target="_blank" rel="noopener noreferrer">
-                Voir monF Cv <i class="fas fa-download"></i> 
+                Voir mon CV <i className="fas fa-file-alt"></i>
               </a>
             </motion.button>
           </motion.div>
         </motion.div>
       </motion.div>
 
-      <motion.div className="divLogo" variants={getVariants(slideInRight)}>
+      <motion.div className="divLogo" variants={slideInRight}>
         <motion.div
           className="logofo"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 1 }}
-          variants={getVariants(slideInBottom)}
+          variants={slideInBottom}
+          transition={{ duration: 1 }}
         >
           NIZAR
         </motion.div>
         <motion.img
           src="imgfott.png"
           alt=""
-          whileHover={isDesktop ? {
+          whileHover={{
             scale: 1.05,
             rotate: [0, -20, 20, -20, 0],
-            transition: { duration: 1 },
-            repeat: Infinity,
-          } : {}}
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 1 }}
-          variants={getVariants(slideInRight)}
+            transition: { duration: 1 }
+          }}
+          transition={{ duration: 2 }}
+          variants={slideInRight}
         />
       </motion.div>
 
-      <motion.hr className="footer-break" variants={getVariants(itemVariants)} />
+      <motion.hr className="footer-break" variants={fadeIn} />
       <motion.p
         className="copyright"
-        variants={getVariants(slideInRight)}
-        whileHover={isDesktop ? { scale: 1.01, transition: { duration: 0.2 } } : {}}
+        variants={slideInRight}
+        whileHover={{ scale: 1.01 }}
       >
         copyright © NIZAR DOUIREK {new Date().getFullYear()} 🖤
       </motion.p>

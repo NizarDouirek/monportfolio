@@ -100,7 +100,7 @@ en programmation et en conception web  <br />
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                          <i class="fas fa-download"></i>  Voir mon Cv  
+               Voir mon Cv <i class="fas fa-file-alt"></i> 
                         </a>
                     </motion.button>
                 </div>
