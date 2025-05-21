@@ -1,11 +1,11 @@
 .contact{
     height: 100vh;
     /* min-height: 120vh; */
-    background: url('/public/he.avif');
+    background: url('/public/decor6.svg');
     background-repeat: no-repeat;
     margin-top: 50px;
     /* background-size: cover; */
-    background-position: right top;
+    background-position: top right;
 }
 .loginPage {
     display: flex;

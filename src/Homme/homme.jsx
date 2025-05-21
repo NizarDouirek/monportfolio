@@ -89,7 +89,9 @@ export default function Homme() {
             <a href="#contact">Contactez-moi </a>
           </motion.button>
         </motion.div>
-
+       <div>
+        <img src="decor2.svg" style={{marginTop:'-400px',marginLeft:'1150px',width:'200px',height:'300px'}} alt="" />
+         </div>
         {/* Section des compétences */}
         <motion.div className="marquee-container2" initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
@@ -156,6 +158,7 @@ export default function Homme() {
       </button>
       <Skills />
       <Cv />
+      
       <Projet />
     <div className="circle-stats-container">
   <motion.div

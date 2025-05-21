@@ -1,8 +1,8 @@
 .projets{
-    /* background-image: url(/public/bb.png);
+    background-image: url(/public/decor3.svg);
     background-repeat: no-repeat;
-    background-size: cover; */
-    background-color: white;
+    background-position: top right ;
+    /* background-color: white; */
     padding: 100px;
     /* height: 500px; */
 }
@@ -232,6 +232,7 @@
 
 @media screen and (max-width: 480px) {
     .projets{
+        background:none;
         margin-top: 25px;
     }
     .projets-message p{
