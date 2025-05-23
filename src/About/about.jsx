@@ -71,19 +71,19 @@ en programmation et en conception web  <br />
   transition={{ delay: 1, duration: 1.3 }}>
                         <table>
                             <tr>
-                                <td><i class="fas fa-phone"></i> Téléphone </td>
+                                <td><i class="bx bx-phone icn"></i> Téléphone </td>
                                 <td>+212 699862707</td>
                             </tr>
                             <tr>
-                                <td> <i class="fas fa-envelope"></i> Email </td>
+                                <td> <i class="bx bx-envelope icn"></i> Email </td>
                                 <td>douireknizar@gmail.com</td>
                             </tr>
                             <tr>
-                                <td><i class="fas fa-map-marker-alt"></i> Adresse</td>
+                                <td><i class="bx bx-map icn"></i> Adresse</td>
                                 <td>Hay Nassim, Casablanca</td>
                             </tr>
                             <tr>
-                                <td><i class="fas fa-language"></i> Langues</td>
+                                <td><i class="bx bx-globe icn"></i> Langues</td>
                                 <td>Arabe, Français, Anglais</td>
                             </tr>
                         </table>
@@ -96,12 +96,11 @@ en programmation et en conception web  <br />
   animate={isVisible ? "visible" : "hidden"}
   transition={{ delay: 1, duration: 1.6 }}>
                         <a
-                            href="Nizar-douirek.pdf"
+                            href= "https://www.linkedin.com/in/nizar-douirek123/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-               Voir mon Cv <i class="fas fa-file-alt"></i> 
-                        </a>
+             <i class="bx bxl-linkedin icnLi"></i> Visiter mon linkedin</a>
                     </motion.button>
                 </div>
             </div>

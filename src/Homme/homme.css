@@ -14,11 +14,11 @@ body, html, #root, .homme {
 }
 .container{
     text-align: center;
-    margin-top: 12%; 
+    margin-top: 8%; 
 }
 .bonjour{
     color:#45474B;
-    font-size: 35px;
+    font-size: 30px;
     /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     font-style: italic;
@@ -176,7 +176,40 @@ body, html, #root, .homme {
     cursor: url('/public/nnb.cur'), auto;
    
 }
+.btn-homme1:hover {
+    cursor: url('/public/nnb.cur'), auto;
+    background: linear-gradient(80deg, #eaf8f3, #d4e3de); /* Légère variation de couleur */
+    box-shadow: 0 0 20px 8px rgba(61, 111, 106, 0.7); /* Effet lumineux plus fort */
+    transform: scale(1.05); /* Léger agrandissement */
+}
 
+.btn-homme1:active {
+    
+    transform: scale(0.95); /* Réduit légèrement le bouton au clic */
+    box-shadow: 0px 4px 8px rgba(59, 35, 101, 0.225); /* Diminue l'ombre */
+}
+
+
+.btn-homme1 a {
+    color: #143d2f;
+    text-decoration: none;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    font-weight: bold;
+    cursor: url('/public/nnb.cur'), auto;
+}
+.btn-homme1{
+    background: linear-gradient(135deg, #d8ece6,  #ffffff);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: url('/public/nnb.cur'), auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
+}
 
 @media screen and (max-width: 480px) {
     body, html, #root {
@@ -192,7 +225,7 @@ body, html, #root, .homme {
         display: none;
     }
     .container {
-        margin-top: 50%; /* Déplace plus bas sur les petits écrans */
+        margin-top: 40%; 
     }
 
     .nom {
@@ -223,7 +256,11 @@ body, html, #root, .homme {
    
     .marquee-container2 p{
       font-size: 25px !important;
-      margin-top: 60px;
+      /* margin-top: 60px; */
+    }
+    .paHomme{
+      font-size: 16px !important;
+      width: 370px;
     }
 }
 @media screen and (min-width: 760px) and (max-width: 1060px) {
@@ -257,6 +294,7 @@ body, html, #root, .homme {
         font-size: 16px; /* Affiche le texte avec une petite taille */
         display: block; /* Rétablit l'affichage si masqué pour téléphones */
     }
+    
 }
 
 
@@ -354,7 +392,7 @@ body, html, #root, .homme {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 125px;
+  margin-top: 80px;
 }
 
 .marquee-content2 {
@@ -397,7 +435,8 @@ body, html, #root, .homme {
 .circle-card {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  border-radius: 20px;
   background: linear-gradient(135deg, #143d2f, #309976);
   color: white;
   display: flex;
@@ -455,4 +494,23 @@ body, html, #root, .homme {
   .iconEf{
     font-size: 20px;
   }
+}
+.divPaHomme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.paHomme {
+  max-width: 760px;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 1.6;
+  font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+}
+.icnBu{
+  position: relative;
+  top: 2px;
 }

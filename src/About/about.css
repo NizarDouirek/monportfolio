@@ -280,4 +280,10 @@ table tr:hover{
 .contentAbout {
     opacity: 0; /* Initialement caché */
 }
-
+.icn {
+  font-size: 20px;       /* Ajuste la taille selon ton design */
+  margin-right: 5px;     /* Espace entre l'icône et le texte */
+  position: relative;
+  top: 3px;              /* Fait descendre légèrement l’icône */
+  color: #3a3a3a;        /* Optionnel : couleur personnalisée */
+}

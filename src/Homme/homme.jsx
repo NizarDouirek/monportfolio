@@ -72,7 +72,7 @@ export default function Homme() {
         <motion.div className="container" variants={itemVariants}>
           <motion.p className="bonjour" initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 1, duration: 2}}>
+    transition={{ delay: 1, duration: 1}}>
             Bonjour <span className="wave-hand"></span>, je suis
           </motion.p>
           <motion.h1 className="nom" variants={itemVariants}>
@@ -80,17 +80,34 @@ export default function Homme() {
           </motion.h1>
           <motion.p className="job"  initial={{ opacity: 0, x: 200 }}
     animate={{ opacity: 1, x: 0 }}
-    transition={{ delay: 2, duration: 1 }}>
+    transition={{ delay: 2, duration: 0.5 }}>
             Développeur Full Stack
           </motion.p>
+          <div className="divPaHomme">
+  <motion.p className="paHomme" initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 3, duration: 0.6}}>
+    Je transforme vos idées en applications web rapides, intuitives et scalables,
+    pour répondre parfaitement aux besoins de vos utilisateurs.
+  </motion.p>
+</div>
+
           <motion.button className="btn-homme"  initial={{ opacity: 0, x: -100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 3, duration: 1 }}>
-            <a href="#contact">Contactez-moi </a>
+            <a href="#contact"> <i class="bx bx-chat icnBu"></i> Contactez-moi </a>
+          </motion.button>
+          <motion.button className="btn-homme1"  initial={{ opacity: 0, x: 100 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ delay: 3, duration: 1 }}>
+            <a href="Nizar-douirek.pdf"target="_blank"rel="noopener noreferrer">
+              <i class="bx bx-download icnBu"></i> Voir mon cv</a>
           </motion.button>
         </motion.div>
        <div>
-        <img src="decor2.svg" style={{marginTop:'-400px',marginLeft:'1150px',width:'200px',height:'300px'}} alt="" />
+        <motion.img initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 4, duration: 1 }} src="decor7.svg" style={{marginTop:'-500px',marginLeft:'1150px',width:'350px',height:'500px'}} alt="" />
          </div>
         {/* Section des compétences */}
         <motion.div className="marquee-container2" initial={{ opacity: 0, y: -50 }}
@@ -116,7 +133,7 @@ export default function Homme() {
         {/* Décoration */}
         <motion.div className="decoration" initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 4, duration: 0.6}}>
+    transition={{ delay: 3, duration: 0.6}}>
           <div className="carre carre1"></div>
           <div className="carre carre2"></div>
           <div className="carre carre3"></div>
@@ -160,7 +177,7 @@ export default function Homme() {
       <Cv />
       
       <Projet />
-    <div className="circle-stats-container">
+    <motion.div className="circle-stats-container">
   <motion.div
     className="circle-card"
     initial={{ opacity: 0, x: 100 }}
@@ -199,7 +216,7 @@ export default function Homme() {
     <p className="circle-title">Certification</p>
     <p className="circle-number">+7</p>
   </motion.div>
-</div>
+</motion.div>
 
 
       <Contact />

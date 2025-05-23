@@ -28,6 +28,7 @@ export default function Projet(){
         <div id="projet">
           <div className="projets">
           <Title text="Projet" />
+          <p style={{textAlign:'center',fontSize:'20px',fontWeight:'bold',marginTop:'10px'}}> Découvrez une sélection de mes projets les plus aboutis et innovants 💡</p>
                <div className="projet">
                 <div className="sectionP">
                     <div className="contentP">

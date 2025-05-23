@@ -253,7 +253,7 @@ export default function Footer() {
         variants={slideInRight}
         whileHover={{ scale: 1.01 }}
       >
-        copyright © NIZAR DOUIREK {new Date().getFullYear()} 🖤
+        copyright © NIZAR DOUIREK {new Date().getFullYear()} 🤍
       </motion.p>
     </motion.footer>
   );

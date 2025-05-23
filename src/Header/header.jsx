@@ -27,29 +27,29 @@ export default function Header(){
         <div>
             <header  className={isScrolled ? "scrolled" : ""}>
                 <div className="logo">
-                  <img src="dn.png"/>
+                  <img className="dn" src="dn.png"/>
                   {/* <h1>Nizar <span className="prenom">Douirek</span></h1> */}
                   <div className="navbar">
                       <nav>
                         <ul>
-                           <li><Link to="/homme" style={{ color: isActive(["/", "/homme"]) ? '#32ca97' : '#495E57' }}>Accueil</Link></li>
-                           <li><Link to="/about"  style={{ color: isActive(["/about"]) ? '#32ca97' : '#495E57' }}>À propos</Link></li>
-                           <li><Link to="/skills"  style={{ color: isActive(["/skills"]) ? '#32ca97' : '#495E57' }}>Compétences</Link></li>
-                           <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#32ca97' : '#495E57' }}>Parcours</Link></li>
-                           <li><Link to="/projet" style={{ color: isActive(["/projet"]) ? '#32ca97' : '#495E57' }}>Projets</Link></li>
-                           <li><Link to="/contact" style={{ color: isActive(["/contact"]) ? '#32ca97' : '#495E57' }}>Contact</Link></li>
+                           <li><Link to="/homme" style={{ color: isActive(["/", "/homme"]) ? '#32ca97' : '#495E57' }}><i className="bx bx-home-alt icnH"></i> Accueil</Link></li>
+                           <li><Link to="/about"  style={{ color: isActive(["/about"]) ? '#32ca97' : '#495E57' }}><i className='bx bx-user icnH'></i> À propos</Link></li>
+                           <li><Link to="/skills"  style={{ color: isActive(["/skills"]) ? '#32ca97' : '#495E57' }}><i className="bx bx-wrench icnH"></i> Compétences</Link></li>
+                           <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#32ca97' : '#495E57' }}><i className="bx bx-book icnH"></i> Parcours</Link></li>
+                           <li><Link to="/projet" style={{ color: isActive(["/projet"]) ? '#32ca97' : '#495E57' }}><i className="bx bx-folder icnH"></i>  Projets</Link></li>
+                           <li><Link to="/contact" style={{ color: isActive(["/contact"]) ? '#32ca97' : '#495E57' }}><i className="bx bx-envelope icnH"></i> Contact</Link></li>
                            
                         </ul>
                       </nav>
                   </div>
                   <div className="navbar-icons"> 
                     <ul> 
-                        <li><Link to="/homme" style={{ color: isActive(["/", "/homme"]) ? '#379777' : 'black' }}><i className="fas fa-home"></i> <span style={{ color: isActive(["/", "/homme"]) ? '#379777' : 'black' }}>homme</span></Link></li>
-                        <li><Link to="/about" style={{ color: isActive(["/about"]) ? '#379777' : 'black' }}><i className="fas fa-user"></i><span style={{ color: isActive(["/about"]) ? '#379777' : 'black' }}>About</span></Link></li>
-                        <li><Link to="/skills" style={{ color: isActive(["/skills"]) ? '#379777' : 'black' }}><i className="fas fa-code"></i><span style={{ color: isActive(["/skills"]) ? '#379777' : 'black' }}>skills</span></Link></li>
-                        <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#379777' : 'black' }}><i className="fas fa-file-alt"></i><span style={{ color: isActive(["/cv"]) ? '#379777' : 'black' }}>Parcours</span></Link></li> 
-                        <li><Link to="/projet" style={{ color: isActive(["/projet"]) ? '#379777' : 'black' }}><i className="fas fa-briefcase"></i><span style={{ color: isActive(["/projet"]) ? '#379777' : 'black' }}>projet</span></Link></li>
-                        <li><Link to="/contact" style={{ color: isActive(["/contact"]) ? '#379777' : 'black' }}><i className="fas fa-envelope"></i><span style={{ color: isActive(["/contact"]) ? '#379777' : 'black' }}>contact</span></Link></li>
+                        <li><Link to="/homme" style={{ color: isActive(["/", "/homme"]) ? '#379777' : 'black' }}><i className="bx bx-home-alt icnM"></i> <span style={{ color: isActive(["/", "/homme"]) ? '#379777' : 'black' }}>homme</span></Link></li>
+                        <li><Link to="/about" style={{ color: isActive(["/about"]) ? '#379777' : 'black' }}><i className="bx bx-user icnM"></i><span style={{ color: isActive(["/about"]) ? '#379777' : 'black' }}>About</span></Link></li>
+                        <li><Link to="/skills" style={{ color: isActive(["/skills"]) ? '#379777' : 'black' }}><i className="bx bx-wrench icnM"></i><span style={{ color: isActive(["/skills"]) ? '#379777' : 'black' }}>skills</span></Link></li>
+                        <li><Link to="/cv" style={{ color: isActive(["/cv"]) ? '#379777' : 'black' }}><i className="bx bx-book icnM"></i><span style={{ color: isActive(["/cv"]) ? '#379777' : 'black' }}>Parcours</span></Link></li> 
+                        <li><Link to="/projet" style={{ color: isActive(["/projet"]) ? '#379777' : 'black' }}><i className="bx bx-folder icnM"></i><span style={{ color: isActive(["/projet"]) ? '#379777' : 'black' }}>projet</span></Link></li>
+                        <li><Link to="/contact" style={{ color: isActive(["/contact"]) ? '#379777' : 'black' }}><i className="bx bx-envelope icnM"></i><span style={{ color: isActive(["/contact"]) ? '#379777' : 'black' }}>contact</span></Link></li>
                      </ul>
                  </div>
                 </div>
