@@ -101,7 +101,7 @@ export default function Homme() {
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 3, duration: 1 }}>
             <a href="Nizar-douirek.pdf"target="_blank"rel="noopener noreferrer">
-              <i class="bx bx-download icnBu"></i> Voir mon cv</a>
+              <i class="bx bx-download icnBu"></i> Télécharger mon CV</a>
           </motion.button>
         </motion.div>
        <div>
@@ -186,7 +186,7 @@ export default function Homme() {
     viewport={{ once: true, amount: 0.3 }}
     whileHover={{scale: 1.1}}
   >
-    <i className="fas fa-code iconEf"></i>
+    <i className="bx bx-wrench iconEf"></i>
     <p className="circle-title">Skills</p>
     <p className="circle-number">+16</p>
   </motion.div>
@@ -199,7 +199,7 @@ export default function Homme() {
     viewport={{ once: true, amount: 0.3 }}
     whileHover={{scale: 1.1}}
   >
-    <i className="fas fa-laptop iconEf"></i>
+    <i className="bx bx-rocket iconEf"></i>
     <p className="circle-title">Projet réalisé</p>
     <p className="circle-number">+6</p>
   </motion.div>
@@ -212,7 +212,7 @@ export default function Homme() {
     viewport={{ once: true, amount: 0.3 }}
      whileHover={{scale: 1.1}}
   >
-    <i className="fas fa-user-graduate iconEf"></i>
+    <i className="bx bx-badge-check iconEf"></i>
     <p className="circle-title">Certification</p>
     <p className="circle-number">+7</p>
   </motion.div>

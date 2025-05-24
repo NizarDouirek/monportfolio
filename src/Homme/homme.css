@@ -140,7 +140,7 @@ body, html, #root, .homme {
     font-size: 20px;
     margin-top: 20px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px;
     border: none;
     color: white;
     cursor: url('/public/nnb.cur'), auto;
@@ -172,7 +172,7 @@ body, html, #root, .homme {
     color: white;
     text-decoration: none;
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    font-weight: bold;
+    /* font-weight: bold; */
     cursor: url('/public/nnb.cur'), auto;
    
 }
@@ -194,7 +194,7 @@ body, html, #root, .homme {
     color: #143d2f;
     text-decoration: none;
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    font-weight: bold;
+    /* font-weight: bold; */
     cursor: url('/public/nnb.cur'), auto;
 }
 .btn-homme1{
@@ -203,7 +203,7 @@ body, html, #root, .homme {
     margin-top: 20px;
     margin-left: 30px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 12px;
     border: none;
     color: white;
     cursor: url('/public/nnb.cur'), auto;
@@ -250,7 +250,11 @@ body, html, #root, .homme {
     }
 
     .btn-homme {
-        font-size: 20px; /* Boutons plus petits */
+        font-size: 15px; /* Boutons plus petits */
+        padding: 10px; /* Réduction du padding */
+    }
+    .btn-homme1 {
+        font-size: 15px; /* Boutons plus petits */
         padding: 10px; /* Réduction du padding */
     }
    
@@ -392,7 +396,7 @@ body, html, #root, .homme {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .marquee-content2 {
@@ -426,7 +430,7 @@ body, html, #root, .homme {
 .circle-stats-container {
   display: flex;
   justify-content: center;
-  gap: 5.2rem;
+  gap: 5rem;
   flex-wrap: wrap;
   margin-top: -5rem;
   padding: 100px;
@@ -437,37 +441,38 @@ body, html, #root, .homme {
   height: 250px;
   /* border-radius: 50%; */
   border-radius: 20px;
-  background: linear-gradient(135deg, #143d2f, #309976);
-  color: white;
+  background: linear-gradient(135deg, #fcfefe, #f6f6f6);
+  color: #143d2f;
   display: flex;
+  border: 1px solid rgb(213, 206, 206);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,10,0,0.2);
   font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
   font-style: italic;
   transition: transform 0.3s ease;
 }
 
 .circle-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 0 20px rgba(61, 111, 106, 0.6);
 }
 
 .circle-title {
   font-size: 34px;
   margin: 0;
-  color: wheat;
+  color: rgba(61, 111, 106, 0.6);
 }
 
 .circle-number {
-  font-size: 46px;
+  font-size: 41px;
   font-weight: bold;
   margin: 0;
-  color: white;
+  color: #143d2f;
 }
 .iconEf {
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
