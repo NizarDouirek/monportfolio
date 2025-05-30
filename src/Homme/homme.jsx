@@ -4,11 +4,13 @@ import Header from "../Header/header";
 import About from "../About/about";
 import Skills from "../Skills/skills";
 import Projet from "../Projet/projet";
+import { useTranslation } from "react-i18next";
 import Contact from "../Contact/contact";
 import Cv from "../Cv/cv";
 import Loader from "../Loader/loader";
 import Footer from "../Footer/foother";
 import { motion } from "framer-motion";
+import ParticlesBackground from "../ParticlesBackground/ParticlesBackground";
 
 export default function Homme() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -22,6 +24,7 @@ export default function Homme() {
       setIsVisible(false);
     }
   };
+    const { t } = useTranslation(); 
 
   // Fonction pour faire défiler la page vers le haut
   const scrollToTop = () => {
@@ -61,6 +64,7 @@ export default function Homme() {
 
   return (
     <div id="homme">
+      {/* <ParticlesBackground/> */}
       {/* Conteneur animé */}
       <motion.div
         className="homme"
@@ -73,7 +77,7 @@ export default function Homme() {
           <motion.p className="bonjour" initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 1, duration: 1}}>
-            Bonjour <span className="wave-hand"></span>, je suis
+           {t("Bonjour")} <span className="wave-hand"></span>, {t("jesuis")}
           </motion.p>
           <motion.h1 className="nom" variants={itemVariants}>
             Nizar Douirek
@@ -81,27 +85,26 @@ export default function Homme() {
           <motion.p className="job"  initial={{ opacity: 0, x: 200 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 2, duration: 0.5 }}>
-            Développeur Full Stack
+            {t("job")}
           </motion.p>
           <div className="divPaHomme">
   <motion.p className="paHomme" initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 3, duration: 0.6}}>
-    Je transforme vos idées en applications web rapides, intuitives et scalables,
-    pour répondre parfaitement aux besoins de vos utilisateurs.
+     {t("intro1")}
   </motion.p>
 </div>
 
           <motion.button className="btn-homme"  initial={{ opacity: 0, x: -100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 3, duration: 1 }}>
-            <a href="#contact"> <i class="bx bx-chat icnBu"></i> Contactez-moi </a>
+            <a href="#contact"> <i class="bx bx-chat icnBu"></i> {t("contactezMoi")} </a>
           </motion.button>
           <motion.button className="btn-homme1"  initial={{ opacity: 0, x: 100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 3, duration: 1 }}>
             <a href="Nizar-douirek.pdf"target="_blank"rel="noopener noreferrer">
-              <i class="bx bx-download icnBu"></i> Télécharger mon CV</a>
+              <i class="bx bx-download icnBu"></i> {t("telechargerCV")}</a>
           </motion.button>
         </motion.div>
        <div>
@@ -114,17 +117,7 @@ export default function Homme() {
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 3, duration: 0.6 }}>
       <div className="marquee-content2">
-          <p>Développeur FrontEnd
-          -
-           Développeur BackEnd
-          -
-           Développeur d'applications
-          -
-           Développeur d'interfaces utilisateur
-          -
-           Développeur créatif
-          -
-           Développeur Web</p> 
+          <p>{t("descriptionDev")}</p> 
           </div>
         </motion.div>
 
@@ -187,7 +180,7 @@ export default function Homme() {
     whileHover={{scale: 1.1}}
   >
     <i className="bx bx-wrench iconEf"></i>
-    <p className="circle-title">Skills</p>
+    <p className="circle-title">{t("skills")}</p>
     <p className="circle-number">+16</p>
   </motion.div>
 
@@ -200,7 +193,7 @@ export default function Homme() {
     whileHover={{scale: 1.1}}
   >
     <i className="bx bx-rocket iconEf"></i>
-    <p className="circle-title">Projet réalisé</p>
+    <p className="circle-title">{t("projetsRealises")}</p>
     <p className="circle-number">+6</p>
   </motion.div>
 
@@ -213,7 +206,7 @@ export default function Homme() {
      whileHover={{scale: 1.1}}
   >
     <i className="bx bx-badge-check iconEf"></i>
-    <p className="circle-title">Certification</p>
+    <p className="circle-title">{t("certification")}</p>
     <p className="circle-number">+7</p>
   </motion.div>
 </motion.div>

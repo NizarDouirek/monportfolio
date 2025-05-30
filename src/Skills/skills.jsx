@@ -1,34 +1,33 @@
 import React from "react";
 import "./skills.css";
 import Title from "../Constant/Titre";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 const Skills = () => {
+  const { t } = useTranslation(); 
   const characters = [
     {
-      name: "Développeur FrontEnd",
+      name: t("frontendtitle"),
       image: "1i.avif",
-      description:
-        "Passionné par la conception d'interfaces modernes et intuitives, des designs élégants et fonctionnels, je transforme les idées en expériences web performantes. Expert en HTML, CSS, Bootstrap, JavaScript et React."
+      description: t("frontenddescription"),
     },
     {
-      name: "Développeur BackEnd",
+      name: t("backendtitle"),
       image: "2i.avif",
-      description:
-        "Je crée  des solutions backend performantes et sur mesure, garantissant fiabilité, évolutivité et sécurité. Avec une expertise reconnue en PHP et Laravel. Maîtrisant les bases de données relationnelles et NoSQL."
+      description: t("backenddescription"),
     },
     {
       name: "Designer",
       image: "i3.avif",
-      description:
-        "Je suis passionné par le design et j’ai développé une expertise sur des outils comme Figma, Canva et Adobe Photoshop, me permettant de créer des interfaces modernes et attrayantes 🎨✨"
+      description: t("designerdescription"),
     }
   ];
 
   return (
     <div id="skills" className="skills">
-      <Title text="Compétences" />
-      <p className="hover-instruction">💡 Survolez les cartes pour en savoir plus !</p>
+      <Title text={t("competences" )}/>
+      <p className="hover-instruction">{t("hover")}</p>
 
       <div className="containerskills">
         {characters.map((character, index) => (
@@ -53,7 +52,7 @@ const Skills = () => {
       </div>
 
       {/* Langages et Frameworks */}
-      <h1 className="titrecp">💫Langages et Frameworks</h1>
+      <h1 className="titrecp">💫{t("languagesFrameworks")}</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5}}>
         {["html.png", "css.png", "javascript.png", "php.png", "bootstrap.png", "react.png","react-native.png", "laravel.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
@@ -64,7 +63,7 @@ const Skills = () => {
       </motion.div>
 
       {/* Bases de données */}
-      <h1 className="titrecp">💫Base de données</h1>
+      <h1 className="titrecp">💫{t("databases")}</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
         {["mysql.png", "mongo-db.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
@@ -75,7 +74,7 @@ const Skills = () => {
       </motion.div>
 
       {/* Outils de Développement et Design */}
-      <h1 className="titrecp">💫Outils de Développement et de Design</h1>
+      <h1 className="titrecp">💫{t("tools")}</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
         {[ "git.png","github.png", "postman.png","figma.png", "canva.webp", "photoshop.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>

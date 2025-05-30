@@ -2,10 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import "./contact.css";
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import Title from "../Constant/Titre";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
     const sectionRef = useRef(null);
     const [formStatus, setFormStatus] = useState(null);
+    const { t } = useTranslation(); 
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -60,17 +62,17 @@ export default function Contact() {
 
     return (
         <div id="contact" className="contact" ref={sectionRef}>
-            <Title text="Contact" />
+            <Title text={t("contact") }/>
 
             <div className="loginPage">
                 <div className="contentForm">
                     {/* Bloc Texte & Réseaux Sociaux */}
                     <div className="imgForm hidden">
                         <h2>
-                            Une idée en tête ? Un projet à concrétiser ? 🚀 Contactez-moi et transformons vos ambitions en réalité!
+                           {t("ideeProjet")}
                         </h2>
                         <p className="parcontact">
-                            Contactez-moi sur n'importe quel réseau social de votre choix ! 😊📩
+                            {t("contactReseaux")}
                         </p>
                         <div className="social-icons">
                             <a href="https://wa.me/212699862707?text=Bonjour%20👋,%20je%20suis%20intéressé%20par%20vos%20services%20et%20j'aimerais%20en%20savoir%20plus">
@@ -84,7 +86,7 @@ export default function Contact() {
                             </a>
                             <a href="https://www.instagram.com/nizar_douirek">
                                 <FaInstagram className="icon" />
-                            </a>
+                            </a> 
                             <a href="https://web.facebook.com/nizar.douirek.50">
                                 <FaFacebook className="icon" />
                             </a>
@@ -93,22 +95,22 @@ export default function Contact() {
 
                     {/* Formulaire */}
                     <form onSubmit={handleSubmit} className="formLogin hidden">
-                        <h1 className="bienvenu">Contactez-moi</h1>
+                        <h1 className="bienvenu">{t("contactezMoi")}</h1>
 
                         <div className="inputbox">
-                            <input type="text" name="name" id="name" placeholder="Votre nom" required />
+                            <input type="text" name="name" id="name" placeholder={t("placeholderNom")} required />
                         </div>
 
                         <div className="inputbox">
-                            <input type="email" name="email" id="email" placeholder="Votre email" required />
+                            <input type="email" name="email" id="email" placeholder={t("placeholderEmail")} required />
                         </div>
 
                         <div className="inputbox">
-                            <textarea name="message" id="message" placeholder="Votre message" required></textarea>
+                            <textarea name="message" id="message" placeholder={t("placeholderMessage")} required></textarea>
                         </div>
 
                         <button type="submit" className="btn-Login">
-                            Envoyer
+                            {t("envoyer")}
                         </button>
 
                         {/* Afficher le statut du formulaire */}

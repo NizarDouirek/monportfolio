@@ -203,6 +203,7 @@ table tr:hover{
     table {
         font-size: 16px; 
         /* margin-left: 79px; */
+         background-color: #f9fffd; 
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -220,7 +221,8 @@ table tr:hover{
     }
 
     .cv a {
-        font-size: 20px;
+        font-size: 15px;
+        padding: 10px;
     }
 }
 /* Animation pour le titre */

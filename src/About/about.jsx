@@ -3,11 +3,12 @@ import "./about.css";
 import Header from "../Header/header";
 import Title from "../Constant/Titre";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
     const [isVisible, setIsVisible] = useState(false);
     const aboutRef = useRef(null);
-
+    const { t } = useTranslation(); 
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -33,7 +34,7 @@ export default function About() {
         <>
         {/* <Header/> */}
         <div id="about" className="about" ref={aboutRef}>
-            <Title text="À propos" />
+            <Title text={t("apropos")} />
             <div className={`containe ${isVisible ? "slide-in" : ""}`}>
                 <img className={`i ${isVisible ? "slide-left" : ""}`} src="profillinkd.jpg" alt="Profil" />
                 <div className={`contentAbout ${isVisible ? "slide-right" : ""}`}>
@@ -44,7 +45,7 @@ export default function About() {
   initial="hidden"
   animate={isVisible ? "visible" : "hidden"}
   transition={{ delay: 1, duration: 0.2 }}>
-                        Bonjour! Je suis<span className="sp"> Nizar Douirek</span>
+                        {t("BonjourJesuis")}<span className="sp"> Nizar Douirek</span>
                     </motion.h2>
                     {/* <h4>Développeur Full Stack</h4> */}
                     <motion.p variants={{
@@ -54,11 +55,7 @@ export default function About() {
   initial="hidden"
   animate={isVisible ? "visible" : "hidden"}
   transition={{ delay: 1, duration:1.5 }}>
-                    jeune diplômé en développement digital, passionné par la
-
-
-création de solutions innovantes , avec une expertise solide 
-en programmation et en conception web  <br />
+                   {t("resumeAbout")} <br />
 
                         
                     </motion.p>
@@ -71,7 +68,7 @@ en programmation et en conception web  <br />
   transition={{ delay: 1, duration: 1.3 }}>
                         <table>
                             <tr>
-                                <td><i class="bx bx-phone icn"></i> Téléphone </td>
+                                <td><i class="bx bx-phone icn"></i> {t("tel")} </td>
                                 <td>+212 699862707</td>
                             </tr>
                             <tr>
@@ -79,11 +76,11 @@ en programmation et en conception web  <br />
                                 <td>douireknizar@gmail.com</td>
                             </tr>
                             <tr>
-                                <td><i class="bx bx-map icn"></i> Adresse</td>
+                                <td><i class="bx bx-map icn"></i> {t("adr")}</td>
                                 <td>Hay Nassim, Casablanca</td>
                             </tr>
                             <tr>
-                                <td><i class="bx bx-globe icn"></i> Langues</td>
+                                <td><i class="bx bx-globe icn"></i> {t("langue")}</td>
                                 <td>Arabe, Français, Anglais</td>
                             </tr>
                         </table>
@@ -100,7 +97,7 @@ en programmation et en conception web  <br />
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-             <i class="bx bxl-linkedin icnLi"></i> Visiter mon linkedin</a>
+             <i class="bx bxl-linkedin icnLi"></i> {t("linkdeen")}</a>
                     </motion.button>
                 </div>
             </div>

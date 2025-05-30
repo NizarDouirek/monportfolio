@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./footer.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import ParticlesBackground from "../ParticlesBackground/ParticlesBackground";
 
 export default function Footer() {
+  const { t } = useTranslation(); 
   const [formStatus, setFormStatus] = useState(null);
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0.7, 1], [0, 1]);
@@ -88,6 +91,7 @@ export default function Footer() {
       animate={inView ? "visible" : "hidden"}
       variants={containerVariants}
     >
+    
       <motion.div className="social" variants={fadeIn}>
         <motion.div className="head-foot" variants={slideInTop}>
           <div className="container-footer-form">
@@ -99,7 +103,7 @@ export default function Footer() {
               <motion.input
                 type="email"
                 name="email"
-                placeholder="Entrez votre adresse email"
+                placeholder="Entrez votre email"
                 required
                 whileFocus={{ scale: 1.02 }}
               />
@@ -135,14 +139,14 @@ export default function Footer() {
               >
                 🚀
               </motion.span>
-              <b> Restez connecté à mon univers tech </b>
+              <b> {t("restezConnecte")} </b>
             </motion.div>
           </div>
         </motion.div>
 
         <motion.div className="section-foot" variants={fadeIn}>
           <motion.div className="contact-foot" variants={slideInLeft}>
-            <h1>Contactez moi</h1>
+            <h1>{t("contactezMoi")}</h1>
             <motion.div variants={fadeIn}
             transition={{ duration: 1.5 }}>
               {[
@@ -179,34 +183,34 @@ export default function Footer() {
             <ul className="footer-links">
               <motion.li variants={slideInLeft} transition={{ duration: 2 }}>
                 <motion.div whileHover={{ x: 10 }}>
-                  <Link to="/about">À propos</Link>
+                  <Link to="/about">{t("apropos")}</Link>
                 </motion.div>
               </motion.li>
               <motion.li variants={slideInRight} transition={{ duration: 2 }}>
                 <motion.div whileHover={{ x: 10 }}>
-                  <Link to="/skills">Compétences</Link>
+                  <Link to="/skills">{t("competences")}</Link>
                 </motion.div>
               </motion.li>
               <motion.li variants={slideInLeft} transition={{ duration: 2 }}>
                 <motion.div whileHover={{ x: 10 }}>
-                  <Link to="/projet">Projet</Link>
+                  <Link to="/projet">{t("projet")}</Link>
                 </motion.div>
               </motion.li>
               <motion.li variants={slideInRight} transition={{ duration: 2 }}>
                 <motion.div whileHover={{ x: 10 }}>
-                  <Link to="/Cv">Parcours</Link>
+                  <Link to="/Cv">{t("parcours")}</Link>
                 </motion.div>
               </motion.li>
               <motion.li variants={slideInLeft} transition={{ duration: 2 }}>
                 <motion.div whileHover={{ x: 10 }}>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/contact">{t("contact")}</Link>
                 </motion.div>
               </motion.li>
             </ul>
           </motion.div>
 
           <motion.div className="section-adrss" variants={slideInLeft} transition={{ duration: 2 }}>
-            <h1>Adresse</h1>
+            <h1>{t("adr")}</h1>
             <ul className="footer-links">
               <motion.p variants={slideInRight}>
                 Hay Nassim imm:31 <br /> app:9, Casablanca
@@ -219,7 +223,7 @@ export default function Footer() {
               variants={slideInBottom}
             >
               <a href="Nizar-douirek.pdf" target="_blank" rel="noopener noreferrer">
-                Voir mon CV <i className="fas fa-file-alt"></i>
+                <i class="bx bx-download icnBu"></i> {t("telechargerCV")}
               </a>
             </motion.button>
           </motion.div>

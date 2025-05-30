@@ -2,11 +2,13 @@ import React, { useEffect, useRef } from "react";
 import "./cv.css";
 import Header from "../Header/header";
 import Title from "../Constant/Titre";
+import { useTranslation } from "react-i18next";
 
 export default function Cv() {
   const formationRef = useRef();
   const experienceRef = useRef();
   const scrollRef = useRef();
+  const { t } = useTranslation(); 
 
 
   useEffect(() => {
@@ -52,21 +54,20 @@ export default function Cv() {
     <>
       {/* <Header/> */}
       <div id="cv" className="cv2">
-        <Title text="Parcours" size="xl" color="primary" />
+        <Title text={t("parcours")} size="xl" color="primary" />
         {/* <h1  className="titre1">CV</h1> */}
         <div className="fe">
           {/* Section Formation */}
           {/* <div className="f" ref={formationRef}> */}
           <div className="f hidden" ref={formationRef}>
             <div className="log">
-              <h1><i class="fas fa-graduation-cap"></i> Formation</h1>
+              <h1><i class="fas fa-graduation-cap"></i> {t("formation")}</h1>
             </div>
             <div className="divcv">
               <div className="groupcv">
                 <img src="ofppt.png" alt="" />
                 <h2>
-                  Technicien spécialisé en développement digital option
-                  ‘full-stack web’
+                 {t("dts")}
                 </h2>
               </div>
               <span className="date"> 2022 - 2024</span>
@@ -74,13 +75,11 @@ export default function Cv() {
                 className="p"
                 style={{ letterSpacing: "1px", fontWeight: "bold" }}
               >
-               📍 A l'institut spécialisé en technologie appliquée NTIC 1,
-                Casablanca
+             {t("ecoleista")}
               </p>
               <br/>
               <p>
-              Formation axée sur la conception, le développement et le déploiement 
-              d’applications web dynamiques, incluant des projets pratiques avec React.js et Laravel,
+             {t("dscIsta")}
               </p>
             </div>
             <br />
@@ -88,14 +87,14 @@ export default function Cv() {
             <div className="divcv">
                <div className="groupcv">
                <img src="eco.jpg"  style={{borderRadius:'50%'}} alt="" />
-              <h2>Baccalauréat en Sciences de la Vie et de la Terre</h2>
+              <h2>{t("bac")}</h2>
               </div>
               <span className="date"> 2021 - 2022</span>
               <p
                 className="p"
                 style={{ letterSpacing: "1px", fontWeight: "bold" }}
               >
-               📍 En Lycée Ibno-Khatib, Casablanca
+              {t("ecolebac")}
               </p>
             </div>
           </div>
@@ -104,7 +103,7 @@ export default function Cv() {
           {/* <div className="ex" ref={experienceRef}> */}
           <div className="ex hidden hidden-right" ref={experienceRef}>
             <div className="log">
-              <h1>  <i class="fas fa-briefcase"></i> Expériences</h1>
+              <h1>  <i class="fas fa-briefcase"></i> {t("experience")}</h1>
             </div>
             <div className="divcv">
               <div className="groupcv">
@@ -113,15 +112,13 @@ export default function Cv() {
                   style={{ borderRadius: "50%" }}
                   alt=""
                 />
-                <h2>Stage Développeur mobile , VNB-IT</h2>
+                <h2> {t("stagevnb")}</h2>
               </div>
-              <span className="date"> Mars 2025 - Mai 2025</span>
+              <span className="date"> {t("datedevnb")}</span>
               <p>
-              développement de l’application mobile LCR, plateforme numérique de
-               l’auto-école GMP, axée sur la formation accélérée à la conduite et 
-               l’accompagnement personnalisé des élèves.
+              {t("descvnb")}
                 <br />
-                <span className="role">Technologies utilisées :</span> React Native,
+                <span className="role"> {t("techvnb")} :</span> React Native,
                 CSS,postgresql,Git
 
 
@@ -144,14 +141,13 @@ export default function Cv() {
                   style={{ borderRadius: "50%" }}
                   alt=""
                 />
-                <h2>Stage Développeur Full stack, TECHNAPS</h2>
+                <h2>{t("stageTechnaps")}</h2>
               </div>
-              <span className="date"> Décembre 2024 - Mars 2025</span>
+              <span className="date">{t("dateTechnaps")}</span>
               <p>
-                Développement de l'interface d'un site web de réservation
-                d'hôtels, de voitures et de restaurants
+                {t("descTechnaps")}
                 <br />
-                <span className="role">Technologies utilisées :</span> React.js,
+                <span className="role">{t("techvnb")}</span> React.js,
                 CSS, MongoDB, Git
               </p>
               <br />
@@ -161,7 +157,7 @@ export default function Cv() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  attestation 🔗
+                 {t("attestationTechnaps")}
                 </a>
               </button>
             </div>
@@ -169,14 +165,13 @@ export default function Cv() {
             <div className="divcv">
               <div className="groupcv">
                 <img src="sirecom.png" alt="" />
-                <h2>Stage Développeur full stack - laravel, SIRECOM</h2>
+                <h2>{t("stageSirecom")}</h2>
               </div>
-              <span className="date">1 MARS 2024 - 1 MAI 2024</span>
+              <span className="date">{t("dateSirecom")}</span>
               <p>
-                Développement d'une application de gestion des équipements
-                informatiques et matériels de l'entreprise
+                {t("descSirecom")}
                 <br />
-                <span className="role">Technologies utilisées :</span> PHP,
+                <span className="role">{t("techvnb")}</span> PHP,
                 Laravel, MySQL, CSS, Bootstrap ,Git
               </p>
             </div>

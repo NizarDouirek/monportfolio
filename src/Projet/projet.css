@@ -238,6 +238,12 @@
     .projets-message p{
         font-size: 10px;
     }
+     .sectionP h1, 
+    .sectionP2 h1, 
+    .sectionP3 h1 ,
+    .sectionP4 h1,.sectionP5 h1{
+        font-size: 30px !important; /* Réduction de la taille des titres */
+    }
 }
  @media screen and (max-width: 768px) {
     .projets {
@@ -270,7 +276,7 @@
 
     .sectionP h1, 
     .sectionP2 h1, 
-    .sectionP3 h1 ,.sectionP4,.sectionP5{
+    .sectionP3 h1 ,.sectionP4 h1,.sectionP5 h1{
         font-size: 1.2em; /* Réduction de la taille des titres */
     }
 

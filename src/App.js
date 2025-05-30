@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import './App.css';
+import './i18n';
 import Header from './Header/header';
 import Homme from './Homme/homme';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
