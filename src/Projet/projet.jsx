@@ -51,7 +51,7 @@ export default function Projet(){
                        </a>
                     </div>
                    <a href="voyage.png" target="_blank">
-                      <img className="imgsite1" src="voyage.png" alt=""/>
+                      <img className="imgsite" src="voyage.png" alt=""/>
                    </a>
                  </div><br /><br />
                 <div className="sectionP2">
