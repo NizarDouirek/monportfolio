@@ -1,11 +1,11 @@
 .skills {
     padding: 40px;
     padding-top: 70px;
-    /* background-color:white; */
-    background-image: url('/public/des.svg');
-    /* background-size: cover; */
+    /* background:linear-gradient(60deg, white,rgb(228, 238, 236)); */
+    background-image: url('/public/decor.png'); 
+     /* background-size: cover; */
     background-position: bottom right;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     display: flex;
     flex-direction: column;
     justify-content: center;

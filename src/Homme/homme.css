@@ -6,11 +6,19 @@ body, html, #root, .homme {
   }
  
 .homme{
-    background-image: url("/public/g2.gif");
+   background-image:
+    /* linear-gradient(to right,
+  rgba(206, 246, 229, 0.955) 0%,       
+  rgba(255, 255, 255, 0.874) 20%,     
+  rgba(255, 255, 255, 0.788) 50%,                       
+  rgba(255, 255, 255, 0.788) 80%,       
+  rgba(209, 240, 227, 0.972) 100%  ) ,   */
+ url("/public/g2.gif");
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
     height: 700px;
+    background-attachment: fixed;
 }
 .container{
     text-align: center;
