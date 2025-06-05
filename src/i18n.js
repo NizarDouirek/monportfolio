@@ -60,7 +60,7 @@ certification: "Certification",
 
          
           stagevnb: "Stagiaire Développeur Mobile, VNB-IT",
-          datedevnb: "Mars 2025 – Mai 2025",
+          datedevnb: "Mars 2025 – Juin 2025",
           descvnb: "Développement de l’application mobile LCR, une plateforme numérique de l’auto-école GMP, axée sur la formation accélérée à la conduite et l’accompagnement personnalisé des élèves.",
           techvnb: "Technologies utilisées :",
 
@@ -162,7 +162,7 @@ certification: "Certification",
           ecolebac:"📍 At Lycée Ibno-Khatib, Casablanca",
 
           stagevnb: "Mobile Developer Intern, VNB-IT",
-          datedevnb: "March 2025 – May 2025",
+          datedevnb: "March 2025 – June 2025",
           descvnb: "Development of the LCR mobile application, a digital platform for the GMP driving school, focused on accelerated driving training and personalized student support.",
           techvnb: "Technologies used: ",
 
