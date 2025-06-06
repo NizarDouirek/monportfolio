@@ -222,7 +222,7 @@ export default function Footer() {
               whileTap={{ scale: 0.95 }}
               variants={slideInBottom}
             >
-              <a href="Nizar-douirek.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="NIZAR-DOUIREK-CV.pdf" target="_blank" rel="noopener noreferrer">
                 <i class="bx bx-download icnBu"></i> {t("telechargerCV")}
               </a>
             </motion.button>

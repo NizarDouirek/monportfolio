@@ -103,7 +103,7 @@ export default function Homme() {
           <motion.button className="btn-homme1"  initial={{ opacity: 0, x: 100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 3, duration: 1 }}>
-            <a href="Nizar-douirek.pdf"target="_blank"rel="noopener noreferrer">
+            <a href="NIZAR-DOUIREK-CV.pdf"target="_blank"rel="noopener noreferrer">
               <i class="bx bx-download icnBu"></i> {t("telechargerCV")}</a>
           </motion.button>
         </motion.div>

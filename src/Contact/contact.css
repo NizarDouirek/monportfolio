@@ -113,9 +113,8 @@
   /* Effet de focus */
   .inputbox input:focus,
   .inputbox textarea:focus {
-    border: 2px solid #379777;
-    box-shadow: 0 0 10px rgba(55, 151, 119, 0.5);
-    background: rgba(255, 255, 255, 0.3);
+    
+     animation: rotateshadow 2s infinite linear;
   }
   .inputbox textarea{
     height:80px ;
@@ -143,8 +142,26 @@
     transform: translateY(-10px);
     font-size: 0.9em;
     opacity: 0.6;
+   
   }
-  
+ @keyframes rotateshadow {
+  0% {
+    box-shadow: 0 0 5px 0 #109869, 0 0 10px 2px #46ad8a;
+  }
+  25% {
+    box-shadow: 2px 2px 8px 0 #109869, -2px -2px 10px 2px #46ad8a;
+  }
+  50% {
+    box-shadow: -2px 2px 8px 0 #109869, 2px -2px 10px 2px #46ad8a;
+  }
+  75% {
+    box-shadow: 2px -2px 8px 0 #109869, -2px 2px 10px 2px #46ad8a;
+  }
+  100% {
+    box-shadow: 0 0 5px 0 #109869, 0 0 10px 2px #46ad8a;
+  }
+}
+
   /* --- 🌟 Bouton d'envoi --- */
   .btn-Login {
     background: linear-gradient(135deg, #2a6e58,  #47d8a8);
