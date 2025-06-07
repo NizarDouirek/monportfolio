@@ -105,6 +105,8 @@ placeholderEmail: "Entrez votre adresse email ",
 placeholderMessage: "Écrivez votre message ici...",
 restezConnecte: "Restez connecté à mon univers tech",
 
+finished: "Projet terminé",
+ongoing: "Projet en cours"
 
 
 
@@ -205,6 +207,9 @@ placeholderNom: "Enter your full name",
 placeholderEmail: "Enter your email address",
 placeholderMessage: "Write your message here...",
 restezConnecte: "Stay connected to my tech universe",
+
+finished: "Completed Project",
+ongoing: "Ongoing Project"
 
         },
       },

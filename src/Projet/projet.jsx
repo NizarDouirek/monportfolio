@@ -49,6 +49,7 @@ export default function Projet(){
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
                        </button>
                        </a>
+                       <span className="project-status finished">{t("finished")}</span>
                     </div>
                    <a href="voyage.png" target="_blank">
                       <img className="imgsite" src="voyage.png" alt=""/>
@@ -71,6 +72,7 @@ export default function Projet(){
                        
                        </button>
                        </a>
+                       <span className="project-status finished">{t("finished")}</span>
                     </div>
                    <div className="imgsite-container">
                     <a href="gbien.png" target="_blank">
@@ -94,6 +96,7 @@ export default function Projet(){
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
                        </button>
                        </a>
+                       <span className="project-status finished">{t("finished")}</span>
                     </div>
                    <a href="storeelec.png" target="_blank">
                       <img className="imgsite" src="storeelec.png" alt=""/>
@@ -118,6 +121,7 @@ export default function Projet(){
                        </button>
                        
                        </a>
+                       <span className="project-status ongoing">{t("ongoing")}</span>
                     </div>
                    <a href="fittrack.png" target="_blank">
                       <img className="imgsite" src="fittrack.png" alt=""/>
@@ -143,6 +147,7 @@ export default function Projet(){
                        </button>
                        
                        </a>
+                       <span className="project-status finished">{t("finished")}</span>
                     </div>
                    
                    <a href="tasko.png" target="_blank">
