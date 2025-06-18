@@ -52,13 +52,13 @@ header.scrolled {
 .logo {
   /* margin-left: 50px; */
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 10rem;
 }
 /* .logo h1 {
   margin-top: 9px;
   color: black;
-  font-family: "Pacifico", cursive;
+  font-family: "Pacifico", cursive;n
 }
 .prenom {
   color: #3572ef;
@@ -227,16 +227,18 @@ nav a:hover::after {
 }
 .lang-toggle {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.6rem;
+  right: 4rem;
   display: flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg, #91b586, #B3D8A8);
-  color: white;
-  border: none;
+  /* background: linear-gradient(135deg, #80b59b, #B3D8A8); */
+  /* color: white; */
+  /* border: none; */
   border-radius: 20px;
-  padding: 8px 14px;
+  border: 1px solid white;
+  padding: 8px 12px;
+  border-color: #0c9165;
   font-size: 14px;
   font-weight: 500;
   cursor: url('/public/nnb.cur'), auto;
@@ -245,11 +247,19 @@ nav a:hover::after {
 }
 
 .lang-toggle:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .lang-toggle i {
   font-size: 18px;
+}
+.flag-icon {
+  width: 24px;
+  height: 20px;
+  border-radius: 30%;
+  margin: 0 8px;
+  vertical-align: middle;
+  object-fit: cover;
 }
 

@@ -8,14 +8,17 @@ import { useTranslation } from "react-i18next";
 import Contact from "../Contact/contact";
 import Cv from "../Cv/cv";
 import Loader from "../Loader/loader";
+import SplitText from "../Constant/SplitText";
 import Footer from "../Footer/foother";
 import { motion } from "framer-motion";
+import SpotlightCard from "../Constant/SpotlightCard";
 import ParticlesBackground from "../ParticlesBackground/ParticlesBackground";
 
 export default function Homme() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-
+const handleAnimationComplete = () => {
+    console.log("Toutes les lettres ont été animées !");}
   // Fonction pour gérer la visibilité du bouton en fonction de la position de défilement
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
@@ -82,27 +85,42 @@ export default function Homme() {
           <motion.h1 className="nom" variants={itemVariants}>
             Nizar Douirek
           </motion.h1>
-          <motion.p className="job"  initial={{ opacity: 0, x: 200 }}
+          
+          {/* <motion.p className="job"  initial={{ opacity: 0, x: 200 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 2, duration: 0.5 }}>
             {t("job")}
-          </motion.p>
+          </motion.p> */}
+          <SplitText
+  text={t("job")}
+  className="jb"
+  delay={100}
+  duration={0.6}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+  onLetterAnimationComplete={handleAnimationComplete}
+/>
           <div className="divPaHomme">
   <motion.p className="paHomme" initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 3, duration: 0.6}}>
+    transition={{ delay: 2, duration: 0.6}}>
      {t("intro1")}
   </motion.p>
 </div>
 
           <motion.button className="btn-homme"  initial={{ opacity: 0, x: -100 }}
     animate={{ opacity: 1, x: 0 }}
-    transition={{ delay: 3, duration: 1 }}>
+    transition={{ delay: 2, duration: 1 }}>
             <a href="#contact"> <i class="bx bx-chat icnBu"></i> {t("contactezMoi")} </a>
           </motion.button>
           <motion.button className="btn-homme1"  initial={{ opacity: 0, x: 100 }}
     animate={{ opacity: 1, x: 0 }}
-    transition={{ delay: 3, duration: 1 }}>
+    transition={{ delay: 2 , duration: 1 }}>
             <a href="nizarDouirek.pdf"target="_blank"rel="noopener noreferrer">
               <i class="bx bx-download icnBu"></i> {t("telechargerCV")}</a>
           </motion.button>
@@ -166,48 +184,50 @@ export default function Homme() {
   style={{ width: "40px", height: "40px" }}
 />
       </button>
+      
+
       <Skills />
       <Cv />
       
       <Projet />
     <motion.div className="circle-stats-container">
   <motion.div
-    className="circle-card"
-    initial={{ opacity: 0, x: 100 }}
+    // initial={{ opacity: 0, x: 100 }}
     whileInView={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.3 }}
     viewport={{ once: true, amount: 0.3 }}
-    whileHover={{scale: 1.1}}
   >
-    <i className="bx bx-wrench iconEf"></i>
-    <p className="circle-title">{t("skills")}</p>
-    <p className="circle-number">+16</p>
+    <SpotlightCard className="circle-card" spotlightColor="rgba(23, 195, 149, 0.8)">
+      <i className="bx bx-wrench iconEf"></i>
+      <p className="circle-title">{t("skills")}</p>
+      <p className="circle-number">+16</p>
+    </SpotlightCard>
   </motion.div>
 
   <motion.div
-    className="circle-card"
-    initial={{ opacity: 0, y: 100 }}
+    // initial={{ opacity: 0, y: 100 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.3 }}
     viewport={{ once: true, amount: 0.3 }}
-    whileHover={{scale: 1.1}}
   >
-    <i className="bx bx-rocket iconEf"></i>
-    <p className="circle-title">{t("projetsRealises")}</p>
-    <p className="circle-number">+6</p>
+   <SpotlightCard className="circle-card" spotlightColor="rgba(23, 195, 149, 0.8)">
+      <i className="bx bx-rocket iconEf"></i>
+      <p className="circle-title">{t("projetsRealises")}</p>
+      <p className="circle-number">+6</p>
+    </SpotlightCard>
   </motion.div>
 
   <motion.div
-    className="circle-card"
-    initial={{ opacity: 0, x: -100 }}
+    // initial={{ opacity: 0, x: -100 }}
     whileInView={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.3 }}
     viewport={{ once: true, amount: 0.3 }}
-     whileHover={{scale: 1.1}}
   >
-    <i className="bx bx-badge-check iconEf"></i>
-    <p className="circle-title">{t("certification")}</p>
-    <p className="circle-number">+7</p>
+    <SpotlightCard className="circle-card"spotlightColor="rgba(23, 195, 149, 0.8)">
+      <i className="bx bx-badge-check iconEf"></i>
+      <p className="circle-title">{t("certification")}</p>
+      <p className="circle-number">+7</p>
+    </SpotlightCard>
   </motion.div>
 </motion.div>
 

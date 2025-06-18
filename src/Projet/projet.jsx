@@ -3,6 +3,7 @@ import './projet.css';
 import Header from "../Header/header";
 import Title from "../Constant/Titre";
 import { useTranslation } from "react-i18next";
+import CircularText from "../Constant/textcircle";
 
 import { motion } from "framer-motion";
 
@@ -30,12 +31,13 @@ export default function Projet(){
         <div id="projet">
           <div className="projets">
           <Title text={t("projet")} />
-          <p style={{textAlign:'center',fontSize:'20px',fontWeight:'bold',marginTop:'10px'}}>{t("projetsIntro")}</p>
+          <p className="introprojet">{t("projetsIntro")}</p>
                <div className="projet">
                 <div className="sectionP">
                     <div className="contentP">
                     <h1>Luxury Voyage</h1>
                     <p>   {t("luxuryvoyage")}</p><br />
+                 
                        <div className="tec">
                             
                             <img src="react.png" alt=""  title="React.js"/>
@@ -49,7 +51,14 @@ export default function Projet(){
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
                        </button>
                        </a>
-                       <span className="project-status finished">{t("finished")}</span>
+                       {/* <span className="project-status finished">{t("finished")}</span> */}
+                          <CircularText
+  text={t("finished")}
+  onHover="speedUp"
+  spinDuration={10}
+  className="custom-class"
+ status="finished"
+/>
                     </div>
                    <a href="voyage.png" target="_blank">
                       <img className="imgsite" src="voyage.png" alt=""/>
@@ -72,7 +81,14 @@ export default function Projet(){
                        
                        </button>
                        </a>
-                       <span className="project-status finished">{t("finished")}</span>
+                       
+                          <CircularText
+  text={t("finished")}
+  onHover="speedUp"
+  spinDuration={10}
+  className="custom-class"
+status="finished"
+/>
                     </div>
                    <div className="imgsite-container">
                     <a href="gbien.png" target="_blank">
@@ -96,7 +112,14 @@ export default function Projet(){
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
                        </button>
                        </a>
-                       <span className="project-status finished">{t("finished")}</span>
+                       
+                          <CircularText
+  text={t("finished")}
+  onHover="speedUp"
+  spinDuration={10}
+  className="custom-class"
+  status="finished"
+/>
                     </div>
                    <a href="storeelec.png" target="_blank">
                       <img className="imgsite" src="storeelec.png" alt=""/>
@@ -121,7 +144,14 @@ export default function Projet(){
                        </button>
                        
                        </a>
-                       <span className="project-status ongoing">{t("ongoing")}</span>
+                       
+                          <CircularText
+  text={t("ongoing")}
+  onHover="speedUp"
+  spinDuration={10}
+  className="custom-class"
+  status="ongoing"
+/>
                     </div>
                    <a href="fittrack.png" target="_blank">
                       <img className="imgsite" src="fittrack.png" alt=""/>
@@ -146,8 +176,13 @@ export default function Projet(){
                        <i className="fa-brands fa-github" style={{marginLeft:'10px'}}></i>
                        </button>
                        
-                       </a>
-                       <span className="project-status finished">{t("finished")}</span>
+                       </a>    <CircularText
+  text={t("finished")}
+  onHover="speedUp"
+  spinDuration={10}
+  className="custom-class"
+  status="finished"
+/>
                     </div>
                    
                    <a href="tasko.png" target="_blank">

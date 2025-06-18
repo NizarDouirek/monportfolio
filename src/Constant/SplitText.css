@@ -1,0 +1,20 @@
+
+  
+.jb{
+    margin-top: 10px;
+    color: #495E57;
+    font-size: 30px;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    font-style: italic;
+    /* animation: shine1 4s linear infinite, glow1 2s ease-in-out infinite alternate; */
+    position: relative;
+    font-weight: 700;
+     
+  text-shadow:
+    0 0 5px #b0d1be,
+    0 0 10px #1f7867,
+    0 0 20px #234d34,
+    0 0 40px #328956;
+    
+}
+

@@ -10,13 +10,16 @@
     width: 420px;
     height: 270px;
     border-radius: 20px;
+     cursor: url('/public/nnb.cur'), auto;
     transition: transform 0.5s ease;
 }
 .imgsite:hover{
   transform: translateY(-5px); 
+      cursor: url('/public/nnb.cur'), auto;
 }
 .imgsite1:hover{
   transform: translateY(-5px); 
+      cursor: url('/public/nnb.cur'), auto;
 }
 .sectionP h1{
     color: #46aa9d;
@@ -101,6 +104,7 @@
     width: 420px;
     height: 270px;
     border-radius: 20px;
+     cursor: url('/public/nnb.cur'), auto;
     transition: transform 0.5s ease;
 }
 .sectionP4 {
@@ -544,3 +548,17 @@
 .sectionP, .sectionP2, .sectionP3, .sectionP4, .sectionP5, .sectionP6 {
   position: relative;
 }
+.introprojet{
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #139371;
+    text-align: center;
+}
+ .sectionP , 
+    .sectionP2 , 
+    .sectionP3  ,
+    .sectionP4 ,.sectionP5 {
+        margin-bottom: 2.5rem; /* Réduction de la taille des titres */
+    }

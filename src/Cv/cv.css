@@ -308,26 +308,35 @@ hr {
 .see-more-btn {
     padding: 8px 10px;
     font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background: linear-gradient(45deg, #aacec6, #FFFAEC);
-    border: none;
-    border-radius: 25px;
+    /* font-weight: bold; */
+    color: black;
+    background: linear-gradient(45deg, #ffffff, #d8f4e9);
+    border: 1px solid #63c4af;
+   
     /* margin-left: 420px; */
     cursor: url('/public/nnb.cur'), auto;
     transition: all 0.3s ease-in-out;
     outline: none;
     display: inline-block;
+      display: inline-flex;
+        align-items: center;
+        gap: 8px;
+       
+        padding: 10px 16px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-family: 'Segoe UI', sans-serif;
+        transition: 0.3s;
   }
   .see-more-btn a{
     text-decoration:none;
-    color: rgb(32, 85, 57);
+    color: #42897a;
     cursor: url('/public/nnb.cur'), auto;
   }
   
   .see-more-btn:hover {
     background: linear-gradient(45deg, #d9e7e4, #aacec6);
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
     cursor: url('/public/nnb.cur'), auto;
   }
   

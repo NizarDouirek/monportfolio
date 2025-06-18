@@ -63,6 +63,8 @@ const Skills = () => {
       </motion.div>
 
       {/* Bases de données */}
+      <div className="cardTwo">
+        <div>
       <h1 className="titrecp">💫{t("databases")}</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
         {["mysql.png", "mongo-db.png"].map((img, index) => (
@@ -72,6 +74,19 @@ const Skills = () => {
           </motion.section>
         ))}
       </motion.div>
+      </div>
+      <div>
+      <h1 className="titrecp">💫ERP - CMC</h1>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
+        {["odoo.png"].map((img, index) => (
+          <motion.section key={index} whileHover={{ scale: 1.1 }}>
+            <img className="imgskills" src={img} alt={img.split(".")[0]} />
+            <h2>{img.split(".")[0].toUpperCase()}</h2>
+          </motion.section>
+        ))}
+      </motion.div>
+      </div>
+      </div>
 
       {/* Outils de Développement et Design */}
       <h1 className="titrecp">💫{t("tools")}</h1>

@@ -63,6 +63,37 @@ export default function Cv() {
             <div className="log">
               <h1><i class="fas fa-graduation-cap"></i> {t("formation")}</h1>
             </div>
+           <div className="divcv">
+  <div className="groupcv">
+    <img src="tecknaps.png" alt="" style={{ borderRadius: "50%" }} />
+    <h2>{t("forodoo")}</h2>
+  </div>
+  <span className="date">{t("dateForodoo")}</span>
+  <p
+    className="p"
+    style={{ letterSpacing: "1px", fontWeight: "bold" }}
+  >
+  
+  </p>
+  <br />
+  <p>
+    {t("descodoo")}
+  </p><br />
+  <button className="see-more-btn">
+
+                <a
+                  href="attestationFormationOdoo.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                       <i class='bx bx-link-external'></i>
+                 {t("attestationTechnaps")}
+                </a>
+              </button>
+</div>
+<br />
+<br />
+
             <div className="divcv">
               <div className="groupcv">
                 <img src="ofppt.png" alt="" />
@@ -118,19 +149,22 @@ export default function Cv() {
               <p>
               {t("descvnb")}
                 <br />
-                <span className="role"> {t("techvnb")} :</span> React Native,
+                <span className="role"> {t("techvnb")} </span> React Native,
                 CSS,postgresql,Git
 
 
               </p>
+
               <br />
+
               {/* <button className="see-more-btn">
                 <a
-                  href="aa"
+                  href="Attestation_de_stage_chez_VNB-IT_Douirek-Nizar.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  attestation
+                  <i class='bx bx-link-external'></i>
+                   {t("attestationTechnaps")}
                 </a>
               </button> */}
             </div><br />
@@ -157,6 +191,7 @@ export default function Cv() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <i class='bx bx-link-external'></i>
                  {t("attestationTechnaps")}
                 </a>
               </button>
@@ -298,8 +333,8 @@ export default function Cv() {
             
           </div>
           <button className="arrow right" onClick={handleScrollRight}>→</button>
-          </div> */}
-        {/* </div> */}
+          </div>
+        </div> */}
       </div>
     </>
   );

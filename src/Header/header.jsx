@@ -111,8 +111,16 @@ export default function Header() {
   className="lang-toggle"
   aria-label="Changer la langue"
 >
-  <i className="bx bx-globe"></i>
-  <span>{i18n.language === "fr" ? "Français" : "English"}</span>
+  {/* <i className="bx bx-globe"></i> */}
+    <span>{i18n.language === "fr" ? "Français" : "English"}</span>
+  <img
+    src={i18n.language === "fr"
+      ? "https://flagcdn.com/w40/fr.png"
+      : "https://flagcdn.com/w40/gb.png"}
+    alt={i18n.language === "fr" ? "FR" : "EN"}
+    className="flag-icon"
+  />
+
 </button>
         
             {/* <button

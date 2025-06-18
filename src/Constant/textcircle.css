@@ -1,0 +1,44 @@
+.circular-text {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 150px;
+  position: relative;
+  height: 180px;
+  font-weight: bold;
+  color: #ff9aff;
+  font-weight: 900;
+  text-align: center;
+  cursor: url('/public/nnb.cur'), auto;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  position: absolute;
+  top: -75px;
+  right: -65px;
+  z-index: 4;
+}
+
+
+.circular-text span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 28px;
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
+@media (max-width: 768px) {
+   .circular-text {
+    display: none;
+  }
+
+}
+.circular-text.finished {
+  color: #0bc496;
+  
+}
+
+.circular-text.ongoing {
+  color: #dbde0e; /* Rouge */
+}

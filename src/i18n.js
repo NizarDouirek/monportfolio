@@ -26,7 +26,7 @@ i18n
          telechargerCV: "Télécharger mon CV",
          descriptionDev: "Développeur FrontEnd - Développeur BackEnd - Développeur d'applications - Développeur d'interfaces utilisateur - Développeur créatif - Développeur Web",
          skills: "Compétences",
-projetsRealises: "Projet réalisé",
+projetsRealises: "Projet ",
 certification: "Certification",
  
 
@@ -52,13 +52,15 @@ certification: "Certification",
         //  CV
          formation:"Formation",
          experience:"Expérience",
+         forodoo:"Formation Odoo chez Technaps",
+         descodoo:"Formation 100% en ligne couvrant l'installation et la configuration d’Odoo sur Linux, le développement de modules personnalisés, l’intégration d’APIs tierces, ainsi que les bonnes pratiques de versioning, test et déploiement.",
          dts:"Technicien spécialisé en développement digital option ‘full-stack web’ ",
          ecoleista:"📍 A l'institut spécialisé en technologie appliquée NTIC 1, Casablanca",
          dscIsta:"Formation axée sur la conception, le développement et le déploiementd’applications web dynamiques, incluant des projets pratiques avec React.js et Laravel.",
-         bac:"Baccalaureate in Life and Earth Sciences",
+         bac:"Baccalaureate en Sciences de vie et de terre",
          ecolebac:"📍 En Lycée Ibno-Khatib, Casablanca",
 
-         
+         dateForodoo:"Avril 2025 - Juin 2025",
           stagevnb: "Stagiaire Développeur Mobile, VNB-IT",
           datedevnb: "Mars 2025 – Juin 2025",
           descvnb: "Développement de l’application mobile LCR, une plateforme numérique de l’auto-école GMP, axée sur la formation accélérée à la conduite et l’accompagnement personnalisé des élèves.",
@@ -67,7 +69,7 @@ certification: "Certification",
           stageTechnaps: "Stagiaire Développeur Full Stack, TECHNAPS",
           dateTechnaps: "Décembre 2024 - Mars 2025",
           descTechnaps: "Développement de l'interface d'un site web de réservation d'hôtels, de voitures et de restaurants.",
-          attestationTechnaps: "Attestation 🔗",
+          attestationTechnaps: " Attestation",
 
           stageSirecom: "Stagiaire Développeur Full Stack - Laravel, SIRECOM",
           dateSirecom: "1 Mars 2024 - 1 Mai 2024",
@@ -105,8 +107,8 @@ placeholderEmail: "Entrez votre adresse email ",
 placeholderMessage: "Écrivez votre message ici...",
 restezConnecte: "Restez connecté à mon univers tech",
 
-finished: "Projet terminé",
-ongoing: "Projet en cours"
+finished:"  PROJET TERMINE",
+ongoing: "  PROJET EN COURS"
 
 
 
@@ -157,6 +159,9 @@ certification: "Certification",
            //  CV
           formation:"Education",
           experience:"Experience",
+          forodoo:"Odoo Training at Technaps",
+          dateForodoo:"April 2025 – June 2025",
+          descodoo:"A 100% online training covering the installation and configuration of Odoo on Linux, the development of custom modules, integration of third-party APIs, as well as best practices in versioning, testing, and deployment.",
           dts:"Specialized Technician in Digital Development, 'Full-Stack Web' option",
           ecoleista:"📍 At the Specialized Institute of Applied Technology NTIC 1, Casablanca",
           dscIsta:"Training focused on the design, development, and deployment of dynamic web applications, including practical projects with React.js and Laravel.",
@@ -171,7 +176,7 @@ certification: "Certification",
           stageTechnaps: "Full Stack Developer Intern, TECHNAPS",
           dateTechnaps: "December 2024 - March 2025",
           descTechnaps: "Developed the user interface of a booking website for hotels, cars, and restaurants.",
-          attestationTechnaps: "Certificate 🔗",
+          attestationTechnaps: " Certificate",
 
           stageSirecom: "Full Stack Developer Intern - Laravel, SIRECOM",
           dateSirecom: "March 1st, 2024 - May 1st, 2024",
@@ -208,8 +213,8 @@ placeholderEmail: "Enter your email address",
 placeholderMessage: "Write your message here...",
 restezConnecte: "Stay connected to my tech universe",
 
-finished: "Completed Project",
-ongoing: "Ongoing Project"
+finished: "  COMPLETED PROJECT",
+ongoing: "  ONGOING PROJECT"
 
         },
       },
