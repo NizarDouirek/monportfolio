@@ -6,6 +6,7 @@
   height: 180px;
   font-weight: bold;
   color: #ff9aff;
+  
   font-weight: 900;
   text-align: center;
   cursor: url('/public/nnb.cur'), auto;
@@ -36,9 +37,24 @@
 }
 .circular-text.finished {
   color: #0bc496;
+  text-shadow:     0px 0px 2px #05381b,
+    0px 0px 5px #215645,
+    0px 0px 10px #215645,
+
+    /* Ombre douce pour la profondeur */
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.15);
+  
   
 }
 
 .circular-text.ongoing {
   color: #dbde0e; /* Rouge */
+  text-shadow:     0px 0px 2px #215645,
+    0px 0px 5px #215645,
+    0px 0px 10px #215645,
+
+    /* Ombre douce pour la profondeur */
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.15);
 }

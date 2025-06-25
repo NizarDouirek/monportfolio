@@ -128,7 +128,7 @@ const handleAnimationComplete = () => {
        <div>
         <motion.img initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 4, duration: 1 }} src="decor7.svg" style={{marginTop:'-500px',marginLeft:'1150px',width:'350px',height:'500px'}} alt="" />
+    transition={{ delay: 4, duration: 1 }} src="decor7.svg" style={{marginTop:'-500px',marginLeft:'1150px',width:'350px',height:'500px',userSelect: "none",pointerEvents: "none"}} alt="" />
          </div>
         {/* Section des compétences */}
         <motion.div className="marquee-container2" initial={{ opacity: 0, y: -50 }}

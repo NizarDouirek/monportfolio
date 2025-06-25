@@ -55,9 +55,9 @@
       top: -16px;
       right: -16px;
       /* background: #054044; */
-      background-image: linear-gradient(25deg, #caf6e8, #025b3f, #023035, #054044);
+      background-image: linear-gradient(25deg, #09909a, #044449, #023035, #054044);
       height: 52px;
-      width: 60px;
+      width: 65px;
       border-radius: 32px;
       transform: scale(1);
       transform-origin: 50% 50%;
@@ -311,7 +311,7 @@ hr {
     /* font-weight: bold; */
     color: black;
     background: linear-gradient(45deg, #ffffff, #d8f4e9);
-    border: 1px solid #63c4af;
+    border: 1px solid #044449;
    
     /* margin-left: 420px; */
     cursor: url('/public/nnb.cur'), auto;
@@ -330,7 +330,7 @@ hr {
   }
   .see-more-btn a{
     text-decoration:none;
-    color: #42897a;
+    color: #044449;
     cursor: url('/public/nnb.cur'), auto;
   }
   

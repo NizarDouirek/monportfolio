@@ -17,4 +17,22 @@
     0 0 40px #328956;
     
 }
+/* Tablettes (largeur entre 601px et 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  .jb {
+    font-size: 24px;
+    text-shadow:
+      0 0 4px #b0d1be,
+      0 0 8px #1f7867;
+  }
+}
 
+/* Téléphones (largeur jusqu'à 600px) */
+@media screen and (max-width: 600px) {
+  .jb {
+    font-size: 20px;
+    text-shadow:
+      0 0 3px #b0d1be,
+      0 0 6px #1f7867;
+  }
+}

@@ -246,7 +246,20 @@
     .sectionP2 h1, 
     .sectionP3 h1 ,
     .sectionP4 h1,.sectionP5 h1{
-        font-size: 30px !important; /* Réduction de la taille des titres */
+        font-size: 26px !important;
+         margin-top: -15px;
+    }
+    .visit,.visit2,.visit3,.visit4,.visit5{
+        margin-top: 10px !important;
+    }
+    .projets-message{
+padding: 10px !important;
+margin: 10px !important;
+    }
+    .projets-message p {
+        font-size: 16px !important;
+        
+      
     }
 }
  @media screen and (max-width: 768px) {
@@ -310,7 +323,7 @@
 
     .titre1 {
         font-size: 24px; /* Réduction de la taille de la police */
-        margin-top: 25px; /* Réduction de l'espacement inférieur */
+        margin-top: 25px; 
     }
     .projets-message {
         padding: 10px;
@@ -319,6 +332,14 @@
 
     .projets-message p {
         font-size: 16px;
+      
+    }
+    .introprojet{
+        font-size: 18px !important;
+    }
+    .tech-item img {
+        width: 40px !important;
+        height: 40px !important;
     }
 } 
  
@@ -368,7 +389,7 @@
         gap: 0.5em; /* Réduction de l'espacement */
     }
 
-    .tec img {
+    .tech-item img {
         width: 50px; /* Réduction de la taille des icônes */
         height: 50px;
         padding: 3px; /* Réduction du padding */
@@ -413,6 +434,7 @@
     .projets-message p {
         font-size: 26px;
     }
+    
 }
 .projets-message {
     margin: 40px auto;
@@ -562,3 +584,41 @@
     .sectionP4 ,.sectionP5 {
         margin-bottom: 2.5rem; /* Réduction de la taille des titres */
     }
+   
+
+.tech-item {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.tech-item img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.tech-item:hover img {
+  transform: scale(1.1);
+  
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #17888a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.tech-item:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(5px);
+}
