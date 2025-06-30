@@ -75,7 +75,7 @@ export default function Cv() {
   >
   
   </p>
-  <br />
+  
   <p>
     {t("descodoo")}
   </p><br />

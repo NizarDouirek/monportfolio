@@ -133,7 +133,7 @@
   .pack section:hover {
     transform: perspective(1000px) rotateX(10deg) rotateY(10deg) scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    background-color: #379777;
+    background-color: #0c5f65;
   }
   
   /* Effet de lumière dynamique */

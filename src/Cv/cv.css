@@ -142,19 +142,22 @@ h2 {
     font-size: 1.4rem;
     color: #163726;
     margin: 10px 0;
+    font-family: Raleway, sans-serif;
 }
 
 .date {
     display: inline-block;
-    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    font-family: Raleway, sans-serif;
+    /* font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1; */
     background-color: #3a716a;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    font-size: 14px;
 }
 .date:hover{
-    background-color:#4c7466 ;
+    background-color:#28867e ;
 }
 
 .p, p {
@@ -321,7 +324,6 @@ hr {
       display: inline-flex;
         align-items: center;
         gap: 8px;
-       
         padding: 10px 16px;
         border-radius: 10px;
         text-decoration: none;

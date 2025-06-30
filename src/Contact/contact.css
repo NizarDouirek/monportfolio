@@ -183,6 +183,36 @@
     
   }
   
+  .btn-Login {
+  background: linear-gradient(135deg, #093c2b, #109869); /* Dégradé bleu élégant */
+  color: #fff; /* Texte blanc */
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px; /* Bords arrondis */
+ cursor: url('/public/nnb.cur'), auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre douce */
+}
+
+.btn-Login:hover {
+  transform: translateY(-2px);
+  cursor: url('/public/nnb.cur'), auto;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #0d4f49, #0c5d41);
+}
+
+.btn-Login:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.btn-Login:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(227, 235, 234, 0.5);
+}
+
   /* --- 🌟 Responsive Design --- */
   @media (max-width: 768px) {
     .contentForm {

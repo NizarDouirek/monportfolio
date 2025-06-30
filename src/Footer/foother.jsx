@@ -95,6 +95,22 @@ export default function Footer() {
       <motion.div className="social" variants={fadeIn}>
         <motion.div className="head-foot" variants={slideInTop}>
           <div className="container-footer-form">
+             <motion.div style={{ display: 'flex' }} variants={fadeIn} transition={{ duration: 2 }}>
+              <motion.span
+                animate={{
+                  y: [-5, 5, -5],
+                  rotate: [0, 10, 0],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
+                🚀
+              </motion.span>
+              <b> {t("restezConnecte")} </b>
+            </motion.div>
             <motion.form
               className="footer-newsletter"
               onSubmit={handleSubmit}
@@ -125,22 +141,7 @@ export default function Footer() {
                 </motion.b>
               )}
             </motion.form>
-            <motion.div style={{ display: 'flex' }} variants={fadeIn} transition={{ duration: 2 }}>
-              <motion.span
-                animate={{
-                  y: [-5, 5, -5],
-                  rotate: [0, 10, 0],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              >
-                🚀
-              </motion.span>
-              <b> {t("restezConnecte")} </b>
-            </motion.div>
+           
           </div>
         </motion.div>
 
@@ -255,9 +256,9 @@ export default function Footer() {
       <motion.p
         className="copyright"
         variants={slideInRight}
-        whileHover={{ scale: 1.01 }}
+        // whileHover={{ scale: 1.01 }}
       >
-        copyright © NIZAR DOUIREK {new Date().getFullYear()} 🤍
+        Copyright © NIZAR DOUIREK {new Date().getFullYear()} 
       </motion.p>
     </motion.footer>
   );

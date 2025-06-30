@@ -1,13 +1,16 @@
 .footer {
-    background: url(/public/f.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background: url(/public/weee.jpg);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-position: top; */
     /* color: #fff; */
     text-align: center;
     padding: 20px 20px 10px;
     
     margin-top: 50px;
+    background-size: contain;
+background-repeat: no-repeat;
+/* background-position: center; */
     /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,14 +76,15 @@
   
   .footer-links {
     list-style: none;
+
     padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    margin-top: 10px;
-    /* gap: 25px; */
+    margin-top: 20px;
+    gap: 1px;
   }
   
   .footer-links li {
@@ -107,8 +111,9 @@
   .copyright {
     margin-top: 20px;
     font-size: 14px;
+    font-weight: 600;
     /* opacity: 0.8; */
-    color: white;
+    color: rgb(25, 82, 79);
     transition: all 0.3s ease;
   }
   .divLogo{
@@ -124,7 +129,7 @@
     color: #007C5C;
     position: relative;
     margin-left: 40px;
-    margin-top: 7px;
+    margin-top: -26px;
     text-shadow: 0px 0px 10px #3f3f3f, 0px 0px 10px #00d1ff80;
     transition: all 0.4s ease-in-out;
 }
@@ -137,52 +142,10 @@
   width: 160px;
   height: 130px;
   margin-left: -30px;
-  margin-bottom: 25px;
+  margin-top: -38px;
   
 }
-.footer-newsletter {
-  display: flex;
-  width: 400px;
-  height: 50px;
-  align-items: center;
-  /* flex-direction: column; */
-  /* margin-left: 100px; */
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
-  margin-top: 10px;
-}
 
-.footer-newsletter input {
-  width: 100%;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  background-color: #e8fefa;
-  color: #093c2b;
-  transition: all 0.3s ease-in-out;
-  border: 2px solid rgb(241, 237, 237);
-  outline: none;
-}
-.footer-newsletter input:focus {
-  border: 2px solid #379777;
-  box-shadow: 0 0 10px rgba(55, 151, 119, 0.5);
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.footer-newsletter button {
-  padding: 10px 16px;
-  font-family: Roboto;
-  background-color: #008f72;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  cursor: url('/public/nnb.cur'), auto;
-}
-
-.footer-newsletter button:hover {
-  cursor: url('/public/nnb.cur'), auto;;
-  background: linear-gradient(80deg, #379777, #495E57); /* Légère variation de couleur */ 
-}
 .head-foot{
   /* display: flex; */
   justify-content: center;
@@ -219,7 +182,7 @@
   width: 210px;
   color: white;
   font-weight: bold;
-  margin-top: 40px;
+  margin-top: 30px;
   cursor: url('/public/nnb.cur'), auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
@@ -245,6 +208,7 @@
 }
 .section-adrss p{
   color: black;
+  margin-top: 6px;
   font-size: 18px;
 }
 
@@ -256,6 +220,9 @@
 /* Media Query pour les écrans de petite taille (≤ 480px) */
 @media (max-width: 480px) {
     .footer {
+       background: url(/public/weee.jpg);
+       background-size: cover;
+background-repeat: no-repeat;
         margin-top: 60px; /* Réduire l'espace en haut */
         padding: 35px 20px; /* Réduire le padding */
          overflow: hidden;
@@ -428,3 +395,239 @@
     background-position: 0% 50%;
   }
 }
+/* Nouveau design amélioré pour le formulaire */
+.footer-newsletter {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+  align-items: center;
+  position: relative;
+  margin: 20px auto;
+  padding: 10px;
+  /* gap: 10px; */
+    /* background: linear-gradient(45deg, #00b894, #006d5b, #00b894); */
+}
+
+.footer-newsletter::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+
+  background-size: 200% 200%;
+  z-index: -1;
+  border-radius: 10px;
+  animation: gradientFlow 6s ease infinite;
+  filter: blur(8px);
+  opacity: 0.7;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.footer-newsletter input {
+  flex: 1;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #093c2b;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid #2aa888;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: '__swearDisplay_6a02b1', '__swearDisplay_Fallback_6a02b1';
+}
+
+.footer-newsletter input::placeholder {
+  color: #5a7a72;
+  opacity: 0.8;
+}
+
+.footer-newsletter input:focus {
+  border: 1px solid #00b894;
+  box-shadow: 
+    0 0 0 3px rgba(0, 184, 148, 0.3),
+    0 6px 20px rgba(0, 184, 148, 0.2);
+  background-color: white;
+  transform: translateY(-2px);
+}
+
+.footer-newsletter button {
+  padding: 15px 25px;
+  font-family: '__swearDisplay_6a02b1', '__swearDisplay_Fallback_6a02b1';
+  background: linear-gradient(135deg, #00b894, #008f72);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 15px rgba(0, 184, 148, 0.4); */
+  position: relative;
+  overflow: hidden;
+  min-width: 120px;
+}
+
+.footer-newsletter button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.footer-newsletter button:hover {
+  transform: translateY(-2px);
+  /* box-shadow: 0 6px 25px rgba(0, 184, 148, 0.6); */
+}
+
+.footer-newsletter button:hover::after {
+  left: 100%;
+}
+
+.footer-newsletter button:active {
+  transform: translateY(0);
+}
+
+/* Style pour les messages de statut */
+.form-status {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  animation: slideIn 0.5s ease-out forwards;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-status.success {
+  background: rgba(46, 213, 115, 0.15);
+  color: #2ed573;
+  border: 1px solid rgba(46, 213, 115, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.form-status.error {
+  background: rgba(255, 71, 87, 0.15);
+  color: #ff4757;
+  border: 1px solid rgba(255, 71, 87, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+/* Animation pour le bouton submit */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.footer-newsletter button:disabled {
+  animation: pulse 1.5s infinite;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-newsletter {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+  
+  .footer-newsletter input,
+  .footer-newsletter button {
+    width: 100%;
+  }
+  
+  .form-status {
+    bottom: -60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-newsletter {
+    padding: 0 10px;
+  }
+  
+  .footer-newsletter input {
+    padding: 12px 15px;
+  }
+  
+  .footer-newsletter button {
+    padding: 12px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-newsletter {
+    flex-direction: row; /* Garde les éléments en ligne */
+    width: 90%; /* Prend plus de largeur */
+    gap: 8px; /* Réduit l'espace entre les éléments */
+    padding: 0 10px;
+  }
+  
+  .footer-newsletter input {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-newsletter button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-newsletter {
+    width: 95%; /* Encore plus large sur très petits écrans */
+    gap: 5px; /* Espace minimal entre les éléments */
+  }
+  
+  .footer-newsletter input {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    width: 200px;
+  }
+  
+  .footer-newsletter button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Pour les très petits écrans où même cette disposition peut être trop large */
+@media (max-width: 350px) {
+  .footer-newsletter {
+    flex-wrap: wrap; /* Permet le passage à la ligne si vraiment nécessaire */
+  }
+  
+  .footer-newsletter button {
+    white-space: normal; /* Permet au texte de passer à la ligne si besoin */
+  }
+}
+
