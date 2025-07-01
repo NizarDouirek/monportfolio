@@ -153,6 +153,10 @@ body, html, #root, .homme {
     color: white;
     cursor: url('/public/nnb.cur'), auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
 }
 
@@ -222,6 +226,10 @@ body, html, #root, .homme {
     cursor: url('/public/nnb.cur'), auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
+    transition: all 0.6s ease;
+  /* box-shadow: 0 4px 15px rgba(0, 184, 148, 0.4); */
+  position: relative;
+  overflow: hidden;
 }
 .btn-homme1:hover a{
   color: white;
@@ -557,4 +565,92 @@ body, html, #root, .homme {
   .circle-card {
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   }
+}
+
+ 
+/* .btn-homme {
+    background: linear-gradient(135deg, #2a6e58, #47d8a8);
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 12px 25px;
+    border: none;
+    color: white;
+    cursor: url('/public/nnb.cur'), auto;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
+} */
+
+.btn-homme::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: skewX(-25deg);
+    z-index: 2;
+}
+
+.btn-homme:hover::before {
+    animation: shine 1s ease-in-out;
+}
+
+@keyframes shine {
+    0% {
+        left: -75%;
+    }
+    100% {
+        left: 125%;
+    }
+}
+
+.btn-homme:hover {
+    background: linear-gradient(135deg, #1e5d49, #38c49a);
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-homme1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: skewX(-25deg);
+    z-index: 2;
+}
+
+.btn-homme1:hover::before {
+    animation: shine 1s ease-in-out;
+}
+
+@keyframes shine {
+    0% {
+        left: -75%;
+    }
+    100% {
+        left: 125%;
+    }
+}
+
+.btn-homme1:hover {
+    background: linear-gradient(135deg, #1e5d49, #38c49a);
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }

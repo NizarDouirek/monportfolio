@@ -526,7 +526,7 @@ background-repeat: no-repeat;
   }
 }
 
-.form-status.success {
+/* .form-status.success {
   background: rgba(46, 213, 115, 0.15);
   color: #2ed573;
   border: 1px solid rgba(46, 213, 115, 0.3);
@@ -538,7 +538,7 @@ background-repeat: no-repeat;
   color: #ff4757;
   border: 1px solid rgba(255, 71, 87, 0.3);
   backdrop-filter: blur(5px);
-}
+} */
 
 /* Animation pour le bouton submit */
 @keyframes pulse {
