@@ -25,11 +25,11 @@ body, html, #root, .homme {
     margin-top: 8%; 
 }
 .bonjour{
-    color:#45474B;
+    color:#dbe4e3;
     font-size: 30px;
     /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    font-style: italic;
+    font-family: Montserrat, sans-serif;
+    
 
  
   /* text-shadow:
@@ -37,8 +37,15 @@ body, html, #root, .homme {
     0 0 10px #bfdecb,
     0 0 20px #234d34,
     0 0 40px #bbebcf; */
-  font-weight: 900;
+  
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #143d2f;
+  
+  /* line-height: 62px; */
+  
 
                 
 }
@@ -281,7 +288,9 @@ body, html, #root, .homme {
         font-size: 15px; /* Boutons plus petits */
         padding: 10px; /* Réduction du padding */
     }
-   
+   .marquee-container2{
+    margin-top: 60px !important;
+   }
     .marquee-container2 p{
       font-size: 25px !important;
       /* margin-top: 60px; */
@@ -419,25 +428,36 @@ body, html, #root, .homme {
   white-space: nowrap;
   position: relative;
   width: 100%;
+  padding: 10px;
   height: auto;
-  margin-top: 70px;
+  margin-top: 50px;
+  border: 1px solid rgb(219, 216, 216);
+  color: #000;
+ 
+  background: #fff;
+ 
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .marquee-content2 {
   display: inline-block;
   white-space: nowrap;
   padding-left: 100%;
-  animation: scroll-left1 25s linear infinite;
+  animation: scroll-left1 85s linear infinite;
 } 
 .marquee-container2 p{
   font-size: 35px;
-    font-weight: bold;
+    font-weight: 900;
     
     letter-spacing: 1px;
     font-family: 'Courier New', Courier;
     color:#495E57;
-    text-shadow: 2px 2px 4px #45474B;
+    /* text-shadow: 2px 2px 4px #45474B; */
     white-space: nowrap;
+    -webkit-text-stroke: 2px #143d2f;
+  color: white;
+ 
 }
 .marquee-container2:hover .marquee-content2 {
   animation-play-state: paused;
@@ -455,6 +475,7 @@ body, html, #root, .homme {
   display: flex;
   justify-content: center;
   gap: 5rem;
+  /* background-color: #143d2f; */
   flex-wrap: wrap;
   margin-top: -5rem;
   padding: 100px;
@@ -654,3 +675,91 @@ body, html, #root, .homme {
     transform: scale(1.07);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+.decPc{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.imgpc{
+  height: 60px;
+}
+.carousel-wrapper {
+  background-color: #0f4a38;
+  overflow-x: hidden; 
+  padding: 30px;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  gap: 90px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  user-select: none;
+  animation: scroll-left4 30s linear infinite;
+      
+}
+.carousel:hover {
+            animation-play-state: paused;
+        }
+
+.carousel:active {
+  cursor: grabbing; 
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; 
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  cursor: pointer;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item svg {
+  width: 50px;
+  height: 50px;
+  fill: #ccc;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.carousel-item p {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.carousel-item:hover p {
+  color: #14d692;
+}
+
+.carousel-item:hover svg {
+  fill: #14d692;
+}
+ 
+        
+      
+        
+        /* Animation de défilement */
+        @keyframes scroll-left4{
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+       

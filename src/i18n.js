@@ -24,7 +24,7 @@ i18n
          job: "Développeur Full Stack",
          contactezMoi: "Contactez-moi",
          telechargerCV: "Télécharger mon CV",
-         descriptionDev: "Développeur FrontEnd - Développeur BackEnd - Développeur d'applications - Développeur d'interfaces utilisateur - Développeur créatif - Développeur Web - Freelancer ",
+         descriptionDev: "Développeur FrontEnd ✦ Développeur BackEnd ✦ Développeur d'applications ✦ Développeur d'interfaces utilisateur ✦ Développeur créatif ✦ Développeur Web ✦ Freelancer ✦ Développeur FrontEnd ✦ Développeur BackEnd ✦ Développeur d'applications ✦ Développeur d'interfaces utilisateur ✦ Développeur créatif ✦ Développeur Web ✦ Freelancer ✦ Développeur FrontEnd ✦ Développeur BackEnd ✦ Développeur d'applications ✦ Développeur d'interfaces utilisateur ✦ Développeur créatif ✦ Développeur Web ✦ Freelancer ",
          skills: "Compétences",
 projetsRealises: "Projet ",
 certification: "Certification",
@@ -62,7 +62,7 @@ certification: "Certification",
 
          dateForodoo:"Avril 2025 - Juin 2025",
           stagevnb: "Stagiaire Développeur Mobile, VNB-IT",
-          datedevnb: "Mars 2025 – Juin 2025",
+          datedevnb: "Avril 2025 – Juillet 2025",
           descvnb: "Développement de l’application mobile LCR, une plateforme numérique de l’auto-école GMP, axée sur la formation accélérée à la conduite et l’accompagnement personnalisé des élèves.",
           techvnb: "Technologies utilisées :",
 
@@ -131,10 +131,10 @@ ongoing: "  PROJET EN COURS"
           job: "Full Stack Developer",
           contactezMoi: "Contact Me",
           telechargerCV: "Download My Resume",
-          descriptionDev: "FrontEnd Developer - BackEnd Developer - Application Developer - UI Developer - Creative Developer - Web Developer - Freelancer ",
+          descriptionDev: "FrontEnd Developer ✦ BackEnd Developer ✦ Application Developer ✦ UI Developer ✦ Creative Developer ✦ Web Developer ✦ Freelancer FrontEnd Developer ✦ BackEnd Developer ✦ Application Developer ✦ UI Developer ✦ Creative Developer ✦ Web Developer ✦ Freelancer ✦ FrontEnd Developer ✦ BackEnd Developer ✦ Application Developer ✦ UI Developer ✦ Creative Developer ✦ Web Developer ✦ Freelancer ✦ FrontEnd Developer ✦ BackEnd Developer ✦ Application Developer ✦ UI Developer ✦ Creative Developer ✦ Web Developer ✦ Freelancer",
           skills: "Skills",
-projetsRealises:"Project",
-certification: "Certification",
+          projetsRealises:"Project",
+          certification: "Certification",
 
           
         //  ABOUT
@@ -169,7 +169,7 @@ certification: "Certification",
           ecolebac:"📍 At Lycée Ibno-Khatib, Casablanca",
 
           stagevnb: "Mobile Developer Intern, VNB-IT",
-          datedevnb: "March 2025 – June 2025",
+          datedevnb: "April 2025 – July 2025",
           descvnb: "Development of the LCR mobile application, a digital platform for the GMP driving school, focused on accelerated driving training and personalized student support.",
           techvnb: "Technologies used: ",
 

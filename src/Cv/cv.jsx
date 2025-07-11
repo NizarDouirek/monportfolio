@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from "react";
 import "./cv.css";
 import Header from "../Header/header";
 import Title from "../Constant/Titre";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export default function Cv() {
+export default function Cv({ showHero = true }) {
   const formationRef = useRef();
   const experienceRef = useRef();
   const scrollRef = useRef();
@@ -53,6 +54,18 @@ export default function Cv() {
   return (
     <>
       {/* <Header/> */}
+       {showHero && (
+        <section className="hero-section">
+          <div className="hero-overlay">
+            <div className="hero-content">
+              <h1>Parcours</h1>
+              <div className="breadcrumb">
+                <Link to="/homme">Home</Link><span className="spann"> • Parcours</span> 
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
       <div id="cv" className="cv2">
         <Title text={t("parcours")} size="xl" color="primary" />
         {/* <h1  className="titre1">CV</h1> */}
@@ -154,8 +167,17 @@ export default function Cv() {
 
 
               </p>
-
               <br />
+              <button className="see-more-btn">
+                <a
+                  href="AttestationVNB.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class='bx bx-link-external'></i>
+                 {t("attestationTechnaps")}
+                </a>
+              </button>
 
               {/* <button className="see-more-btn">
                 <a

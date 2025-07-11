@@ -25,10 +25,10 @@
 .i{
     width: 350px;
     height: 450px;
-    border-radius: 10px;
+    border-radius: 40%;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
+    
   }
   
   .i:hover {
@@ -297,4 +297,148 @@ table tr:hover{
   position: relative;
   top: 3px;              /* Fait descendre légèrement l’icône */
   color: #3a3a3a;        /* Optionnel : couleur personnalisée */
+}
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 400px; /* Hauteur minimale augmentée */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/public/hero2.jfif') center/cover no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  z-index: 1;
+  /* Effet de parallaxe */
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(218, 220, 222, 0.7) 0%, rgba(164, 180, 148, 0.8) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  backdrop-filter: blur(2px); 
+}
+
+.hero-content {
+  text-align: center;
+  color: #1b543e;
+  padding: 2rem;
+  max-width: 800px;
+  animation: fadeInUp 1s ease-out;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+  font-size: 4rem; /* Taille augmentée */
+  font-weight: 800; /* Plus gras */
+  margin: 0 0 1rem 0;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif; /* Police plus élégante */
+  position: relative;
+  display: inline-block;
+}
+
+/* .hero-content h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #186436;
+  border-radius: 3px;
+} */
+.breadcrumb {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.breadcrumb a {
+  color: #2c3e50;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumb a:hover {
+  color: #186436;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.breadcrumb a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: #186436;
+  transition: all 0.3s ease;
+}
+
+.breadcrumb a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.spann {
+  color: #53a188 !important;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Animation au chargement */
+.breadcrumb {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+    min-height: 500px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .breadcrumb {
+    font-size: 1rem;
+  }
 }

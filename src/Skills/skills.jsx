@@ -2,9 +2,10 @@ import React from "react";
 import "./skills.css";
 import Title from "../Constant/Titre";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const Skills = () => {
+const Skills = ({ showHero = true }) => {
   const { t } = useTranslation(); 
   const characters = [
     {
@@ -25,9 +26,23 @@ const Skills = () => {
   ];
 
   return (
+    <> {showHero && (
+        <section className="hero-section">
+          <div className="hero-overlay">
+            <div className="hero-content">
+              <h1>Skills</h1>
+              <div className="breadcrumb">
+                 <Link to="/homme">Home</Link><span className="spann"> • Skills</span> 
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
     <div id="skills" className="skills">
       <Title text={t("competences" )}/>
-      <p className="hover-instruction">{t("hover")}</p>
+      <motion.p initial={{ opacity: 0, x: 100 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ delay: 1 , duration: 1 }} className="hover-instruction">{t("hover")}</motion.p>
 
       <div className="containerskills">
         {characters.map((character, index) => (
@@ -99,6 +114,7 @@ const Skills = () => {
         ))}
       </motion.div>
     </div>
+    </>
   );
 };
 

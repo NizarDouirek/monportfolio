@@ -3,9 +3,10 @@ import "./about.css";
 import Header from "../Header/header";
 import Title from "../Constant/Titre";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export default function About() {
+export default function About({ showHero = true }) {
     const [isVisible, setIsVisible] = useState(false);
     const aboutRef = useRef(null);
     const { t } = useTranslation(); 
@@ -32,6 +33,18 @@ export default function About() {
 
     return (
         <>
+         {showHero && (
+        <section className="hero-section">
+          <div className="hero-overlay">
+            <div className="hero-content">
+              <h1>About</h1>
+              <div className="breadcrumb">
+                <Link to="/homme">Home</Link><span className="spann"> • About</span> 
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
         {/* <Header/> */}
         <div id="about" className="about" ref={aboutRef}>
             <Title text={t("apropos")} />

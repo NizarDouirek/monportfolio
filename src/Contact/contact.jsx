@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import "./contact.css";
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import Title from "../Constant/Titre";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export default function Contact() {
+export default function Contact({ showHero = true })  {
     const sectionRef = useRef(null);
     const [formStatus, setFormStatus] = useState(null);
     const { t } = useTranslation(); 
@@ -61,6 +62,19 @@ export default function Contact() {
     };
 
     return (
+        <>
+         {showHero && (
+        <section className="hero-section">
+          <div className="hero-overlay">
+            <div className="hero-content">
+              <h1>Contact</h1>
+              <div className="breadcrumb">
+                 <Link to="/homme">Home</Link><span className="spann"> • Contact</span> 
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
         <div id="contact" className="contact" ref={sectionRef}>
             <Title text={t("contact") }/>
 
@@ -123,5 +137,6 @@ export default function Contact() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

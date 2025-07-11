@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./projet.css";
 import Header from "../Header/header";
 import Title from "../Constant/Titre";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import CircularText from "../Constant/textcircle";
 
 import { motion } from "framer-motion";
 
-export default function Projet() {
+export default function Projet({ showHero = true }) {
   const { t } = useTranslation();
   useEffect(() => {
     const sections = document.querySelectorAll(
@@ -32,6 +33,18 @@ export default function Projet() {
   }, []);
   return (
     <>
+     {showHero && (
+        <section className="hero-section">
+          <div className="hero-overlay">
+            <div className="hero-content">
+              <h1>Project</h1>
+              <div className="breadcrumb">
+                 <Link to="/homme">Home</Link><span className="spann"> • Project</span> 
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
       {/* <Header/> */}
       <div id="projet">
         <div className="projets">
