@@ -248,7 +248,7 @@ body, html, #root, .homme {
         /* overflow-x: hidden; */
       }
     .homme{
-        height: 650px;
+        height: 660px;
         overflow-x: hidden;
     }
     .decoration {
@@ -289,7 +289,7 @@ body, html, #root, .homme {
         padding: 10px; /* Réduction du padding */
     }
    .marquee-container2{
-    margin-top: 60px !important;
+    margin-top: 70px !important;
    }
     .marquee-container2 p{
       font-size: 25px !important;
@@ -477,7 +477,7 @@ body, html, #root, .homme {
   gap: 5rem;
   /* background-color: #143d2f; */
   flex-wrap: wrap;
-  margin-top: -5rem;
+  margin-top: 3rem;
   padding: 100px;
 }
 
@@ -486,7 +486,7 @@ body, html, #root, .homme {
   height: 250px;
   /* border-radius: 50%; */
   border-radius: 20px;
-    background: linear-gradient(135deg, #dad5e2, #f0ebeb, #f4f6ee);
+  background: linear-gradient(135deg, #dad5e2, #f0ebeb, #f4f6ee);
   color: #143d2f;
   display: flex;
   cursor: url('/public/nnb.cur'), auto;
