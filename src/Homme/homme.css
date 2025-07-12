@@ -289,7 +289,7 @@ body, html, #root, .homme {
         padding: 10px; /* Réduction du padding */
     }
    .marquee-container2{
-    margin-top: 70px !important;
+    margin-top: 75px !important;
    }
     .marquee-container2 p{
       font-size: 25px !important;
@@ -533,7 +533,7 @@ body, html, #root, .homme {
     
   }
   .circle-stats-container{
-    gap: 1rem;
+    gap: 1.5rem;
   }
   .circle-title {
     font-size: 22px;
