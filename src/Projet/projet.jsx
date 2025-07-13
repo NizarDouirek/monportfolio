@@ -39,7 +39,7 @@ export default function Projet({ showHero = true }) {
             <div className="hero-content">
               <h1>Project</h1>
               <div className="breadcrumb">
-                 <Link to="/homme">Home</Link><span className="spann"> • Project</span> 
+                 <Link to="/home">Home</Link><span className="spann"> • Project</span> 
               </div>
             </div>
           </div>

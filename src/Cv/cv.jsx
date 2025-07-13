@@ -60,7 +60,7 @@ export default function Cv({ showHero = true }) {
             <div className="hero-content">
               <h1>Parcours</h1>
               <div className="breadcrumb">
-                <Link to="/homme">Home</Link><span className="spann"> • Parcours</span> 
+                <Link to="/home">Home</Link><span className="spann"> • Parcours</span> 
               </div>
             </div>
           </div>

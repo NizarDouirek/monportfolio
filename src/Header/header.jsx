@@ -48,9 +48,9 @@ export default function Header() {
               <ul>
                 <li>
                   <Link
-                    to="/homme"
+                    to="/home"
                     style={{
-                      color: isActive(["/", "/homme"]) ? "#32ca97" : "#495E57",
+                      color: isActive(["/", "/home"]) ? "#32ca97" : "#495E57",
                     }}
                   >
                     <i className="bx bx-home-alt icnH"></i> {t("accueil")}
@@ -143,18 +143,18 @@ export default function Header() {
             <ul>
               <li>
                 <Link
-                  to="/homme"
+                  to="/home"
                   style={{
-                    color: isActive(["/", "/homme"]) ? "#379777" : "black",
+                    color: isActive(["/", "/home"]) ? "#379777" : "black",
                   }}
                 >
                   <i className="bx bx-home-alt icnM"></i>{" "}
                   <span
                     style={{
-                      color: isActive(["/", "/homme"]) ? "#379777" : "black",
+                      color: isActive(["/", "/home"]) ? "#379777" : "black",
                     }}
                   >
-                    homme
+                    home
                   </span>
                 </Link>
               </li>

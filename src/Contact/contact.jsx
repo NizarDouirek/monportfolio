@@ -69,7 +69,7 @@ export default function Contact({ showHero = true })  {
             <div className="hero-content">
               <h1>Contact</h1>
               <div className="breadcrumb">
-                 <Link to="/homme">Home</Link><span className="spann"> • Contact</span> 
+                 <Link to="/home">Home</Link><span className="spann"> • Contact</span> 
               </div>
             </div>
           </div>

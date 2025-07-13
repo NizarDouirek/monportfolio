@@ -39,7 +39,7 @@ export default function About({ showHero = true }) {
             <div className="hero-content">
               <h1>About</h1>
               <div className="breadcrumb">
-                <Link to="/homme">Home</Link><span className="spann"> • About</span> 
+                <Link to="/home">Home</Link><span className="spann"> • About</span> 
               </div>
             </div>
           </div>
