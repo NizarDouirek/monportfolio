@@ -32,7 +32,7 @@ const Skills = ({ showHero = true }) => {
             <div className="hero-content">
               <h1>Skills</h1>
               <div className="breadcrumb">
-                 <Link to="/home">Home</Link><span className="spann"> • Skills</span> 
+                 <Link to="/home"> <i className="bx bx-home-alt icnH"></i> Home</Link>/<span className="spann">  Skills</span> 
               </div>
             </div>
           </div>

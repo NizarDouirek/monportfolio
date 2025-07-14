@@ -306,8 +306,8 @@ table tr:hover{
   align-items: center;
   justify-content: center;
   /* background: url('/public/weee.avif') center/cover no-repeat; */
-  /* background-attachment: fixed; */
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-attachment: fixed;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);
   overflow: hidden;
   z-index: 1;
   /* Effet de parallaxe */
@@ -377,14 +377,16 @@ table tr:hover{
   text-decoration: none;
   font-weight: 500;
   position: relative;
+  cursor: url('/public/nnb.cur'), auto;
   padding: 5px 10px;
   transition: all 0.3s ease;
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(247, 243, 243, 0.2);
 }
 
 .breadcrumb a:hover {
   color: #186436;
+  cursor: url('/public/nnb.cur'), auto;
   background: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
 }
