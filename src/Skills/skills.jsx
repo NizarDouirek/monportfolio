@@ -40,9 +40,7 @@ const Skills = ({ showHero = true }) => {
       )}
     <div id="skills" className="skills">
       <Title text={t("competences" )}/>
-      <motion.p initial={{ opacity: 0, x: 100 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ delay: 1 , duration: 1 }} className="hover-instruction">{t("hover")}</motion.p>
+      <motion.p  className="hover-instruction">{t("hover")}</motion.p>
 
       <div className="containerskills">
         {characters.map((character, index) => (

@@ -305,8 +305,9 @@ table tr:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/public/ehm1.jpg') center/cover no-repeat;
-  background-attachment: fixed;
+  /* background: url('/public/weee.avif') center/cover no-repeat; */
+  /* background-attachment: fixed; */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   overflow: hidden;
   z-index: 1;
   /* Effet de parallaxe */
