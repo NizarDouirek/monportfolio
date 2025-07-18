@@ -5,10 +5,9 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./footer.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import ParticlesBackground from "../ParticlesBackground/ParticlesBackground";
 
 export default function Footer() {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
   const [formStatus, setFormStatus] = useState(null);
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0.7, 1], [0, 1]);
@@ -91,11 +90,14 @@ export default function Footer() {
       animate={inView ? "visible" : "hidden"}
       variants={containerVariants}
     >
-    
       <motion.div className="social" variants={fadeIn}>
         <motion.div className="head-foot" variants={slideInTop}>
           <div className="container-footer-form">
-             <motion.div style={{ display: 'flex' }} variants={fadeIn} transition={{ duration: 2 }}>
+            <motion.div
+              style={{ display: "flex" }}
+              variants={fadeIn}
+              transition={{ duration: 0.4 }}
+            >
               <motion.span
                 animate={{
                   y: [-5, 5, -5],
@@ -104,7 +106,7 @@ export default function Footer() {
                 transition={{
                   duration: 3,
                   repeat: Infinity,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
                 }}
               >
                 🚀
@@ -132,7 +134,9 @@ export default function Footer() {
               </motion.button>
               {formStatus && (
                 <motion.b
-                  className={`form-status ${formStatus.includes("Merci") ? "success" : "error"}`}
+                  className={`form-status ${
+                    formStatus.includes("Merci") ? "success" : "error"
+                  }`}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 20 }}
@@ -141,21 +145,28 @@ export default function Footer() {
                 </motion.b>
               )}
             </motion.form>
-           
           </div>
         </motion.div>
 
         <motion.div className="section-foot" variants={fadeIn}>
           <motion.div className="contact-foot" variants={slideInLeft}>
             <h1>{t("contactezMoi")}</h1>
-            <motion.div variants={fadeIn}
-            transition={{ duration: 1.5 }}>
+            <motion.div variants={fadeIn} transition={{ duration: 0.4 }}>
               {[
-                { href: "https://web.facebook.com/nizar.douirek.50", img: "fcb.png" },
-                { href: "https://www.linkedin.com/in/nizar-douirek123/", img: "linkdeen-footer.png" },
-                { href: "https://www.instagram.com/nizar_douirek", img: "insta.png" },
+                {
+                  href: "https://web.facebook.com/nizar.douirek.50",
+                  img: "fcb.png",
+                },
+                {
+                  href: "https://www.linkedin.com/in/nizar-douirek123/",
+                  img: "linkdeen-footer.png",
+                },
+                {
+                  href: "https://www.instagram.com/nizar_douirek",
+                  img: "insta.png",
+                },
                 { href: "https://github.com/NizarDouirek", img: "gtf.png" },
-                { href: "mailto:douireknizar@gmail.com", img: "gmail.avif" }
+                { href: "mailto:douireknizar@gmail.com", img: "gmail.avif" },
               ].map((social, index) => (
                 <motion.a
                   key={index}
@@ -163,7 +174,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2 }}
-                  transition={{ duration: 1.3 }}
+                  transition={{ duration: 0.3 }}
                   variants={slideInRight}
                 >
                   <img src={social.img} alt="" className="social-icon" />
@@ -171,10 +182,14 @@ export default function Footer() {
               ))}
             </motion.div>
 
-            <motion.p variants={slideInBottom} transition={{ duration: 2 }}>
-              <i className="fas fa-envelope"></i> douireknizar@gmail.com
+            <motion.p className="pEmail" variants={slideInBottom} transition={{ duration: 0.3}}>
+              <Link  to="https://mail.google.com/mail/?view=cm&to=douireknizar@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer" className="monmail">
+              <i className="fas fa-envelope"></i> douireknizar@gmail.com</Link>
             </motion.p>
-            <motion.p variants={slideInBottom} transition={{ duration: 2 }}>
+            <motion.p variants={slideInBottom} transition={{ duration: 0.3 }}>
+              
               <i className="fas fa-phone"></i> +212 699862707
             </motion.p>
           </motion.div>
@@ -182,27 +197,27 @@ export default function Footer() {
           <motion.div className="section-nav" variants={slideInRight}>
             <h1>Pages</h1>
             <ul className="footer-links">
-              <motion.li variants={slideInLeft} transition={{ duration: 2 }}>
+              <motion.li variants={slideInLeft} transition={{ duration: 0.4 }}>
                 <motion.div whileHover={{ x: 10 }}>
                   <Link to="/about">{t("apropos")}</Link>
                 </motion.div>
               </motion.li>
-              <motion.li variants={slideInRight} transition={{ duration: 2 }}>
+              <motion.li variants={slideInRight} transition={{ duration: 0.4 }}>
                 <motion.div whileHover={{ x: 10 }}>
                   <Link to="/skills">{t("competences")}</Link>
                 </motion.div>
               </motion.li>
-              <motion.li variants={slideInLeft} transition={{ duration: 2 }}>
+              <motion.li variants={slideInLeft} transition={{ duration: 0.4 }}>
                 <motion.div whileHover={{ x: 10 }}>
                   <Link to="/projet">{t("projet")}</Link>
                 </motion.div>
               </motion.li>
-              <motion.li variants={slideInRight} transition={{ duration: 2 }}>
+              <motion.li variants={slideInRight} transition={{ duration: 0.4 }}>
                 <motion.div whileHover={{ x: 10 }}>
                   <Link to="/Cv">{t("parcours")}</Link>
                 </motion.div>
               </motion.li>
-              <motion.li variants={slideInLeft} transition={{ duration: 2 }}>
+              <motion.li variants={slideInLeft} transition={{ duration: 0.4 }}>
                 <motion.div whileHover={{ x: 10 }}>
                   <Link to="/contact">{t("contact")}</Link>
                 </motion.div>
@@ -210,12 +225,34 @@ export default function Footer() {
             </ul>
           </motion.div>
 
-          <motion.div className="section-adrss" variants={slideInLeft} transition={{ duration: 2 }}>
+          <motion.div
+            className="section-adrss"
+            variants={slideInLeft}
+            transition={{ duration: 0.3}}
+          >
             <h1>{t("adr")}</h1>
             <ul className="footer-links">
-              <motion.p variants={slideInRight}>
-                Hay Nassim imm:31 <br /> app:9, Casablanca
-              </motion.p>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "0.3rem",
+                }}
+              >
+                <svg
+                  style={{ width: "40px" }}
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Google Maps</title>
+                  <path d="M19.527 4.799c1.212 2.608.937 5.678-.405 8.173-1.101 2.047-2.744 3.74-4.098 5.614-.619.858-1.244 1.75-1.669 2.727-.141.325-.263.658-.383.992-.121.333-.224.673-.34 1.008-.109.314-.236.684-.627.687h-.007c-.466-.001-.579-.53-.695-.887-.284-.874-.581-1.713-1.019-2.525-.51-.944-1.145-1.817-1.79-2.671L19.527 4.799zM8.545 7.705l-3.959 4.707c.724 1.54 1.821 2.863 2.871 4.18.247.31.494.622.737.936l4.984-5.925-.029.01c-1.741.601-3.691-.291-4.392-1.987a3.377 3.377 0 0 1-.209-.716c-.063-.437-.077-.761-.004-1.198l.001-.007zM5.492 3.149l-.003.004c-1.947 2.466-2.281 5.88-1.117 8.77l4.785-5.689-.058-.05-3.607-3.035zM14.661.436l-3.838 4.563a.295.295 0 0 1 .027-.01c1.6-.551 3.403.15 4.22 1.626.176.319.323.683.377 1.045.068.446.085.773.012 1.22l-.003.016 3.836-4.561A8.382 8.382 0 0 0 14.67.439l-.009-.003zM9.466 5.868L14.162.285l-.047-.012A8.31 8.31 0 0 0 11.986 0a8.439 8.439 0 0 0-6.169 2.766l-.016.018 3.665 3.084z" />
+                </svg>
+                <motion.p variants={slideInRight}>
+                  Hay Nassim imm:31 <br /> app:9, Casablanca
+                </motion.p>
+              </div>
             </ul>
             <motion.button
               className="cv-foot"
@@ -223,7 +260,11 @@ export default function Footer() {
               whileTap={{ scale: 0.95 }}
               variants={slideInBottom}
             >
-              <a href="CV NIZAR DOUIREK.pdf" target="_blank" rel="noopener noreferrer">
+              <a
+                href="CV NIZAR DOUIREK.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i class="bx bx-download icnBu"></i> {t("telechargerCV")}
               </a>
             </motion.button>
@@ -235,7 +276,7 @@ export default function Footer() {
         <motion.div
           className="logofo"
           variants={slideInBottom}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.4 }}
         >
           NIZAR
         </motion.div>
@@ -245,9 +286,9 @@ export default function Footer() {
           whileHover={{
             scale: 1.05,
             rotate: [0, -20, 20, -20, 0],
-            transition: { duration: 1 }
+            transition: { duration: 1 },
           }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 0.4 }}
           variants={slideInRight}
         />
       </motion.div>
@@ -258,7 +299,7 @@ export default function Footer() {
         variants={slideInRight}
         // whileHover={{ scale: 1.01 }}
       >
-        Copyright © NIZAR DOUIREK {new Date().getFullYear()} 
+        Copyright © NIZAR DOUIREK {new Date().getFullYear()}
       </motion.p>
     </motion.footer>
   );

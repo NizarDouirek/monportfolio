@@ -66,7 +66,7 @@ const Skills = ({ showHero = true }) => {
 
       {/* Langages et Frameworks */}
       <h1 className="titrecp"><i class="fas fa-puzzle-piece"></i> {t("languagesFrameworks")}</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5}}>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}}>
         {["html.png", "css.png", "javascript.png", "php.png", "bootstrap.png", "react.png","react-native.png", "laravel.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img className="imgskills" src={img} alt={img.split(".")[0]} />
@@ -79,7 +79,7 @@ const Skills = ({ showHero = true }) => {
       <div className="cardTwo">
         <div>
       <h1 className="titrecp"><i class="fas fa-database"></i> {t("databases")}</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         {["mysql.png", "mongo-db.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img className="imgskills" src={img} alt={img.split(".")[0]} />
@@ -90,7 +90,7 @@ const Skills = ({ showHero = true }) => {
       </div>
       <div>
       <h1 className="titrecp"><i class="fas fa-th-large"></i> ERP - CMC</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         {["odoo.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img className="imgskills" src={img} alt={img.split(".")[0]} />
@@ -103,7 +103,7 @@ const Skills = ({ showHero = true }) => {
 
       {/* Outils de Développement et Design */}
       <h1 className="titrecp"><i class="fas fa-tools"></i> {t("tools")}</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         {[ "git.png","github.png", "postman.png","figma.png", "canva.webp", "photoshop.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img className="imgskills" src={img} alt={img.split(".")[0]} />

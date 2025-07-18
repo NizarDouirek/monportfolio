@@ -19,10 +19,12 @@ body, html, #root, .homme {
     background-position: center;
     height: 700px;
     background-attachment: fixed;
+    /* will-change: transform, opacity; */
 }
 .container{
     text-align: center;
     margin-top: 8%; 
+    will-change: transform, opacity;
 }
 .bonjour{
     color:#dbe4e3;
@@ -88,6 +90,7 @@ body, html, #root, .homme {
                  0 18px 18px rgba(0,0,0,.25),
                  0 2px 24px rgba(0,0,0,.2),
                  0 3px 36px rgba(0,0,0,.15);
+                  will-change: transform;
 }
 
 /* Animation pour simuler l'écriture */
@@ -347,6 +350,7 @@ body, html, #root, .homme {
     height: 17em;
     width: 25em;
     overflow: hidden;
+    will-change: transform, opacity;
     /* z-index: 2; */
   }
   
@@ -439,6 +443,7 @@ body, html, #root, .homme {
  
   font-weight: 900;
   text-transform: uppercase;
+  will-change: transform, opacity;
 }
 
 .marquee-content2 {
@@ -478,7 +483,7 @@ body, html, #root, .homme {
   gap: 5rem;
   /* background-color: #143d2f; */
   flex-wrap: wrap;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 100px;
 }
 
@@ -686,6 +691,8 @@ body, html, #root, .homme {
 }
 .imgpc{
   height: 60px;
+  user-select: none;
+  pointer-events: none;
 }
 .carousel-wrapper {
   background-color: #0f4a38;
@@ -764,3 +771,18 @@ body, html, #root, .homme {
             }
         }
        
+        .scrolBits{
+          margin-top: 100px;
+          padding-bottom: 50px;
+        }
+        .my-svg-icon {
+  height: 60px;
+  margin-left: 30px;
+  fill: rgba(18, 175, 138, 1);
+}
+@media (max-width: 768px) {
+  .my-svg-icon {
+    height: 40px; /* Par exemple */
+    margin-left: 15px;
+  }
+}

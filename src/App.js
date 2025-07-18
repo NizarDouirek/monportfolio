@@ -11,7 +11,7 @@ import Cv from './Cv/cv';
 import Footer from './Footer/foother';
 import Contact from './Contact/contact';
 import Loader from './Loader/loader';
-import Page from './Portfolio/page';
+
 import ReactGA from "react-ga4";
 import ScrollToTop from './ScrollToTop/ScrollToTop';
 

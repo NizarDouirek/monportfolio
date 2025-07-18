@@ -329,21 +329,15 @@ export default function Projet({ showHero = true }) {
             </div>
           </div>
 
-          <motion.div
+          <div
             className="projets-message"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 3 }}
+           
           >
-            <motion.p
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 3 }}
-            >
+            <p >
               {t("encours")}✨
               {/* Restez à l'écoute pour découvrir de nouvelles créations et solutions innovantes. */}
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
         </div>
       </div>
     </>
