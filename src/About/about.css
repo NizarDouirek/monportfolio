@@ -307,12 +307,20 @@ table tr:hover{
   justify-content: center;
   /* background: url('/public/weee.avif') center/cover no-repeat; */
   background-attachment: fixed;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);
+  /* background: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%); */
+  background:linear-gradient(
+      rgba(255, 255, 255, 0),  
+      rgba(179, 212, 212, 0.5)
+    ), url('/public/banner-slide-img-1.png');
+  background-size: contain;
+  background-position: right ;
+  background-repeat: no-repeat;
   overflow: hidden;
   z-index: 1;
+  
   /* Effet de parallaxe */
-  perspective: 1px;
-  transform-style: preserve-3d;
+  /* perspective: 1px; */
+  /* transform-style: preserve-3d; */
    
 }
 
@@ -328,7 +336,7 @@ table tr:hover{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  backdrop-filter: blur(2px); 
+  /* backdrop-filter: blur(2px);  */
 }
 
 .hero-content {
@@ -441,9 +449,18 @@ table tr:hover{
   
   .hero-content h1 {
     font-size: 3rem;
+    color: white;
   }
   
   .breadcrumb {
     font-size: 1rem;
+    color: white;
+    
+  }
+  .breadcrumb a {
+    color: white;
+  }
+  .spann{
+    color: white !important;
   }
 }

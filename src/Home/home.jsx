@@ -21,6 +21,7 @@ export default function Home() {
    const [velocity, setVelocity] = useState(50);
   const [isLoaded, setIsLoaded] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  
 const handleAnimationComplete = () => {
     console.log("Toutes les lettres ont été animées !");}
   // Fonction pour gérer la visibilité du bouton en fonction de la position de défilement
@@ -49,6 +50,29 @@ const handleAnimationComplete = () => {
       window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
+  useEffect(() => {
+  const handleScroll = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const debounce = (func, delay) => {
+    let timeout;
+    return () => {
+      clearTimeout(timeout);
+      timeout = setTimeout(func, delay);
+    };
+  };
+
+  const debouncedScroll = debounce(handleScroll, 100);
+
+  window.addEventListener("scroll", debouncedScroll);
+  return () => window.removeEventListener("scroll", debouncedScroll);
+}, []);
+
 
   // Animation d'entrée avec Framer Motion
   const containerVariants = {
@@ -97,7 +121,7 @@ const handleAnimationComplete = () => {
     transition={{ delay: 2, duration: 0.5 }}>
             {t("job")}
           </motion.p> */}
-          <div className="decPc"><img className="imgpc" src="pc.webp" alt="" />
+          <div className="decPc"><img loading="lazy"  className="imgpc" src="pc.webp" alt="" />
           <SplitText
   text={t("job")}
   className="jb"
@@ -134,7 +158,7 @@ const handleAnimationComplete = () => {
           </motion.button>
         </motion.div>
        <div>
-        <motion.img initial={{ opacity: 0, y: -50 }}
+        <motion.img loading="lazy"  initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 4, duration: 0.3}} src="decor7.svg" style={{marginTop:'-500px', willChange:'transform, opacity',marginLeft:'1150px',width:'350px',height:'500px',userSelect: "none",pointerEvents: "none"}} alt="" />
          </div>
@@ -185,7 +209,7 @@ const handleAnimationComplete = () => {
           boxShadow: "0 4px 6px rgba(95, 92, 92, 0.1)",
         }}
       >
-        <img
+        <img loading="lazy" 
   src="top.png"
   className="Top"
   alt="scroll up"
