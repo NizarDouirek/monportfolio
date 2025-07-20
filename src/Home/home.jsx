@@ -17,6 +17,62 @@ import SpotlightCard from "../Constant/SpotlightCard";
 import AnimatedCounter from "../Constant/animatecounter/numbercount";
 
 export default function Home() {
+   const items = [
+  {
+    label: "Développeur FrontEnd",
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M4 5h16v12H4V5zm0-2a2 2 0 00-2 2v12a2 2 0 002 2h7v2H8v2h8v-2h-3v-2h7a2 2 0 002-2V5a2 2 0 00-2-2H4z"/>
+  <path d="M9.5 8.5L7 11l2.5 2.5L8 15l-4-4 4-4 1.5 1.5zm5 0L17 11l-2.5 2.5L16 15l4-4-4-4-1.5 1.5z"/>
+</svg>
+    ),
+  },
+  {
+    label: "Développeur BackEnd",
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M4 4h16v4H4V4zm0 6h16v4H4v-4zm0 6h16v4H4v-4zM6 6h2v2H6V6zm0 6h2v2H6v-2zm0 6h2v2H6v-2z"/>
+</svg>
+    ),
+  },
+  {
+    label: "Développeur Web",
+    icon: (
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm6.93 6h-3.12a15.77 15.77 0 0 0-1.33-3.66A8.025 8.025 0 0 1 18.93 8zM12 4c.64 0 1.89 1.79 2.57 4H9.43C10.11 5.79 11.36 4 12 4zM4.07 8a8.025 8.025 0 0 1 4.45-3.66A15.77 15.77 0 0 0 7.19 8H4.07zm0 2h3.36a17.7 17.7 0 0 0 0 4H4.07a8.09 8.09 0 0 1 0-4zm1.86 6h3.26a15.77 15.77 0 0 0 1.33 3.66A8.025 8.025 0 0 1 5.93 16zM12 20c-.64 0-1.89-1.79-2.57-4h5.14C13.89 18.21 12.64 20 12 20zm2.63-.34A15.77 15.77 0 0 0 16.81 16h3.12a8.025 8.025 0 0 1-4.45 3.66zM16.57 14H7.43a15.77 15.77 0 0 1 0-4h9.14a15.77 15.77 0 0 1 0 4zm1.62-6a15.77 15.77 0 0 0-1.33-3.66A8.025 8.025 0 0 1 18.93 8z"/>
+</svg>
+    ),
+  },
+  {
+    label: "Développeur mobile",
+    icon: (
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M7 2C5.9 2 5 2.9 5 4v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H7zm5 19c-.55 0-1-.45-1-1s.45-1 1-1
+  1 .45 1 1-.45 1-1 1zm5-3H7V5h10v13z"/>
+</svg>
+
+    ),
+  },
+  {
+    label: "Développeur d'interfaces utilisateur",
+    icon: (
+      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M3 3h18v2H3V3zm0 4h18v14H3V7zm2 2v10h14V9H5z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Freelancer",
+    icon: (
+      
+      <svg width="16" height="16" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Freelancer</title><path d="M14.096 3.076l1.634 2.292L24 3.076M5.503 20.924l4.474-4.374-2.692-2.89m6.133-10.584L11.027 5.23l4.022.15M4.124 3.077l.857 1.76 4.734.294m-3.058 7.072l3.497-6.522L0 5.13m7.064 7.485l3.303 3.548 3.643-3.57 1.13-6.652-4.439-.228Z"/></svg>
+    ),
+  },
+];
+
+
+  const repeatedItems = [...items, ...items];
+
    const aboutRef = useRef(null);
    const [velocity, setVelocity] = useState(50);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -92,7 +148,6 @@ const handleAnimationComplete = () => {
   // if (!isLoaded) {
   //   return <Loader setIsLoaded={setIsLoaded} />;
   // }
-
   return (
     <div id="homme">
       {/* <ParticlesBackground/> */}
@@ -116,11 +171,7 @@ const handleAnimationComplete = () => {
 
           
           
-          {/* <motion.p className="job"  initial={{ opacity: 0, x: 200 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ delay: 2, duration: 0.5 }}>
-            {t("job")}
-          </motion.p> */}
+          
           <div className="decPc"><img loading="lazy"  className="imgpc" src="pc.webp" alt="" />
           <SplitText
   text={t("job")}
@@ -163,14 +214,7 @@ const handleAnimationComplete = () => {
     transition={{ delay: 4, duration: 0.3}} src="decor7.svg" style={{marginTop:'-500px', willChange:'transform, opacity',marginLeft:'1150px',width:'350px',height:'500px',userSelect: "none",pointerEvents: "none"}} alt="" />
          </div>
         {/* Section des compétences */}
-        <motion.div className="marquee-container2" initial={{ opacity: 0, y: -50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 3, duration: 0.6 }}>
-      <div className="marquee-content2">
-          <p>{t("descriptionDev")}</p> 
-          </div>
-        </motion.div>
-
+       
          
 
         {/* Décoration */}
@@ -188,8 +232,18 @@ const handleAnimationComplete = () => {
           <div className="carre carre9"></div>
         </motion.div>
       </div>
-{/* <img src="hoo.jpg" alt="" style={{width:'300px',height:'300px',marginTop:'-700px'}}/> */}
-      {/* Autres sections */}
+
+       <div className="marquee-container2">
+    <div className="marquee-content2">
+      {repeatedItems.map((item, index) => (
+        <p className="carousel-item" key={index}>
+          {item.icon}
+        <span>{item.label}</span>
+        </p>
+      ))}
+    </div>
+  </div>
+
        <About showHero={false} />
       <button
         onClick={scrollToTop}

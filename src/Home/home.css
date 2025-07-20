@@ -293,11 +293,15 @@ body, html, #root, .homme {
         padding: 10px; /* Réduction du padding */
     }
    .marquee-container2{
-    margin-top: 75px !important;
+    /* margin-top: 75px !important; */
    }
+    
     .marquee-container2 p{
       font-size: 25px !important;
       /* margin-top: 60px; */
+    }
+    .marquee-container2 {
+
     }
     .paHomme{
       font-size: 16px !important;
@@ -428,55 +432,8 @@ body, html, #root, .homme {
     }
   }
 
- .marquee-container2 {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  width: 100%;
-  padding: 10px;
-  height: auto;
-  margin-top: 50px;
-  border: 1px solid rgb(219, 216, 216);
-  color: #000;
- 
-  background: #fff;
- 
-  font-weight: 900;
-  text-transform: uppercase;
-  will-change: transform, opacity;
-}
 
-.marquee-content2 {
-  display: inline-block;
-  white-space: nowrap;
-  padding-left: 100%;
-  animation: scroll-left1 85s linear infinite;
-} 
-.marquee-container2 p{
-  font-size: 35px;
-    font-weight: 900;
-    
-    letter-spacing: 1px;
-    font-family: 'Courier New', Courier;
-    color:#495E57;
-    /* text-shadow: 2px 2px 4px #45474B; */
-    white-space: nowrap;
-    -webkit-text-stroke: 2px #143d2f;
-  color: white;
- 
-}
-.marquee-container2:hover .marquee-content2 {
-  animation-play-state: paused;
-}
 
-@keyframes scroll-left1 {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 .circle-stats-container {
   display: flex;
   justify-content: center;
@@ -785,4 +742,65 @@ body, html, #root, .homme {
     height: 40px; /* Par exemple */
     margin-left: 15px;
   }
+ 
+}
+.marquee-container2 {
+  width: 100%;
+  overflow: hidden;
+  
+  white-space: nowrap;
+  padding: 10px 0;
+   background: linear-gradient(to right, #48c2a3, #0d8280);
+ /* margin-top: 60px; */
+  font-weight: 900;
+  text-transform: uppercase;
+  will-change: transform, opacity;
+}
+
+.marquee-content2 {
+  display: inline-block;
+  animation: scroll-left 50s linear infinite;
+}
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Bonus : pause animation au survol du container */
+.marquee-container2:hover .marquee-content2 {
+  animation-play-state: paused;
+}
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 30px;
+  transition: color 0.3s ease;
+  cursor: default;
+  gap: 8px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+.carousel-item:hover {
+  color: #00ffd5;
+}
+
+.carousel-item svg {
+  fill: #dcf7ed;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover svg {
+  transform: scale(1.1);
+  fill: #00ffd5;
+
 }
