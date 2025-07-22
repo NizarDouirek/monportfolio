@@ -104,7 +104,7 @@ const Skills = ({ showHero = true }) => {
       {/* Outils de Développement et Design */}
       <h1 className="titrecp"><i class="fas fa-tools"></i> {t("tools")}</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-        {[ "git.png","github.png", "postman.png","figma.png", "canva.webp", "photoshop.png"].map((img, index) => (
+        {[ "git.png","github.png", "postman.png","xamp.png","figma.png", "canva.webp", "photoshop.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img className="imgskills" src={img} alt={img.split(".")[0]} />
             <h2>{img.split(".")[0].toUpperCase()}</h2>

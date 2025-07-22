@@ -759,7 +759,7 @@ body, html, #root, .homme {
 
 .marquee-content2 {
   display: inline-block;
-  animation: scroll-left 50s linear infinite;
+  animation: scroll-left 30s linear infinite;
 }
 
 
@@ -791,7 +791,7 @@ body, html, #root, .homme {
 }
 
 .carousel-item:hover {
-  color: #00ffd5;
+  color: black;
 }
 
 .carousel-item svg {
@@ -801,6 +801,6 @@ body, html, #root, .homme {
 
 .carousel-item:hover svg {
   transform: scale(1.1);
-  fill: #00ffd5;
+  fill: black;
 
 }

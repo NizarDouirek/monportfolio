@@ -85,11 +85,12 @@ export default function Projet({ showHero = true }) {
                   rel="noopener noreferrer"
                 >
                   <button className="visit">
-                    visit Repository
                     <i
                       className="fa-brands fa-github"
-                      style={{ marginLeft: "10px" }}
+                      style={{ marginRight: "10px" }}
                     ></i>
+                    visit Repository
+                    
                   </button>
                 </a>
                 {/* <span className="project-status finished">{t("finished")}</span> */}
@@ -136,11 +137,11 @@ export default function Projet({ showHero = true }) {
                   rel="noopener noreferrer"
                 >
                   <button className="visit2">
-                    visit Repository
                     <i
                       className="fa-brands fa-github"
-                      style={{ marginLeft: "10px" }}
-                    ></i>
+                      style={{ marginRight: "10px" }}
+                    ></i> visit Repository
+                    
                   </button>
                 </a>
 
@@ -194,11 +195,12 @@ export default function Projet({ showHero = true }) {
                   rel="noopener noreferrer"
                 >
                   <button className="visit3">
-                    visit Repository
                     <i
                       className="fa-brands fa-github"
-                      style={{ marginLeft: "10px" }}
+                      style={{ marginRight: "10px" }}
                     ></i>
+                    visit Repository
+                   
                   </button>
                 </a>
 
@@ -250,11 +252,12 @@ export default function Projet({ showHero = true }) {
                   rel="noopener noreferrer"
                 >
                   <button className="visit4">
-                    visit Repository
                     <i
                       className="fa-brands fa-github"
-                      style={{ marginLeft: "10px" }}
+                      style={{ marginRight: "10px" }}
                     ></i>
+                    visit Repository
+                    
                   </button>
                 </a>
 
@@ -307,11 +310,12 @@ export default function Projet({ showHero = true }) {
                   rel="noopener noreferrer"
                 >
                   <button className="visit5">
-                    visit Repository
                     <i
                       className="fa-brands fa-github"
-                      style={{ marginLeft: "10px" }}
+                      style={{ marginRight: "10px" }}
                     ></i>
+                    visit Repository
+                    
                   </button>
                 </a>{" "}
                 <CircularText
