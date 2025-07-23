@@ -440,7 +440,7 @@ body, html, #root, .homme {
   gap: 5rem;
   /* background-color: #143d2f; */
   flex-wrap: wrap;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 100px;
 }
 
@@ -804,3 +804,24 @@ body, html, #root, .homme {
   fill: black;
 
 }
+.realisations-title {
+  font-size: 68px;
+  text-align: center;
+  top: 60px;
+  margin-top: 60px;
+  color: rgba(0, 0, 0, 0.1); /* noir très transparent */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+font-weight: 700
+}
+@media screen and (max-width: 768px) {
+  .realisations-title {
+    font-size: 38px;
+    /* top: 30px; */
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+  }
+}
+

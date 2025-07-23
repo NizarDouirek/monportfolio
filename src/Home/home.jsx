@@ -277,6 +277,7 @@ const handleAnimationComplete = () => {
       <Cv showHero={false}/>
       
       <Projet showHero={false} />
+      <h2 className="realisations-title">Réalisations</h2>
     <motion.div className="circle-stats-container">
   <motion.div
     // initial={{ opacity: 0, x: 100 }}
