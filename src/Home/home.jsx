@@ -136,7 +136,7 @@ const handleAnimationComplete = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.4, ease: "easeOut", staggerChildren: 1.5 },
+      transition: { duration: 0.3, ease: "easeOut", staggerChildren: 1.5 },
     },
   };
 
@@ -162,7 +162,7 @@ const handleAnimationComplete = () => {
         <motion.div className="container" variants={itemVariants}>
           <motion.p className="bonjour" initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 1, duration: 0.4}}>
+    transition={{ delay: 1, duration: 0.3}}>
            {t("Bonjour")} <span className="wave-hand"></span>, {t("jesuis")}
           </motion.p>
           <motion.h1 className="nom" variants={itemVariants}>
@@ -172,12 +172,12 @@ const handleAnimationComplete = () => {
           
           
           
-          <div className="decPc"><img loading="lazy"  className="imgpc" src="pc.webp" alt="" />
+          <div className="decPc"><img  className="imgpc" src="pc.webp" alt="" />
           <SplitText
   text={t("job")}
   className="jb"
   delay={100}
-  duration={0.6}
+  duration={0.3}
   ease="power3.out"
   splitType="chars"
   from={{ opacity: 0, y: 40 }}
@@ -209,7 +209,7 @@ const handleAnimationComplete = () => {
           </motion.button>
         </motion.div>
        <div>
-        <motion.img loading="lazy"  initial={{ opacity: 0, y: -50 }}
+        <motion.img  initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 4, duration: 0.3}} src="decor7.svg" style={{marginTop:'-500px', willChange:'transform, opacity',marginLeft:'1150px',width:'350px',height:'500px',userSelect: "none",pointerEvents: "none"}} alt="" />
          </div>
@@ -220,7 +220,7 @@ const handleAnimationComplete = () => {
         {/* Décoration */}
         <motion.div className="decoration" initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 3, duration: 0.6}}>
+    transition={{ delay: 3, duration: 0.3}}>
           <div className="carre carre1"></div>
           <div className="carre carre2"></div>
           <div className="carre carre3"></div>
@@ -263,7 +263,7 @@ const handleAnimationComplete = () => {
           boxShadow: "0 4px 6px rgba(95, 92, 92, 0.1)",
         }}
       >
-        <img loading="lazy" 
+        <img
   src="top.png"
   className="Top"
   alt="scroll up"

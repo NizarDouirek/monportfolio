@@ -78,7 +78,7 @@ export default function Cv({ showHero = true }) {
             </div>
            <div className="divcv">
   <div className="groupcv">
-    <img src="tecknaps.png" alt="" style={{ borderRadius: "50%" }} />
+    <img loading="lazy" src="tecknaps.png" alt="" style={{ borderRadius: "50%" }} />
     <h2>{t("forodoo")}</h2>
   </div>
   <span className="date">{t("dateForodoo")}</span>
@@ -109,7 +109,7 @@ export default function Cv({ showHero = true }) {
 
             <div className="divcv">
               <div className="groupcv">
-                <img src="ofppt.png" alt="" />
+                <img  loading="lazy" src="ofppt.png" alt="" />
                 <h2>
                  {t("dts")}
                 </h2>
@@ -130,7 +130,7 @@ export default function Cv({ showHero = true }) {
             <br />
             <div className="divcv">
                <div className="groupcv">
-               <img src="eco.jpg"  style={{borderRadius:'50%'}} alt="" />
+               <img loading="lazy" src="eco.jpg"  style={{borderRadius:'50%'}} alt="" />
               <h2>{t("bac")}</h2>
               </div>
               <span className="date"> 2021 - 2022</span>
@@ -151,7 +151,7 @@ export default function Cv({ showHero = true }) {
             </div>
             <div className="divcv">
               <div className="groupcv">
-                <img
+                <img loading="lazy"
                   src="vnb-it.jfif"
                   style={{ borderRadius: "50%" }}
                   alt=""
@@ -192,7 +192,7 @@ export default function Cv({ showHero = true }) {
             </div><br />
             <div className="divcv">
               <div className="groupcv">
-                <img
+                <img loading="lazy"
                   src="tecknaps.png"
                   style={{ borderRadius: "50%" }}
                   alt=""
@@ -221,7 +221,7 @@ export default function Cv({ showHero = true }) {
             <br />
             <div className="divcv">
               <div className="groupcv">
-                <img src="sirecom.png" alt="" />
+                <img loading="lazy" src="sirecom.png" alt="" />
                 <h2>{t("stageSirecom")}</h2>
               </div>
               <span className="date">{t("dateSirecom")}</span>

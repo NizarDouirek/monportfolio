@@ -54,7 +54,7 @@ const Skills = ({ showHero = true }) => {
             whileHover={{ scale: 1.05 }}
           >
             <div className="img-container">
-              <img src={character.image} alt={character.name} />
+              <img loading="lazy" src={character.image} alt={character.name} />
             </div>
             <div className="card-details">
               <h2>{character.name}</h2>
@@ -69,7 +69,7 @@ const Skills = ({ showHero = true }) => {
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}}>
         {["html.png", "css.png", "javascript.png", "php.png", "bootstrap.png", "react.png","react-native.png", "laravel.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
-            <img className="imgskills" src={img} alt={img.split(".")[0]} />
+            <img loading="lazy" className="imgskills" src={img} alt={img.split(".")[0]} />
             <h2>{img.split(".")[0].toUpperCase()}</h2>
           </motion.section>
         ))}
@@ -93,7 +93,7 @@ const Skills = ({ showHero = true }) => {
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         {["odoo.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
-            <img className="imgskills" src={img} alt={img.split(".")[0]} />
+            <img loading="lazy" className="imgskills" src={img} alt={img.split(".")[0]} />
             <h2>{img.split(".")[0].toUpperCase()}</h2>
           </motion.section>
         ))}
@@ -106,7 +106,7 @@ const Skills = ({ showHero = true }) => {
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         {[ "git.png","github.png", "postman.png","xamp.png","figma.png", "canva.webp", "photoshop.png"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
-            <img className="imgskills" src={img} alt={img.split(".")[0]} />
+            <img loading="lazy" className="imgskills" src={img} alt={img.split(".")[0]} />
             <h2>{img.split(".")[0].toUpperCase()}</h2>
           </motion.section>
         ))}

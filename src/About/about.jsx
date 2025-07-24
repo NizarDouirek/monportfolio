@@ -51,7 +51,7 @@ export default function About({ showHero = true }) {
         <div id="about" className="about" ref={aboutRef}>
             <Title text={t("apropos")} />
             <div className={`containe ${isVisible ? "slide-in" : ""}`}>
-                <img className={`i ${isVisible ? "slide-left" : ""}`} src="profillinkd.jpg" alt="Profil" />
+                <img loading="lazy" className={`i ${isVisible ? "slide-left" : ""}`} src="profillinkd.jpg" alt="Profil" />
                 <div className={`contentAbout ${isVisible ? "slide-right" : ""}`}>
                     <motion.h2 variants={{
     hidden: { opacity: 0, y: -50 },

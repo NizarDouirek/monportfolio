@@ -7,12 +7,7 @@ body, html, #root, .homme {
  
 .homme{
    background-image:
-    /* linear-gradient(to right,
-  rgba(206, 246, 229, 0.955) 0%,       
-  rgba(255, 255, 255, 0.874) 20%,     
-  rgba(255, 255, 255, 0.788) 50%,                       
-  rgba(255, 255, 255, 0.788) 80%,       
-  rgba(209, 240, 227, 0.972) 100%  ) ,   */
+   
  url("/public/g2.gif");
     background-size: cover; 
     background-repeat: no-repeat;
@@ -33,12 +28,7 @@ body, html, #root, .homme {
     font-family: Montserrat, sans-serif;
     
 
- 
-  /* text-shadow:
-    0 0 5px #b0d1be,
-    0 0 10px #bfdecb,
-    0 0 20px #234d34,
-    0 0 40px #bbebcf; */
+
   
   text-align: center;
   font-family: 'Montserrat', sans-serif;
@@ -552,21 +542,6 @@ body, html, #root, .homme {
 }
 
  
-/* .btn-homme {
-    background: linear-gradient(135deg, #2a6e58, #47d8a8);
-    font-size: 16px;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 12px 25px;
-    border: none;
-    color: white;
-    cursor: url('/public/nnb.cur'), auto;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
-} */
 
 .btn-homme::before {
     content: '';

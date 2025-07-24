@@ -127,7 +127,7 @@ export default function Footer() {
               />
               <motion.button
                 type="submit"
-                whileHover={{ scale: 1.05 }}
+              
                 whileTap={{ scale: 0.95 }}
               >
                 S'abonner
@@ -177,7 +177,7 @@ export default function Footer() {
                   transition={{ duration: 0.3 }}
                   variants={slideInRight}
                 >
-                  <img src={social.img} alt="" className="social-icon" />
+                  <img loading="lazy" src={social.img} alt="" className="social-icon" />
                 </motion.a>
               ))}
             </motion.div>
@@ -282,6 +282,7 @@ export default function Footer() {
         </motion.div>
         <motion.img
           src="imgfott.png"
+          loading="lazy"
           alt=""
           whileHover={{
             scale: 1.05,
