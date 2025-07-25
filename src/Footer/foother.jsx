@@ -155,17 +155,17 @@ export default function Footer() {
               {[
                 {
                   href: "https://web.facebook.com/nizar.douirek.50",
-                  img: "fcb.png",
+                  img: "fcb.webp",
                 },
                 {
                   href: "https://www.linkedin.com/in/nizar-douirek123/",
-                  img: "linkdeen-footer.png",
+                  img: "linkdeen-footer.webp",
                 },
                 {
                   href: "https://www.instagram.com/nizar_douirek",
-                  img: "insta.png",
+                  img: "insta.webp",
                 },
-                { href: "https://github.com/NizarDouirek", img: "gtf.png" },
+                { href: "https://github.com/NizarDouirek", img: "gtf.webp" },
                 { href: "mailto:douireknizar@gmail.com", img: "gmail.avif" },
               ].map((social, index) => (
                 <motion.a
@@ -281,7 +281,7 @@ export default function Footer() {
           NIZAR
         </motion.div>
         <motion.img
-          src="imgfott.png"
+          src="imgfott.webp"
           loading="lazy"
           alt=""
           whileHover={{

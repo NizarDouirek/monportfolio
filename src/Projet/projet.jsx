@@ -59,23 +59,23 @@ export default function Projet({ showHero = true }) {
 
                 <div className="tec">
                   <div className="tech-item">
-                    <img src="react.png" alt="React.js" />
+                    <img src="react.webp" alt="React.js" />
                     <span className="tooltip">React.js</span>
                   </div>
                   <div className="tech-item">
-                    <img src="css.png" alt="CSS" />
+                    <img src="css.avif" alt="CSS" />
                     <span className="tooltip">CSS</span>
                   </div>
                   <div className="tech-item">
-                    <img src="bootstrap.png" alt="Bootstrap" />
+                    <img src="bootstrap.avif" alt="Bootstrap" />
                     <span className="tooltip">Bootstrap</span>
                   </div>
                   <div className="tech-item">
-                    <img src="laravel.png" alt="Laravel" />
+                    <img src="laravel.webp" alt="Laravel" />
                     <span className="tooltip">Laravel</span>
                   </div>
                   <div className="tech-item">
-                    <img src="mysql.png" alt="MySQL" />
+                    <img src="mysql.webp" alt="MySQL" />
                     <span className="tooltip">MySQL</span>
                   </div>
                 </div>
@@ -102,8 +102,8 @@ export default function Projet({ showHero = true }) {
                   status="finished"
                 />
               </div>
-              <a href="voyage.png" target="_blank">
-                <img className="imgsite" src="voyage.png" alt="" />
+              <a href="voyage.webp" target="_blank">
+                <img className="imgsite" src="voyage.webp" alt="" />
               </a>
             </div>
             <br />
@@ -115,19 +115,19 @@ export default function Projet({ showHero = true }) {
                 <br />
                 <div className="tec">
                   <div className="tech-item">
-                    <img src="laravel.png" alt="" />
+                    <img src="laravel.webp" alt="" />
                     <span className="tooltip">Laravel</span>
                   </div>
                   <div className="tech-item">
-                    <img src="css.png" alt="CSS" />
+                    <img src="css.avif" alt="CSS" />
                     <span className="tooltip">CSS</span>
                   </div>
                   <div className="tech-item">
-                    <img src="bootstrap.png" alt="Bootstrap" />
+                    <img src="bootstrap.avif" alt="Bootstrap" />
                     <span className="tooltip">Bootstrap</span>
                   </div>
                   <div className="tech-item">
-                    <img src="mysql.png" alt="MySQL" />
+                    <img src="mysql.webp" alt="MySQL" />
                     <span className="tooltip">MySQL</span>
                   </div>
                 </div>
@@ -154,10 +154,10 @@ export default function Projet({ showHero = true }) {
                 />
               </div>
               <div className="imgsite-container">
-                <a href="gbien.png" target="_blank">
+                <a href="gbien.webp" target="_blank">
                   <img
                     className="imgsite"
-                    src="gbien.png"
+                    src="gbien.webp"
                     alt=""
                     style={{ marginTop: "0.1px" }}
                   />
@@ -173,15 +173,15 @@ export default function Projet({ showHero = true }) {
                 <br />
                 <div className="tec">
                   <div className="tech-item">
-                    <img src="html.png" alt="" />
+                    <img src="html.avif" alt="" />
                     <span className="tooltip">Html</span>
                   </div>
                   <div className="tech-item">
-                    <img src="css.png" alt="CSS" />
+                    <img src="css.avif" alt="CSS" />
                     <span className="tooltip">CSS</span>
                   </div>
                   <div className="tech-item">
-                    <img src="bootstrap.png" alt="Bootstrap" />
+                    <img src="bootstrap.avif" alt="Bootstrap" />
                     <span className="tooltip">Bootstrap</span>
                   </div>
                   <div className="tech-item">
@@ -212,8 +212,8 @@ export default function Projet({ showHero = true }) {
                   status="finished"
                 />
               </div>
-              <a href="storeelec.png" target="_blank">
-                <img className="imgsite" src="storeelec.png" alt="" />
+              <a href="storeelec.webp" target="_blank">
+                <img className="imgsite" src="storeelec.webp" alt="" />
               </a>
             </div>
             <br />
@@ -225,24 +225,24 @@ export default function Projet({ showHero = true }) {
                 <br />
                 <div className="tec">
                   <div className="tech-item">
-                    <img src="html.png" alt="" />
+                    <img src="html.avif" alt="" />
                     <span className="tooltip">Html</span>
                   </div>
                   <div className="tech-item">
-                    <img src="css.png" alt="CSS" />
+                    <img src="css.avif" alt="CSS" />
                     <span className="tooltip">CSS</span>
                   </div>
                   <div className="tech-item">
-                    <img src="react.png" alt="React.js" />
+                    <img src="react.webp" alt="React.js" />
                     <span className="tooltip">React.js</span>
                   </div>
 
                   <div className="tech-item">
-                    <img src="laravel.png" alt="Laravel" />
+                    <img src="laravel.webp" alt="Laravel" />
                     <span className="tooltip">Laravel</span>
                   </div>
                   <div className="tech-item">
-                    <img src="mongo-db.png" alt="" />
+                    <img src="mongo-db.webp" alt="" />
                     <span className="tooltip">Mongo DB</span>
                   </div>
                 </div>
@@ -269,8 +269,8 @@ export default function Projet({ showHero = true }) {
                   status="ongoing"
                 />
               </div>
-              <a href="fittrack.png" target="_blank">
-                <img className="imgsite" src="fittrack.png" alt="" />
+              <a href="fittrack.webp" target="_blank">
+                <img className="imgsite" src="fittrack.webp" alt="" />
               </a>
             </div>
             <br />
@@ -281,26 +281,26 @@ export default function Projet({ showHero = true }) {
                 <p>{t("tasko")} </p>
                 <br />
                 <div className="tec">
-                  {/* <img src="mongo-db.png" alt="" title="MongoDB" /> */}
+                  {/* <img src="mongo-db.webp" alt="" title="MongoDB" /> */}
                   <div className="tech-item">
-                    <img src="html.png" alt="" />
+                    <img src="html.avif" alt="" />
                     <span className="tooltip">Html</span>
                   </div>
                   <div className="tech-item">
-                    <img src="css.png" alt="CSS" />
+                    <img src="css.avif" alt="CSS" />
                     <span className="tooltip">CSS</span>
                   </div>
                   <div className="tech-item">
-                    <img src="react.png" alt="React.js" />
+                    <img src="react.webp" alt="React.js" />
                     <span className="tooltip">React.js</span>
                   </div>
 
                   <div className="tech-item">
-                    <img src="laravel.png" alt="Laravel" />
+                    <img src="laravel.webp" alt="Laravel" />
                     <span className="tooltip">Laravel</span>
                   </div>
                   <div className="tech-item">
-                    <img src="mongo-db.png" alt="" />
+                    <img src="mongo-db.webp" alt="" />
                     <span className="tooltip">Mongo DB</span>
                   </div>
                 </div>
@@ -327,8 +327,8 @@ export default function Projet({ showHero = true }) {
                 />
               </div>
 
-              <a href="tasko.png" target="_blank">
-                <img className="imgsite" src="tasko.png" alt="" />
+              <a href="tasko.webp" target="_blank">
+                <img className="imgsite" src="tasko.webp" alt="" />
               </a>
             </div>
           </div>

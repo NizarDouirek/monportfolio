@@ -211,7 +211,7 @@ const handleAnimationComplete = () => {
        <div>
         <motion.img  initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 4, duration: 0.3}} src="decor7.svg" style={{marginTop:'-500px', willChange:'transform, opacity',marginLeft:'1150px',width:'350px',height:'500px',userSelect: "none",pointerEvents: "none"}} alt="" />
+    transition={{ delay: 4, duration: 0.3}} src="decor7.webp" style={{marginTop:'-500px', willChange:'transform, opacity',marginLeft:'1150px',width:'300px',height:'300px',userSelect: "none",pointerEvents: "none"}} alt="" />
          </div>
         {/* Section des compétences */}
        
@@ -264,7 +264,7 @@ const handleAnimationComplete = () => {
         }}
       >
         <img
-  src="top.png"
+  src="top.avif"
   className="Top"
   alt="scroll up"
   style={{ width: "40px", height: "40px" }}

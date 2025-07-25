@@ -1,9 +1,6 @@
 .skills {
     padding: 40px;
     padding-top: 70px;
-    /* background:linear-gradient(60deg, white,rgb(228, 238, 236)); */
-    /* background-image: url('/public/bgskill.svg');  */
-     /* background-size: cover; */
     background-position: bottom right;
     background-repeat: no-repeat; 
     display: flex;
@@ -16,7 +13,6 @@
   
   .containerskills{
     max-width:1000px;
-    /* margin:100px auto; */
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
@@ -104,8 +100,7 @@
     line-height:30px;
     font-size:1.1em;
   }
-  /* Style de base pour le conteneur */
-  /* Style de base pour le conteneur */
+
   .pack {
     display: flex;
     flex-wrap: wrap;
@@ -231,7 +226,6 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: 0.1rem;
-      /* justify-content: center; */
     }
   
     .pack section {
