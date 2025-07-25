@@ -16,7 +16,7 @@ export default function Cv({ showHero = true }) {
     const handleScroll = () => {
       const formation = formationRef.current;
       const experience = experienceRef.current;
-      const certif = experienceRef.current;
+      // const certif = experienceRef.current;
 
       const windowHeight = window.innerHeight;
 
@@ -29,9 +29,9 @@ export default function Cv({ showHero = true }) {
       if (experience.getBoundingClientRect().top < windowHeight - 100) {
         experience.classList.add("show");
       }
-      if (experience.getBoundingClientRect().top < windowHeight - 100) {
-        certif.classList.add("show");
-      }
+      // if (experience.getBoundingClientRect().top < windowHeight - 100) {
+      //   certif.classList.add("show");
+      // }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -39,17 +39,17 @@ export default function Cv({ showHero = true }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   
-  const handleScrollLeft = () => {
-    const container = document.getElementById("certifScroll");
-    const itemWidth = container.offsetWidth / 3 + 20; // largeur d’un item + gap
-    container.scrollLeft -= itemWidth * 3;
-  };
+  // const handleScrollLeft = () => {
+  //   const container = document.getElementById("certifScroll");
+  //   const itemWidth = container.offsetWidth / 3 + 20; 
+  //   container.scrollLeft -= itemWidth * 3;
+  // };
   
-  const handleScrollRight = () => {
-    const container = document.getElementById("certifScroll");
-    const itemWidth = container.offsetWidth / 3 + 20; // largeur d’un item + gap
-    container.scrollLeft += itemWidth * 3;
-  };
+  // const handleScrollRight = () => {
+  //   const container = document.getElementById("certifScroll");
+  //   const itemWidth = container.offsetWidth / 3 + 20; 
+  //   container.scrollLeft += itemWidth * 3;
+  // };
 
   return (
     <>

@@ -41,7 +41,7 @@ export default function Header() {
     <div>
       <header className={isScrolled ? "scrolled" : ""}>
         <div className="logo">
-          <img className="dn" src="dn.png" />
+          <img className="dn" src="dn.webp" />
           {/* <h1>Nizar <span className="prenom">Douirek</span></h1> */}
           <div className="navbar">
             <nav>
