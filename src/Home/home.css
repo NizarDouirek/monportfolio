@@ -6,9 +6,10 @@ body, html, #root, .homme {
   }
  
 .homme{
-   background-image:
+   /* background-image:
    
- url("/public/g2.gif");
+ url("/public/g2.gif"); */
+ 
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
