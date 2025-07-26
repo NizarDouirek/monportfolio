@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./footer.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -96,7 +95,7 @@ export default function Footer() {
             <motion.div
               style={{ display: "flex" }}
               variants={fadeIn}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.3 }}
             >
               <motion.span
                 animate={{
@@ -125,11 +124,7 @@ export default function Footer() {
                 required
                 whileFocus={{ scale: 1.02 }}
               />
-              <motion.button
-                type="submit"
-              
-                whileTap={{ scale: 0.95 }}
-              >
+              <motion.button type="submit" whileTap={{ scale: 0.95 }}>
                 S'abonner
               </motion.button>
               {formStatus && (
@@ -151,7 +146,7 @@ export default function Footer() {
         <motion.div className="section-foot" variants={fadeIn}>
           <motion.div className="contact-foot" variants={slideInLeft}>
             <h1>{t("contactezMoi")}</h1>
-            <motion.div variants={fadeIn} transition={{ duration: 0.4 }}>
+            <motion.div variants={fadeIn} transition={{ duration: 0.3 }}>
               {[
                 {
                   href: "https://web.facebook.com/nizar.douirek.50",
@@ -177,19 +172,31 @@ export default function Footer() {
                   transition={{ duration: 0.3 }}
                   variants={slideInRight}
                 >
-                  <img loading="lazy" src={social.img} alt="" className="social-icon" />
+                  <img
+                    loading="lazy"
+                    src={social.img}
+                    alt=""
+                    className="social-icon"
+                  />
                 </motion.a>
               ))}
             </motion.div>
 
-            <motion.p className="pEmail" variants={slideInBottom} transition={{ duration: 0.3}}>
-              <Link  to="https://mail.google.com/mail/?view=cm&to=douireknizar@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer" className="monmail">
-              <i className="fas fa-envelope"></i> douireknizar@gmail.com</Link>
+            <motion.p
+              className="pEmail"
+              variants={slideInBottom}
+              transition={{ duration: 0.3 }}
+            >
+              <Link
+                to="https://mail.google.com/mail/?view=cm&to=douireknizar@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="monmail"
+              >
+                <i className="fas fa-envelope"></i> douireknizar@gmail.com
+              </Link>
             </motion.p>
             <motion.p variants={slideInBottom} transition={{ duration: 0.3 }}>
-              
               <i className="fas fa-phone"></i> +212 699862707
             </motion.p>
           </motion.div>
@@ -197,27 +204,27 @@ export default function Footer() {
           <motion.div className="section-nav" variants={slideInRight}>
             <h1>Pages</h1>
             <ul className="footer-links">
-              <motion.li variants={slideInLeft} transition={{ duration: 0.4 }}>
+              <motion.li variants={slideInLeft} transition={{ duration: 0.3 }}>
                 <motion.div whileHover={{ x: 10 }}>
                   <Link to="/about">{t("apropos")}</Link>
                 </motion.div>
               </motion.li>
-              <motion.li variants={slideInRight} transition={{ duration: 0.4 }}>
+              <motion.li variants={slideInRight} transition={{ duration: 0.3 }}>
                 <motion.div whileHover={{ x: 10 }}>
                   <Link to="/skills">{t("competences")}</Link>
                 </motion.div>
               </motion.li>
-              <motion.li variants={slideInLeft} transition={{ duration: 0.4 }}>
+              <motion.li variants={slideInLeft} transition={{ duration: 0.3 }}>
                 <motion.div whileHover={{ x: 10 }}>
                   <Link to="/projet">{t("projet")}</Link>
                 </motion.div>
               </motion.li>
-              <motion.li variants={slideInRight} transition={{ duration: 0.4 }}>
+              <motion.li variants={slideInRight} transition={{ duration: 0.3 }}>
                 <motion.div whileHover={{ x: 10 }}>
                   <Link to="/Cv">{t("parcours")}</Link>
                 </motion.div>
               </motion.li>
-              <motion.li variants={slideInLeft} transition={{ duration: 0.4 }}>
+              <motion.li variants={slideInLeft} transition={{ duration: 0.3 }}>
                 <motion.div whileHover={{ x: 10 }}>
                   <Link to="/contact">{t("contact")}</Link>
                 </motion.div>
@@ -228,7 +235,7 @@ export default function Footer() {
           <motion.div
             className="section-adrss"
             variants={slideInLeft}
-            transition={{ duration: 0.3}}
+            transition={{ duration: 0.3 }}
           >
             <h1>{t("adr")}</h1>
             <ul className="footer-links">
@@ -276,7 +283,7 @@ export default function Footer() {
         <motion.div
           className="logofo"
           variants={slideInBottom}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.3 }}
         >
           NIZAR
         </motion.div>
@@ -289,7 +296,7 @@ export default function Footer() {
             rotate: [0, -20, 20, -20, 0],
             transition: { duration: 1 },
           }}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.3 }}
           variants={slideInRight}
         />
       </motion.div>

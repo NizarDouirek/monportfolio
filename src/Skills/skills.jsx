@@ -40,7 +40,7 @@ const Skills = ({ showHero = true }) => {
       )}
     <div id="skills" className="skills">
       <Title text={t("competences" )}/>
-      <motion.p  className="hover-instruction">{t("hover")}</motion.p>
+      <p  className="hover-instruction">{t("hover")}</p>
 
       <div className="containerskills">
         {characters.map((character, index) => (
@@ -66,7 +66,7 @@ const Skills = ({ showHero = true }) => {
 
       {/* Langages et Frameworks */}
       <h1 className="titrecp"><i class="fas fa-puzzle-piece"></i> {t("languagesFrameworks")}</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}}>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4}}>
         {["html.avif", "css.avif", "javascript.webp", "php.webp", "bootstrap.avif", "react.webp","react-native.webp", "laravel.webp"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img loading="lazy" className="imgskills" src={img} alt={img.split(".")[0]} />
@@ -79,7 +79,7 @@ const Skills = ({ showHero = true }) => {
       <div className="cardTwo">
         <div>
       <h1 className="titrecp"><i class="fas fa-database"></i> {t("databases")}</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         {["mysql.webp", "mongo-db.webp"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img className="imgskills" src={img} alt={img.split(".")[0]} />
@@ -90,7 +90,7 @@ const Skills = ({ showHero = true }) => {
       </div>
       <div>
       <h1 className="titrecp"><i class="fas fa-th-large"></i> ERP - CMC</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         {["odoo.webp"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img loading="lazy" className="imgskills" src={img} alt={img.split(".")[0]} />
@@ -103,7 +103,7 @@ const Skills = ({ showHero = true }) => {
 
       {/* Outils de Développement et Design */}
       <h1 className="titrecp"><i class="fas fa-tools"></i> {t("tools")}</h1>
-      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+      <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         {[ "git.webp","github.webp", "postman.webp","xamp.webp","figma.webp", "canva.webp", "photoshop.webp"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img loading="lazy" className="imgskills" src={img} alt={img.split(".")[0]} />
