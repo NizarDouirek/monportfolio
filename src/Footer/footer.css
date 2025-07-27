@@ -247,6 +247,9 @@
         font-size: 12px;
         margin-top: 10px;
     }
+        .cv-foot {
+        margin-top: -40px !important;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -277,6 +280,8 @@
     .footer-newsletter {
         width: 300px;
     }
+
+
 }
 
 @media (max-width: 480px) {
@@ -517,18 +522,18 @@
 @media (max-width: 480px) {
     .footer-newsletter {
         width: 95%;
-        gap: 5px;
+        gap: 3px;
     }
 
     .footer-newsletter input {
-        padding: 8px 10px;
-        font-size: 0.85rem;
-        width: 200px;
+        padding: 10px 10px;
+        font-size: 1rem;
+        width: 210px;
     }
 
     .footer-newsletter button {
-        padding: 8px 12px;
-        font-size: 0.85rem;
+        padding: 10px 10px;
+        font-size: 1rem;
     }
 }
 

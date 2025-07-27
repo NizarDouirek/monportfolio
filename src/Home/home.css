@@ -9,13 +9,23 @@ body, html, #root, .homme {
    /* background-image:
    
  url("/public/g2.gif"); */
- 
+   position: relative;
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
     height: 700px;
     background-attachment: fixed;
+    overflow: hidden;
     /* will-change: transform, opacity; */
+}
+.squares-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 1; */
+  pointer-events: none; /* permet d'interagir avec le contenu au-dessus */
 }
 .container{
     text-align: center;
@@ -281,21 +291,13 @@ body, html, #root, .homme {
         font-size: 15px; /* Boutons plus petits */
         padding: 10px; /* Réduction du padding */
     }
-   .marquee-container2{
-    /* margin-top: 75px !important; */
-   }
     
-    .marquee-container2 p{
-      font-size: 25px !important;
-      /* margin-top: 60px; */
-    }
-    .marquee-container2 {
-
-    }
+    
     .paHomme{
       font-size: 16px !important;
       width: 370px;
     }
+    
 }
 @media screen and (min-width: 760px) and (max-width: 1060px) {
     .homme {
@@ -323,11 +325,7 @@ body, html, #root, .homme {
         padding: 8px 12px; /* Ajuste le padding pour une meilleure ergonomie */
     }
 
-    .marq p {
-        margin-top: 90px;
-        font-size: 16px; /* Affiche le texte avec une petite taille */
-        display: block; /* Rétablit l'affichage si masqué pour téléphones */
-    }
+    
     
 }
 
@@ -771,6 +769,27 @@ body, html, #root, .homme {
   fill: black;
 
 }
+@media screen and (max-width: 768px) {
+  .carousel-item {
+    font-size: 16px;
+    /* margin: 0 15px; */
+    gap: 6px;
+  }
+
+  .carousel-item svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .marquee-container2 {
+    padding: 10px 0;
+  }
+
+  .marquee-content2 {
+    animation: scroll-left 20s linear infinite;
+  }
+}
+
 .realisations-title {
   font-size: 68px;
   text-align: center;

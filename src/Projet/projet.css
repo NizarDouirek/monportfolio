@@ -45,36 +45,53 @@
 .visit{
     margin-top: 5px;
     background-color: #397a71;
-    font-family: roboto;
-    font-size: 17px;
+    
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #40a295;
    color: white; 
    cursor: url('/public/nnb.cur'), auto;
+   font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+    
 }
 
 .visit2{
     margin-top: 5px;
     background-color: #9843bf;
-    font-family: roboto;
-    font-size: 17px;
+    
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #e4b2fb;
    color: white; 
     cursor: url('/public/nnb.cur'), auto;
+    font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+    
 }
 .visit3{
     margin-top: 5px;
     background-color: #12695d;
-    font-family: roboto;
-    font-size: 17px;
+    
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #40a295;
     color: white; 
     cursor: url('/public/nnb.cur'), auto;
+    font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+    font-weight: 600;
 }
 
 .sectionP2 {
@@ -127,15 +144,22 @@
 }
 
 .visit4{
+    
     margin-top: 5px;
     background-color: #a30827;
-    font-family: roboto;
-    font-size: 17px;
+    
+
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #ff738f;
    color: white; 
+    font-weight: 600;
     cursor: url('/public/nnb.cur'), auto;
+    font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
     
 }
 .visit4:hover {
@@ -166,13 +190,18 @@
 .visit5{
     margin-top: 5px;
     background-color: #a30881;
-    font-family: roboto;
-    font-size: 17px;
+    
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #ff738f;
    color: white; 
     cursor: url('/public/nnb.cur'), auto;
+    font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+    font-weight: 600;
     
 }
 .visit5:hover {
@@ -621,4 +650,12 @@ margin: 10px !important;
 .tech-item:hover .tooltip {
   opacity: 1;
   transform: translateX(-50%) translateY(5px);
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+
+  fill: #ffffff;
+  transition: fill 0.3s ease;
 }

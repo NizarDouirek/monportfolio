@@ -15,6 +15,7 @@ import { motion } from "framer-motion";
 import Title from "../Constant/Titre";
 import SpotlightCard from "../Constant/SpotlightCard";
 import AnimatedCounter from "../Constant/animatecounter/numbercount";
+import Squares from "../Constant/Bg/bg";
 
 export default function Home() {
    const items = [
@@ -158,6 +159,14 @@ const handleAnimationComplete = () => {
         initial="hidden"
         animate="visible"
       >
+        <Squares 
+speed={0.5} 
+squareSize={40}
+direction='diagonal' // up, down, left, right, diagonal
+borderColor='#dbe4e3'
+hoverFillColor='transparent'
+ className="squares-bg"
+/>
         {/* Section principale */}
         <motion.div className="container" variants={itemVariants}>
           <motion.p className="bonjour" initial={{ opacity: 0, y: 50 }}
@@ -208,11 +217,11 @@ const handleAnimationComplete = () => {
               <i class="bx bx-download icnBu"></i> {t("telechargerCV")}</a>
           </motion.button>
         </motion.div>
-       <div>
+       {/* <div>
         <motion.img  initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 4, duration: 0.3}} src="decor7.webp" style={{marginTop:'-500px', willChange:'transform, opacity',marginLeft:'1150px',width:'300px',height:'300px',userSelect: "none",pointerEvents: "none"}} alt="" />
-         </div>
+         </div> */}
         {/* Section des compétences */}
        
          
