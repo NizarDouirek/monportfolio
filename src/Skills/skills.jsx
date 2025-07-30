@@ -65,7 +65,7 @@ const Skills = ({ showHero = true }) => {
       </div>
 
       {/* Langages et Frameworks */}
-      <h1 className="titrecp"><i class="fas fa-puzzle-piece"></i> {t("languagesFrameworks")}</h1>
+      <h1 className="titrecp"><i class='bx bx-terminal'></i>  {t("languagesFrameworks")}</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4}}>
         {["html.avif", "css.avif", "javascript.webp", "php.webp", "bootstrap.avif", "react.webp","react-native.webp", "laravel.webp"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
@@ -78,7 +78,7 @@ const Skills = ({ showHero = true }) => {
       {/* Bases de données */}
       <div className="cardTwo">
         <div>
-      <h1 className="titrecp"><i class="fas fa-database"></i> {t("databases")}</h1>
+      <h1 className="titrecp"><i class='bx bx-data'></i>  {t("databases")}</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         {["mysql.webp", "mongo-db.webp"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
@@ -89,7 +89,7 @@ const Skills = ({ showHero = true }) => {
       </motion.div>
       </div>
       <div>
-      <h1 className="titrecp"><i class="fas fa-th-large"></i> ERP - CMC</h1>
+      <h1 className="titrecp"><i class='bx bx-briefcase-alt'></i>  ERP - CMC</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         {["odoo.webp"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
@@ -102,7 +102,7 @@ const Skills = ({ showHero = true }) => {
       </div>
 
       {/* Outils de Développement et Design */}
-      <h1 className="titrecp"><i class="fas fa-tools"></i> {t("tools")}</h1>
+      <h1 className="titrecp"><i class='bx bx-git-branch'></i>  {t("tools")}</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
         {[ "git.webp","github.webp", "postman.webp","xamp.webp","figma.webp", "canva.webp", "photoshop.webp"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
