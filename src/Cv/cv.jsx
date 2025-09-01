@@ -4,6 +4,7 @@ import Header from "../Header/header";
 import Title from "../Constant/Titre";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Certifications from "../Constant/Certification/certification";
 
 export default function Cv({ showHero = true }) {
   const formationRef = useRef();
@@ -58,14 +59,14 @@ export default function Cv({ showHero = true }) {
           <div className="f hidden" ref={formationRef}>
             <div className="log">
               <h1>
-                <i class="fas fa-graduation-cap"></i> {t("formation")}
+               <i class='bx bx-book-open'></i> {t("formation")}
               </h1>
             </div>
             <div className="divcv">
               <div className="groupcv">
                 <img
                   loading="lazy"
-                  src="tecknaps.png"
+                  src="tecknaps.webp"
                   alt=""
                   style={{ borderRadius: "50%" }}
                 />
@@ -135,7 +136,7 @@ export default function Cv({ showHero = true }) {
             <div className="log">
               <h1>
                 {" "}
-                <i class="fas fa-briefcase"></i> {t("experience")}
+                <i class='bx bx-briefcase'></i>  {t("experience")}
               </h1>
             </div>
             <div className="divcv">
@@ -172,7 +173,7 @@ export default function Cv({ showHero = true }) {
               <div className="groupcv">
                 <img
                   loading="lazy"
-                  src="tecknaps.png"
+                  src="tecknaps.webp"
                   style={{ borderRadius: "50%" }}
                   alt=""
                 />
@@ -213,7 +214,8 @@ export default function Cv({ showHero = true }) {
             </div>
             <br />
           </div>
-        </div>
+        </div><br />
+        <Certifications/>
       </div>
     </>
   );

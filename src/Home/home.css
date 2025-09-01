@@ -455,15 +455,15 @@ body, html, #root, .homme {
 
 .circle-title {
   font-size: 34px;
-  margin: 0;
-  color: #143d2f;
+  margin-top: 15px;
+  color: #031b13;
 }
 
 .circle-number {
   font-size: 41px;
   font-weight: bold;
-  margin: 0;
-  color: #143d2f;
+ 
+  color: #031b13;
 }
 .iconEf {
   color: #17a273;
@@ -478,7 +478,7 @@ body, html, #root, .homme {
 /* Responsive */
 @media (max-width: 480px) {
   .circle-card {
-    width: 230px;
+    width: 190px;
     height: 130px;
     
   }
@@ -694,6 +694,7 @@ body, html, #root, .homme {
         }
        
         .scrolBits{
+          
           margin-top: 100px;
           padding-bottom: 50px;
         }
@@ -811,3 +812,39 @@ font-weight: 700
   }
 }
 
+.img-Skills{
+  width: 70px;
+}
+.img-closure{
+  width: 80px;
+}
+.img-certif{
+  width: 70px;
+}
+.img-Skills,.img-closure,.img-certif {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(91%) saturate(434%) hue-rotate(138deg) brightness(91%) contrast(97%);
+}
+@media (max-width: 1024px) {
+  .img-Skills {
+    width: 60px;
+  }
+  .img-closure {
+    width: 70px;
+  }
+  .img-certif {
+    width: 60px;
+  }
+}
+
+/* Téléphone (largeur ≤ 768px) */
+@media (max-width: 768px) {
+  .img-Skills {
+    width: 50px;
+  }
+  .img-closure {
+    width: 60px;
+  }
+  .img-certif {
+    width: 50px;
+  }
+}

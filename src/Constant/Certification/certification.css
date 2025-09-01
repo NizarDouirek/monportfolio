@@ -1,0 +1,255 @@
+
+
+.certifications-container {
+  /* min-height: 100vh; */
+  /* background: rgb(233, 238, 238); */
+  font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    flex: 1 1 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  
+}
+
+/* Effet décoratif (cercles dégradés en arrière-plan) */
+.certifications-container::before,
+.certifications-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  /* filter: blur(120px); */
+  opacity: 0.25;
+}
+
+
+/* Header */
+.cert-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+  /* display: flex; */
+  /* align-items: center; */
+    display: flex;
+  flex-direction: column; /* mettre h1 et p en colonne */
+  align-items: center;   /* centre horizontalement */
+  justify-content: center; 
+}
+
+
+
+.cert-header h1 {
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+    font-size: 1.8rem;
+    color: #495E57;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    
+    
+}
+.cert-header h1::after{
+    content: "";
+    bottom: -5px;
+    width: 20%;
+    height: 4px; 
+    /* color: black; */
+    display: block;
+    background-color: #278579;
+    position: absolute;
+    transition: width 0.4s ease-in-out; 
+
+}
+.cert-header h1:hover::after{
+    width: 100%;
+}
+
+.cert-header p {
+  font-size: 1.4rem;
+  color: #108989;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Grid */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+/* Card */
+.cert-card {
+  background: rgba(27, 99, 85, 0.08);
+  border: 1px solid rgba(157, 213, 202, 0.4);
+  border-radius: 1rem;
+  backdrop-filter: blur(16px);
+  overflow: hidden;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: url('/public/nnb.cur'), auto;
+}
+
+.cert-card:hover {
+  transform: translateY(-1px) scale(1.03);
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  /* border-color: #54a091; */
+}
+
+.cert-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: fill;
+  background: #0f172a;
+   cursor: url('/public/nnb.cur'), auto;
+  transition: transform 0.4s ease;
+}
+
+.cert-card:hover .cert-image img {
+  transform: scale(1.04);
+}
+
+.cert-content {
+  padding: 1.5rem;
+}
+
+.cert-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cert-title h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.cert-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #108989;
+}
+
+.orgcert {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  color: #108989;
+}
+
+.datecert {
+  font-size: 1.2rem;
+  color: #202222;
+  margin-top: 5px;
+}
+
+/* Animation fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+/* 📱 Téléphones (max 600px) */
+@media (max-width: 600px) {
+  .certifications-container {
+    padding: 15px;
+    margin: 5px;
+  }
+
+  .cert-header h1 {
+    font-size: 2rem;
+  }
+
+  .cert-header p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr; /* une carte par ligne */
+    gap: 1.5rem;
+  }
+
+  .cert-card {
+    border-radius: 0.8rem;
+  }
+
+  .cert-image img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .cert-title h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* 📱📲 Tablettes (601px à 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .certifications-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .cert-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .cert-header p {
+    font-size: 1.05rem;
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 1.8rem;
+  }
+
+  .cert-image img {
+    height: 240px;
+  }
+
+  .cert-title h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* 💻 Desktop large (900px et +) */
+@media (min-width: 901px) {
+  .cert-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+.ribbon {
+  position: relative;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #108989, #1b6355);
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
+

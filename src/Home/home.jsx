@@ -295,7 +295,7 @@ hoverFillColor='transparent'
     viewport={{ once: true, amount: 0.3 }}
   >
     <SpotlightCard className="circle-card" spotlightColor="rgba(23, 195, 149, 0.8)">
-      <i className="bx bx-wrench iconEf"></i>
+      <img src="skills.webp" className="img-Skills"  alt="" />
       <p className="circle-title">{t("skills")}</p>
       <p className="circle-number">
   +<AnimatedCounter to={16} duration={1200} />
@@ -310,7 +310,7 @@ hoverFillColor='transparent'
     viewport={{ once: true, amount: 0.3 }}
   >
    <SpotlightCard className="circle-card" spotlightColor="rgba(23, 195, 149, 0.8)">
-      <i className="bx bx-rocket iconEf"></i>
+      <img src="closure.webp" className="img-closure"  alt="" />
       <p className="circle-title">{t("projetsRealises")}</p>
       <p className="circle-number">
              +<AnimatedCounter to={12} duration={1400} />
@@ -327,7 +327,7 @@ hoverFillColor='transparent'
     className="circle-card"
     spotlightColor="rgba(23, 195, 149, 0.8)"
   >
-    <i className="bx bx-badge-check iconEf"></i>
+    <img src="certificate.webp" className="img-certif"  alt="" />
     <p className="circle-title">{t("certification")}</p>
     <p className="circle-number">
       +<AnimatedCounter to={7} duration={1400} />

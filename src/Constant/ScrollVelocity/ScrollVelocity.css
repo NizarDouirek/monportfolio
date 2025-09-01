@@ -20,6 +20,7 @@
 .scroller span {
   flex-shrink: 0;
   color: rgba(29, 145, 118, 1);
+  cursor: url('/public/nnb.cur'), auto;
 }
 
 @media (min-width: 768px) {

@@ -96,6 +96,7 @@ Elle permet aux utilisateurs de fixer des objectifs, de suivre leurs progrès en
 à des analyses personnalisées pour améliorer leur bien-être et atteindre leurs objectifs de fitness.`,
 
 tasko: `"Tasko" est une application de gestion de tâches conçue pour aider les utilisateurs à organiser efficacement leur quotidien. Elle permet de gérer une liste de tâches de manière simple et intuitive. Chaque utilisateur peut ajouter de nouvelles tâches, les modifier, les marquer comme terminées, ou encore les supprimer.`,
+alphaweb: `"Alpha Web" est une agence digitale spécialisée dans les solutions IT, le développement de sites web modernes et la création d’applications sur mesure. Elle accompagne les entreprises dans leur transformation numérique en proposant des services adaptés à leurs besoins`,
 
 // CONTACT
 ideeProjet: "Une idée en tête ? Un projet à concrétiser ? 🚀 Contactez-moi et transformons vos ambitions en réalité!",
@@ -203,6 +204,7 @@ fittrack: `"FitTrack" is an innovative platform dedicated to tracking physical f
 It allows users to set goals, monitor their progress in real-time, and access personalized analytics 
 to improve their well-being and achieve their fitness goals.`,
 tasko: `"Tasko" is a task management application designed to help users efficiently organize their daily lives. It allows users to manage a to-do list in a simple and intuitive way. Each user can add new tasks, edit them, mark them as completed, or delete them.`,
+alphaweb: `"Alpha Web" is a digital agency specialized in IT solutions, modern website development, and custom application creation. It supports businesses in their digital transformation by providing services tailored to their specific needs.`,
 
 // CONTACT
 ideeProjet: "Got an idea in mind? A project to bring to life? 🚀 Reach out and let’s turn your vision into reality!",

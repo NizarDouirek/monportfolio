@@ -13,14 +13,14 @@
 }
 
 .f, .ex {
-    background-color: rgb(233, 238, 238);
+    /* background-color: rgb(233, 238, 238); */
     /* border: 2px solid #495E57; */
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     border-radius: 15px;
     padding: 20px;
     margin: 10px;
     flex: 1 1 45%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 .cer{
     background-color: rgb(233, 238, 238);
@@ -119,6 +119,9 @@
     color: #495E57;
     text-align: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     margin-left: 200px;
     margin-bottom: 30px;
 }
