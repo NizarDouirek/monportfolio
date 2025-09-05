@@ -317,7 +317,9 @@
     .sectionP4 h1,.sectionP5 h1,.sectionP7 h1{
         font-size: 26px !important;
          margin-top: -15px;
+         color: rgb(224, 220, 220);
     }
+
     .nbv{
         display: flex;
         justify-content: center;

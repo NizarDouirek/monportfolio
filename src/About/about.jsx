@@ -62,7 +62,7 @@ export default function About({ showHero = true }) {
   <img
     loading="lazy"
     className={`i ${isVisible ? "slide-left" : ""}`}
-    src="profillinkd.jpg"
+    src="pro41.jpeg"
     alt="Profil"
   />
 </div>

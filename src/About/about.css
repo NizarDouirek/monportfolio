@@ -22,19 +22,7 @@
     margin-top: 45px;
     
 }
-.i{
-    width: 350px;
-    height: 450px;
-    border-radius: 40%;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-    box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
-    
-  }
-  
-  .i:hover {
-    transform: scale(3.08);
-    box-shadow: 0 0 5px rgba(51, 51, 52, 0.721);
-  }
+
 .image-container-decor {
   position: relative;
   display: inline-block;
@@ -42,17 +30,17 @@
 
 .i {
   width: 350px;
-  height: 450px;
-  border-radius: 40%;
+  height: 420px;
+  border-radius: 20%;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
-  box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);
+  box-shadow: 0 0 10px rgba(220, 220, 223, 0.721);
   position: relative;
   z-index: 5;
 }
 
 .i:hover {
   transform: scale(3.08);
-  box-shadow: 0 0 5px rgba(63, 153, 141, 0.721);
+  box-shadow: 0 0 5px rgba(73, 122, 115, 0.721);
 }
 
 /* Conteneur des formes décoratives */
@@ -72,7 +60,7 @@
   left: -50px;
   width: 140px;
   height: 140px;
-  border: 3px solid rgba(53, 134, 114, 0.504);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 50%;
   animation: float 2s ease-in-out infinite;
 }
@@ -85,7 +73,7 @@
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 25px solid rgba(18, 175, 138, 0.3);
+  border-bottom: 25px solid rgba(34, 34, 34, 0.976);
   animation: moveTriangle 5s infinite ease-in-out;
   z-index: 1;
 }
@@ -111,7 +99,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: rgba(18, 175, 138, 0.3);
+  background-color: rgba(18, 175, 138, 0.528);
   animation: moveSquare 6s infinite ease-in-out;
 }
 
