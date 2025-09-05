@@ -205,7 +205,7 @@ export default function Projet({ showHero = true }) {
                 />
               </div>
               <a href="https://alpha-web-39zc.vercel.app/" target="_blank">
-                <img className="imgsite" src="alphaweb.png" alt="" />
+                <img className="imgsite" src="alphaweb.webp" alt="" />
               </a>
             </div>
             <br />
