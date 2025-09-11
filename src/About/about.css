@@ -29,8 +29,8 @@
 }
 
 .i {
-  width: 350px;
-  height: 420px;
+  width: 420px;
+  height: 430px;
   border-radius: 20%;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   box-shadow: 0 0 10px rgba(220, 220, 223, 0.721);
@@ -99,7 +99,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: rgba(18, 175, 138, 0.528);
+  background-color: #abb4ab;
   animation: moveSquare 6s infinite ease-in-out;
 }
 

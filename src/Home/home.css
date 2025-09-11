@@ -301,7 +301,8 @@ body, html, #root, .homme {
 }
 @media screen and (min-width: 760px) and (max-width: 1060px) {
     .homme {
-        height: 800px; /* Ajuste la hauteur pour les tablettes */
+        height: 800px;
+        overflow-x: hidden; /* Ajuste la hauteur pour les tablettes */
     }
 
     .container {
@@ -311,22 +312,16 @@ body, html, #root, .homme {
     .nom {
         font-size: 70px; /* Taille du texte principal ajustée pour les tablettes */
     }
-
     .bonjour {
         font-size: 40px; /* Texte d'accueil légèrement plus grand */
     }
-
     .job {
         font-size: 34px; /* Texte de job adapté */
     }
-
     .btn-homme {
         font-size: 28px; /* Boutons légèrement plus grands */
         padding: 8px 12px; /* Ajuste le padding pour une meilleure ergonomie */
-    }
-
-    
-    
+    } 
 }
 
 
