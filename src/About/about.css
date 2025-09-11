@@ -278,7 +278,7 @@ table tr:hover{
     }
 
     .i {
-        width: 230px; /* L'image occupe toute la largeur */
+        width: 300px; /* L'image occupe toute la largeur */
         height: 300px; /* Maintient le ratio d'aspect */
         border-radius: 100px;
     }
