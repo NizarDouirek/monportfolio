@@ -62,7 +62,7 @@ export default function About({ showHero = true }) {
   <img
     loading="lazy"
     className={`i ${isVisible ? "slide-left" : ""}`}
-    src="wi.webp"
+    src="profilLin.png"
     alt="Profil"
   />
 </div>

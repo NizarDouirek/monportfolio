@@ -28,7 +28,7 @@
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
   /* display: flex; */
   /* align-items: center; */
     display: flex;
@@ -79,7 +79,7 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  z-index: 2;
+  /* z-index: 2; */
   position: relative;
 }
 

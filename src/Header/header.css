@@ -51,6 +51,8 @@ header.scrolled {
   margin-left: 30px;
   width: 120px;
   height: 100px;
+  user-select: none;
+  pointer-events: none;
 }
 .logo {
   /* margin-left: 50px; */

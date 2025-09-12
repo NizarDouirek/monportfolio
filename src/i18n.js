@@ -121,7 +121,7 @@ ongoing: "  PROJET EN COURS"
           accueil: "Home",
           apropos: "About",
           competences: "Skills",
-          parcours: "Resume",
+          parcours: "Career",
           projets: "Projects",
           contact: "Contact",
 

@@ -36,6 +36,8 @@
   box-shadow: 0 0 10px rgba(220, 220, 223, 0.721);
   position: relative;
   z-index: 5;
+  user-select: none;
+  pointer-events: none;
 }
 
 .i:hover {

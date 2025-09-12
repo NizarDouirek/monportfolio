@@ -154,7 +154,7 @@ export default function Header() {
                       color: isActive(["/", "/home"]) ? "#379777" : "black",
                     }}
                   >
-                    home
+                    Home
                   </span>
                 </Link>
               </li>
@@ -184,7 +184,7 @@ export default function Header() {
                       color: isActive(["/skills"]) ? "#379777" : "black",
                     }}
                   >
-                    skills
+                    Skills
                   </span>
                 </Link>
               </li>
@@ -197,7 +197,7 @@ export default function Header() {
                   <span
                     style={{ color: isActive(["/cv"]) ? "#379777" : "black" }}
                   >
-                    Parcours
+                    Career
                   </span>
                 </Link>
               </li>
@@ -212,7 +212,7 @@ export default function Header() {
                       color: isActive(["/projet"]) ? "#379777" : "black",
                     }}
                   >
-                    projet
+                    Projects
                   </span>
                 </Link>
               </li>
@@ -229,7 +229,7 @@ export default function Header() {
                       color: isActive(["/contact"]) ? "#379777" : "black",
                     }}
                   >
-                    contact
+                    Contact
                   </span>
                 </Link>
               </li>
