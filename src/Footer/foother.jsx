@@ -268,7 +268,7 @@ export default function Footer() {
               variants={slideInBottom}
             >
               <a
-                href="Nizar Douirek (17).pdf"
+                href="Nizar Douirek (18).pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
