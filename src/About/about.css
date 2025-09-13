@@ -21,6 +21,7 @@
     gap: 8rem;
     margin-top: 45px;
     
+    
 }
 
 .image-container-decor {
@@ -36,6 +37,8 @@
   box-shadow: 0 0 10px rgba(220, 220, 223, 0.721);
   position: relative;
   z-index: 5;
+  border: 1px solid #18644e;
+  padding: 7px; /* espace pour la bordure */
   user-select: none;
   pointer-events: none;
 }
