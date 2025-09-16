@@ -9,7 +9,7 @@ const certifications = [
     date: "février 2025",
     color: "blue",
      image: "reactUdemy.webp",
-      url: "reactUdemy.jpg",
+      url: "ExpertReact.pdf",
   },
   {
     id: 2,
@@ -46,15 +46,18 @@ const certifications = [
     date: "Septembre 2025",
     color: "purple",
     image: "certifFrontend.webp",
+     url: "devfrontend.pdf",
   },
-//   {
-//     id: 6,
-//     title: "Cybersécurité",
-//     org: "CompTIA Security+",
-//     date: "Juin 2023",
-//     color: "yellow",
-//     image: "reactUdemy.jpg",
-//   },
+  {
+    id: 6,
+    title: "Cyber Security",
+    org: "Udemy",
+    date: "Septembre 2025",
+    color: "purple",
+    image: "cbSecurity.jpg",
+     url: "Cyber Security.pdf",
+  },
+
 ];
 
 export default function Certifications() {

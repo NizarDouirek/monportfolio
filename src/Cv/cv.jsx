@@ -96,7 +96,7 @@ export default function Cv({ showHero = true }) {
 
             <div className="divcv">
               <div className="groupcv">
-                <img loading="lazy" src="ofppt.png" alt="" />
+                <img loading="lazy" src="ofppt.webp" alt="" />
                 <h2>{t("dts")}</h2>
               </div>
               <span className="date"> 2022 - 2024</span>
