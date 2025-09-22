@@ -160,6 +160,7 @@ body, html, #root, .homme {
     border-radius: 10px;
     padding: 12px;
     border: none;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     color: white;
     cursor: url('/public/nnb.cur'), auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
@@ -190,14 +191,7 @@ body, html, #root, .homme {
 }
 
 
-.btn-homme a {
-    color: white;
-    text-decoration: none;
-    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    /* font-weight: bold; */
-    cursor: url('/public/nnb.cur'), auto;
-   
-}
+
 .btn-homme1:hover {
     cursor: url('/public/nnb.cur'), auto;
     /* background-color: #143d2f; */
@@ -215,13 +209,6 @@ body, html, #root, .homme {
 }
 
 
-.btn-homme1 a {
-    color: #143d2f;
-    text-decoration: none;
-    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    /* font-weight: bold; */
-    cursor: url('/public/nnb.cur'), auto;
-}
 
 
 .btn-homme1{
@@ -229,10 +216,11 @@ body, html, #root, .homme {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 30px;
+    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
     border-radius: 10px;
     padding: 12px;
     border: 1px solid #105a4145;
-    color: white;
+   color: #143d2f;
     cursor: url('/public/nnb.cur'), auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     box-shadow: 0 0 10px rgba(229, 228, 238, 0.721);

@@ -204,18 +204,21 @@ hoverFillColor='transparent'
      {t("intro1")}
   </motion.p>
 </div>
-
+  <a href="#contact" className="a-contact">
           <motion.button className="btn-homme"  initial={{ opacity: 0, x: -100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 2, duration: 0.3}}>
-            <a href="#contact"> <i class="bx bx-chat icnBu"></i> {t("contactezMoi")} </a>
+           <i class="bx bx-chat icnBu"></i> {t("contactezMoi")} 
           </motion.button>
+          </a>
+            <a href="Nizar Douirek (18).pdf"target="_blank"rel="noopener noreferrer">
           <motion.button className="btn-homme1"  initial={{ opacity: 0, x: 100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 2 , duration: 0.3 }}>
-            <a href="Nizar Douirek (18).pdf"target="_blank"rel="noopener noreferrer">
-              <i class="bx bx-download icnBu"></i> {t("telechargerCV")}</a>
+          
+              <i class="bx bx-download icnBu"></i> {t("telechargerCV")}
           </motion.button>
+          </a>
         </motion.div>
        {/* <div>
         <motion.img  initial={{ opacity: 0, y: -50 }}
