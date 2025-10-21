@@ -231,7 +231,7 @@ select:focus {
 
 .contact-info {
   flex: 0.7;
-  /* background: linear-gradient(180deg, #f4edff, #efe6ff); */
+  background: linear-gradient(180deg, #ffffff, #ffffff);
   padding: 60px 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* ✅ deux colonnes */
@@ -256,7 +256,6 @@ select:focus {
 /* 🔹 Écrans entre 1200px et 992px (tablette paysage, petit PC) */
 @media (max-width: 1200px) {
   .contact-section {
-    background: linear-gradient(to bottom, #ffffff, #ffffff);
     padding: 80px 30px;
   }
 
