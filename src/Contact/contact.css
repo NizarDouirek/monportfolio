@@ -1,7 +1,8 @@
 .contact{
-    height: 100vh;
+    height: 110vh;
     /* min-height: 120vh; */
     background: url('/public/decor6.svg');
+    
     background-repeat: no-repeat;
     margin-top: 80px;
     /* background-size: cover; */

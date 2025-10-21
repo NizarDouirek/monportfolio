@@ -3,11 +3,11 @@ import "./Titre.css"; // Import du fichier de style
 
 const Title = ({ text }) => {
     return (
-      <div className="title-container">
-        <div className="line"></div>
-        <h2 className="title">{text}</h2>
-        <div className="line"></div>
-      </div>
+      <div className="section-title">
+  <h2 className="background-text">{text}</h2>
+  <h3 className="foreground-text">{text}</h3>
+  <div className="swipe"></div>
+</div>
     );
   };
 

@@ -1,105 +1,189 @@
-.title-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 15px; /* Espace entre les éléments */
-}
-.title {
-    color: white; /* Couleur principale */
-    font-size: 33px;
-    font-weight: bold;
-    font-style: oblique;
-    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-    /* Effet néon avec des couleurs plus harmonieuses */
-    text-shadow: 
-        0 0 10px #0bed93, 
-        0 0 20px #33ff55, 
-        0 0 30px #0ca668, 
-        0 0 40px #0ca668, 
-        0 0 50px #0ca668;
-    animation: glow 1.8s infinite alternate;
-    /* font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 62px; */
-  /* -webkit-text-stroke: 2px #143d2f; */
+
+
+
+.section-title {
+  position: relative;
+  text-align: left; /* 🔹 Le texte n’est plus centré */
+  padding: 60px;
+  background: linear-gradient(90deg, #ffffff00, #f9f9f900);
+  overflow: hidden;
+  border-radius: 20px;
 }
 
-/* Animation du texte avec des couleurs plus douces */
-@keyframes glow {
+/* Texte en arrière-plan (effet décoratif) */
+.background-text {
+  font-size: 8rem;
+  font-weight: 700;
+   font-family: "EB Garamond", serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        -1px -1px 0 rgba(0, 0, 0, 0.20),
+        1px -1px 0  rgba(0, 0, 0, 0.20),
+        -1px 1px 0  rgba(0, 0, 0, 0.20),
+        1px 1px 0  rgba(0, 0, 0, 0.20);
+  text-transform: uppercase;
+  position: absolute;
+  top: 10%; /* 🔹 Pas au centre */
+  left: 3%;
+  white-space: nowrap;
+  letter-spacing: 8px;
+  transform: translateY(-20%);
+  user-select: none;
+  animation: slideInBg 1.2s ease forwards;
+}
+
+/* Texte au premier plan */
+.foreground-text {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "EB Garamond", serif;
+  
+   background: linear-gradient(90deg, #36e6c2, #00bfa6, #057469);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  z-index: 1;
+  display: inline-block;
+  animation: fadeIn 1s ease-in-out;
+  padding-left: 15px;
+  
+}
+
+/* Animation subtile d’apparition du texte principal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation d’entrée du texte en arrière-plan */
+@keyframes slideInBg {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.swipe {
+  position: relative;
+  width: 0;
+  height: 5px;
+  margin-top: 10px;
+  background: linear-gradient(90deg,#00ffcc, #07aa8e, #07925a);
+  border-radius: 5px;
+  transition: width 0.6s ease;
+  opacity: 0;
+}
+
+.foreground-text:hover + .swipe {
+  width: 140px;
+  opacity: 1;
+  animation: swipeMove 2s infinite linear;
+}
+
+@keyframes swipeMove {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 200% 50%;
+  }
+}
+/* ======================== */
+/* TABLETTE */
+/* ======================== */
+@media (max-width: 1024px) {
+  .section-title {
+    padding: 60px 40px;
+  }
+
+  .background-text {
+    display: none;
+  }
+
+  .foreground-text {
+    font-size: 4.4rem;
+  }
+}
+
+/* ======================== */
+/* MOBILE */
+/* ======================== */
+@media (max-width: 768px) {
+  .section-title {
+    padding: 50px 25px;
+    text-align: center;
+  }
+
+  .foreground-text {
+    font-size: 3.8rem;
+    padding: 8px 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00ffc3, #00bfa6, #00725a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: inline-block;
+    animation: glowMobile 3s infinite ease-in-out;
+  }
+
+  /* ✨ Animation douce de glow (effet lumière pulsante) */
+  @keyframes glowMobile {
     0% {
-        text-shadow: 
-        0 0 10px #0bed93, 
-        0 0 20px #33ff55, 
-        0 0 30px #0ca668, 
-        0 0 40px #0ca668, 
-        0 0 50px #0ca668
+      text-shadow: 0 0 5px rgba(0, 255, 195, 0.4),
+                   0 0 10px rgba(0, 191, 166, 0.3);
+    }
+    50% {
+      text-shadow: 0 0 12px rgba(0, 255, 195, 0.7),
+                   0 0 25px rgba(0, 191, 166, 0.6);
     }
     100% {
-        text-shadow: 
-        0 0 10px #0bed93, 
-        0 0 20px #33ff55, 
-        0 0 30px #0ca668, 
-        0 0 40px #0ca668, 
-        0 0 50px #0ca668
+      text-shadow: 0 0 5px rgba(0, 255, 195, 0.4),
+                   0 0 10px rgba(0, 191, 166, 0.3);
     }
+  }
+
+  /* Barre animée centrée sous le texte */
+  .swipe {
+    margin: 10px auto 0;
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, #00ffcc, #07aa8e, #07925a);
+    border-radius: 5px;
+    animation: swipeMove 2.5s infinite linear;
+  }
 }
 
-/* Lignes sous le titre avec un dégradé dynamique */
-.line {
-    width: 150px;
-    height: 4px;
-    background: linear-gradient(to right,#0bed93, #0bed93, #0dbb75, #0ca668);
-    border-radius: 10px;
-    animation: lineGlow 1.5s infinite alternate;
-}
+/* ======================== */
+/* PETIT MOBILE */
+/* ======================== */
+@media (max-width: 480px) {
+  .section-title {
+    padding: 40px 15px;
+  }
 
-@keyframes lineGlow {
-    from {
-        opacity: 0.6;
-    }
-    to {
-        opacity: 1;
-    }
-}
+  .foreground-text {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #06f7b7, #00bca4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowMobile 3s infinite ease-in-out;
+  }
 
-
-@media screen and (max-width: 768px) {
-    .title-container {
-        margin-top: 15px;
-    }
-
-    .title {
-        font-size: 22px;
-        text-shadow: 
-            0 0 8px #0bed93, 
-            0 0 16px #33ff55, 
-            0 0 24px #0ca668;
-    }
-
-    .line {
-        width: 100px;
-        height: 3px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .title-container {
-        /* margin-top: 10px; */
-        gap: 5px;
-    }
-
-    .title {
-        font-size: 25px;
-        
-    }
-
-    .line {
-        width: 50px;
-        height: 2px;
-    }
+  .swipe {
+    width: 100px;
+    height: 2px;
+  }
 }

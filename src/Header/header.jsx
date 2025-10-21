@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./header.css";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
+import ThemeToggle from "../Constant/mode/mode";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
@@ -122,6 +123,7 @@ export default function Header() {
   />
 
 </button>
+{/* <ThemeToggle/> */}
         
             {/* <button
               onClick={toggleTheme}

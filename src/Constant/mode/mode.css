@@ -1,0 +1,33 @@
+.theme-toggle {
+  background: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+/* Variables globales (mêmes qu’avant) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --primary-color: #00b77f;
+}
+
+.dark-mode {
+  --bg-color: #1C352D;
+  --text-color: #e4e4e4;
+  --primary-color: #00ffaa;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.4s ease;
+}

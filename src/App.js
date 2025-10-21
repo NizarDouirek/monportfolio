@@ -9,7 +9,8 @@ import Projet from './Projet/projet';
 import Skills from './Skills/skills';
 import Cv from './Cv/cv';
 import Footer from './Footer/foother';
-import Contact from './Contact/contact';
+// import Contact from './Contact/contact';
+import Contact from './Test/test';
 import Loader from './Loader/loader';
 
 import ReactGA from "react-ga4";
@@ -44,6 +45,7 @@ function AppContent() {
             <Route path="/Cv" element={<Cv />} />
             <Route path="/projet" element={<Projet />} />
             <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/contact" element={<Contact />} /> */}
           </Routes>
           <Footer />
         </>

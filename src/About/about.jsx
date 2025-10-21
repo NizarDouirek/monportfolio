@@ -127,7 +127,7 @@ export default function About({ showHero = true }) {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-             <i class="bx bxl-linkedin icnLi"></i> {t("linkdeen")}</a>
+                  <i class="bx bxl-linkedin icnLi"></i> {t("linkdeen")}</a>
                     </motion.button>
                 </div>
             </div>
@@ -161,6 +161,7 @@ export default function About({ showHero = true }) {
           className="custom-scroll-text"
         />
         </div> */}
+        
         </>
     );
 }

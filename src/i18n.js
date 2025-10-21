@@ -39,7 +39,7 @@ certification: "Certification",
          linkdeen:"Visiter mon linkedin",
 
          // SKILLS
-         hover: "💡 Survolez les cartes pour en savoir plus !",
+         hover: " Survolez les cartes pour en savoir plus !",
          frontendtitle:"Développeur FrontEnd",
          frontenddescription:"Passionné par la conception d'interfaces modernes et intuitives, des designs élégants et fonctionnels, je transforme les idées en expériences web performantes. Expert en HTML, CSS, Bootstrap, JavaScript et React.",
          backendtitle:"Développeur BackEnd",
@@ -76,7 +76,7 @@ certification: "Certification",
           descSirecom: "Développement d'une application de gestion des équipements informatiques et matériels de l'entreprise.",
 
         //  PROJET
-         projetsIntro: " Découvrez une sélection de mes projets les plus aboutis et innovants 💡",
+         projetsIntro: " Découvrez une sélection de mes projets les plus aboutis et innovants ",
          encours:"Des projets passionnants sont en cours de développement.",
         luxuryvoyage: `"Luxury Voyage" est une agence de voyage spécialisée dans l'organisation de séjours d'exception 
 pour les voyageurs en quête de confort, d'élégance et d'expériences inoubliables. Notre site est conçu pour vous 
@@ -101,7 +101,9 @@ alphaweb: `"Alpha Web" est une agence digitale spécialisée dans les solutions 
 // CONTACT
 ideeProjet: "Une idée en tête ? Un projet à concrétiser ? 🚀 Contactez-moi et transformons vos ambitions en réalité!",
 contactReseaux: "Contactez-moi sur n'importe quel réseau social de votre choix ! 😊📩",
-envoyer:"Envoyer",
+envoyer:"Envoyer Message",
+lets: "Travaillons",
+go: "ensemble !",
 
 placeholderNom: "Entrez votre nom complet",
 placeholderEmail: "Entrez votre adresse email ",
@@ -147,7 +149,7 @@ ongoing: "  PROJET EN COURS"
           linkdeen:" Visit my LinkedIn",
 
           // SKILLS
-          hover: "💡 Hover over the cards to learn more!",
+          hover: " Hover over the cards to learn more!",
           frontendtitle:"Front-End Developer",
           frontenddescription:"Passionate about designing modern and intuitive interfaces, with elegant and functional designs. I turn ideas into high-performance web experiences. Expert in HTML, CSS, Bootstrap, JavaScript, and React.",
           backendtitle:"Back-End Developer",
@@ -209,7 +211,9 @@ alphaweb: `"Alpha Web" is a digital agency specialized in IT solutions, modern w
 // CONTACT
 ideeProjet: "Got an idea in mind? A project to bring to life? 🚀 Reach out and let’s turn your vision into reality!",
 contactReseaux: "Feel free to contact me on any social media platform of your choice! 😊📩",
-envoyer:"Send",
+envoyer:"Send Message",
+lets:"Let’s",
+go:"work together!",
 placeholderNom: "Enter your full name",
 placeholderEmail: "Enter your email address",
 placeholderMessage: "Write your message here...",

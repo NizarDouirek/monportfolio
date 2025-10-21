@@ -5,25 +5,28 @@
     background-repeat: no-repeat; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     background-attachment: fixed;
     margin-top: 40px;
   }
   
   .containerskills{
-    max-width:1000px;
+    /* max-width:1200px; */
+    
+    align-items: center;
+    justify-content: center;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
-    gap: 3rem;
+    /* gap: 1rem; */
   }
   .hover-instruction {
     font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     margin-top: 50px;
-    color: #139371;
+    color: #000000;
     text-align: center;
   }
   
@@ -31,8 +34,8 @@
   
   .cardskills{
     position:relative;
-    margin:20px 0;
-    width:300px;
+    margin:30px 0;
+    width:340px;
     height:400px;
     background: #fff;
     transform-style:preserve-3d;
