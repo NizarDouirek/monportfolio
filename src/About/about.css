@@ -514,6 +514,14 @@ table tr:hover{
   .hero-section {
     height: 80vh;
     min-height: 500px;
+      background: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(201, 243, 243, 0.42)
+    ),
+    url('/public/nizar.png'); /* <-- mets ici le chemin de ton image */
+  background-size: contain;  /* Contenir l'image dans la section */
+  background-position: right bottom; /* À droite et centré verticalement */
+  background-repeat: no-repeat;
   }
   
   .hero-content h1 {
@@ -525,7 +533,7 @@ table tr:hover{
         1px -1px 0  black,
         -1px 1px 0  black,
         1px 1px 0  black;
-        margin-top: 230px;
+        margin-top: 350px;
   }
   
   .breadcrumb {

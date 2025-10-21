@@ -1,5 +1,5 @@
 .contact-section {
-  background: linear-gradient(to bottom, #faf7ff, #f1ecff);
+  background: linear-gradient(to bottom, #fcfaff, #f1ecff);
   padding: 100px 50px;
   
   display: block; /* ✅ on enlève le flex pour ne pas centrer verticalement */
@@ -256,6 +256,7 @@ select:focus {
 /* 🔹 Écrans entre 1200px et 992px (tablette paysage, petit PC) */
 @media (max-width: 1200px) {
   .contact-section {
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
     padding: 80px 30px;
   }
 
