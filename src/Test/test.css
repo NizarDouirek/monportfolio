@@ -1,5 +1,5 @@
 .contact-section {
-  background: linear-gradient(to bottom, #fcfaff, #f1ecff);
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
   padding: 100px 50px;
   
   display: block; /* ✅ on enlève le flex pour ne pas centrer verticalement */
