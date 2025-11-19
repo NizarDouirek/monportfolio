@@ -41,7 +41,6 @@ const Skills = ({ showHero = true }) => {
     <div id="skills" className="skills">
       <Title text={t("competences" )}/>
       <p  className="hover-instruction">{t("hover")}</p>
-
       <div className="containerskills">
         {characters.map((character, index) => (
           <motion.div

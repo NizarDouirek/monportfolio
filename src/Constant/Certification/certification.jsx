@@ -46,7 +46,7 @@ const certifications = [
     date: "Septembre 2025",
     color: "purple",
     image: "certifFrontend.webp",
-     url: "devfrontend.pdf",
+     url: "devFrontend.pdf",
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const certifications = [
     date: "Septembre 2025",
     color: "purple",
     image: "cbSecurity.jpg",
-     url: "Cyber Security.pdf",
+     url: "cyber Security.pdf",
   },
 
 ];

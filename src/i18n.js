@@ -32,7 +32,7 @@ certification: "Certification",
 
         //  ABOUT
          BonjourJesuis:"Bonjour! Je suis",
-         resumeAbout:" jeune diplômé en développement digital, passionné par la création de solutions innovantes , avec une expertise solide en programmation et en conception web ",
+         resumeAbout:" Développeur Full Stack axé sur la performance et l'innovation, je crée des solutions web robustes et intuitives, transformant vos défis digitaux en expériences utilisateur fluides qui génèrent de la valeur",
          tel:"Téléphone",
          adr:"Adresse",
          langue:"Langues",
@@ -142,7 +142,7 @@ ongoing: "  PROJET EN COURS"
           
         //  ABOUT
           BonjourJesuis:"Hello ! I'm",
-          resumeAbout:"A recent graduate in digital development, passionate about building innovative solutions, with strong skills in programming and web design",
+          resumeAbout:"Performance and innovation-driven Full Stack Developer, I build robust and intuitive web solutions, transforming your digital challenges into seamless user experiences that generate value",
           tel:"Phone ",
           adr:"Address",
           langue:"Languages",

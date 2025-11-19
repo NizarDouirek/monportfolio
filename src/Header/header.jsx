@@ -39,7 +39,7 @@ export default function Header() {
     i18n.changeLanguage(newLang);
   };
   return (
-    <div>
+    <div className="header">
       <header className={isScrolled ? "scrolled" : ""}>
         <div className="logo">
           <img className="dn" src="dn.webp" />

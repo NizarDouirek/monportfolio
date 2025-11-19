@@ -126,18 +126,14 @@ body, html, #root, .homme {
 
 .job{
     margin-top: 10px;
-    color: #495E57;
+    /* color: #495E57; */
   
-    font-size: 30px;
-    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    position: relative;
-    font-weight: 700;
+  
      
-  text-shadow:
-    0 0 5px #b0d1be,
-    0 0 10px #1f7867,
-    0 0 20px #234d34,
-    0 0 40px #328956;
+  
+       background: linear-gradient(90deg, #36e6c2, #00bfa6, #057469);
+        -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     
 }
 @keyframes shine1 {
@@ -272,11 +268,11 @@ body, html, #root, .homme {
     }
 
     .btn-homme {
-        font-size: 15px; /* Boutons plus petits */
+        font-size: 17px; /* Boutons plus petits */
         padding: 10px; /* Réduction du padding */
     }
     .btn-homme1 {
-        font-size: 15px; /* Boutons plus petits */
+        font-size: 17px; /* Boutons plus petits */
         padding: 10px; /* Réduction du padding */
     }
     
@@ -411,6 +407,7 @@ body, html, #root, .homme {
   background-color: #f5f1f1;
   flex-wrap: wrap;
   position: relative;
+  background-attachment: fixed;
   /* margin-top: 2rem; */
   padding: 100px;
 }
@@ -505,6 +502,7 @@ body, html, #root, .homme {
   font-weight: 900;
   line-height: 1.6;
   font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+  
 }
 .icnBu{
   position: relative;
