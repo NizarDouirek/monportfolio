@@ -52,6 +52,10 @@ certification: "Certification",
         //  CV
          formation:"Formation",
          experience:"Expérience",
+         est:"Licence Professionnelle en Génie Informatique",
+         desEst:"formation polyvalente couvre toutes les étapes de la création d'un projet informatique, de la conception à la mise en service. Elle apporte une solide expertise dans le développement d'applications et de solutions web, tout en intégrant les principes essentiels de la sécurité et de la gestion de réseau",
+         ecoleEst:"📍 EST – École Supérieure de Technologie, Casablanca",
+        
          forodoo:"Formation Odoo chez Technaps",
          descodoo:"Formation 100% en ligne couvrant l'installation et la configuration d’Odoo sur Linux, le développement de modules personnalisés, l’intégration d’APIs tierces, ainsi que les bonnes pratiques de versioning, test et déploiement.",
          dts:"Technicien spécialisé en développement digital option ‘full-stack web’ ",
@@ -61,10 +65,16 @@ certification: "Certification",
          ecolebac:"📍 En Lycée Ibno-Khatib, Casablanca",
 
          dateForodoo:"Avril 2025 - Juin 2025",
+         dateEst:"oct 2025 - Présent",
           stagevnb: "Stagiaire Développeur Mobile, VNB-IT",
           datedevnb: "Avril 2025 – Juillet 2025",
           descvnb: "Développement de l’application mobile LCR, une plateforme numérique de l’auto-école GMP, axée sur la formation accélérée à la conduite et l’accompagnement personnalisé des élèves.",
           techvnb: "Technologies utilisées :",
+
+          Yokamos: "Développeur Full Stack, YOKAMOS",
+          dateYokamos: "Nov 2025 – Présent",
+          descYokamos: "Conception et développement d'interfaces créatives pour centres de surveillance (SOC). Création de Dashboards pour Solutions SOC . Visualisation de données de sécurité en temps réel, monitoring des alertes et analyse des journaux (logs). Développement de solutions applicatives pour la détection de menaces et la gestion des vulnérabilités.",
+          techYokamos: "Technologies utilisées :",
 
           stageTechnaps: "Stagiaire Développeur Full Stack, TECHNAPS",
           dateTechnaps: "Décembre 2024 - Mars 2025",
@@ -111,8 +121,11 @@ placeholderMessage: "Écrivez votre message ici...",
 restezConnecte: "Restez connecté à mon univers tech",
 
 finished:"  PROJET TERMINE",
-ongoing: "  PROJET EN COURS"
+ongoing: "  PROJET EN COURS",
 
+  "restezConnecte": " Vous aimez mon travail ?",
+  "boutonLike": "Aimer",
+  "merciLike": "Merci pour votre soutien ! 🙌"
 
 
         },
@@ -160,7 +173,11 @@ ongoing: "  PROJET EN COURS"
           tools: "Development and Design Tools",
 
            //  CV
-          formation:"Education",
+           est:"Bachelor’s Degree in Computer Engineering",
+         desEst:"A versatile program covering all stages of IT project development, from initial design to deployment. It provides solid expertise in building applications and web solutions, while integrating essential principles of cybersecurity and network management",
+         dateEst:"oct 2025 - Present", 
+
+         formation:"Education",
           experience:"Experience",
           forodoo:"Odoo Training at Technaps",
           dateForodoo:"April 2025 – June 2025",
@@ -170,6 +187,12 @@ ongoing: "  PROJET EN COURS"
           dscIsta:"Training focused on the design, development, and deployment of dynamic web applications, including practical projects with React.js and Laravel.",
           bac:"Baccalaureate in Life and Earth Sciences",
           ecolebac:"📍 At Lycée Ibno-Khatib, Casablanca",
+
+         Yokamos: "Full Stack Developer, YOKAMOS",
+          dateYokamos: "Nov 2025 – Present",
+          descYokamos: "Design and development of creative interfaces for Security Operations Centers (SOC). I focus on building advanced dashboards for SOC solutions, featuring real-time security data visualization, alert monitoring, and log analysis. I also develop application-based solutions dedicated to threat detection and vulnerability management",
+          techYokamos: "Technologies used: ",
+
 
           stagevnb: "Mobile Developer Intern, VNB-IT",
           datedevnb: "April 2025 – July 2025",
@@ -220,7 +243,12 @@ placeholderMessage: "Write your message here...",
 restezConnecte: "Stay connected to my tech universe",
 
 finished: "  COMPLETED PROJECT",
-ongoing: "  ONGOING PROJECT"
+ongoing: "  ONGOING PROJECT",
+
+  "restezConnecte": " Like my work?",
+  "boutonLike": "Like",
+  "merciLike": "Thanks for your support! 🙌"
+
 
         },
       },

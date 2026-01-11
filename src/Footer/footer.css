@@ -441,7 +441,7 @@
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer;
+     cursor: url('/public/nnb.cur'), auto;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;

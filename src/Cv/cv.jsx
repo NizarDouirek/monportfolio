@@ -66,6 +66,39 @@ export default function Cv({ showHero = true }) {
               <div className="groupcv">
                 <img
                   loading="lazy"
+                  src="estc_logo.jfif"
+                  alt=""
+                  style={{ borderRadius: "50%" }}
+                />
+                <h2>{t("est")}</h2>
+              </div>
+              <span className="date">{t("dateEst")}</span>
+             <p
+                className="p"
+                style={{ letterSpacing: "1px", fontWeight: "bold" }}
+              >
+                {t("ecoleEst")}
+              </p><br />
+
+              <p>{t("desEst")}</p>
+              <br />
+              {/* <button className="see-more-btn">
+                <a
+                  href="attestationFormationOdoo.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bx bx-link-external"></i>
+                  {t("attestationTechnaps")}
+                </a>
+              </button> */}
+            </div>
+            <br />
+            <br />
+            <div className="divcv">
+              <div className="groupcv">
+                <img
+                  loading="lazy"
                   src="tecknaps.webp"
                   alt=""
                   style={{ borderRadius: "50%" }}
@@ -139,6 +172,26 @@ export default function Cv({ showHero = true }) {
                 <i class='bx bx-briefcase'></i>  {t("experience")}
               </h1>
             </div>
+            <div className="divcv">
+              <div className="groupcv">
+                <img
+                  loading="lazy"
+                  src="yokamos.jfif"
+                  style={{ borderRadius: "50%" }}
+                  alt=""
+                />
+                <h2> {t("Yokamos")}</h2>
+              </div>
+              <span className="date"> {t("dateYokamos")}</span>
+              <p>
+                {t("descYokamos")}
+                <br /><br />
+                <span className="role"> {t("techYokamos")} </span> React, Laravel, Docker, Css, postgresql, Git, MySql, Grafana, API_Qradar
+              </p>
+              <br />
+              
+            </div>
+            <br />
             <div className="divcv">
               <div className="groupcv">
                 <img

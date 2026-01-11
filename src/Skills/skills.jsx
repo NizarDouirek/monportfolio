@@ -66,7 +66,7 @@ const Skills = ({ showHero = true }) => {
       {/* Langages et Frameworks */}
       <h1 className="titrecp"><i class='bx bx-terminal'></i>  {t("languagesFrameworks")}</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4}}>
-        {["html.avif", "css.avif", "javascript.webp", "php.webp", "bootstrap.avif", "react.webp","react-native.webp", "laravel.webp"].map((img, index) => (
+        {["html.avif", "css.avif", "javascript.webp", "php.webp", "java.png", "react.webp","react-native.webp", "laravel.webp"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img loading="lazy" className="imgskills" src={img} alt={img.split(".")[0]} />
             <h2>{img.split(".")[0].toUpperCase()}</h2>

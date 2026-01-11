@@ -29,7 +29,7 @@ export default function Footer() {
       });
 
       if (response.ok) {
-        setFormStatus("Merci pour votre abonnement ! 🙌 !");
+        setFormStatus(t("merciLike"));
         e.target.reset();
       } else {
         setFormStatus("Une erreur est survenue. Veuillez réessayer.");
@@ -125,7 +125,7 @@ export default function Footer() {
                 whileFocus={{ scale: 1.02 }}
               />
               <motion.button type="submit" whileTap={{ scale: 0.95 }}>
-                S'abonner
+               {t("boutonLike")}
               </motion.button>
               {formStatus && (
                 <motion.b

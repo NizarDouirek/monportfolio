@@ -111,7 +111,7 @@ export default function Contact({ showHero = true }) {
                         </h2> 
                        
                   </div>
-          
+        
           <div className="contact-info hidden">
  <div className="info-item">
     <div className="icon-circle">
