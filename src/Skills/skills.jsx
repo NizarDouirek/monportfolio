@@ -103,7 +103,7 @@ const Skills = ({ showHero = true }) => {
       {/* Outils de Développement et Design */}
       <h1 className="titrecp"><i class='bx bx-git-branch'></i>  {t("tools")}</h1>
       <motion.div className="pack" initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
-        {[ "git.webp","github.webp", "postman.webp","xamp.webp","figma.webp", "canva.webp", "photoshop.webp"].map((img, index) => (
+        {[ "git.webp","github.webp", "postman.webp","xamp.webp","figma.webp", "canva.webp","grafana.jfif", "photoshop.webp"].map((img, index) => (
           <motion.section key={index} whileHover={{ scale: 1.1 }}>
             <img loading="lazy" className="imgskills" src={img} alt={img.split(".")[0]} />
             <h2>{img.split(".")[0].toUpperCase()}</h2>

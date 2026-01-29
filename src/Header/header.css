@@ -1,231 +1,164 @@
+/* ================= VARIABLES ================= */
+:root {
+  --primary: #32ca97;
+  --dark: #495E57;
+  --shadow: 0 5px 10px -5px rgba(0,0,0,.3);
+  --radius: 30px;
+}
+
+/* ================= HEADER ================= */
 .header header {
-  /* background-color: black; */
-  width: 85%;
-  overflow: hidden; 
-  /* max-width: 100%; */
-  box-sizing: border-box;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  
-  z-index: 1000;
+  width: 85%;
   height: 10vh;
-/* border: 1px solid black; */
-   border-radius: 30px;
-   transition: top 0.4s ease-in-out, background-color 0.4s ease, box-shadow 0.4s ease;
-  
+  border-radius: var(--radius);
+  z-index: 1000;
+  transition: .4s ease;
+  display: flex;
+  align-items: center; 
 }
-.header header:not(.scrolled) { 
-  background-color: transparent; 
+/* .header header {
+  border: 1px solid transparent;
+  background-clip: padding-box;
 }
 
-.header header.scrolled {
-  background: linear-gradient(135deg,#e1f5ef, hsl(154, 100%, 99%), rgb(244, 251, 248)  , #e1f5ef); 
-  background-size: 200% 200%;  
-  animation: gradientAnimation 10s ease infinite;
-   box-shadow: 0 5px 10px -5px rgba(0,0,0,0.3);
-   top: 6px;
-   
-}
- /* .header header.scrolled::before {
-  content: '';
+.header header::before {
+  content: "";
   position: absolute;
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, #36e6c2, #00bfa6, #057469, transparent);
-  border-radius: 2px;
-  box-shadow: 0 0 10px #32ca97, 0 0 20px #32ca97;
-  animation: moveBorder 10s linear infinite;
-  z-index: 10;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    #32ca97,
+    transparent
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: borderMove 6s linear infinite;
 }
 
-@keyframes moveBorder {
-
-  0% {
-    top: -2px;
-    left: 30px;
-    transform: rotate(0deg);
-  }
-  20% {
-    top: -2px;
-    left: calc(100% - 110px);
-    transform: rotate(0deg);
-  }
-
-  
- 25% {
-  top: 30px;
-  left: calc(100% - 3px);
-  transform: rotate(90deg);
-}
-
-45% {
-  top: calc(100% - 30px);
-  left: calc(100% - 3px); 
-  transform: rotate(90deg);
-}
-
-  
-  45% {
-    top: calc(100% - 30px);
-    left: calc(100% - 1.5px); 
-    transform: rotate(90deg);
-  }
-
-  
-  47% {
-    top: calc(100% - 5px);
-    left: calc(100% - 40px); 
-    transform: rotate(135deg);
-  }
-  50% {
-    top: calc(100% - 2px);
-    left: calc(100% - 110px);
-    transform: rotate(180deg);
-  }
-
-  
-  70% {
-    top: calc(100% - 2px);
-    left: 30px;
-    transform: rotate(180deg);
-  }
-
- 
-  72% {
-    top: calc(100% - 5px);
-    left: 5px; 
-    transform: rotate(225deg);
-  }
-  75% {
-    top: calc(100% - 30px);
-    left: -2px;
-    transform: rotate(270deg);
-  }
-
-
-  95% {
-    top: 30px;
-    left: -2px;
-    transform: rotate(270deg);
-  }
-
-  
-  75% {
-  top: calc(100% - 30px);
-  left: -1px; 
-  transform: rotate(270deg);
-}
-
-95% {
-  top: 30px;
-  left: -1px; 
-  transform: rotate(270deg);
-}
-}
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+@keyframes borderMove {
+  0% { background-position: 0% }
+  100% { background-position: 200% }
 } */
 
 
-
-
-.header header.scrolled::before {
-  opacity: 1;
+.header header:not(.scrolled) {
+  background: transparent;
 }
 
-.icnH{
-  position: relative;
-  top: 2px;              /* Fait descendre légèrement l’icône */
+.header header.scrolled {
+  top: 6px;
+  background: linear-gradient(135deg,#e1f5ef,#fff,#f4fbf8,#e1f5ef);
+  background-size: 200% 200%;
+  animation: gradient 10s infinite;
+  box-shadow: var(--shadow);
 }
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+
+/* ================= LOGO ================= */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2.5rem;
 }
+
+
 .dn {
-  margin-top: -15px;
-  margin-left: 30px;
-  width: 120px;
+   width: 120px;
   height: 100px;
-  user-select: none;
+  /* object-fit: contain; */
   pointer-events: none;
 }
-.logo {
-  /* margin-left: 50px; */
-  display: flex;
-  /* justify-content: center; */
-  gap: 10rem;
-}
 
+/* ================= NAVBAR ================= */
 .navbar {
-  margin-top: 19px;
+  flex: 1;
   display: flex;
+  justify-content: center;
 }
 
 .navbar ul {
   display: flex;
-  justify-content: flex-end;
-  margin-left: -90px;
-  gap: 3em;
+  gap: 3rem;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
+  font-family: roboto;
+  font-size: 17px;
   color: black;
   text-decoration: none;
-  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
-  font-family: roboto;
+  position: relative;
+  transition: .3s;
   cursor: url('/public/nnb.cur'), auto;
-  font-size: 17px;
-  /* font-weight: 700; */
-  position: relative; /* Nécessaire pour les pseudo-éléments */
-  transition: color 0.3s ease, transform 0.3s ease;
+  
 }
 
-/* Effet sur le texte au survol */
 nav a:hover {
-  color: #32ca97;
-  text-shadow: 0 0 10px #A6A6A6, 0 0 20px #A6A6A6, 0 0 30px #A6A6A6;
-  transform: scale(1.1); /* Agrandit légèrement le texte */
+  color: var(--primary);
+  transform: scale(1.1);
+   text-shadow: 0 0 10px #A6A6A6, 0 0 20px #A6A6A6, 0 0 30px #A6A6A6;
 }
 
-/* Ligne animée sous le texte au survol */
 nav a::after {
   content: "";
   position: absolute;
+  bottom: -5px;
   left: 0;
-  bottom: -5px; /* Décalé légèrement sous le texte */
-  width: 0%;
+  width: 0;
   height: 2px;
-  color: #32ca97;
-  background-color: #32ca97;
-  transition: width 0.3s ease-in-out;
+  background: #538474;
+  transition: .3s;
 }
 
 nav a:hover::after {
-  width: 100%; 
-  color: #32ca97;/* La ligne s'étend sous le texte */
-
+  width: 100%;
 }
 
-.navbar-icons ul{
+.icnH {
+  position: relative;
+  top: 2px;
+}
+
+/* ================= MOBILE NAV ================= */
+.navbar-icons ul {
   display: none;
 }
+
+.lang-toggle {
+  position: absolute;
+  top: .6rem;
+  right: 2rem;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #0c9165;
+  background: none;
+  cursor: url('/public/nnb.cur'), auto;
+  transition: .3s;
+}
+
+.lang-toggle:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,.2);
+}
+
+.flag-icon {
+  width: 24px;
+  height: 20px;
+  border-radius: 30%;
+}
+
+/* ================= RESPONSIVE ================= */
 
 @media  (max-width: 399px) {
   .navbar-icons ul {
@@ -301,79 +234,27 @@ nav a:hover::after {
   
 
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .header header {
-    margin: 0;
-    padding: 0;
-  }
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
   .logo {
     gap: 1rem;
   }
-  .logo img {
-    width: 90px;
-    height: 100px;
-   
-  }
 
-  .logo h1 {
-    display: none;
-  }
-  .logo .prenom {
-    display: none;
-  }
   .navbar {
     display: none;
-    position: absolute;
   }
-  .navbar-icons ul{
+
+  .navbar-icons ul {
     display: flex;
-    margin-left: 46px;
-    margin-top: 15px;
-    align-items: center; /* Centrez les icônes */
     gap: 3rem;
+    margin-top: 15px;
     list-style: none;
-}
-.navbar-icons li a {
-    color: rgb(124, 140, 194);
-    font-size: 40px;
-    text-decoration: none;
-}
-}
-.lang-toggle {
-  position: absolute;
-  top: 0.6rem;
-  right: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  /* background: linear-gradient(135deg, #80b59b, #B3D8A8); */
-  /* color: white; */
-  /* border: none; */
-  border-radius: 20px;
-  border: 1px solid white;
-  padding: 8px 12px;
-  border-color: #0c9165;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: url('/public/nnb.cur'), auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
+  }
 }
 
-.lang-toggle:hover {
-  /* transform: scale(1.05); */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+/* ================= ANIMATION ================= */
+@keyframes gradient {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
 }
-
-.lang-toggle i {
-  font-size: 18px;
-}
-.flag-icon {
-  width: 24px;
-  height: 20px;
-  border-radius: 30%;
-  margin: 0 8px;
-  vertical-align: middle;
-  object-fit: cover;
-}
-

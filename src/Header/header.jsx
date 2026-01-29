@@ -113,7 +113,7 @@ export default function Header() {
   aria-label="Changer la langue"
 >
   {/* <i className="bx bx-globe"></i> */}
-    <span>{i18n.language === "fr" ? "Français" : "English"}</span>
+    {/* <span>{i18n.language === "fr" ? "Français" : "English"}</span> */}
   <img
     src={i18n.language === "fr"
       ? "https://flagcdn.com/w40/fr.png"

@@ -404,7 +404,7 @@ body, html, #root, .homme {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  background-color: #f5f1f1;
+  background-color: #ffffff;
   flex-wrap: wrap;
   position: relative;
   background-attachment: fixed;
@@ -424,7 +424,7 @@ body, html, #root, .homme {
   height: 250px;
   /* border-radius: 50%; */
   border-radius: 20px;
-  background: linear-gradient(135deg, #dad5e2, #f0ebeb, #f4f6ee);
+  background: linear-gradient(135deg, #fbf8ff, #f0ebeb, #fefffb);
   color: #143d2f;
   display: flex;
   cursor: url('/public/nnb.cur'), auto;

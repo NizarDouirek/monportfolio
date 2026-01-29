@@ -31,12 +31,12 @@
 
 .contact-title {
   font-size: 2.4rem;
-  color: #222;
+  color: #000000;
   font-weight: 700;
   margin-bottom: 10px;
 }
 .contact-stitle{
-  color: #055e52;
+  color: #000000;
     
 font-size: 23px;
   margin-bottom: 30px;
@@ -60,26 +60,7 @@ font-size: 23px;
   margin-bottom: 20px;
 }
 
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 15px;
-  border: 1.5px solid #c7e2d9;
-  border-radius: 10px;
-  background-color: #faf8ff;
-  color: #333;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-}
 
-input:focus,
-select:focus,
-textarea:focus {
-  border-color: #07ae9e;
-  box-shadow: 0 0 10px rgba(58, 177, 237, 0.3);
-  outline: none;
-}
 
 textarea {
   resize: none;
@@ -136,7 +117,7 @@ textarea {
 
   /* --- 🌟 Bouton d'envoi --- */
   .btn-Login {
-    background: linear-gradient(90deg, #36e6c2, #00bfa6, #057469);
+    background: linear-gradient(90deg, #012619, #001310, #057469);
     font-size: 18px;
     border-radius: 8px;
     padding: 12px;
@@ -154,7 +135,7 @@ textarea {
   transform: translateY(-2px);
   cursor: url('/public/nnb.cur'), auto;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(135deg, #1dc9bb, #0e9e8a);
+  background: linear-gradient(90deg, #36e6c2, #00bfa6, #057469);
 }
 
 .btn-Login:active {
@@ -215,7 +196,7 @@ textarea,
 select {
   position: relative;
   border: none;
-  border-bottom: 2px solid #c7e2d9;
+  border-bottom: 2px solid black;
   background: transparent;
   transition: all 0.3s ease;
 }
