@@ -424,7 +424,7 @@ body, html, #root, .homme {
   height: 250px;
   /* border-radius: 50%; */
   border-radius: 20px;
-  background: linear-gradient(135deg, #fbf8ff, #f0ebeb, #fefffb);
+  background: linear-gradient(135deg, #ffffff, #f0ebeb, #fefffb);
   color: #143d2f;
   display: flex;
   cursor: url('/public/nnb.cur'), auto;
@@ -473,6 +473,7 @@ body, html, #root, .homme {
   .circle-card {
     width: 190px;
     height: 130px;
+      background: linear-gradient(135deg, #00bfa6, #fefdfd, #ffffff);
     
   }
   .circle-stats-container{

@@ -81,13 +81,13 @@ export default function Contact({ showHero = true }) {
 
             <form onSubmit={handleSubmit}>
               <div className="form-row">
-                <input type="text" name="first_name" placeholder="First name" required />
-                <input type="text" name="last_name" placeholder="Last name" required />
+                <input type="text" name="first_name" placeholder="Prénom" required />
+                <input type="text" name="last_name" placeholder="Nom" required />
               </div>
 
               <div className="form-row">
-                <input type="email" name="email" placeholder="Email address" required />
-                <input type="tel" name="phone" placeholder="Phone number" />
+                <input type="email" name="email" placeholder="Adresse e-mail" required />
+                <input type="tel" name="phone" placeholder="Numéro de téléphone" />
               </div>
               <textarea name="message" placeholder="Message" rows="4" required></textarea>
 
