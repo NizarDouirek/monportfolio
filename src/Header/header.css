@@ -160,32 +160,23 @@ nav a:hover::after {
 
 /* ================= RESPONSIVE ================= */
 
-@media  (max-width: 399px) {
-  .navbar-icons ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.09rem;
-    list-style: none;
-    padding: 0;
-    /* margin-left: -16px; */
-    /* margin-top: 12px; */
-    /* margin: 10px 0; */
-}
-}
+
 @media (max-width: 480px) {
     .header header {
-       height: 9vh;
-       width: 97%;
+       left: 0;
+    transform: none;
+    margin: 0 auto;   /* ✅ vrai centrage */
+    width: 100%;
        border-radius: 20px;
-      
+      padding: 10px;
     }
     .header header.scrolled {
         top: 4px; /* Un peu plus près du bord pour les mobiles */
     }
-    /* .logo {
-        gap: 1rem;
-    } */
+    .logo {
+         padding: 0;      /* ✅ empêche l’écrasement à droite */
+    justify-content: center;
+    }
     .logo img {
         
         display: none;
@@ -200,25 +191,25 @@ nav a:hover::after {
         display: none !important;
     }
     .navbar-icons ul {
-      display: flex;
-      /* align-items: center;
-      justify-content: center; */
-      /* gap: 1.1rem; */
-      list-style: none;
-      padding: 0;
-      /* margin-right: 50px; */
-      margin-top: 8px;
-      /* margin: 10px 0; */
+    display: flex;
+    justify-content: space-around; /* ✅ espace automatique entre les icônes */
+    align-items: center;
+    width: 100%;  
+    gap: 1.4rem;                /* ✅ prend toute la largeur */
+                /* petit padding latéral */
+    margin-top: 8px;
+    list-style: none;
   }
   .navbar-icons a{
     text-decoration: none;
   }
   
   .navbar-icons li {
-      display: flex;
-      flex-direction: column; /* Met l'icône au-dessus du texte */
-      align-items: center;
-      text-align: center;
+    flex: 1;                      /* ✅ chaque item prend la même place */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   
   .navbar-icons i {

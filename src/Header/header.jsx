@@ -50,6 +50,7 @@ export default function Header() {
                 <li>
                   <Link
                     to="/home"
+                    className={isActive(["/", "/home"]) ? "active" : ""}
                     style={{
                       color: isActive(["/", "/home"]) ? "#32ca97" : "#495E57",
                     }}
@@ -60,6 +61,7 @@ export default function Header() {
                 <li>
                   <Link
                     to="/about"
+                    className={isActive(["/about"]) ? "active" : ""}
                     style={{
                       color: isActive(["/about"]) ? "#32ca97" : "#495E57",
                     }}
@@ -70,6 +72,7 @@ export default function Header() {
                 <li>
                   <Link
                     to="/skills"
+                    className={isActive(["/skills"]) ? "active" : ""}
                     style={{
                       color: isActive(["/skills"]) ? "#32ca97" : "#495E57",
                     }}
@@ -80,6 +83,7 @@ export default function Header() {
                 <li>
                   <Link
                     to="/cv"
+                    className={isActive(["/cv"]) ? "active" : ""}
                     style={{ color: isActive(["/cv"]) ? "#32ca97" : "#495E57" }}
                   >
                     <i className="bx bx-book icnH"></i> {t("parcours")}
@@ -88,6 +92,7 @@ export default function Header() {
                 <li>
                   <Link
                     to="/projet"
+                    className={isActive(["/projet"]) ? "active" : ""}
                     style={{
                       color: isActive(["/projet"]) ? "#32ca97" : "#495E57",
                     }}
@@ -98,6 +103,7 @@ export default function Header() {
                 <li>
                   <Link
                     to="/contact"
+                    className={isActive(["/contact"]) ? "active" : ""}
                     style={{
                       color: isActive(["/contact"]) ? "#32ca97" : "#495E57",
                     }}
