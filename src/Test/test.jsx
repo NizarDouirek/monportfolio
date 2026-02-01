@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./test.css";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt,FaLinkedin,FaGithub,FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaEnvelope,FaLinkedin,FaGithub,FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import Title from "../Constant/Titre";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";

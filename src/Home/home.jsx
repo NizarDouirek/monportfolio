@@ -1,19 +1,13 @@
 import React, { useEffect, useState,useRef } from "react";
 import "./home.css";
-import Header from "../Header/header";
 import About from "../About/about";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Skills from "../Skills/skills";
 import Projet from "../Projet/projet";
 import { useTranslation } from "react-i18next";
-import Contact from "../Contact/contact";
 import Cv from "../Cv/cv";
-import Loader from "../Loader/loader";
 import SplitText from "../Constant/SplitText";
 import ScrollVelocity from "../Constant/ScrollVelocity/ScrollVelocity";
-import Footer from "../Footer/foother";
 import { motion } from "framer-motion";
-import Title from "../Constant/Titre";
 import SpotlightCard from "../Constant/SpotlightCard";
 import AnimatedCounter from "../Constant/animatecounter/numbercount";
 import Squares from "../Constant/Bg/bg";
@@ -76,9 +70,9 @@ export default function Home() {
 
   const repeatedItems = [...items, ...items];
 
-   const aboutRef = useRef(null);
+  //  const aboutRef = useRef(null);
    const [velocity, setVelocity] = useState(50);
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   
 const handleAnimationComplete = () => {

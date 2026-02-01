@@ -118,14 +118,13 @@ go: "ensemble !",
 placeholderNom: "Entrez votre nom complet",
 placeholderEmail: "Entrez votre adresse email ",
 placeholderMessage: "Écrivez votre message ici...",
-restezConnecte: "Restez connecté à mon univers tech",
 
 finished:"  PROJET TERMINE",
 ongoing: "  PROJET EN COURS",
 
-  "restezConnecte": " Vous aimez mon travail ?",
-  "boutonLike": "Aimer",
-  "merciLike": "Merci pour votre soutien ! 🙌"
+  restezConnecte: " Vous aimez mon travail ?",
+  boutonLike: "Aimer",
+  merciLike: "Merci pour votre soutien ! 🙌"
 
 
         },
@@ -240,14 +239,13 @@ go:"work together!",
 placeholderNom: "Enter your full name",
 placeholderEmail: "Enter your email address",
 placeholderMessage: "Write your message here...",
-restezConnecte: "Stay connected to my tech universe",
 
 finished: "  COMPLETED PROJECT",
 ongoing: "  ONGOING PROJECT",
 
-  "restezConnecte": " Like my work?",
-  "boutonLike": "Like",
-  "merciLike": "Thanks for your support! 🙌"
+  restezConnecte: " Like my work?",
+  boutonLike: "Like",
+  merciLike : "Thanks for your support! 🙌"
 
 
         },

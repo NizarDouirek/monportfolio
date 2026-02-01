@@ -2,152 +2,171 @@ import React, { useState, useEffect } from "react";
 import "./header.css";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
-import ThemeToggle from "../Constant/mode/mode";
+import { motion } from "framer-motion";
+
+/* ================= ANIMATION CONFIG ================= */
+const DURATION = 0.25;
+const STAGGER = 0.025;
+
+/* ================= FLIP LINK COMPONENT ================= */
+const FlipNavLink = ({ to, icon, text, active }) => {
+  return (
+    <motion.div initial="initial" whileHover="hovered" className="flip-link">
+      <Link
+        to={to}
+        className={active ? "active" : ""}
+        style={{ color: active ? "#32ca97" : "#495E57" }}
+      >
+        <i className={`${icon} icnH`}></i>
+
+        <span className="flip-text">
+          {/* FIRST TEXT */}
+          <span className="text-layer">
+            {text.split("").map((char, i) => (
+              <motion.span
+                key={i}
+                variants={{
+                  initial: { y: 0 },
+                  hovered: { y: "-100%" },
+                }}
+                transition={{
+                  duration: DURATION,
+                  ease: "easeInOut",
+                  delay: STAGGER * i,
+                }}
+                className="char"
+              >
+                {char}
+              </motion.span>
+            ))}
+          </span>
+
+          {/* SECOND TEXT */}
+          <span className="text-layer absolute">
+            {text.split("").map((char, i) => (
+              <motion.span
+                key={i}
+                variants={{
+                  initial: { y: "100%" },
+                  hovered: { y: 0 },
+                }}
+                transition={{
+                  duration: DURATION,
+                  ease: "easeInOut",
+                  delay: STAGGER * i,
+                }}
+                className="char"
+              >
+                {char}
+              </motion.span>
+            ))}
+          </span>
+        </span>
+      </Link>
+    </motion.div>
+  );
+};
+
+/* ================= HEADER ================= */
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  const isActive = (paths) => {
-    return paths.includes(location.pathname);
-  };
+  const { t, i18n } = useTranslation();
+
+  const isActive = (paths) => paths.includes(location.pathname);
+
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const [darkMode, setDarkMode] = useState(false);
-
-  // const toggleTheme = () => {
-  //   setDarkMode(!darkMode);
-    
-  //   document.body.style.backgroundColor = darkMode ? "white" : "gray";
-  //   document.body.style.color = darkMode ? "yellow" : "white";
-  // };
-   const { t, i18n } = useTranslation(); // dans le composant
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === "fr" ? "en" : "fr";
-    i18n.changeLanguage(newLang);
+    i18n.changeLanguage(i18n.language === "fr" ? "en" : "fr");
   };
+
   return (
     <div className="header">
       <header className={isScrolled ? "scrolled" : ""}>
         <div className="logo">
-          <img className="dn" src="dn.webp" />
-          {/* <h1>Nizar <span className="prenom">Douirek</span></h1> */}
+          <img className="dn" src="dn.webp" alt="logo" />
+
           <div className="navbar">
             <nav>
               <ul>
                 <li>
-                  <Link
+                  <FlipNavLink
                     to="/home"
-                    className={isActive(["/", "/home"]) ? "active" : ""}
-                    style={{
-                      color: isActive(["/", "/home"]) ? "#32ca97" : "#495E57",
-                    }}
-                  >
-                    <i className="bx bx-home-alt icnH"></i> {t("accueil")}
-                  </Link>
+                    icon="bx bx-home-alt"
+                    text={t("accueil")}
+                    active={isActive(["/", "/home"])}
+                  />
                 </li>
+
                 <li>
-                  <Link
+                  <FlipNavLink
                     to="/about"
-                    className={isActive(["/about"]) ? "active" : ""}
-                    style={{
-                      color: isActive(["/about"]) ? "#32ca97" : "#495E57",
-                    }}
-                  >
-                    <i className="bx bx-user icnH"></i> {t("apropos")}
-                  </Link>
+                    icon="bx bx-user"
+                    text={t("apropos")}
+                    active={isActive(["/about"])}
+                  />
                 </li>
+
                 <li>
-                  <Link
+                  <FlipNavLink
                     to="/skills"
-                    className={isActive(["/skills"]) ? "active" : ""}
-                    style={{
-                      color: isActive(["/skills"]) ? "#32ca97" : "#495E57",
-                    }}
-                  >
-                    <i className="bx bx-wrench icnH"></i> {t("competences")}
-                  </Link>
+                    icon="bx bx-wrench"
+                    text={t("competences")}
+                    active={isActive(["/skills"])}
+                  />
                 </li>
+
                 <li>
-                  <Link
+                  <FlipNavLink
                     to="/cv"
-                    className={isActive(["/cv"]) ? "active" : ""}
-                    style={{ color: isActive(["/cv"]) ? "#32ca97" : "#495E57" }}
-                  >
-                    <i className="bx bx-book icnH"></i> {t("parcours")}
-                  </Link>
+                    icon="bx bx-book"
+                    text={t("parcours")}
+                    active={isActive(["/cv"])}
+                  />
                 </li>
+
                 <li>
-                  <Link
+                  <FlipNavLink
                     to="/projet"
-                    className={isActive(["/projet"]) ? "active" : ""}
-                    style={{
-                      color: isActive(["/projet"]) ? "#32ca97" : "#495E57",
-                    }}
-                  >
-                    <i className="bx bx-folder icnH"></i> {t("projets")}
-                  </Link>
+                    icon="bx bx-folder"
+                    text={t("projets")}
+                    active={isActive(["/projet"])}
+                  />
                 </li>
+
                 <li>
-                  <Link
+                  <FlipNavLink
                     to="/contact"
-                    className={isActive(["/contact"]) ? "active" : ""}
-                    style={{
-                      color: isActive(["/contact"]) ? "#32ca97" : "#495E57",
-                    }}
-                  >
-                    <i className="bx bx-envelope icnH"></i> {t("contact")}
-                  </Link>
+                    icon="bx bx-envelope"
+                    text={t("contact")}
+                    active={isActive(["/contact"])}
+                  />
                 </li>
               </ul>
             </nav>
-             <button
-  onClick={toggleLanguage}
-  className="lang-toggle"
-  aria-label="Changer la langue"
->
-  {/* <i className="bx bx-globe"></i> */}
-    {/* <span>{i18n.language === "fr" ? "Français" : "English"}</span> */}
-  <img
-    src={i18n.language === "fr"
-      ? "https://flagcdn.com/w40/fr.png"
-      : "https://flagcdn.com/w40/gb.png"}
-    alt={i18n.language === "fr" ? "FR" : "EN"}
-    className="flag-icon"
-  />
 
-</button>
-{/* <ThemeToggle/> */}
-        
-            {/* <button
-              onClick={toggleTheme}
-              style={{
-                fontSize: "27px",
-                marginLeft: "120px",
-                marginTop: "-30px",
-                cursor: "pointer",
-                background: "none",
-                border: "none",
-                color: darkMode ? "yellow" : "black",
-              }}
-            >
-              <i className={darkMode ? "bx bx-sun" : "bx bx-moon"}></i>
-            </button> */}
+            {/* LANGUAGE BUTTON */}
+            <button onClick={toggleLanguage} className="lang-toggle">
+              <img
+                src={
+                  i18n.language === "fr"
+                    ? "https://flagcdn.com/w40/fr.png"
+                    : "https://flagcdn.com/w40/gb.png"
+                }
+                alt="lang"
+                className="flag-icon"
+              />
+            </button>
           </div>
+          
 
-          <div className="navbar-icons">
+
+<div className="navbar-icons">
             <ul>
               <li>
                 <Link
@@ -248,3 +267,6 @@ export default function Header() {
     </div>
   );
 }
+
+
+

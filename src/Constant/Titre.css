@@ -120,3 +120,49 @@
     margin: 12px auto 0;
   }
 }
+/* ================= FLIP TITLE ================= */
+
+.flip-title {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: url('/public/nnb.cur'), auto;
+}
+
+/* couche texte */
+.flip-layer {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.flip-layer.absolute {
+  position: absolute;
+  inset: 0;
+}
+
+/* lettres */
+.flip-title .char {
+  display: inline-block;
+  line-height: 1.2em;
+  transition: color 0.3s ease;
+}
+
+/* 🔥 HOVER : on enlève le gradient et on force la couleur */
+.flip-title:hover {
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
+
+.flip-title:hover .char {
+    background: linear-gradient(90deg, #36e6c2, #00bfa6, #057469);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* swipe visible au hover du titre */
+.flip-title:hover + .swipe {
+  width: 140px;
+  opacity: 1;
+  animation: swipeMove 2s infinite linear;
+}
