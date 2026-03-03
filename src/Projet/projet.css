@@ -26,7 +26,10 @@
     color: #46aa9d;
     font-family: roboto;
 }
-
+.sectionP8 h1{
+    color: #004781;
+    font-family: roboto;
+}
 .sectionP2 h1{
     color: #bb6fde;
     font-family: roboto;
@@ -47,10 +50,17 @@
     box-shadow: 0 1rem 2rem -1rem black;
     background:linear-gradient(60deg, #61928b, #285865 );
 }
+.sectionP8 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0 1rem 2rem -1rem black;
+    background:linear-gradient(60deg, #7d9eb8, #475887 );
+}
 .visit{
     margin-top: 5px;
-    background-color: #397a71;
-    
+    background-color: #397a71;   
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #40a295;
@@ -63,6 +73,28 @@
   gap: 10px;
   font-weight: 600;
     
+}
+.visit8{
+    margin-top: 5px;
+    background-color: #475887;   
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #6579b3;
+   color: white; 
+   cursor: url('/public/nnb.cur'), auto;
+   font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+    
+}
+.visit8:hover {
+    cursor: url('/public/nnb.cur'), auto;
+    background: linear-gradient(80deg, #004781, #1d98c1); /* Légère variation de couleur */
+    box-shadow: 0 0 20px 8px rgba(56, 129, 189, 0.7); /* Effet lumineux plus fort */
+    transform: scale(1.05); /* Léger agrandissement */
 }
 
 .visit2{
@@ -286,7 +318,7 @@
     padding: 5px;
     width: 50px;
     height: 50px;
-    transition: transform 0.5 ease;
+    transition: transform 0.5s ease;
 }
 .tec img:hover{
    transform: translateY(-5px);
@@ -314,7 +346,7 @@
      .sectionP h1, 
     .sectionP2 h1, 
     .sectionP3 h1 ,
-    .sectionP4 h1,.sectionP5 h1,.sectionP7 h1{
+    .sectionP4 h1,.sectionP5 h1,.sectionP8 h1,.sectionP7 h1{
         font-size: 26px !important;
          margin-top: -15px;
          color: rgb(224, 220, 220);
@@ -324,7 +356,7 @@
         display: flex;
         justify-content: center;
     }
-    .visit,.visit2,.visit3,.visit4,.visit5,.visit7{
+    .visit,.visit2,.visit3,.visit4,.visit5,.visit7,.visit8{
         margin-top: 10px !important;
     }
     .projets-message{
@@ -360,6 +392,7 @@ margin: 10px !important;
     .sectionP3 ,
     .sectionP4,
     .sectionP5,
+    .sectionP8,
     .sectionP7{
         flex-direction: column; /* Aligne les éléments verticalement */
         gap: 10px; /* Ajoute un espacement entre les éléments */
@@ -369,7 +402,7 @@ margin: 10px !important;
 
     .sectionP h1, 
     .sectionP2 h1, 
-    .sectionP3 h1 ,.sectionP4 h1,.sectionP5 h1,.sectionP7 h1{
+    .sectionP3 h1 ,.sectionP4 h1,.sectionP5 h1,.sectionP7 h1,.sectionP8 h1{
         font-size: 1.2em; /* Réduction de la taille des titres */
     }
 
@@ -436,7 +469,7 @@ margin: 10px !important;
     .sectionP, 
     .sectionP2, 
     .sectionP3,
-    .sectionP4 ,.sectionP5,.sectionP7{
+    .sectionP4 ,.sectionP5,.sectionP7,.sectionP8{
         flex-direction: column; /* Aligne les éléments verticalement */
         gap: 10px; /* Ajoute un espacement entre les éléments */
         padding: 10px; /* Réduction de l'espacement interne */
@@ -447,7 +480,7 @@ margin: 10px !important;
     .sectionP2 h1, 
     .sectionP3 h1,
     .sectionP4 h1,
-    .sectionP5 h1,.sectionP7 h1{
+    .sectionP5 h1,.sectionP7 h1,.sectionP8 h1{
         font-size: 1.5em; /* Réduction de la taille des titres */
     }
 
@@ -503,6 +536,9 @@ margin: 10px !important;
         font-size: 20px;
     }
     .visit7 {
+        font-size: 20px;
+    }
+    .visit8 {
         font-size: 20px;
     }
     .projets-message {
@@ -574,7 +610,7 @@ margin: 10px !important;
 .projet .sectionP2,
 .projet .sectionP3,
 .projet .sectionP4,
-.projet .sectionP5 ,.projet .sectionP7{
+.projet .sectionP5 ,.projet .sectionP7,.projet .sectionP8{
     opacity: 0; /* Initialement invisible */
     transform: translateY(50px); /* Départ depuis le bas */
 }
@@ -584,6 +620,7 @@ margin: 10px !important;
 .projet .sectionP3.visible ,
 .projet .sectionP4.visible,
 .projet .sectionP5.visible, 
+.projet .sectionP8.visible, 
 .projet .sectionP7.visible {
     opacity: 1; /* Lorsque l'élément devient visible */
     animation: slideUp 1s forwards; /* Animation déclenchée */
@@ -647,7 +684,7 @@ margin: 10px !important;
   }
 }
 
-.sectionP, .sectionP2, .sectionP3, .sectionP4, .sectionP5, .sectionP6, .sectionP7 {
+.sectionP, .sectionP2, .sectionP3, .sectionP4, .sectionP5, .sectionP6, .sectionP7, .sectionP8 {
   position: relative;
 }
 .introprojet{
@@ -661,7 +698,7 @@ margin: 10px !important;
  .sectionP , 
     .sectionP2 , 
     .sectionP3  ,
-    .sectionP4 ,.sectionP5,.sectionP7 {
+    .sectionP4 ,.sectionP5,.sectionP7,.sectionP8{
         margin-bottom: 2.5rem; /* Réduction de la taille des titres */
     }
    
