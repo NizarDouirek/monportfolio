@@ -81,15 +81,15 @@ export default function Contact({ showHero = true }) {
 
             <form onSubmit={handleSubmit}>
               <div className="form-row">
-                <input type="text" name="first_name" placeholder="Prénom" required />
-                <input type="text" name="last_name" placeholder="Nom" required />
+                <input type="text" name="first_name" placeholder={t("placeholderNom")} required />
+                {/* <input type="text" name="last_name" placeholder="Nom" required /> */}
               </div>
 
               <div className="form-row">
-                <input type="email" name="email" placeholder="Adresse e-mail" required />
-                <input type="tel" name="phone" placeholder="Numéro de téléphone" />
+                <input type="email" name="email" placeholder={t("placeholderEmail")}required />
+                <input type="tel" name="phone" placeholder={t("placeholderPhone")} />
               </div>
-              <textarea name="message" placeholder="Message" rows="4" required></textarea>
+              <textarea name="message" placeholder={t("placeholderMessage")} rows="4" required></textarea>
 
               <button type="submit" className="btn-Login">
                   {t("envoyer")}

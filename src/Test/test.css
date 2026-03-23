@@ -196,7 +196,7 @@ textarea,
 select {
   position: relative;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(232, 230, 230);
   background: transparent;
   transition: all 0.3s ease;
 }

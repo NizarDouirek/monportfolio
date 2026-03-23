@@ -122,47 +122,35 @@
 }
 /* ================= FLIP TITLE ================= */
 
-.flip-title {
+/* Texte au premier plan */
+.foreground-text {
   position: relative;
-  display: inline-block;
-  overflow: hidden;
-  cursor: url('/public/nnb.cur'), auto;
-}
-
-/* couche texte */
-.flip-layer {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.flip-layer.absolute {
-  position: absolute;
-  inset: 0;
-}
-
-/* lettres */
-.flip-title .char {
-  display: inline-block;
-  line-height: 1.2em;
-  transition: color 0.3s ease;
-}
-
-/* 🔥 HOVER : on enlève le gradient et on force la couleur */
-.flip-title:hover {
-  background: none;
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: initial;
-}
-
-.flip-title:hover .char {
-    background: linear-gradient(90deg, #36e6c2, #00bfa6, #057469);
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: "EB Garamond", serif;
+  background: linear-gradient(90deg, #36e6c2, #00bfa6, #057469);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  z-index: 1;
+  display: inline-block;
+  padding-left: 15px;
 }
 
-/* swipe visible au hover du titre */
-.flip-title:hover + .swipe {
+/* Ligne en dessous */
+.swipe {
+  width: 0;
+  height: 4px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #00ffcc, #07aa8e, #07925a);
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: width 0.3s ease;
+}
+
+/* Hover simple (SANS animation continue) */
+.foreground-text:hover + .swipe {
   width: 140px;
-  opacity: 1;
-  animation: swipeMove 2s infinite linear;
 }
