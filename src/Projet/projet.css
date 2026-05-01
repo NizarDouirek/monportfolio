@@ -2,7 +2,7 @@
     background-image: url(/public/decor3.svg);
     background-repeat: no-repeat;
     background-position: top right ;
-    /* background-color: white; */
+      background: linear-gradient(90deg, #ffffff, #f0fffe,#e8fffd,#f2fffe);
     padding: 100px;
     /* height: 500px; */
 }
