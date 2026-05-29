@@ -344,7 +344,7 @@ Html -
       <img src="closure.webp" className="img-closure"  alt="" />
       <p className="circle-title">{t("projetsRealises")}</p>
       <p className="circle-number">
-             +<AnimatedCounter to={12} duration={1400} />
+             +<AnimatedCounter to={20} duration={1400} />
       </p>
     </SpotlightCard>
   </motion.div>

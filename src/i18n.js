@@ -23,7 +23,7 @@ i18n
          jesuis:"je suis",
          job: "Développeur Full Stack",
          contactezMoi: "Contactez-moi",
-         telechargerCV: "Télécharger mon CV",
+         telechargerCV: "Consulter mon CV",
          descriptionDev: "Développeur FrontEnd ✦ Développeur BackEnd ✦ Développeur d'applications ✦ Développeur d'interfaces utilisateur ✦ Développeur créatif ✦ Développeur Web ✦ Freelancer ✦ Développeur FrontEnd ✦ Développeur BackEnd ✦ Développeur d'applications ✦ Développeur d'interfaces utilisateur ✦ Développeur créatif ✦ Développeur Web ✦ Freelancer ✦ Développeur FrontEnd ✦ Développeur BackEnd ✦ Développeur d'applications ✦ Développeur d'interfaces utilisateur ✦ Développeur créatif ✦ Développeur Web ✦ Freelancer ",
          skills: "Compétences",
 projetsRealises: "Projet ",
@@ -107,6 +107,7 @@ Elle permet aux utilisateurs de fixer des objectifs, de suivre leurs progrès en
 
 tasko: `"Tasko" est une application de gestion de tâches conçue pour aider les utilisateurs à organiser efficacement leur quotidien. Elle permet de gérer une liste de tâches de manière simple et intuitive. Chaque utilisateur peut ajouter de nouvelles tâches, les modifier, les marquer comme terminées, ou encore les supprimer.`,
 alphaweb: `"Alpha Web" est une agence digitale spécialisée dans les solutions IT, le développement de sites web modernes et la création d’applications sur mesure. Elle accompagne les entreprises dans leur transformation numérique en proposant des services adaptés à leurs besoins`,
+tchatoo: "Tchatoo est un chatbot intelligent construit avec React et Groq API (Llama 3). Il offre des réponses en streaming temps réel, un historique de conversations, la recherche, l'export en .txt, le mode sombre/clair et une interface moderne thème orange.",
 
 // CONTACT
 ideeProjet: "Une idée en tête ? Un projet à concrétiser ? 🚀 Contactez-moi et transformons vos ambitions en réalité!",
@@ -146,7 +147,7 @@ ongoing: "  PROJET EN COURS",
           jesuis:"I’m",
           job: "Full Stack Developer",
           contactezMoi: "Contact Me",
-          telechargerCV: "Download My Resume",
+          telechargerCV: "Consult My Resume",
           descriptionDev: "FrontEnd Developer ✦ BackEnd Developer ✦ Application Developer ✦ UI Developer ✦ Creative Developer ✦ Web Developer ✦ Freelancer FrontEnd Developer ✦ BackEnd Developer ✦ Application Developer ✦ UI Developer ✦ Creative Developer ✦ Web Developer ✦ Freelancer ✦ FrontEnd Developer ✦ BackEnd Developer ✦ Application Developer ✦ UI Developer ✦ Creative Developer ✦ Web Developer ✦ Freelancer ✦ FrontEnd Developer ✦ BackEnd Developer ✦ Application Developer ✦ UI Developer ✦ Creative Developer ✦ Web Developer ✦ Freelancer",
           skills: "Skills",
           projetsRealises:"Project",
@@ -230,6 +231,7 @@ It allows users to set goals, monitor their progress in real-time, and access pe
 to improve their well-being and achieve their fitness goals.`,
 tasko: `"Tasko" is a task management application designed to help users efficiently organize their daily lives. It allows users to manage a to-do list in a simple and intuitive way. Each user can add new tasks, edit them, mark them as completed, or delete them.`,
 alphaweb: `"Alpha Web" is a digital agency specialized in IT solutions, modern website development, and custom application creation. It supports businesses in their digital transformation by providing services tailored to their specific needs.`,
+tchatoo: "Tchatoo is an intelligent chatbot built with React and Groq API (Llama 3). It features real-time streaming responses, conversation history, search, .txt export, dark/light mode, and a modern orange-themed interface.",
 
 // CONTACT
 ideeProjet: "Got an idea in mind? A project to bring to life? 🚀 Reach out and let’s turn your vision into reality!",

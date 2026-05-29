@@ -186,7 +186,7 @@ export default function Cv({ showHero = true }) {
               <p>
                 {t("descYokamos")}
                 <br /><br />
-                <span className="role"> {t("techYokamos")} </span> React, Laravel, Docker, Css, postgresql, Git, MySql, Grafana, API_Qradar
+                <span className="role"> {t("techYokamos")} </span> React, Laravel, Docker, Css, postgresql, REST API, OpenSearch , Linux, Git, MySql, Grafana, API_Qradar
               </p>
               <br />
               
@@ -236,7 +236,7 @@ export default function Cv({ showHero = true }) {
               <p>
                 {t("descTechnaps")}
                 <br />
-                <span className="role">{t("techvnb")}</span> React.js, CSS,
+                <span className="role">{t("techvnb")}</span> React.js, CSS,REST API,
                 MongoDB, Git
               </p>
               <br />
@@ -261,7 +261,7 @@ export default function Cv({ showHero = true }) {
               <p>
                 {t("descSirecom")}
                 <br />
-                <span className="role">{t("techvnb")}</span> PHP, Laravel,
+                <span className="role">{t("techvnb")}</span> PHP, Laravel,REST API,
                 MySQL, CSS, Bootstrap ,Git
               </p>
             </div>
