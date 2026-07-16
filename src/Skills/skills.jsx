@@ -91,6 +91,7 @@ const Skills = ({ showHero = true }) => {
             "php.webp",
             "java.png",
             "react.webp",
+            "angular.svg",
             "react-native.webp",
             "laravel.webp",
             "python.png",
