@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, {  useEffect } from "react";
 import "./projet.css";
-import Header from "../Header/header";
 import Title from "../Constant/Titre";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ExternalLink } from "lucide-react";
 import CircularText from "../Constant/textcircle";
 
-import { motion } from "framer-motion";
+
 
 export default function Projet({ showHero = true }) {
   const { t } = useTranslation();
@@ -134,7 +133,7 @@ export default function Projet({ showHero = true }) {
                   status="ongoing"
                 />
               </div>
-              <a href="https://fit-track-coral.vercel.app/" target="_blank">
+              <a href="https://fit-track-coral.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <img className="imgsite" src="fittrack.webp" alt="" />
               </a>
             </div>
@@ -211,7 +210,7 @@ export default function Projet({ showHero = true }) {
                   status="finished"
                 />
               </div>
-              <a href="https://tchatoo-seven.vercel.app/" target="_blank">
+              <a href="https://tchatoo-seven.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <img className="imgsite" src="tchatoo.png" alt="" />
               </a>
             </div>
@@ -298,7 +297,7 @@ export default function Projet({ showHero = true }) {
                   status="finished"
                 />
               </div>
-              <a href="https://safetyambassadorprogramm.com/" target="_blank">
+              <a href="https://safetyambassadorprogramm.com/" target="_blank" rel="noopener noreferrer">
                 <img className="imgsite" src="safety.png" alt="" />
               </a>
             </div>
@@ -384,7 +383,7 @@ export default function Projet({ showHero = true }) {
                   status="ongoing"
                 />
               </div>
-              <a href="https://aromaluxe-pi.vercel.app/" target="_blank">
+              <a href="https://aromaluxe-pi.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <img className="imgsite" src="aromaluxe.png" alt="" />
               </a>
             </div>
@@ -468,7 +467,7 @@ export default function Projet({ showHero = true }) {
                   status="ongoing"
                 />
               </div>
-              <a href="https://alpha-web-39zc.vercel.app/" target="_blank">
+              <a href="https://alpha-web-39zc.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <img className="imgsite" src="alphaweb.webp" alt="" />
               </a>
             </div>
@@ -548,7 +547,7 @@ export default function Projet({ showHero = true }) {
                   status="finished"
                 />
               </div>
-              <a href="voyage.webp" target="_blank">
+              <a href="voyage.webp" target="_blank" rel="noopener noreferrer">
                 <img className="imgsite" src="voyage.webp" alt="" />
               </a>
             </div>
@@ -623,7 +622,7 @@ export default function Projet({ showHero = true }) {
                 />
               </div>
               <div className="imgsite-container">
-                <a href="gbien.webp" target="_blank">
+                <a href="gbien.webp" target="_blank" rel="noopener noreferrer">
                   <img
                     className="imgsite"
                     src="gbien.webp"
@@ -710,7 +709,7 @@ export default function Projet({ showHero = true }) {
               </div>
               <a
                 href="https://hakim2mezrioui.github.io/storElec/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <img className="imgsite" src="storeelec.webp" alt="" />
               </a>
@@ -798,7 +797,7 @@ export default function Projet({ showHero = true }) {
                 />
               </div>
 
-              <a href="https://tasko-silk.vercel.app/" target="_blank">
+              <a href="https://tasko-silk.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <img className="imgsite" src="tasko.webp" alt="" />
               </a>
             </div>

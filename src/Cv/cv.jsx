@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "./cv.css";
-import Header from "../Header/header";
 import Title from "../Constant/Titre";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -9,7 +8,6 @@ import Certifications from "../Constant/Certification/certification";
 export default function Cv({ showHero = true }) {
   const formationRef = useRef();
   const experienceRef = useRef();
-  const scrollRef = useRef();
   const { t } = useTranslation();
 
   useEffect(() => {

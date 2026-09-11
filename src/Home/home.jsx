@@ -71,7 +71,7 @@ export default function Home() {
   const repeatedItems = [...items, ...items];
 
   //  const aboutRef = useRef(null);
-   const [velocity, setVelocity] = useState(50);
+   const [velocity] = useState(50);
   // const [isLoaded, setIsLoaded] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   
