@@ -86,6 +86,7 @@ const Skills = ({ showHero = true }) => {
           {[
             "html.avif",
             "css.avif",
+            "tailwind.png",
             "bootstrap.avif",
             "javascript.webp",
             "php.webp",

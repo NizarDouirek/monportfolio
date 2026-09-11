@@ -13,7 +13,7 @@ export default function Projet({ showHero = true }) {
   const { t } = useTranslation();
   useEffect(() => {
     const sections = document.querySelectorAll(
-      ".sectionP, .sectionP2, .sectionP3, .sectionP4, .sectionP5, .sectionP7, .sectionP8, .sectionTchatoo"
+      ".sectionP, .sectionP2, .sectionP3, .sectionP4, .sectionP5, .sectionP7, .sectionP8, .sectionTchatoo, .sectionP9",
     );
 
     const observer = new IntersectionObserver(
@@ -300,6 +300,92 @@ export default function Projet({ showHero = true }) {
               </div>
               <a href="https://safetyambassadorprogramm.com/" target="_blank">
                 <img className="imgsite" src="safety.png" alt="" />
+              </a>
+            </div>
+            <br />
+            <br />
+            <div className="sectionP9">
+              <div className="contentP">
+                <h1>AromaLuxe</h1>
+                <p> {t("aromaluxe")}</p>
+                <br />
+                <div className="tec">
+                   <div className="tech-item">
+                    <img src="react.webp" alt="React.js" />
+                    <span className="tooltip">React.js</span>
+                  </div>
+                  <div className="tech-item">
+                    <img src="css.avif" alt="CSS" />
+                    <span className="tooltip">CSS</span>
+                  </div>
+                  <div className="tech-item">
+                    <img src="tailwind.png" alt="tailwind" />
+                    <span className="tooltip">tailwind</span>
+                  </div>
+                  <div className="tech-item">
+                    <img src="laravel.webp" alt="Laravel" />
+                    <span className="tooltip">Laravel</span>
+                  </div>
+                  <div className="tech-item">
+                    <img src="mysql.webp" alt="MySQL" />
+                    <span className="tooltip">MySQL</span>
+                  </div>
+                </div>
+                <div className="nbv">
+                  <a
+                    href="https://aromaluxe-pi.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="visit9">
+                      <svg
+                        class="github-icon"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M12,0.5C5.37,0.5,0,5.87,0,12.5C0,17.88,3.44,22.38,8.21,23.93
+      c0.6,0.11,0.82-0.26,0.82-0.58c0-0.29-0.01-1.06-0.02-2.08
+      c-3.34,0.73-4.04-1.61-4.04-1.61c-0.55-1.39-1.34-1.76-1.34-1.76
+      c-1.1-0.75,0.08-0.74,0.08-0.74c1.22,0.09,1.86,1.25,1.86,1.25
+      c1.08,1.85,2.83,1.32,3.52,1.01c0.11-0.78,0.42-1.32,0.76-1.63
+      c-2.67-0.3-5.47-1.34-5.47-5.95c0-1.31,0.47-2.38,1.24-3.22
+      C4.56,8.49,4.22,7.47,4.83,5.97c0,0,1.01-0.32,3.3,1.23
+      c0.96-0.27,1.98-0.41,3-0.41s2.04,0.14,3,0.41c2.29-1.55,3.3-1.23,3.3-1.23
+      c0.61,1.5,0.27,2.52,0.13,2.79c0.77,0.84,1.24,1.91,1.24,3.22
+      c0,4.62-2.8,5.65-5.48,5.95c0.43,0.37,0.81,1.1,0.81,2.22
+      c0,1.6-0.01,2.89-0.01,3.28c0,0.32,0.22,0.7,0.83,0.58
+      C20.57,22.38,24,17.88,24,12.5C24,5.87,18.63,0.5,12,0.5z"
+                        />
+                      </svg>
+                      visit Repository
+                    </button>
+                  </a>
+
+                  <a
+                    href="https://aromaluxe-pi.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="visit-icon-btn"
+                  >
+                    <button className="visit9">
+                      Demo
+                      <ExternalLink size={22} />
+                    </button>
+                  </a>
+                </div>
+
+                {/* <span className="project-status finished">{t("finished")}</span> */}
+                <CircularText
+                  text={t("ongoing")}
+                  onHover="speedUp"
+                  spinDuration={10}
+                  className="custom-class"
+                  status="ongoing"
+                />
+              </div>
+              <a href="https://aromaluxe-pi.vercel.app/" target="_blank">
+                <img className="imgsite" src="aromaluxe.png" alt="" />
               </a>
             </div>
             <br />

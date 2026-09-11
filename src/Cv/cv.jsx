@@ -13,27 +13,25 @@ export default function Cv({ showHero = true }) {
   const { t } = useTranslation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      const formation = formationRef.current;
-      const experience = experienceRef.current;
+  const handleScroll = () => {
+    const formation = formationRef.current;
+    const experience = experienceRef.current;
+    if (!formation || !experience) return; // ✅ garde ajoutée
 
-      const windowHeight = window.innerHeight;
+    const windowHeight = window.innerHeight;
 
-      // Check position of Formation section
-      if (formation.getBoundingClientRect().top < windowHeight - 100) {
-        formation.classList.add("show");
-      }
+    if (formation.getBoundingClientRect().top < windowHeight - 100) {
+      formation.classList.add("show");
+    }
 
-      // Check position of Experience section
-      if (experience.getBoundingClientRect().top < windowHeight - 100) {
-        experience.classList.add("show");
-      }
-    };
+    if (experience.getBoundingClientRect().top < windowHeight - 100) {
+      experience.classList.add("show");
+    }
+  };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
   return (
     <>
       {/* <Header/> */}

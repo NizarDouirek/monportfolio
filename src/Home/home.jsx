@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
 import About from "../About/about";
 import Skills from "../Skills/skills";
@@ -207,7 +207,7 @@ hoverFillColor='transparent'
            <i class="bx bx-chat icnBu"></i> {t("contactezMoi")} 
           </motion.button>
           </a>
-            <a href="Nizar Douirek .pdf"target="_blank"rel="noopener noreferrer">
+            <a href="Nizar Douirek CV.pdf" target="_blank"rel="noopener noreferrer">
           <motion.button className="btn-homme1"  initial={{ opacity: 0, x: 100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 2 , duration: 0.3 }}>
@@ -314,60 +314,78 @@ Html -
   className="custom-scroll-text"
 />
 </div>
-      <Projet showHero={false} />
-     <h2 className="realisations-title">Réalisations</h2>
-    <motion.div className="circle-stats-container">
-       
-         
+<Projet showHero={false} />
+
+<motion.h2
+  className="realisations-title"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  viewport={{ once: true, amount: 0.3 }}
+>
+  Réalisations
+</motion.h2>
+
+<motion.div
+  className="circle-stats-container"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.3 }}
+  variants={{
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.15 },
+    },
+  }}
+>
   <motion.div
-    // initial={{ opacity: 0, x: 100 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.3 }}
-    viewport={{ once: true, amount: 0.3 }}
+    variants={{
+      hidden: { opacity: 0, y: 60, scale: 0.9 },
+      visible: { opacity: 1, y: 0, scale: 1 },
+    }}
+    transition={{ duration: 0.5, ease: "easeOut" }}
   >
     <SpotlightCard className="circle-card" spotlightColor="rgba(23, 195, 149, 0.8)">
-      <img src="skills.webp" className="img-Skills"  alt="" />
+      <img src="skills.webp" className="img-Skills" alt="" />
       <p className="circle-title">{t("skills")}</p>
       <p className="circle-number">
-  +<AnimatedCounter to={16} duration={1200} />
-</p>
-    </SpotlightCard>
-  </motion.div>
-
-  <motion.div
-    // initial={{ opacity: 0, y: 100 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.3 }}
-    viewport={{ once: true, amount: 0.3 }}
-  >
-   <SpotlightCard className="circle-card" spotlightColor="rgba(23, 195, 149, 0.8)">
-      <img src="closure.webp" className="img-closure"  alt="" />
-      <p className="circle-title">{t("projetsRealises")}</p>
-      <p className="circle-number">
-             +<AnimatedCounter to={20} duration={1400} />
+        +<AnimatedCounter to={16} duration={1200} />
       </p>
     </SpotlightCard>
   </motion.div>
 
   <motion.div
-  whileInView={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.3 }}
-  viewport={{ once: true, amount: 0.3 }}
->
-  <SpotlightCard
-    className="circle-card"
-    spotlightColor="rgba(23, 195, 149, 0.8)"
+    variants={{
+      hidden: { opacity: 0, y: 60, scale: 0.9 },
+      visible: { opacity: 1, y: 0, scale: 1 },
+    }}
+    transition={{ duration: 0.5, ease: "easeOut" }}
   >
-    <img src="certificate.webp" className="img-certif"  alt="" />
-    <p className="circle-title">{t("certification")}</p>
-    <p className="circle-number">
-      +<AnimatedCounter to={9} duration={1400} />
-    </p>
-  </SpotlightCard>
-</motion.div>
+    <SpotlightCard className="circle-card" spotlightColor="rgba(23, 195, 149, 0.8)">
+      <img src="closure.webp" className="img-closure" alt="" />
+      <p className="circle-title">{t("projetsRealises")}</p>
+      <p className="circle-number">
+        +<AnimatedCounter to={12} duration={1400} />
+      </p>
+    </SpotlightCard>
+  </motion.div>
 
+  <motion.div
+    variants={{
+      hidden: { opacity: 0, y: 60, scale: 0.9 },
+      visible: { opacity: 1, y: 0, scale: 1 },
+    }}
+    transition={{ duration: 0.5, ease: "easeOut" }}
+  >
+    <SpotlightCard className="circle-card" spotlightColor="rgba(23, 195, 149, 0.8)">
+      <img src="certificate.webp" className="img-certif" alt="" />
+      <p className="circle-title">{t("certification")}</p>
+      <p className="circle-number">
+        +<AnimatedCounter to={9} duration={1400} />
+      </p>
+    </SpotlightCard>
+  </motion.div>
 </motion.div>
-
 
       {/* <Contact showHero={false} /> */}
        <Test showHero={false}/>

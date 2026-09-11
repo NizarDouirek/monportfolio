@@ -7,19 +7,17 @@
 
 .contact-container {
   display: flex;
-
   justify-content: center;
   align-items: stretch;
   max-width: 1300px;
   width: 100%;
-  margin-top: 40px;
+  margin: 40px auto 0;  /* ⬅️ remplace margin-top: 40px */
   z-index: 100;
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
-
 
 /* === Formulaire gauche === */
 .contact-form {

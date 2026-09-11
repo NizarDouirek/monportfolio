@@ -31,7 +31,8 @@ function AppContent() {
 
   return (
     <>
-      {loading && <Loader />}
+      {/* {loading && <Loader />} */}
+      {loading && <Loader setIsLoaded={setLoading} />}
       {!loading && (
         <>
           <ScrollToTop />
