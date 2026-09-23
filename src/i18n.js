@@ -109,7 +109,7 @@ tasko: `"Tasko" est une application de gestion de tâches conçue pour aider les
 alphaweb: `"Alpha Web" est une agence digitale spécialisée dans les solutions IT, le développement de sites web modernes et la création d’applications sur mesure. Elle accompagne les entreprises dans leur transformation numérique en proposant des services adaptés à leurs besoins`,
 tchatoo: "Tchatoo est un chatbot intelligent construit avec React et Groq API (Llama 3). Il offre des réponses en streaming temps réel, un historique de conversations, la recherche, l'export en .txt, le mode sombre/clair et une interface moderne thème orange.",
 
-aromaluxe: `"AromaLuxe" est une maison de parfums marocaine dédiée à l'élégance et au raffinement. Elle propose une sélection exclusive de fragrances rares et captivantes, conçues pour sublimer chaque instant et laisser une empreinte olfactive inoubliable`,
+aromaluxe: `"AromaLuxe" est une maison de parfums marocaine dédiée à l'élégance et au raffinement. Elle propose une sélection exclusive de fragrances rares et captivantes, conçues pour sublimer chaque instant et laisser une empreinte olfactive inoubliable. Pour offrir une expérience client fluide et personnalisée, la plateforme intègre un assistant virtuel interactif (chatbot) pour répondre instantanément à toutes les questions des clients et les guider dans le choix de leurs parfums.`,
 // CONTACT
 ideeProjet: "Une idée en tête ? Un projet à concrétiser ? 🚀 Contactez-moi et transformons vos ambitions en réalité!",
 contactReseaux: "Contactez-moi sur n'importe quel réseau social de votre choix ! 😊📩",
@@ -236,7 +236,7 @@ alphaweb: `"Alpha Web" is a digital agency specialized in IT solutions, modern w
 tchatoo: "Tchatoo is an intelligent chatbot built with React and Groq API (Llama 3). It features real-time streaming responses, conversation history, search, .txt export, dark/light mode, and a modern orange-themed interface.",
 
 
-aromaluxe: `"AromaLuxe" is a Moroccan perfume house dedicated to elegance and refinement. It offers an exclusive selection of rare and captivating fragrances, crafted to elevate every moment and leave an unforgettable scent trail`,
+aromaluxe: `"AromaLuxe" is a Moroccan perfume house dedicated to elegance and refinement. It offers an exclusive selection of rare and captivating fragrances, designed to elevate every moment and leave an unforgettable scent trail. To ensure a seamless and personalized customer experience, the platform integrates an interactive virtual assistant (chatbot) to instantly answer customer inquiries and guide them in choosing their perfumes`,
 
 // CONTACT
 ideeProjet: "Got an idea in mind? A project to bring to life? 🚀 Reach out and let’s turn your vision into reality!",

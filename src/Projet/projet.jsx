@@ -384,7 +384,7 @@ export default function Projet({ showHero = true }) {
                 />
               </div>
               <a href="https://aromaluxe-pi.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <img className="imgsite" src="aromaluxe.png" alt="" />
+                <img className="imgsitePar" src="aromaluxe.png" alt="" />
               </a>
             </div>
             <br />

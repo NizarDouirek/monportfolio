@@ -238,6 +238,14 @@
      cursor: url('/public/nnb.cur'), auto;
     transition: transform 0.5s ease;
 }
+.imgsitePar{
+    margin-top: 10px;
+    width: 620px;
+    height: 340px;
+    border-radius: 20px;
+     cursor: url('/public/nnb.cur'), auto;
+    transition: transform 0.5s ease;
+}
 .sectionP4 {
     padding: 10px;
     display: flex;
