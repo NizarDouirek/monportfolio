@@ -11,6 +11,7 @@
     background-attachment: fixed;
     box-sizing: border-box;
     /* overflow: hidden; */
+      background-color: #fcfdfe;
 }
 .containe{
     align-items: center;

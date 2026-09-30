@@ -18,6 +18,187 @@
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
+/* ===== Fenêtre de confirmation ===== */
+.thanks-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(2, 23, 16, 0.75);
+  backdrop-filter: blur(6px);
+  animation: thanksFade 0.25s ease;
+}
+
+.thanks-card {
+  position: relative;
+  overflow: hidden;
+  width: min(520px, 100%);
+  padding: 64px 36px 40px;
+  text-align: center;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  animation: thanksPop 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* Grand mot en contour, comme tes titres de section */
+.thanks-bg-word {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 6.5rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: transparent;
+  -webkit-text-stroke: 1px #d9d9d9;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Formes géométriques décoratives */
+.thanks-shape {
+  position: absolute;
+  pointer-events: none;
+}
+.t-circle {
+  top: -40px;
+  left: -40px;
+  width: 120px;
+  height: 120px;
+  border: 1.5px solid #111;
+  border-radius: 50%;
+}
+.t-square {
+  bottom: 24px;
+  left: 24px;
+  width: 46px;
+  height: 46px;
+  border: 1.5px solid #267259;
+  transform: rotate(18deg);
+}
+.t-triangle {
+  top: 34px;
+  right: 34px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid #8a8d91;
+  transform: rotate(12deg);
+}
+
+.thanks-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Coche animée */
+.thanks-check {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 8px 14px rgba(38, 114, 89, 0.35));
+}
+.check-circle {
+  fill: #fff;
+  stroke: #267259;
+  stroke-width: 2.5;
+  stroke-dasharray: 151;
+  stroke-dashoffset: 151;
+  animation: thanksDraw 0.4s ease 0.1s forwards;
+}
+.check-path {
+  fill: none;
+  stroke: #1de9b6;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: thanksDraw 0.3s ease 0.35s forwards;
+}
+
+.thanks-card h2 {
+  margin: 0 0 12px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #111;
+}
+.thanks-card h2 span {
+  background: linear-gradient(90deg, #1de9b6, #267259);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.thanks-card p {
+  margin: 0 auto 28px;
+  max-width: 380px;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Boutons */
+.thanks-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn-thanks,
+.btn-thanks-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-thanks {
+  border: none;
+  color: #fff;
+  background: linear-gradient(90deg, #021710, #267259);
+}
+.btn-thanks-ghost {
+  color: #267259;
+  background: #fff;
+  border: 1px solid #267259;
+}
+.btn-thanks:hover,
+.btn-thanks-ghost:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(38, 114, 89, 0.3);
+}
+
+/* Animations (rapides) */
+@keyframes thanksFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes thanksPop {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes thanksDraw {
+  to { stroke-dashoffset: 0; }
+}
+
+@media (max-width: 480px) {
+  .thanks-card { padding: 56px 22px 32px; }
+  .thanks-bg-word { font-size: 4.2rem; }
+  .thanks-card h2 { font-size: 1.5rem; }
+}
 
 /* === Formulaire gauche === */
 .contact-form {

@@ -1,37 +1,41 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./about.css";
-import Header from "../Header/header";
+// import Header from "../Header/header";
 import Title from "../Constant/Titre";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ScrollVelocity from "../Constant/ScrollVelocity/ScrollVelocity";
+// import ScrollVelocity from "../Constant/ScrollVelocity/ScrollVelocity";
 export default function About({ showHero = true }) {
     
-       const [velocity, setVelocity] = useState(50);
+    //    const [velocity, setVelocity] = useState(50);
     const [isVisible, setIsVisible] = useState(false);
     const aboutRef = useRef(null);
     const { t } = useTranslation(); 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-            },
-            { threshold: 0.5 } // Déclenche lorsque 50% de la section est visible
-        );
+  useEffect(() => {
+    // 1. Copier la valeur actuelle de la ref dans une variable locale
+    const currentElement = aboutRef.current;
 
-        if (aboutRef.current) {
-            observer.observe(aboutRef.current);
-        }
-
-        return () => {
-            if (aboutRef.current) {
-                observer.unobserve(aboutRef.current);
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+            if (entry.isIntersecting) {
+                setIsVisible(true);
             }
-        };
-    }, []);
+        },
+        { threshold: 0.5 }
+    );
+
+    if (currentElement) {
+        observer.observe(currentElement);
+    }
+
+    return () => {
+        // 2. Utiliser la variable locale dans le nettoyage
+        if (currentElement) {
+            observer.unobserve(currentElement);
+        }
+    };
+}, []);
 
     return (
         <>
@@ -123,7 +127,7 @@ export default function About({ showHero = true }) {
   animate={isVisible ? "visible" : "hidden"}
   transition={{ delay: 1, duration: 0.3 }}>
                         <a
-                            href= "https://www.linkedin.com/in/nizar-douirek123/"
+                            href= "https://www.linkedin.com/in/nizar-douirek/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

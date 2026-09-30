@@ -4,9 +4,13 @@ import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./footer.css";
+import ThanksModal from "../Constant/ThanksModal";
+
+
 
 export default function Footer() {
   const { t } = useTranslation();
+  const [liked, setLiked] = useState(false);
   const [formStatus, setFormStatus] = useState(null);
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0.7, 1], [0, 1]);
@@ -15,33 +19,30 @@ export default function Footer() {
     threshold: 0.1,
   });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const formData = new FormData(form);
 
-    try {
-      const response = await fetch("https://formspree.io/f/myzevqnj", {
-        method: "POST",
-        body: formData,
-        headers: {
-          Accept: "application/json",
-        },
-      });
+  try {
+    const response = await fetch("https://formspree.io/f/myzevqnj", {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    });
 
-      if (response.ok) {
-        setFormStatus(t("merciLike"));
-        e.target.reset();
-      } else {
-        setFormStatus("Une erreur est survenue. Veuillez réessayer.");
-      }
-    } catch (error) {
-      setFormStatus("Une erreur réseau est survenue. Veuillez réessayer.");
+    if (response.ok) {
+      setLiked(true);
+      form.reset();
+    } else {
+      setFormStatus("Une erreur est survenue. Veuillez réessayer.");
     }
+  } catch (error) {
+    setFormStatus("Une erreur réseau est survenue. Veuillez réessayer.");
+  }
 
-    setTimeout(() => {
-      setFormStatus(null);
-    }, 3000);
-  };
+  setTimeout(() => setFormStatus(null), 3000);
+};
 
   // Variants simplifiés pour tous les écrans
   const containerVariants = {
@@ -128,17 +129,14 @@ export default function Footer() {
                {t("boutonLike")}
               </motion.button>
               {formStatus && (
-                <motion.b
-                  className={`form-status ${
-                    formStatus.includes("Merci") ? "success" : "error"
-                  }`}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                >
-                  {formStatus}
-                </motion.b>
-              )}
+  <motion.b
+    className="form-status error"
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+  >
+    {formStatus}
+  </motion.b>
+)}
             </motion.form>
           </div>
         </motion.div>
@@ -153,7 +151,7 @@ export default function Footer() {
                   img: "fcb.webp",
                 },
                 {
-                  href: "https://www.linkedin.com/in/nizar-douirek123/",
+                  href: "https://www.linkedin.com/in/nizar-douirek/",
                   img: "linkdeen-footer.webp",
                 },
                 {
@@ -309,6 +307,13 @@ export default function Footer() {
       >
         Copyright © NIZAR DOUIREK {new Date().getFullYear()}
       </motion.p>
+      <ThanksModal
+  open={liked}
+  onClose={() => setLiked(false)}
+  variant="heart"
+  title={<>Merci pour votre <span>soutien</span> !</>}
+  text="Votre email a bien été enregistré. Je reste en contact avec vous et vous tiendrai au courant de mes nouveaux projets."
+/>
     </motion.footer>
   );
 }

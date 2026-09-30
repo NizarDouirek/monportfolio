@@ -409,7 +409,7 @@ body, html, #root, .homme {
   position: relative;
   background-attachment: fixed;
   /* margin-top: 2rem; */
-  padding: 100px;
+  padding: 140px;
 }
 .circle-stats-container::before {
   content: "";
@@ -420,8 +420,8 @@ body, html, #root, .homme {
 }
 
 .circle-card {
-  width: 250px;
-  height: 250px;
+  width: 330px;
+  height: 300px;
   /* border-radius: 50%; */
   border-radius: 20px;
   background: linear-gradient(135deg, #ffffff, #f0ebeb, #fefffb);
@@ -442,25 +442,25 @@ body, html, #root, .homme {
 
 
 .circle-card:hover {
-  transform: translateY(-5px) rotateX(10deg) rotateY(5deg);
+  transform: translateY(-1px) rotateX(10deg) rotateY(5deg);
   box-shadow: 0 0 10px rgb(235, 237, 236);
 }
 
 .circle-title {
-  font-size: 34px;
+  font-size: 44px;
   margin-top: 15px;
   color: #000000;
 }
 
 .circle-number {
-  font-size: 41px;
+  font-size: 35px;
   font-weight: bold;
  
   color: #000000;
 }
 .iconEf {
   color: #17a273;
-  font-size: 35px;
+  font-size: 45px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }

@@ -323,7 +323,7 @@ Html -
   transition={{ duration: 0.5 }}
   viewport={{ once: true, amount: 0.3 }}
 >
-  Réalisations
+ {t("Réalisations")} 
 </motion.h2>
 
 <motion.div

@@ -7,23 +7,37 @@ import { motion } from "framer-motion";
 
 const Skills = ({ showHero = true }) => {
   const { t } = useTranslation();
-  const characters = [
-    {
-      name: t("frontendtitle"),
-      image: "1i.avif",
-      description: t("frontenddescription"),
-    },
-    {
-      name: t("backendtitle"),
-      image: "2i.avif",
-      description: t("backenddescription"),
-    },
-    {
-      name: "Designer",
-      image: "i3.avif",
-      description: t("designerdescription"),
-    },
-  ];
+ const characters = [
+  {
+    name: t("frontendtitle"),
+    image: "1i.avif",
+    description: t("frontenddescription"),
+    icon: "bx-code-alt",
+    
+
+  },
+  {
+    name: t("backendtitle"),
+    image: "2i.avif",
+    description: t("backenddescription"),
+    icon: "bx-server",
+    
+  },
+  {
+    name: "Designer",
+    image: "i3.avif",
+    description: t("designerdescription"),
+    icon: "bx-palette",
+    
+  },
+  {
+    name: "DevOps",
+    image: "devops.webp",
+    description: t("devopsdescription"),
+    icon: "bx-git-branch",
+    
+  },
+];
 
   return (
     <>
@@ -66,9 +80,17 @@ const Skills = ({ showHero = true }) => {
                 />
               </div>
               <div className="card-details">
-                <h2>{character.name}</h2>
-                <p>{character.description}</p>
-              </div>
+  <div className="card-head">
+    <span className="card-icon">
+      <i className={`bx ${character.icon}`}></i>
+    </span>
+    <h2>{character.name}</h2>
+  </div>
+
+  <p>{character.description}</p>
+
+  
+</div>
             </motion.div>
           ))}
         </div>
@@ -172,7 +194,7 @@ const Skills = ({ showHero = true }) => {
             "git.webp",
             "github.webp",
             "postman.webp",
-            "docker.webp",
+            "docker.svg",
             "xamp.webp",
             "figma.webp",
             "canva.webp",

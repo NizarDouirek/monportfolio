@@ -1,0 +1,22 @@
+/* Cœur animé (variante "heart") */
+.heart-path {
+  fill: transparent;
+  stroke: #267259;
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  transform-origin: center;
+  animation:
+    thanksDraw 0.45s ease 0.1s forwards,
+    heartFill 0.25s ease 0.5s forwards,
+    heartBeat 0.5s ease 0.75s;
+}
+
+@keyframes heartFill {
+  to { fill: #1de9b6; stroke: #1de9b6; }
+}
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  40%      { transform: scale(1.18); }
+}

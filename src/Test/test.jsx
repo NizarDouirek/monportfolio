@@ -9,7 +9,8 @@ export default function Contact({ showHero = true }) {
   const sectionRef = useRef(null);
   const [formStatus, setFormStatus] = useState(null);
   const { t } = useTranslation();
-
+  const [sent, setSent] = useState(false);
+  const [senderName, setSenderName] = useState("");
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -26,28 +27,41 @@ export default function Contact({ showHero = true }) {
     return () => elements.forEach((el) => observer.unobserve(el));
   }, []);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  const form = e.currentTarget;
+  const formData = new FormData(form);
 
-    try {
-      const response = await fetch("https://formspree.io/f/meoqwagg", {
-        method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
-      });
+  try {
+    const response = await fetch("https://formspree.io/f/meoqwagg", {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    });
 
-      if (response.ok) {
-        setFormStatus("✅ Message envoyé avec succès !");
-        e.target.reset();
-      } else setFormStatus("❌ Une erreur est survenue. Veuillez réessayer.");
-    } catch {
-      setFormStatus("⚠️ Une erreur réseau est survenue.");
+    if (response.ok) {
+      setSenderName(formData.get("first_name") || "");
+      setSent(true);
+      form.reset();
+    } else {
+      setFormStatus("❌ Une erreur est survenue. Veuillez réessayer.");
     }
+  } catch {
+    setFormStatus("⚠️ Une erreur réseau est survenue.");
+  }
 
-    setTimeout(() => setFormStatus(null), 5000);
+  setTimeout(() => setFormStatus(null), 5000);
+};
+useEffect(() => {
+  if (!sent) return;
+  const onKey = (e) => e.key === "Escape" && setSent(false);
+  document.addEventListener("keydown", onKey);
+  document.body.style.overflow = "hidden";
+  return () => {
+    document.removeEventListener("keydown", onKey);
+    document.body.style.overflow = "";
   };
-
+}, [sent]);
   return (
     <>
       {showHero && (
@@ -196,6 +210,45 @@ export default function Contact({ showHero = true }) {
           </div>
         </div>
       </div>
+      {sent && (
+  <div className="thanks-overlay" onClick={() => setSent(false)}>
+    <div className="thanks-card" onClick={(e) => e.stopPropagation()}>
+      <span className="thanks-shape t-circle" />
+      <span className="thanks-shape t-square" />
+      <span className="thanks-shape t-triangle" />
+      <span className="thanks-bg-word">MERCI</span>
+
+      <div className="thanks-content">
+        <svg className="thanks-check" viewBox="0 0 52 52">
+          <circle className="check-circle" cx="26" cy="26" r="24" />
+          <path className="check-path" d="M14 27l8 8 16-17" />
+        </svg>
+
+        <h2>
+          Merci{senderName && <>, <span>{senderName}</span></>} !
+        </h2>
+        <p>
+          Votre message a bien été reçu. Je reviens vers vous très
+          rapidement pour transformer votre idée en réalité.
+        </p>
+
+        <div className="thanks-actions">
+          <button className="btn-thanks" onClick={() => setSent(false)}>
+            Retour au site
+          </button>
+          <a
+            className="btn-thanks-ghost"
+              href= "https://www.linkedin.com/in/nizar-douirek/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+          >
+            <FaLinkedin /> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
     </>
   );
 }

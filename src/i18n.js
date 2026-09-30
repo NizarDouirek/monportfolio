@@ -28,7 +28,7 @@ i18n
          skills: "Compétences",
          projetsRealises: "Projet ",
          certification: "Certification",
- 
+ Réalisations :"Réalisations ",
 
         //  ABOUT
          BonjourJesuis:"Bonjour! Je suis",
@@ -44,7 +44,8 @@ i18n
          frontenddescription:"Passionné par la conception d'interfaces modernes et intuitives, des designs élégants et fonctionnels, je transforme les idées en expériences web performantes. Expert en HTML, CSS, Bootstrap, JavaScript et React.",
          backendtitle:"Développeur BackEnd",
          backenddescription:"Je développe des solutions backend performantes, sécurisées et sur mesure, avec une expertise en PHP/Laravel et bases de données (relationnelles et NoSQL), me permet de répondre efficacement à vos besoins spécifiques.",
-         designerdescription:"Je suis passionné par le design et j’ai développé une expertise sur des outils comme Figma, Canva et Adobe Photoshop, me permettant de créer des interfaces modernes et attrayantes 🎨✨",
+         designerdescription:"Je suis passionné par le design et j’ai développé une expertise sur des outils comme Figma, Canva et Adobe Photoshop, me permettant de créer des interfaces modernes et attrayantes ",
+        devopsdescription: "Je conçois et automatise des déploiements conteneurisés avec Docker, tout en mettant en place des pipelines CI/CD et des systèmes de supervision pour garantir des applications fiables, hautement disponibles et évolutives.",
          languagesFrameworks: "Langages et Frameworks",
          databases: "Base de données",
          tools: "Outils de Développement et de Design",
@@ -169,7 +170,8 @@ ongoing: "  PROJET EN COURS",
           frontenddescription:"Passionate about designing modern and intuitive interfaces, with elegant and functional designs. I turn ideas into high-performance web experiences. Expert in HTML, CSS, Bootstrap, JavaScript, and React.",
           backendtitle:"Back-End Developer",
           backenddescription:"I develop high-performance, secure, and custom backend solutions, with expertise in PHP/Laravel and databases (relational and NoSQL), allows me to effectively meet your specific needs.",
-          designerdescription: "I am passionate about design and have developed expertise in tools such as Figma, Canva, and Adobe Photoshop, enabling me to create modern and attractive interfaces 🎨✨",
+          designerdescription: "I am passionate about design and have developed expertise in tools such as Figma, Canva, and Adobe Photoshop, enabling me to create modern and attractive interfaces ",
+          "devopsdescription": "I design and automate containerized deployments using Docker, while implementing CI/CD pipelines and monitoring systems to ensure reliable, highly available, and scalable applications.",
           languagesFrameworks: "Languages and Frameworks",
           databases: "Databases",
           tools: "Development and Design Tools",
@@ -248,7 +250,7 @@ placeholderNom: "Enter your full name",
 placeholderEmail: "Enter your email address",
 placeholderMessage: "Write your message here...",
 placeholderPhone: "Enter your phone number",
-
+Réalisations :"Achievements ",
 finished: "  COMPLETED PROJECT",
 ongoing: "  ONGOING PROJECT",
 

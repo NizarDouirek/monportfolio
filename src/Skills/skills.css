@@ -13,7 +13,7 @@
   
   .containerskills{
     /* max-width:1200px; */
-    
+    counter-reset: card;
     align-items: center;
     justify-content: center;
     display:flex;
@@ -41,6 +41,7 @@
     transform-style:preserve-3d;
     transform:perspective(2000px);
     transition:1s;
+    counter-increment: card;
     box-shadow:inset 100px 0 50px rgba(0,0,0,0.5);
   }
   
@@ -78,32 +79,94 @@
     transform:rotateY(-135deg);
   }
   
-  .cardskills .card-details{
-    position:absolute;
-    left:0;
-    top:0;
-    box-sizing:border-box;
-    padding:20px;
-    color:#000;
-  }
-  
-   .cardskills .card-details h2{
-    margin:0;
-    padding:0.5em 0;
-    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    text-transform:uppercase;
-    font-size:2em;
-    color:#267259;
-  }
-  
-  .cardskills .card-details p{
-    margin:0;
-    padding:0;
-    font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
-    line-height:30px;
-    font-size:1.1em;
-  }
+ .cardskills .card-details {
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #fff;
+  color: #222;
+}
 
+/* Numéro discret en bas à droite : 01, 02, ... */
+.cardskills .card-details::after {
+  content: "0" counter(card);
+  position: absolute;
+  right: 24px;
+  bottom: 20px;
+  font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #267259;
+  opacity: 0.12;
+}
+
+/* Icône + titre */
+.card-head {
+  display: flex;
+  flex-direction: row;      /* icône et titre sur la même ligne */
+  align-items: center;
+  gap: 12px;
+}
+
+.card-icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #267259;
+  border-radius: 50%;
+  font-size: 1.15rem;
+  color: #267259;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.cardskills:hover .card-icon {
+  background: #267259;
+  color: #fff;
+  transition-delay: 0.25s;
+}
+
+.cardskills .card-details h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 1.50em;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Filet fin sous le titre */
+
+
+.cardskills .card-details p {
+  margin: 0;
+  font-family: __swearDisplay_6a02b1, __swearDisplay_Fallback_6a02b1;
+  font-size: 1em;
+  line-height: 1.75;
+  color: #555;
+}
+
+/* Apparition rapide au survol */
+.card-head,
+.cardskills .card-details p {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.cardskills:hover .card-head,
+.cardskills:hover .card-details p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.cardskills:hover .card-head { transition-delay: 0.2s; }
+.cardskills:hover .card-details p { transition-delay: 0.3s; }
   .pack {
     display: flex;
     flex-wrap: wrap;
