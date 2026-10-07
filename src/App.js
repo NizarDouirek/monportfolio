@@ -24,7 +24,7 @@ function AppContent() {
 
   useEffect(() => {
     if (loading) {
-      const timer = setTimeout(() => setLoading(false), 4000); // 4s loader
+      const timer = setTimeout(() => setLoading(false), 7000); 
       return () => clearTimeout(timer);
     }
   }, [loading]);

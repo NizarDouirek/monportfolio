@@ -1,173 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 .loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-	background: radial-gradient(#ffffff, #bab6b6);
-    flex-direction: column;
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    z-index: 9999;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out; 
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 40%, #47d8a8 0%, #2a8a6d 55%, #2a6e58 100%);
+  opacity: 1;
 }
 
-.wee{
-    display: none;
+/* Wrapper du mot : sa taille = celle du texte, le compteur s'y accroche */
+.loader-word {
+  position: relative;
+  display: inline-block;
+  transform-origin: 50% 50%;
 }
 
-.loader-video {
-    width: 100%;
-    height: 100%;
-    /* max-height: 80vh; */
-    object-fit: cover;
+.loader-text {
+  display: block;
+  font-family: "Archivo Black", "Arial Black", Impact, sans-serif;
+  font-size: clamp(2.5rem, 9vw, 12rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  white-space: pre;      /* respecte le \n */
+  text-align: center;
+  user-select: none;
 }
-:root {
-	--sp: 2.5s; /* change speed */
-}		
-
-
-
-
-
-@media screen and (max-width: 480px) {
-    .loader {
-        justify-content: center;
-        align-items: center;
-    }
-    .loading-text {
-        text-align: center;
-        align-items: center;
-    }
-    .wee{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .contenuloader {
-        width: 50vmin;
-        height: 50vmin;
-        position: relative;
-        /* margin-left: 60px; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        transform: scale(0.65);
-        animation: spin-all calc(var(--sp) * 2) linear 0s infinite
-    }
-    .loader-video{
-        display: none;
-    }
-    .loading-text {
-        font-size: 1.3rem; 
-        margin-top: 40px;
-        font-family: roboto; /* Rendre le texte plus visible */
-        text-transform: uppercase; /* Convertir en majuscules */
-        color: #266c54; /* Couleur du texte */
-        animation: fadeText 1.5s ease-in-out infinite; /* Animation fluide */
-      }
-      
-.cercleload {
-	--in: 80%;
-	--ar: #28a47b;
-	--dt: #379777;
-	--shadow: drop-shadow(0vmin 0vmin 0.5vmin #000) drop-shadow(0vmin 1vmin 0.5vmin #0004);
-	--cross: linear-gradient(0deg, #fff0 calc(50% - 2px), #000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px)), linear-gradient(90deg, #fff0 calc(50% - 2px), #000 calc(50% - 1px) calc(50% + 1px), #fff0 calc(50% + 2px));
-    border: 6vmin solid var(--ar);
-    width: var(--in);
-    height: var(--in);
-    border-radius: 100%;
-    position: absolute;
-    box-sizing: border-box;
-    border-top-color: #fff0;
-    border-left-color: #fff0;
-    top: 15vmin;
-    right: -10vmin;
-    animation: spin-bot var(--sp) ease 0s infinite;
-    background-image: var(--cross), radial-gradient(var(--dt) 5.5vmin, #fff0 calc(5.5vmin + 1px));
-	background-repeat: no-repeat;
-    background-size: 3vmin 1vmin, 1vmin 3vmin, 100% 100%;
-    background-position: center center;
-	filter: var(--shadow);
+/* Couche grise (fond du mot) */
+.loader-text--base {
+  color: #1f5e4a;
 }
 
-.cercleload:nth-child(2) {
-    --in: 60%;
-    top: -2vmin;
-    animation: spin-top var(--sp) ease 0s infinite;
-    transform: rotate(-45deg);
-    background-image: var(--cross), radial-gradient(var(--dt) 1.25vmin, #fff0 calc(1.25vmin + 1px));
-    right: -4vmin;
-	filter: hue-rotate(10deg) var(--shadow);
-    background-size: 1.4vmin 1vmin, 1vmin 1.4vmin, 100% 100%;
+/* Couche blanche, révélée de bas en haut par clip-path (piloté en JS) */
+.loader-text--fill {
+  position: absolute;
+  inset: 0;
+  color: #ffffff;
+  clip-path: polygon(0% 100%, 100% 100%);
 }
 
-.cercleload:nth-child(3) {
-    --in: 100%;
-    top: -5vmin;
-    left: -13vmin;
-    transform: rotate(175deg);
-    animation: spin-left var(--sp) ease calc(var(--sp) / 4) infinite;
-    background-image: var(--cross), radial-gradient(var(--dt) 9vmin, #fff0 calc(9vmin + 1px));
-	filter: hue-rotate(20deg) var(--shadow);
-    background-size: 5vmin 1vmin, 1vmin 5vmin, 100% 100%;
+.loader-counter {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 0.6rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(0.65rem, 1.1vw, 0.9rem);
+  font-weight: 500;
+  color: #ffffff;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
-.cercleload:nth-child(4) {
-    --in: 60%;
-    top: 35vmin;
-    left: -6vmin;
-    transform: rotate(-280deg);
-    animation: spin-last var(--sp) ease calc(calc(calc(var(--sp) / 4) + var(--sp)) * -1) infinite;
-    background-image: var(--cross), radial-gradient(var(--dt) 2.5vmin, #fff0 calc(2.5vmin + 1px));
-	filter: hue-rotate(30deg) var(--shadow);
-    background-size: 2vmin 1vmin, 1vmin 2vmin, 100% 100%;
+/* ---------- Sortie : zoom énorme + fondu ---------- */
+.loader.exiting .loader-counter {
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
-
-@keyframes spin-all {
-	0% { transform: rotate(0deg) scale(0.65); }
-	100% { transform: rotate(360deg) scale(0.65); }
+.loader.exiting .loader-word {
+  animation: loader-zoom 1s cubic-bezier(0.7, 0, 0.84, 0) forwards;
 }
 
-
-@keyframes spin-top {
-	0% { transform: rotate(-45deg); }
-	100% { transform: rotate(315deg); }
+.loader.exiting .loader-text--fill {
+  animation: loader-grey 1s ease forwards;
 }
 
-@keyframes spin-bot {
-	0%, 35% { transform: rotate(0deg); }
-	80%, 100% { transform: rotate(-360deg); }
+.loader.exiting {
+  animation: loader-bg-out 0.35s ease 0.65s forwards;
 }
 
-@keyframes spin-left {
-	0%, 35% { transform: rotate(175deg); }
-	80%, 100% { transform: rotate(535deg); }
+@keyframes loader-zoom {
+  0%   { transform: scale(1); }
+  100% { transform: scale(14); }
 }
 
-@keyframes spin-last {
-	0%, 10% { transform: rotate(-280deg); }
-	90%, 100% { transform: rotate(-640deg); }
+/* Le blanc passe au gris pendant le zoom, comme dans la vidéo */
+@keyframes loader-grey {
+  0%   { color: #ffffff; }
+  100% { color: #1f5e4a; } /* même valeur que la base */
 }
 
+@keyframes loader-bg-out {
+  to { opacity: 0; }
+}
 
-@keyframes fadeText {
-  0%, 100% {
-      opacity: 0.2;
-      
+@media (prefers-reduced-motion: reduce) {
+  .loader.exiting .loader-word,
+  .loader.exiting .loader-text--fill {
+    animation: none;
   }
-  50% {
-      opacity: 1;
+  .loader.exiting {
+    animation: loader-bg-out 0.3s ease forwards;
   }
-}
-
 }
