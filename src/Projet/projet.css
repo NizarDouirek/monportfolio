@@ -458,12 +458,8 @@
         background-color: white; /* Garde un contraste approprié */
     }
 
-    .imgsite {
-        width: 100%; /* Les images prennent toute la largeur disponible */
-        height: 200px; /* Ajustement de la hauteur proportionnelle */
-        border-radius: 10px; /* Réduction des coins arrondis */
-    }
-    .imgsite1{
+    
+    .imgsite,.imgsite1,.imgsitePar{
         width: 100%; /* Les images prennent toute la largeur disponible */
         height: 200px; /* Ajustement de la hauteur proportionnelle */
         border-radius: 10px; 
@@ -840,3 +836,5 @@
     display: flex;
     gap: 1rem;
 }
+
+

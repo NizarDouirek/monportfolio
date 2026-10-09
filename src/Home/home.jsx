@@ -13,6 +13,9 @@ import AnimatedCounter from "../Constant/animatecounter/numbercount";
 import Squares from "../Constant/Bg/bg";
 import Test from "../Test/test";
 
+import StackSection from "../Projet/StackSection";
+
+
 export default function Home() {
    const items = [
   {
@@ -148,6 +151,8 @@ const handleAnimationComplete = () => {
   return (
     <div id="homme">
       {/* <ParticlesBackground/> */}
+
+      {/* ───────── 1. Accueil + bandeau défilant (page normale) ───────── */}
       {/* Conteneur animé */}
       <div
         className="homme"
@@ -204,15 +209,15 @@ hoverFillColor='transparent'
           <motion.button className="btn-homme"  initial={{ opacity: 0, x: -100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 2, duration: 0.3}}>
-           <i class="bx bx-chat icnBu"></i> {t("contactezMoi")} 
+           <i className="bx bx-chat icnBu"></i> {t("contactezMoi")} 
           </motion.button>
           </a>
-            <a href="Nizar Douirek CV.pdf" target="_blank"rel="noopener noreferrer">
+            <a href="Nizar Douirek CV.pdf" target="_blank" rel="noopener noreferrer">
           <motion.button className="btn-homme1"  initial={{ opacity: 0, x: 100 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ delay: 2 , duration: 0.3 }}>
           
-              <i class="bx bx-download icnBu"></i> {t("telechargerCV")}
+              <i className="bx bx-download icnBu"></i> {t("telechargerCV")}
           </motion.button>
           </a>
         </motion.div>
@@ -252,7 +257,10 @@ hoverFillColor='transparent'
     </div>
   </div>
 
-       <About showHero={false} />
+      {/* ───────── 2. À propos (page normale) ───────── */}
+      <About showHero={false} />
+
+      {/* Bouton "remonter" : fixe, donc HORS des StackSection */}
       <button
         onClick={scrollToTop}
         className="Top1"
@@ -278,11 +286,19 @@ hoverFillColor='transparent'
   style={{ width: "40px", height: "40px" }}
 />
       </button>
+
+      {/* ───────── 3. Compétences : reste en place, le Parcours la recouvre ───────── */}
+      
+        <Skills showHero={false} />
       
 
-      <Skills showHero={false}/>
-    
-      <Cv showHero={false}/>
+      {/* ───────── 4. Parcours : glisse par-dessus les Compétences ───────── */}
+      
+        <Cv showHero={false}/>
+   
+
+      {/* ───────── 5. Projets + réalisations : reste en place, le Contact les recouvre ───────── */}
+      <StackSection mode="base">
        <div className="scrolBits">
       <ScrollVelocity
   texts={[<span >
@@ -386,9 +402,13 @@ Html -
     </SpotlightCard>
   </motion.div>
 </motion.div>
+      </StackSection>
 
+      {/* ───────── 6. Contact : glisse par-dessus les Projets ───────── */}
       {/* <Contact showHero={false} /> */}
-       <Test showHero={false}/>
+      <StackSection mode="cover">
+        <Test showHero={false}/>
+      </StackSection>
       {/* <Footer /> */}
     </div>
   );

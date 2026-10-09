@@ -3,6 +3,7 @@ import "./header.css";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import HeaderStreak from "./HeaderStreak";
 
 /* ================= ANIMATION CONFIG ================= */
 const DURATION = 0.25;
@@ -88,7 +89,8 @@ export default function Header() {
   return (
     <div className="header">
       <header className={isScrolled ? "scrolled" : ""}>
-        <div className="logo">
+  {isScrolled && <HeaderStreak />}
+  <div className="logo">
           <img className="dn" src="dn.webp" alt="logo" />
 
           <div className="navbar">
